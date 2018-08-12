@@ -1,17 +1,72 @@
 (ns euro-program-app.core
-    (:require ))
+  (:require [reagent.session :as s]
+            [reagent.core :as r]
+            [cljs.reader :as reader]
+            [euro-program-app.display :as d]
+            [secretary.core :as secretary :include-macros true]
+            [goog.events :as events]
+            [goog.history.EventType :as EventType]
+            [ajax.core :refer [GET]])
+  (:require-macros [euro-program-app.macros :as m])
+  (:import goog.History))
 
 (enable-console-print!)
 
-(println "This text is printed from src/euro-program-app/core.cljs. Go ahead and edit it and see reloading in action.")
+;; Routes
 
-;; define your app data so that it doesn't get over-written on reload
+(secretary/set-config! :prefix "#")
 
-(defonce app-state (atom {:text "Hello world!"}))
+(secretary/defroute "/" []
+  (s/put! :page :schedule))
 
+(secretary/defroute "/schedule" []
+  (s/put! :page :schedule))
+
+(secretary/defroute "/schedule/timeslot/:id" [id]
+  (s/put! :page :schedule)
+  (s/put! :timeslot (reader/read-string id)))
+
+(secretary/defroute "/streams" []
+  (s/put! :page :streams))
+
+(secretary/defroute "/participants" []
+  (s/put! :page :participants))
+
+;; History
+;; must be called after routes have been defined
+
+(defn hook-browser-navigation! []
+  (doto (History.)
+    (events/listen
+     EventType/NAVIGATE
+     (fn [event]
+       (secretary/dispatch! (.-token event))))
+    (.setEnabled true)))
+
+;; Data initialisation and reagent components
+
+
+(defn update-local-data [d]
+  (s/put! :data (reader/read-string d)))
+
+(defn get-data []
+  (GET (str (s/get :conf) ".edn") {:handler update-local-data}))
 
 (defn on-js-reload []
-  ;; optionally touch your app-state to force rerendering depending on
-  ;; your application
-  ;; (swap! app-state update-in [:__figwheel_counter] inc)
-)
+  ;; Nothing to do here
+  )
+
+(defn mount []
+  (m/render main)
+  (m/render title)
+  (m/render navbarNavAltMarkup))
+
+(defn init! []
+  (s/put! :conf "or2018")
+  (s/put! :confname "Operations Research 2018")
+  (s/put! :page :schedule)
+  (hook-browser-navigation!)
+  (get-data)
+  (mount))
+
+(defonce init (init!))

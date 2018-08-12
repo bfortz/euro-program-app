@@ -14,3 +14,7 @@ pom.xml.asc
 .cpcache/
 figwheel_server.log
 resources/public/js/compiled/
+.cljs_nashorn_repl/
+.rebel_readline_history
+resources/public/*.edn
+nashorn_code_cache/
