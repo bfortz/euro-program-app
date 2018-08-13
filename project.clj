@@ -13,6 +13,7 @@
                  [reagent-forms "0.5.42"]
                  [reagent-utils "0.3.1"]
                  [secretary "1.2.3"] 
+                 [domina "1.0.3"]
                  [cljs-ajax "0.7.4"]]
 
   :plugins [[lein-figwheel "0.5.16"]

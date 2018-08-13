@@ -1,2 +1,22 @@
-/* some style */
+.header {
+  height: 60px;
+}
 
+#main {
+  margin-top: 60px;
+}
+
+.sessions {
+  height: calc(100vh - 200px);
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+}
+
+.navbar-brand {
+  max-width: 60%;
+}
+
+.session {
+  text-align: left;
+  white-space: normal;
+}

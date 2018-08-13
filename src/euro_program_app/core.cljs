@@ -22,9 +22,13 @@
 (secretary/defroute "/schedule" []
   (s/put! :page :schedule))
 
-(secretary/defroute "/schedule/timeslot/:id" [id]
-  (s/put! :page :schedule)
+(secretary/defroute "/timeslot/:id" [id]
+  (s/put! :page :timeslot)
   (s/put! :timeslot (reader/read-string id)))
+
+(secretary/defroute "/session/:id" [id]
+  (s/put! :page :session)
+  (s/put! :session (reader/read-string id)))
 
 (secretary/defroute "/streams" []
   (s/put! :page :streams))
@@ -53,8 +57,7 @@
   (GET (str (s/get :conf) ".edn") {:handler update-local-data}))
 
 (defn on-js-reload []
-  ;; Nothing to do here
-  )
+  (s/update! :reload inc))
 
 (defn mount []
   (m/render main)
