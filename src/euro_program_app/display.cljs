@@ -30,14 +30,14 @@
      [:div {:class "row"} 
       [:div {:class "col text-center"} [:h3 [:a {:href "#schedule"} "Schedule"]]]]
      [:div {:class "row"} 
-      [:div {:class "col-3"} 
+      [:div {:class "col-2"} 
        (when (get (:timeslots d) (dec id))
          [:a {:href (str "#timeslot/" (dec id))
               :role "button"
               :class "btn btn-primary btn-sm"}
           [:i {:class "material-icons"} "arrow_back"]])]
-      [:div {:class "col-6 text-center"} [:h3 (:schedule t)]] 
-      [:div {:class "col-3 text-right"} 
+      [:div {:class "col-8 text-center"} [:h3 (:schedule t)]] 
+      [:div {:class "col-2 text-right"} 
        (when (get (:timeslots d) (inc id))
          [:a {:href (str "#timeslot/" (inc id))
               :role "button"
