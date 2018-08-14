@@ -15,7 +15,7 @@
     ^{:key (str "S" id)}
     [:a {:href (str "#session/" id) 
           :role "button"
-          :class "btn btn-outline-primary col session-btn"}
+          :class "btn btn-outline-primary col"}
       [:div {:class "row session"}
        [:div {:class "col-4 col-md-3 col-lg-2"} 
         (str (:day t) (:time t) "-" (:track s)) [:br] r]
@@ -47,20 +47,43 @@
       (doall (map session (:sessions t)))]]))
 
 (defn schedule []
-  (let [d (s/get :data)
-        activets (s/get :timeslot)] 
+  (let [d (s/get :data)]
     [:div [:h2 "Schedule"]
      (doall
-       (for [timeslot (:timeslots d)]
-         (let [id (first timeslot)
-               t (second timeslot)]
-           ^{:key (str "T" id)}
-           [:div {:class "row"}
-            [:div {:class "col-lg-3 col-md-6"} 
-             [:a {:href (str "#timeslot/" id) 
-                  :role "button"
-                  :class "btn btn-outline-primary col"}
-              (:schedule t)]]])))]))
+       (for [[id t] (:timeslots d)]
+         ^{:key (str "T" id)}
+         [:div {:class "row"}
+          [:div {:class "col-lg-3 col-md-6"} 
+           [:a {:href (str "#timeslot/" id) 
+                :role "button"
+                :class "btn btn-outline-primary col"}
+            (:schedule t)]]]))]))
+
+(defn stream []
+  (let [d (s/get :data)
+        id (s/get :stream)
+        s (get (:streams d) id)] 
+    [:div
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} [:h3 [:a {:href "#streams"} "Streams"]]]]
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} [:h2 (:name s)]]]
+     [:div {:class "sessions"}
+      (doall (map session (:sessions s)))]]))
+
+(defn streams []
+  (let [d (s/get :data)]
+    [:div [:h2 "Streams"]
+     (doall
+       (for [[id s] (:streams d)]
+         ^{:key (str "ST" id)}
+         [:div {:class "row"}
+          [:div {:class "col"} 
+           [:a {:href (str "#stream/" id) 
+                :role "button"
+                :class "btn btn-outline-primary col session"}
+            (:name s)]]]))]))
+
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
@@ -68,6 +91,8 @@
    (case (s/get :page)
      :schedule (schedule)
      :timeslot (timeslot)
+     :streams (streams)
+     :stream (stream)
      [:h2 "Under construction."])
    [:span {:class "invisible"} (s/get :reload)]])
 

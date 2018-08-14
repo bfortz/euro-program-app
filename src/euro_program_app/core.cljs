@@ -33,6 +33,10 @@
 (secretary/defroute "/streams" []
   (s/put! :page :streams))
 
+(secretary/defroute "/stream/:id" [id]
+  (s/put! :page :stream)
+  (s/put! :stream (reader/read-string id)))
+
 (secretary/defroute "/participants" []
   (s/put! :page :participants))
 
