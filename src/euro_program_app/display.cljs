@@ -3,6 +3,49 @@
             [domina :as dom])
   (:require-macros [euro-program-app.macros :as m]))
 
+(defn user [id]
+  (let [d (s/get :data)
+        u (get (:users d) id)]
+    [:a {:href (str "#user/" id)} (:firstname u) " " (:lastname u)]))
+
+(defn session-detail []
+  (let [d (s/get :data)
+        id (s/get :session)
+        s (get (:sessions d) id) 
+        rooms (:rooms d)
+        t (get (:timeslots d) (:timeslot s))
+        stream (get (:streams d) (:stream s))
+        r (if (nil? (:specialroom s))
+            (:room (get rooms (:track s)))
+            (:specialroom s))
+        chairs (:chairs s)]
+    [:div 
+     [:div {:class "row"}
+      [:div {:class "col"}
+       [:h3 [:a {:href (str "#timeslot/" (:timeslot s))} (:schedule t)]] 
+       [:h2 (:day t) (:time t) "-" (:track s) ": " 
+        [:b {:style {:color "red"}} (:name s)]]
+       [:h3 "Stream: " [:a {:href (str "#stream/" (:stream s)) } (:name stream)]]
+       [:p "Room: " [:i r] [:br]
+        (if (= (count chairs) 1)
+          [:span "Chair: " (user (first chairs)) ]
+          [:span "Chairs:"
+           [:ul
+            (for [c (:chairs s)]
+              ^{:key (str "C" c)}
+              [:li (user c)])]])]]]
+     [:div {:class "row"}
+      [:div {:class "col"}
+       [:ol
+        (for [pid (:papers s)]
+          (let [p (get (:papers d) pid)]
+            ^{:key (str "P" pid)}
+            [:li [:a {:href (str "#paper/" pid)} 
+                  [:i {:style {:color "black"}} (:title p)]] [:br]
+             (reduce #(list (user %2) ", " %1) 
+                     (user (first (:authors p))) 
+                     (rest (:authors p)))]))]]]]))
+
 (defn session [id]
   (let [d (s/get :data)
         s (get (:sessions d) id) 
@@ -93,6 +136,7 @@
      :timeslot (timeslot)
      :streams (streams)
      :stream (stream)
+     :session (session-detail)
      [:h2 "Under construction."])
    [:span {:class "invisible"} (s/get :reload)]])
 
