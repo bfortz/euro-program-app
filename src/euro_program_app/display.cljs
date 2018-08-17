@@ -198,16 +198,17 @@
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
-  [:div
-   (case (s/get :page)
-     :schedule (schedule)
-     :timeslot (timeslot)
-     :streams (streams)
-     :stream (stream)
-     :session (session-detail)
-     :user (user-detail)
-     [:h2 "Under construction."])
-   [:span {:class "invisible"} (s/get :reload)]])
+  (when (s/get :data) 
+    [:div
+     (case (s/get :page)
+       :schedule (schedule)
+       :timeslot (timeslot)
+       :streams (streams)
+       :stream (stream)
+       :session (session-detail)
+       :user (user-detail)
+       [:h2 "Under construction."])
+     [:span {:class "invisible"} (s/get :reload)]]))
 
 (defn title []
   (s/get :confname))
