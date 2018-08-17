@@ -6,6 +6,10 @@
   margin-top: 60px;
 }
 
+.abstract {
+  white-space: pre-line;
+}
+
 .sessions {
   height: calc(100vh - 200px);
   overflow-x: hidden;

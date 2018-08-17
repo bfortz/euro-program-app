@@ -23,19 +23,28 @@
   (s/put! :page :schedule))
 
 (secretary/defroute "/timeslot/:id" [id]
-  (s/put! :page :timeslot)
-  (s/put! :timeslot (reader/read-string id)))
+  (s/put! :timeslot (reader/read-string id)) 
+  (s/put! :page :timeslot))
 
 (secretary/defroute "/session/:id" [id]
-  (s/put! :page :session)
-  (s/put! :session (reader/read-string id)))
+  (s/put! :session (reader/read-string id))
+  (s/remove! :abstract)
+  (s/put! :page :session))
+
+(secretary/defroute "/abstract/:id" [id]
+  (s/put! :abstract (reader/read-string id)) 
+  (s/put! :page :session))
 
 (secretary/defroute "/streams" []
   (s/put! :page :streams))
 
 (secretary/defroute "/stream/:id" [id]
-  (s/put! :page :stream)
-  (s/put! :stream (reader/read-string id)))
+  (s/put! :stream (reader/read-string id)) 
+  (s/put! :page :stream))
+
+(secretary/defroute "/user/:id" [id]
+  (s/put! :user (reader/read-string id)) 
+  (s/put! :page :user))
 
 (secretary/defroute "/participants" []
   (s/put! :page :participants))

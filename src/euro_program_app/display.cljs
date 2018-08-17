@@ -6,11 +6,21 @@
 (defn user [id]
   (let [d (s/get :data)
         u (get (:users d) id)]
-    [:a {:href (str "#user/" id)} (:firstname u) " " (:lastname u)]))
+    [:a {:href (str "#user/" id)} (str (:firstname u) " " (:lastname u))]))
+
+(defn authors [p]
+  (reduce #(conj (conj %1 ", ") (user %2)) 
+          (let [fa (first (:authors p))] 
+            [vector :span (user fa)])
+          (rest (:authors p))))
 
 (defn session-detail []
   (let [d (s/get :data)
-        id (s/get :session)
+        paperid (s/get :abstract)
+        paper (get (:papers d) paperid)
+        id (if paperid
+             (:session paper) 
+             (s/get :session))
         s (get (:sessions d) id) 
         rooms (:rooms d)
         t (get (:timeslots d) (:timeslot s))
@@ -19,32 +29,78 @@
             (:room (get rooms (:track s)))
             (:specialroom s))
         chairs (:chairs s)]
-    [:div 
-     [:div {:class "row"}
+    [:div
+     [:div {:class (str "row mb-3" 
+                        (when paperid " d-none d-md-flex"))}
       [:div {:class "col"}
-       [:h3 [:a {:href (str "#timeslot/" (:timeslot s))} (:schedule t)]] 
-       [:h2 (:day t) (:time t) "-" (:track s) ": " 
-        [:b {:style {:color "red"}} (:name s)]]
-       [:h3 "Stream: " [:a {:href (str "#stream/" (:stream s)) } (:name stream)]]
-       [:p "Room: " [:i r] [:br]
+       [:a {:href (str "#timeslot/" (:timeslot s))} (:schedule t)] [:br]
+       "Room: " [:i r][:br] 
+       "Stream: " [:a {:href (str "#stream/" (:stream s)) :class "text-black"} 
+                   (:name stream)] [:br]
+       [:h2 {:class (if paperid "d-none" "")}
+        [:a {:href (str "#session/" id) :style {:color "red"}} 
+         (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
+       [:div {:class (if paperid "d-none" "")}
         (if (= (count chairs) 1)
-          [:span "Chair: " (user (first chairs)) ]
+          [:p "Chair: " (user (first chairs))]
           [:span "Chairs:"
            [:ul
-            (for [c (:chairs s)]
-              ^{:key (str "C" c)}
-              [:li (user c)])]])]]]
-     [:div {:class "row"}
-      [:div {:class "col"}
-       [:ol
-        (for [pid (:papers s)]
-          (let [p (get (:papers d) pid)]
-            ^{:key (str "P" pid)}
-            [:li [:a {:href (str "#paper/" pid)} 
-                  [:i {:style {:color "black"}} (:title p)]] [:br]
-             (reduce #(list (user %2) ", " %1) 
-                     (user (first (:authors p))) 
-                     (rest (:authors p)))]))]]]]))
+            (doall 
+              (for [c (:chairs s)]
+                ^{:key (str "C" c)}
+                [:li (user c)]))]])]]]
+     [:div {:class "row"}]
+     (if paperid
+       (let [p (get (:papers d) paperid)]
+         [:div
+          [:div {:class "row mb-3"}
+           [:div {:class "col-2 col-md-1"} 
+            (if (= paperid (first (:papers s))) 
+              ""
+              (let [previd (loop [papers (:papers s)]
+                             (if (= paperid (fnext papers))
+                               (first papers)
+                               (recur (rest papers))))] 
+                [:b previd]
+                [:a {:href (str "#abstract/" previd)
+                     :role "button"
+                     :class "btn btn-primary btn-sm"}
+                 [:i {:class "material-icons"} "arrow_back"]]))]
+           [:div {:class "col text-center"}
+            [:a {:href (str "#session/" id) :style {:color "red"}} 
+             (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
+           [:div {:class "col-2 col-md-1"} 
+            (if (= paperid (last (:papers s))) 
+              ""
+              (let [nextid (loop [papers (:papers s)]
+                             (if (= paperid (first papers))
+                               (fnext papers)
+                               (recur (rest papers))))] 
+                [:b nextid]
+                [:a {:href (str "#abstract/" nextid)
+                     :role "button"
+                     :class "btn btn-primary btn-sm"}
+                 [:i {:class "material-icons"} "arrow_forward"]]))]]
+          [:div {:class "row"}
+           [:div {:class "col"} 
+            [:h3 (:title p)]]]
+          [:div {:class "row"} 
+           [:div {:class "col"} 
+            [:p (authors p)]]]
+          [:div {:class "row"}
+           [:div {:class "col abstract"} 
+            (:abstract p)]]])
+       [:div {:class "row"}
+        [:div {:class "col"} 
+         [:ol
+          (doall 
+            (for [pid (:papers s)]
+              (let [p (get (:papers d) pid)]
+                ^{:key (str "P" pid)}
+                [:li
+                 [:a {:href (str "#abstract/" pid) :style {:color "black"} } 
+                  [:i (:title p)]] [:br]
+                 (authors p)])))]]])]))
 
 (defn session [id]
   (let [d (s/get :data)
@@ -57,13 +113,13 @@
             (:specialroom s))]
     ^{:key (str "S" id)}
     [:a {:href (str "#session/" id) 
-          :role "button"
-          :class "btn btn-outline-primary col"}
-      [:div {:class "row session"}
-       [:div {:class "col-4 col-md-3 col-lg-2"} 
-        (str (:day t) (:time t) "-" (:track s)) [:br] r]
-       [:div {:class "col"} [:b {:style {:color "red"}} (:name s)] [:br] 
-        [:i {:style {:color "black"}} (:name stream)]]]]))
+         :role "button"
+         :class "btn btn-outline-primary col"}
+     [:div {:class "row session"}
+      [:div {:class "col-4 col-md-3 col-lg-2"} 
+       (str (:day t) (:time t) "-" (:track s)) [:br] r]
+      [:div {:class "col"} [:b {:style {:color "red"}} (:name s)] [:br] 
+       [:i {:style {:color "black"}} (:name stream)]]]]))
 
 (defn timeslot []
   (let [d (s/get :data)
@@ -102,6 +158,18 @@
                 :class "btn btn-outline-primary col"}
             (:schedule t)]]]))]))
 
+(defn user-detail []
+  (let [d (s/get :data)
+        id (s/get :user)
+        u (get (:users d) id)] 
+    [:div
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} [:h3 [:a {:href "#participants"} "Participants"]]]]
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} [:h2 (:firstname u) " " (:lastname u)]]]
+     [:div {:class "sessions"}
+      (doall (map session (:sessions u)))]]))
+
 (defn stream []
   (let [d (s/get :data)
         id (s/get :stream)
@@ -137,6 +205,7 @@
      :streams (streams)
      :stream (stream)
      :session (session-detail)
+     :user (user-detail)
      [:h2 "Under construction."])
    [:span {:class "invisible"} (s/get :reload)]])
 
