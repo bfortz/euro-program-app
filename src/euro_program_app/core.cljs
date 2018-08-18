@@ -1,6 +1,7 @@
 (ns euro-program-app.core
   (:require [reagent.session :as s]
             [reagent.core :as r]
+            [reagent.cookies :as cookies]
             [cljs.reader :as reader]
             [clojure.string :as string]
             [euro-program-app.display :as d]
@@ -32,6 +33,19 @@
   (s/remove! :abstract)
   (s/put! :page :session))
 
+(defn sort-sessions [s]
+  (let [sessions (:sessions (s/get :data))] 
+    (sort-by #(+ (* 100 (:timeslot (get sessions %))) (:track (get sessions %))) s)))
+
+(secretary/defroute "/addsession/:id" [id]
+  (s/update! :mysessions conj (reader/read-string id))
+  (s/update! :mysessions sort-sessions)
+  (cookies/set! :mysessions (s/get :mysessions)))
+
+(secretary/defroute "/delsession/:id" [id]
+  (s/update! :mysessions (partial remove #(= % (reader/read-string id))))
+  (cookies/set! :mysessions (s/get :mysessions)))
+
 (secretary/defroute "/abstract/:id" [id]
   (s/put! :abstract (reader/read-string id)) 
   (s/put! :page :session))
@@ -54,6 +68,9 @@
 (secretary/defroute "/participants/:letter" [letter]
   (s/put! :first letter)
   (s/put! :page :participants))
+
+(secretary/defroute "/my-program" []
+  (s/put! :page :my-program))
 
 ;; History
 ;; must be called after routes have been defined
@@ -84,7 +101,8 @@
     (s/put! :data data)))
 
 (defn get-data []
-  (GET (str (s/get :conf) ".edn") {:handler update-local-data}))
+  (GET (str (s/get :conf) ".edn") {:handler update-local-data})
+  (s/put! :mysessions (cookies/get :mysessions)))
 
 (defn on-js-reload []
   (s/update! :reload inc))

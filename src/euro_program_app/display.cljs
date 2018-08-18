@@ -36,13 +36,24 @@
             (:specialroom s))
         chairs (:chairs s)]
     [:div
-     [:div {:class (str "row mb-3" 
+     [:div {:class (str "row" 
                         (when paperid " d-none d-md-flex"))}
-      [:div {:class "col"}
+      [:div {:class "col-2 col-md-1 pl-0 ml-0 text-left"}
+       [:a {:href (str (if (empty? (filter #(= id %) (s/get :mysessions)))
+                         "#addsession/"
+                         "#delsession/")
+                       id)
+            :role "button"
+            :class "btn btn"}
+        (if (empty? (filter #(= id %) (s/get :mysessions)))
+         [:i {:class "material-icons"} "star_border"]   
+         [:i {:class "material-icons"} "star"])]]
+      [:div {:class "col-10 mb-3"}
        [:a {:href (str "#timeslot/" (:timeslot s))} (:schedule t)] [:br]
        "Room: " [:i r][:br] 
        "Stream: " [:a {:href (str "#stream/" (:stream s)) :class "text-black"} 
-                   (:name stream)] [:br]
+                   (:name stream)]]
+      [:div {:class "col"}
        [:h2 {:class (if paperid "d-none" "") :style {:color "red"}}
         (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]] 
        [:div {:class (if paperid "d-none" "")}
@@ -66,7 +77,6 @@
                              (if (= paperid (fnext papers))
                                (first papers)
                                (recur (rest papers))))] 
-                [:b previd]
                 [:a {:href (str "#abstract/" previd)
                      :role "button"
                      :class "btn btn-primary btn-sm"}
@@ -81,7 +91,6 @@
                              (if (= paperid (first papers))
                                (fnext papers)
                                (recur (rest papers))))] 
-                [:b nextid]
                 [:a {:href (str "#abstract/" nextid)
                      :role "button"
                      :class "btn btn-primary btn-sm"}
@@ -187,6 +196,18 @@
      [:div {:class "sessions"}
       (doall (map session (:sessions s)))]]))
 
+(defn my-program []
+  (let [s (s/get :mysessions)]
+    [:div
+     [:div {:class "row"} 
+      [:div {:class "col"} 
+       [:h2 "My Program"]]]
+     [:div {:class "row"}
+      [:div {:class "col"}
+       [:p "To add or remove a session from your program, click on the star on the session page."]]]
+     [:div {:class "sessions"}
+      (doall (map session s))]]))
+
 (defn streams []
   (let [d (s/get :data)]
     [:div [:h2 "Streams"]
@@ -248,6 +269,7 @@
        :session (session-detail)
        :user (user-detail)
        :participants (participants)
+       :my-program (my-program)
        [:h2 "Under construction."])
      [:span {:class "invisible"} (s/get :reload)]]))
 
@@ -257,5 +279,6 @@
 (defn navbarNavAltMarkup []
   [:div {:class "navbar-nav"}
    (m/nav-link schedule)
+   (m/nav-link my-program)
    (m/nav-link streams)
    (m/nav-link participants)])
