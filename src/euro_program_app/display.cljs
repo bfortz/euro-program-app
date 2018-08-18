@@ -1,5 +1,6 @@
 (ns euro-program-app.display
   (:require [reagent.session :as s]
+            [clojure.string :as string]
             [domina :as dom])
   (:require-macros [euro-program-app.macros :as m]))
 
@@ -7,6 +8,11 @@
   (let [d (s/get :data)
         u (get (:users d) id)]
     [:a {:href (str "#user/" id)} (str (:firstname u) " " (:lastname u))]))
+
+(defn user-last [id]
+  (let [d (s/get :data)
+        u (get (:users d) id)]
+    [:a {:href (str "#user/" id)} (str (:lastname u) ", " (:firstname u))]))
 
 (defn authors [p]
   (reduce #(conj (conj %1 ", ") (user %2)) 
@@ -195,6 +201,41 @@
                 :class "btn btn-outline-primary col session"}
             (:name s)]]]))]))
 
+(defn letter-map [l] 
+  (let [lm {"Ä" "A", "ä" "a", "Ç" "C", "ç" "c", "Ö" "O", "ö" "o", "Ş" "S", "ş" "s", "Ü" "U", "ü" "u" }]
+    (get lm l l)))
+
+(defn up-first [u]
+  (->> (second u)
+       (:lastname)
+       (first)
+       (string/upper-case)
+       (letter-map)))
+
+(defn participants []
+  (let [users (:users (s/get :data))
+        fl (s/get :first)]
+    (if fl
+      (let [u (filter #(= fl (up-first %)) users)]
+        [:div
+         [:h2 [:a {:href "#participants"} "Participants"]]
+         [:ul
+          (doall
+            (for [id (keys u)] 
+              ^{:key (str "P" id)}
+              [:li
+               (user-last id)]))]])
+      (let [first-letter (apply sorted-set (map up-first users))]
+        [:div 
+         [:h2 "Participants"]
+         [:div {:class "row"}
+          (doall
+            (for [l first-letter]
+              ^{:key (str "P" l)}
+              [:div {:class "col-2 col-md-1 text-center"}
+               [:a {:href (str "#participants/" l) 
+                    :role "button"
+                    :class "btn btn-outline-primary letter"} l]]))]]))))
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
@@ -207,6 +248,7 @@
        :stream (stream)
        :session (session-detail)
        :user (user-detail)
+       :participants (participants)
        [:h2 "Under construction."])
      [:span {:class "invisible"} (s/get :reload)]]))
 

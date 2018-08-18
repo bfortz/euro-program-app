@@ -2,6 +2,7 @@
   (:require [reagent.session :as s]
             [reagent.core :as r]
             [cljs.reader :as reader]
+            [clojure.string :as string]
             [euro-program-app.display :as d]
             [secretary.core :as secretary :include-macros true]
             [goog.events :as events]
@@ -47,6 +48,11 @@
   (s/put! :page :user))
 
 (secretary/defroute "/participants" []
+  (s/remove! :first)
+  (s/put! :page :participants))
+
+(secretary/defroute "/participants/:letter" [letter]
+  (s/put! :first letter)
   (s/put! :page :participants))
 
 ;; History
@@ -62,7 +68,6 @@
 
 ;; Data initialisation and reagent components
 
-
 (defn sort-map-by-fn-value [f m]
   "Returns a sorted map ordered by values of f applied to map values"
   (letfn [(compare-keys [k1 k2]
@@ -72,7 +77,8 @@
 (defn update-local-data [d]
   (let [data (reader/read-string d)
         streams (sort-map-by-fn-value :order (:streams data))
-        data (assoc data :streams streams)] 
+        users (sort-map-by-fn-value #(map d/letter-map (string/upper-case (:lastname %))) (:users data))
+        data (assoc data :streams streams :users users)] 
     (s/put! :data data)))
 
 (defn get-data []
