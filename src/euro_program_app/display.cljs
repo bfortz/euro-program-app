@@ -43,9 +43,8 @@
        "Room: " [:i r][:br] 
        "Stream: " [:a {:href (str "#stream/" (:stream s)) :class "text-black"} 
                    (:name stream)] [:br]
-       [:h2 {:class (if paperid "d-none" "")}
-        [:a {:href (str "#session/" id) :style {:color "red"}} 
-         (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
+       [:h2 {:class (if paperid "d-none" "") :style {:color "red"}}
+        (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]] 
        [:div {:class (if paperid "d-none" "")}
         (if (= (count chairs) 1)
           [:p "Chair: " (user (first chairs))]
@@ -60,7 +59,7 @@
        (let [p (get (:papers d) paperid)]
          [:div
           [:div {:class "row mb-3"}
-           [:div {:class "col-2 col-md-1"} 
+           [:div {:class "col-2"} 
             (if (= paperid (first (:papers s))) 
               ""
               (let [previd (loop [papers (:papers s)]
@@ -75,7 +74,7 @@
            [:div {:class "col text-center"}
             [:a {:href (str "#session/" id) :style {:color "red"}} 
              (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
-           [:div {:class "col-2 col-md-1"} 
+           [:div {:class "col-2 text-right"} 
             (if (= paperid (last (:papers s))) 
               ""
               (let [nextid (loop [papers (:papers s)]

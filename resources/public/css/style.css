@@ -7,12 +7,12 @@
   margin-left: -0.4444em;
 }
 
-.btn {
-  min-width: 3rem;
-}
-
 #main {
   margin-top: 60px;
+}
+
+.material-icons {
+  font-size: 1rem;
 }
 
 .abstract {

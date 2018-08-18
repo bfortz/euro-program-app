@@ -71,7 +71,9 @@
 (defn sort-map-by-fn-value [f m]
   "Returns a sorted map ordered by values of f applied to map values"
   (letfn [(compare-keys [k1 k2]
-            (< (f (get m k1)) (f (get m k2))))] 
+            (or (< (f (get m k1)) (f (get m k2)))
+                (and (= (f (get m k1)) (f (get m k2)))
+                     (< k1 k2))))] 
     (into (sorted-map-by compare-keys) m)))
 
 (defn update-local-data [d]
