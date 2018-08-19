@@ -1,10 +1,10 @@
 (ns euro-program-app.core
   (:require [reagent.session :as s]
             [reagent.core :as r]
-            [reagent.cookies :as cookies]
             [cljs.reader :as reader]
             [clojure.string :as string]
             [euro-program-app.display :as d]
+            [euro-program-app.myprogram :as mp]
             [secretary.core :as secretary :include-macros true]
             [goog.events :as events]
             [goog.history.EventType :as EventType]
@@ -33,21 +33,11 @@
   (s/remove! :abstract)
   (s/put! :page :session))
 
-(defn sort-sessions [s]
-  (let [sessions (:sessions (s/get :data))] 
-    (sort-by #(+ (* 100 (:timeslot (get sessions %))) (:track (get sessions %))) s)))
-
-(defn mysessions-cookie []
-  (keyword (str "mysessions-" (s/get :conf))))
-
 (secretary/defroute "/addsession/:id" [id]
-  (s/update! :mysessions conj (reader/read-string id))
-  (s/update! :mysessions sort-sessions)
-  (cookies/set! (mysessions-cookie) (s/get :mysessions)))
+  (mp/add-session id))
 
 (secretary/defroute "/delsession/:id" [id]
-  (s/update! :mysessions (partial remove #(= % (reader/read-string id))))
-  (cookies/set! (mysessions-cookie) (s/get :mysessions)))
+  (mp/del-session id))
 
 (secretary/defroute "/abstract/:id" [id]
   (s/put! :abstract (reader/read-string id)) 
@@ -103,19 +93,9 @@
         data (assoc data :streams streams :users users)] 
     (s/put! :data data)))
 
-(defn merge-mysessions [d]
-  (let [old (s/get :mysessions)
-        newsessions (reader/read-string d)
-        ms (-> (reduce conj old newsessions)
-               (set)
-               (sort-sessions))]
-      (s/put! :mysessions ms)
-      (cookies/set! (mysessions-cookie) (s/get :mysessions))))
-
 (defn get-data []
   (GET (str (s/get :conf) ".edn") {:handler update-local-data})
-  (s/put! :mysessions (cookies/get (mysessions-cookie))) 
-  (GET "https://www.euro-online.org/or2018/program/mysessions" {:handler merge-mysessions  :with-credentials true}))
+  (mp/init-mysessions))
 
 (defn on-js-reload []
   (s/update! :reload inc))
