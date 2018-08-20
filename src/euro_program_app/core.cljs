@@ -1,6 +1,7 @@
 (ns euro-program-app.core
   (:require [reagent.session :as s]
             [reagent.core :as r]
+            [reagent.cookies :as c]
             [cljs.reader :as reader]
             [clojure.string :as string]
             [euro-program-app.display :as d]
@@ -64,6 +65,13 @@
 
 (secretary/defroute "/my-program" []
   (s/put! :page :my-program))
+
+(secretary/defroute "/notnow" []
+  (s/put! :nologin true))
+
+(secretary/defroute "/never" []
+  (s/put! :nologin true)
+  (c/set! :nologin true))
 
 ;; History
 ;; must be called after routes have been defined
