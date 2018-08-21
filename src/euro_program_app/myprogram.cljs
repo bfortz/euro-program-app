@@ -1,6 +1,7 @@
 (ns euro-program-app.myprogram
   (:require [reagent.cookies :as c]
             [reagent.session :as s]
+            [clojure.set :as cs]
             [cljs.reader :as reader]
             [ajax.core :refer [GET]]))
 
@@ -11,27 +12,35 @@
 (defn mysessions-cookie []
   (keyword (str "mysessions-" (s/get :conf))))
 
+(defn retry [f id]
+  (fn [_]
+    (s/update! :timeout + 10000)
+    (js/setTimeout #(f id) (s/get :timeout))))
+
 (defn add-session [id]
   (when (s/get :logged) 
-    (GET (str "https://www.euro-online.org/" (s/get :conf) "/session/add-session-user/" id) {:handler #() :with-credentials true})) 
+    (GET (str "https://www.euro-online.org/" (s/get :conf) "/session/add-session-user/" id) 
+         {:handler #(s/put! :timeout 0) :error-handler (retry add-session id) :with-credentials true})) 
   (s/update! :mysessions conj (reader/read-string id))
-  (s/update! :mysessions sort-sessions)
-  (c/get (mysessions-cookie) (s/get :mysessions)))
+  (s/update! :mysessions (comp sort-sessions set))
+  (c/set! (mysessions-cookie) (s/get :mysessions)))
 
 (defn del-session [id]
   (when (s/get :logged) 
-    (GET (str "https://www.euro-online.org/" (s/get :conf) "/session/remove-session-user/" id) {:handler #() :with-credentials true})) 
+    (GET (str "https://www.euro-online.org/" (s/get :conf) "/session/remove-session-user/" id) 
+         {:handler #(s/put! :timeout 0) :error-handler (retry del-session id) :with-credentials true})) 
   (s/update! :mysessions (partial remove #(= % (reader/read-string id))))
   (c/set! (mysessions-cookie) (s/get :mysessions)))
 
 (defn merge-mysessions [d]
-  (let [old (s/get :mysessions)
-        newsessions (reader/read-string d)
-        ms (-> (reduce conj old newsessions)
-               (set)
-               (sort-sessions))]
-      (s/put! :mysessions ms)
-      (c/set! (mysessions-cookie) (s/get :mysessions))))
+  (let [old (set (s/get :mysessions))
+        newsessions (set (reader/read-string d))
+        ms (sort-sessions (cs/union old newsessions))
+        diff (cs/difference old newsessions)]
+    (when (s/get :logged)
+      (doseq [id diff] (add-session (str id))))
+    (s/put! :mysessions ms)
+    (c/set! (mysessions-cookie) (s/get :mysessions))))
 
 (defn logged [d]
   (s/put! :logged (reader/read-string d)))
