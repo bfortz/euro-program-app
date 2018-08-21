@@ -257,23 +257,6 @@
                     :role "button"
                     :class "btn btn-outline-primary letter"} l]]))]]))))
 
-(defn main []
-  (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
-  (when (s/get :data) 
-    [:div
-     (login)
-     (case (s/get :page)
-       :schedule (schedule)
-       :timeslot (timeslot)
-       :streams (streams)
-       :stream (stream)
-       :session (session-detail)
-       :user (user-detail)
-       :participants (participants)
-       :my-program (my-program)
-       [:h2 "Under construction."])
-     [:span {:class "invisible"} (s/get :reload)]]))
-
 (defn login []
   (when-not (s/get :nologin) 
     (when-not (s/get :logged)
@@ -295,6 +278,23 @@
          [:a {:href "#never" 
               :role "button"
               :class "btn btn-primary"} "Never ask"]]]])))
+
+(defn main []
+  (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
+  (when (s/get :data) 
+    [:div
+     (login)
+     (case (s/get :page)
+       :schedule (schedule)
+       :timeslot (timeslot)
+       :streams (streams)
+       :stream (stream)
+       :session (session-detail)
+       :user (user-detail)
+       :participants (participants)
+       :my-program (my-program)
+       [:h2 "Under construction."])
+     [:span {:class "invisible"} (s/get :reload)]]))
 
 (defn title []
   (s/get :confname))
