@@ -8,6 +8,6 @@
     "sizes": "192x192"
   }
   ],
-  "start_url": "/",
+  "start_url": "/conferences/program/",
   "display": "standalone"
 }
