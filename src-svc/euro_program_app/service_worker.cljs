@@ -1,5 +1,4 @@
-(ns euro-program-app.service-worker 
-  (:require [reagent.session :as s]))
+(ns euro-program-app.service-worker)
 
 (def app-cache-name "euro-program-app")
 
@@ -46,20 +45,20 @@
       (.then (fn [cache]
                (-> (js/fetch request)
                    (.then (fn [response]
-                            ;; (println "Caching" (.-url request))
-                            (.put cache request (.clone response))
-                            response))
-                   (.then (fn [response]
-                            (println (.-status response))
-                            (js/console.log "Updated page" (.-url request)))))))))
+                            (-> (.text (.clone response))
+                                (.then (fn [cr] 
+                                         (when (not= h (hash cr))
+                                           (js/console.log "Updating cache for " (.-url request))
+                                           (.put cache request response))))))))))))
 
 (defn fetch-and-update-event [e]
-  (let [request (.-request e)
-        fetched (fetch-cached request)]
+  (let [request (.-request e)]
     ;; (js/console.log "[ServiceWorker] Fetch" (-> e .-request .-url))
-    (.respondWith e fetched)
-    (update-cache request (hash fetched))
-    (s/put! :refresh true)))
+    (.respondWith e (-> (fetch-cached request)
+                        (.then (fn [r]
+                                 (-> (.text (.clone r))
+                                     (.then #(update-cache request (hash %))))
+                                 r))))))
 
 (.addEventListener js/self "install" #(.waitUntil % (install-service-worker %)))
 (.addEventListener js/self "fetch" fetch-and-update-event)

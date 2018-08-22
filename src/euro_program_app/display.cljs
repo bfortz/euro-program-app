@@ -1,5 +1,6 @@
 (ns euro-program-app.display
   (:require [reagent.session :as s]
+            [reagent.cookies :as c]
             [clojure.string :as string]
             [domina :as dom])
   (:require-macros [euro-program-app.macros :as m]))
@@ -281,8 +282,6 @@
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
-  (when (s/get! :refresh)
-    (.reload js/window.location))
   (when (s/get :data) 
     [:div
      (login)

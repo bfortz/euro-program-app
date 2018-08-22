@@ -31,8 +31,7 @@
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/euro_program_app.js"
                            :output-dir "resources/public/js/compiled/out"
-                           :source-map-timestamp true
-                           :preloads [devtools.preload]}}
+                           :source-map-timestamp true}}
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/euro_program_app.js"
