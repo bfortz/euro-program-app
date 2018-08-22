@@ -2,6 +2,7 @@
   (:require [reagent.session :as s]
             [reagent.cookies :as c]
             [clojure.string :as string]
+            [euro-program-app.data :as d]
             [domina :as dom])
   (:require-macros [euro-program-app.macros :as m]))
 
@@ -222,22 +223,11 @@
                 :class "btn btn-outline-primary col session"}
             (:name s)]]]))]))
 
-(defn letter-map [l] 
-  (let [lm {"Ä" "A", "ä" "a", "Ç" "C", "ç" "c", "Ö" "O", "ö" "o", "Ş" "S", "ş" "s", "Ü" "U", "ü" "u" }]
-    (get lm l l)))
-
-(defn up-first [u]
-  (->> (second u)
-       (:lastname)
-       (first)
-       (string/upper-case)
-       (letter-map)))
-
 (defn participants []
   (let [users (:users (s/get :data))
         fl (s/get :first)]
     (if fl
-      (let [u (filter #(= fl (up-first %)) users)]
+      (let [u (filter #(= fl (d/up-first %)) users)]
         [:div
          [:h2 [:a {:href "#participants"} "Participants"]]
          [:ul
@@ -246,7 +236,7 @@
               ^{:key (str "P" id)}
               [:li
                (user-last id)]))]])
-      (let [first-letter (apply sorted-set (map up-first users))]
+      (let [first-letter (apply sorted-set (map d/up-first users))]
         [:div 
          [:h2 "Participants"]
          [:div {:class "row"}
@@ -282,7 +272,8 @@
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
-  (when (s/get :data) 
+  (js/setTimeout d/get-data 500)
+  (if (s/get :data) 
     [:div
      (login)
      (case (s/get :page)
@@ -295,7 +286,8 @@
        :participants (participants)
        :my-program (my-program)
        [:h2 "Under construction."])
-     [:span {:class "invisible"} (s/get :reload)]]))
+     [:span {:class "invisible"} (s/get :reload)]]
+    [:h2 "Loading program data. Please wait..."]))
 
 (defn title []
   (s/get :confname))

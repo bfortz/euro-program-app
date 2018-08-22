@@ -3,9 +3,9 @@
             [reagent.core :as r]
             [reagent.cookies :as c]
             [cljs.reader :as reader]
-            [clojure.string :as string]
             [euro-program-app.display :as d]
             [euro-program-app.myprogram :as mp]
+            [euro-program-app.data :as data]
             [secretary.core :as secretary :include-macros true]
             [goog.events :as events]
             [goog.history.EventType :as EventType]
@@ -86,25 +86,6 @@
 
 ;; Data initialisation and reagent components
 
-(defn sort-map-by-fn-value [f m]
-  "Returns a sorted map ordered by values of f applied to map values"
-  (letfn [(compare-keys [k1 k2]
-            (or (< (f (get m k1)) (f (get m k2)))
-                (and (= (f (get m k1)) (f (get m k2)))
-                     (< k1 k2))))] 
-    (into (sorted-map-by compare-keys) m)))
-
-(defn update-local-data [d]
-  (let [data (reader/read-string d)
-        streams (sort-map-by-fn-value :order (:streams data))
-        users (sort-map-by-fn-value #(map d/letter-map (string/upper-case (:lastname %))) (:users data))
-        data (assoc data :streams streams :users users)] 
-    (s/put! :data data)))
-
-(defn get-data []
-  (GET (str (s/get :conf) ".edn") {:handler update-local-data})
-  (mp/init-mysessions))
-
 (defn on-js-reload []
   (s/update! :reload inc))
 
@@ -122,7 +103,7 @@
   (s/put! :confname "Operations Research 2018")
   (s/put! :page :schedule)
   (hook-browser-navigation!)
-  (get-data)
+  (data/get-data)
   (mount)
   (make-progressive!))
 
