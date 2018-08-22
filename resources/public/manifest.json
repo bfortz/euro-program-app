@@ -6,8 +6,16 @@
       "src": "images/icons-192.png",
       "type": "image/png",
     "sizes": "192x192"
+  },
+  "icons": [
+    {
+      "src": "images/icons-512.png",
+      "type": "image/png",
+    "sizes": "512x512"
   }
   ],
   "start_url": "/conferences/program/",
-  "display": "standalone"
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#cccccc"
 }
