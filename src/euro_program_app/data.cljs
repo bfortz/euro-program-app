@@ -36,7 +36,6 @@
   (let [last-fetch (s/get :last-fetch)
         now (js/Date.)]
     (when (or (nil? last-fetch) (> (- now last-fetch) 300000))
-      (println (- now last-fetch))
       (s/put! :last-fetch (js/Date.))
       (GET (str (s/get :conf) ".edn") {:handler update-local-data})
       (mp/init-mysessions))))
