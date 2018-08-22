@@ -1,0 +1,13 @@
+{
+  "short_name": "OR2018",
+  "name": "OR2018 Conference Program",
+  "icons": [
+    {
+      "src": "images/icons-192.png",
+      "type": "image/png",
+    "sizes": "192x192"
+  }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}
