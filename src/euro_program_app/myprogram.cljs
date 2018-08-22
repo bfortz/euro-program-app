@@ -43,10 +43,12 @@
     (c/set! (mysessions-cookie) (s/get :mysessions))))
 
 (defn logged [d]
-  (s/put! :logged (reader/read-string d)))
+  (s/put! :logged (reader/read-string d))
+  (c/set! :logged (reader/read-string d)))
 
 (defn init-mysessions []
   (s/put! :mysessions (c/get (mysessions-cookie))) 
   (s/put! :nologin (c/get :nologin))
-  (GET "https://www.euro-online.org/web/accounts/logged/" {:handler logged :with-credentials true})
-  (GET (str "https://www.euro-online.org/" (s/get :conf) "/program/mysessions" ) {:handler merge-mysessions :with-credentials true}))
+  (s/put! :logged (c/get :logged))
+  (GET "https://www.euro-online.org/web/accounts/logged/" {:handler logged :error-handler #() :with-credentials true})
+  (GET (str "https://www.euro-online.org/" (s/get :conf) "/program/mysessions" ) {:handler merge-mysessions :error-handler #() :with-credentials true}))

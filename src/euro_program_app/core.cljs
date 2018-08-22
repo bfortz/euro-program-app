@@ -113,12 +113,17 @@
   (m/render title)
   (m/render navbarNavAltMarkup))
 
+(defn- make-progressive! []
+  (when js/navigator.serviceWorker
+    (.register js/navigator.serviceWorker "service-worker.js")))
+
 (defn init! []
   (s/put! :conf "or2018")
   (s/put! :confname "Operations Research 2018")
   (s/put! :page :schedule)
   (hook-browser-navigation!)
   (get-data)
-  (mount))
+  (mount)
+  (make-progressive!))
 
 (defonce init (init!))
