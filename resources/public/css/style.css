@@ -40,3 +40,13 @@
   background: lightblue;
   color: blue;
 }
+
+.btn-program {
+  color: blue;
+  border-color: blue;
+  background-color: transparent;
+}
+
+.btn-program:hover {
+  background-color: lightcyan;
+}

@@ -130,7 +130,7 @@
     ^{:key (str "S" id)}
     [:a {:href (str "#session/" id) 
          :role "button"
-         :class "btn btn-outline-primary col"}
+         :class "btn btn-program col"}
      [:div {:class "row session"}
       [:div {:class "col-4 col-md-3 col-lg-2"} 
        (str (:day t) (:time t) "-" (:track s)) [:br] r]
@@ -171,7 +171,7 @@
           [:div {:class "col-lg-3 col-md-6"} 
            [:a {:href (str "#timeslot/" id) 
                 :role "button"
-                :class "btn btn-outline-primary col"}
+                :class "btn btn-program col"}
             (:schedule t)]]]))]))
 
 (defn user-detail []
@@ -220,7 +220,7 @@
           [:div {:class "col"} 
            [:a {:href (str "#stream/" id) 
                 :role "button"
-                :class "btn btn-outline-primary col session"}
+                :class "btn btn-program col session"}
             (:name s)]]]))]))
 
 (defn participants []
@@ -246,7 +246,7 @@
               [:div {:class "col-2 col-md-1 text-center"}
                [:a {:href (str "#participants/" l) 
                     :role "button"
-                    :class "btn btn-outline-primary letter"} l]]))]]))))
+                    :class "btn btn-program letter"} l]]))]]))))
 
 (defn login []
   (when-not (s/get :nologin) 
