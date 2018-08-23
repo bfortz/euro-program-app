@@ -17,25 +17,32 @@
        (letter-map)))
 
 (defn sort-map-by-fn-value [f m]
-  "Returns a sorted map ordered by values of f applied to map values"
-  (letfn [(compare-keys [k1 k2]
+  "Returns a sorted map ordered by values of f applied
+  to map values"
+  (letfn [(ck [k1 k2]
             (or (< (f (get m k1)) (f (get m k2)))
                 (and (= (f (get m k1)) (f (get m k2)))
                      (< k1 k2))))] 
-    (into (sorted-map-by compare-keys) m)))
+    (into (sorted-map-by ck) m)))
+
+(def ucl (memoize (fn [u] (map letter-map (string/upper-case (:lastname u))))))
 
 (defn update-local-data [d]
-  (let [data (reader/read-string d)
-        streams (sort-map-by-fn-value :order (:streams data))
-        users (sort-map-by-fn-value #(map letter-map (string/upper-case (:lastname %))) (:users data))
-        data (assoc data :streams streams :users users)] 
-    (when (not= (hash data) (hash (s/get :data))) 
-      (s/put! :data data))))
+  (let [h (hash d)]
+    (when (not= h (s/get :data-hash))
+      (s/put! :data-hash h)
+      (let [data (reader/read-string d)
+            streams (sort-map-by-fn-value :order (:streams data))
+            users (sort-map-by-fn-value ucl (:users data))
+            data (assoc data :streams streams :users users)] 
+        (s/put! :data data)))))
 
 (defn get-data []
-  (let [last-fetch (s/get :last-fetch)
+  (let [timeout 300000
+        last-fetch (s/get :last-fetch)
         now (js/Date.)]
-    (when (or (nil? last-fetch) (> (- now last-fetch) 300000))
+    (when (or (nil? last-fetch) (> (- now last-fetch) timeout))
       (s/put! :last-fetch (js/Date.))
       (GET (str (s/get :conf) ".edn") {:handler update-local-data})
-      (mp/init-mysessions))))
+      (mp/init-mysessions)
+      (js/setTimeout get-data timeout))))

@@ -33,33 +33,27 @@
       (.then (fn []
                (js/console.log "[ServiceWorker] Successfully Installed")))))
 
-(defn- fetch-cached [request]
-  (-> js/caches
-      (.match request)
-      (.then (fn [response]
-               (or response (js/fetch request))))))
-
-(defn- update-cache [request h]
+(defn- update-cache [request response]
   (-> js/caches
       (.open app-cache-name)
       (.then (fn [cache]
-               (-> (js/fetch request)
-                   (.then (fn [response]
-                            (-> (.text (.clone response))
-                                (.then (fn [cr] 
-                                         (when (not= h (hash cr))
-                                           (js/console.log "Updating cache for " (.-url request))
-                                           (.put cache request response))))))))))))
+               (-> (.put cache request (.clone response)))))))
 
-(defn fetch-and-update-event [e]
-  (let [request (.-request e)]
-    ;; (js/console.log "[ServiceWorker] Fetch" (-> e .-request .-url))
-    (.respondWith e (-> (fetch-cached request)
-                        (.then (fn [r]
-                                 (-> (.text (.clone r))
-                                     (.then #(update-cache request (hash %))))
-                                 r))))))
+(defn- fetch-and-update-cache [request]
+  (-> (js/fetch request)
+      (.then (fn [r]
+               (update-cache request r)
+               r))))
+
+(defn fetch-event [e]
+  (let [request (.-request e)
+        updated-response (fetch-and-update-cache request)
+        response (-> js/caches
+                     (.match request)
+                     (.then (fn [r]
+                              (or r updated-response))))]
+    (.respondWith e response)))
 
 (.addEventListener js/self "install" #(.waitUntil % (install-service-worker %)))
-(.addEventListener js/self "fetch" fetch-and-update-event)
+(.addEventListener js/self "fetch" fetch-event)
 (.addEventListener js/self "activate" #(.waitUntil % (purge-old-caches %)))

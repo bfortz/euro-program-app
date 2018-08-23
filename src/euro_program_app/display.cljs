@@ -272,7 +272,7 @@
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
-  (js/setTimeout d/get-data 500)
+  (js/setTimeout d/get-data 1000)
   (if (s/get :data) 
     [:div
      (login)

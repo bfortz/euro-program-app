@@ -15,3 +15,5 @@
     `[:a {:class (str "nav-item nav-link" 
                       (when (= (s/get :page) ~pagekw) " disabled" ))
           :href ~link} ~title]))
+
+
