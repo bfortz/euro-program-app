@@ -163,21 +163,22 @@
                  (when (some #(= uid %) (:chairs s))
                    ^{:key (str "CH" id)}
                    [:div {:class "row session pt-1"} 
+                    [:div {:class "col-4 col-md-3 col-lg-2"}]
                     [:div {:class "col"} 
                      [:b "Session chair"]]] ) 
                  (let [papers (filter 
                                 (fn [p] (some #(= uid %) (:authors (get (:papers d) p)))) 
                                 (:papers s))]
-                   (doall
-                     (for [pid papers]
-                       (let [p (get (:papers d) pid)] 
-                         ^{:key (str "P" pid)}
-                         [:div {:class "row session pt-1"} 
-                          [:div {:class "col"} 
+                   [:ul {:class "container pt-2"}
+                    (doall
+                      (for [pid papers]
+                        (let [p (get (:papers d) pid)] 
+                          ^{:key (str "P" pid)}
+                          [:li {:style {:color "green"}}
                            [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
                             (if (= (first (:authors p)) uid)
                               [:b (:title p)]
-                              (:title p))]]]))))))
+                              (:title p))]])))])))
        :keyword (let [kid (s/get :keyword)]
                   (list
                     (let [papers (filter 
@@ -187,14 +188,14 @@
                                                               (:keyword2 p)
                                                               (:keyword3 p))))) 
                                    (:papers s))]
-                      (doall
-                        (for [pid papers]
-                          (let [p (get (:papers d) pid)] 
-                            ^{:key (str "P" pid)}
-                            [:div {:class "row session pt-1"} 
-                             [:div {:class "col"} 
+                      [:ul {:class "container pt-2"}
+                       (doall
+                         (for [pid papers]
+                           (let [p (get (:papers d) pid)] 
+                             ^{:key (str "P" pid)}
+                             [:li {:style {:color "green"}}
                               [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
-                               (:title p)]]]))))))
+                               (:title p)]])))])))
        "")])) 
 
 (defn timeslot []
