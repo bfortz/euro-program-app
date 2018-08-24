@@ -22,17 +22,72 @@
             [vector :span (user fa)])
           (rest (:authors p))))
 
+(defn keywords [p]
+  (let [kwnames (:keywords (s/get :data))
+        kws (->> (list :keyword1 :keyword2 :keyword3)   
+                 (map #(% p))
+                 (map #(get-in kwnames [% :name]))
+                 (filter identity))]
+    (reduce #(str %1 ", " %2) (first kws) (rest kws))))
+
+(comment (keywords (get-in (s/get :data) [:papers 48])))
+
+(defn paper-details [paperid]
+  (let [d (s/get :data)
+        p (get-in d [:papers paperid])
+        id (:session p)
+        s (get-in d [:sessions id]) 
+        t (get-in d [:timeslots (:timeslot s)])]
+    [:div
+     [:div {:class "row mb-3"}
+      [:div {:class "col-2"} 
+       (if (= paperid (first (:papers s))) 
+         ""
+         (let [previd (loop [papers (:papers s)]
+                        (if (= paperid (fnext papers))
+                          (first papers)
+                          (recur (rest papers))))] 
+           [:a {:href (str "#abstract/" previd)
+                :role "button"
+                :class "btn btn-primary btn-sm"}
+            [:i {:class "material-icons"} "arrow_back"]]))]
+      [:div {:class "col text-center"}
+       [:a {:href (str "#session/" id) :style {:color "red"}} 
+        (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
+      [:div {:class "col-2 text-right"} 
+       (if (= paperid (last (:papers s))) 
+         ""
+         (let [nextid (loop [papers (:papers s)]
+                        (if (= paperid (first papers))
+                          (fnext papers)
+                          (recur (rest papers))))] 
+           [:a {:href (str "#abstract/" nextid)
+                :role "button"
+                :class "btn btn-primary btn-sm"}
+            [:i {:class "material-icons"} "arrow_forward"]]))]]
+     [:div {:class "row"}
+      [:div {:class "col"} 
+       [:h3 (:title p)]]]
+     [:div {:class "row"} 
+      [:div {:class "col"} 
+       [:p (authors p)]]]
+     [:div {:class "row"} 
+      [:div {:class "col"} 
+       [:p [:b "Keywords: "] (keywords p)]]]
+     [:div {:class "row"}
+      [:div {:class "col abstract"} 
+       (:abstract p)]]]))
+
 (defn session-detail []
   (let [d (s/get :data)
         paperid (s/get :abstract)
-        paper (get (:papers d) paperid)
         id (if paperid
-             (:session paper) 
+             (:session (get (:papers d) paperid)) 
              (s/get :session))
-        s (get (:sessions d) id) 
+        s (get-in d [:sessions id]) 
         rooms (:rooms d)
-        t (get (:timeslots d) (:timeslot s))
-        stream (get (:streams d) (:stream s))
+        t (get-in d [:timeslots (:timeslot s)]) 
+        stream (get-in d [:streams (:stream s)])
         r (if (nil? (:specialroom s))
             (:room (get rooms (:track s)))
             (:specialroom s))
@@ -48,8 +103,8 @@
             :role "button"
             :class "btn btn"}
         (if (empty? (filter #(= id %) (s/get :mysessions)))
-         [:i {:class "material-icons"} "star_border"]   
-         [:i {:class "material-icons"} "star"])]]
+          [:i {:class "material-icons"} "star_border"]   
+          [:i {:class "material-icons"} "star"])]]
       [:div {:class "col-10 mb-3"}
        [:a {:href (str "#timeslot/" (:timeslot s))} (:schedule t)] [:br]
        "Room: " [:i r][:br] 
@@ -69,43 +124,7 @@
                 [:li (user c)]))]])]]]
      [:div {:class "row"}]
      (if paperid
-       (let [p (get (:papers d) paperid)]
-         [:div
-          [:div {:class "row mb-3"}
-           [:div {:class "col-2"} 
-            (if (= paperid (first (:papers s))) 
-              ""
-              (let [previd (loop [papers (:papers s)]
-                             (if (= paperid (fnext papers))
-                               (first papers)
-                               (recur (rest papers))))] 
-                [:a {:href (str "#abstract/" previd)
-                     :role "button"
-                     :class "btn btn-primary btn-sm"}
-                 [:i {:class "material-icons"} "arrow_back"]]))]
-           [:div {:class "col text-center"}
-            [:a {:href (str "#session/" id) :style {:color "red"}} 
-             (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
-           [:div {:class "col-2 text-right"} 
-            (if (= paperid (last (:papers s))) 
-              ""
-              (let [nextid (loop [papers (:papers s)]
-                             (if (= paperid (first papers))
-                               (fnext papers)
-                               (recur (rest papers))))] 
-                [:a {:href (str "#abstract/" nextid)
-                     :role "button"
-                     :class "btn btn-primary btn-sm"}
-                 [:i {:class "material-icons"} "arrow_forward"]]))]]
-          [:div {:class "row"}
-           [:div {:class "col"} 
-            [:h3 (:title p)]]]
-          [:div {:class "row"} 
-           [:div {:class "col"} 
-            [:p (authors p)]]]
-          [:div {:class "row"}
-           [:div {:class "col abstract"} 
-            (:abstract p)]]])
+       (paper-details paperid)
        [:div {:class "row"}
         [:div {:class "col"} 
          [:ol
@@ -120,10 +139,10 @@
 
 (defn session [id]
   (let [d (s/get :data)
-        s (get (:sessions d) id) 
+        s (get-in d [:sessions id]) 
         rooms (:rooms d)
-        t (get (:timeslots d) (:timeslot s))
-        stream (get (:streams d) (:stream s))
+        t (get-in d [:timeslots (:timeslot s)]) 
+        stream (get-in d [:streams (:stream s)])
         r (if (nil? (:specialroom s))
             (:room (get rooms (:track s)))
             (:specialroom s))]
