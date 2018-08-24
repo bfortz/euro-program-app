@@ -22,7 +22,7 @@
             [vector :span (user fa)])
           (rest (:authors p))))
 
-(defn keywords [p]
+(defn keywords-paper [p]
   (let [kwnames (:keywords (s/get :data))
         kws (->> (list :keyword1 :keyword2 :keyword3)   
                  (map #(% p))
@@ -30,7 +30,7 @@
                  (filter identity))]
     (reduce #(str %1 ", " %2) (first kws) (rest kws))))
 
-(comment (keywords (get-in (s/get :data) [:papers 48])))
+(comment (keywords-paper (get-in (s/get :data) [:papers 48])))
 
 (defn paper-details [paperid]
   (let [d (s/get :data)
@@ -73,7 +73,7 @@
        [:p (authors p)]]]
      [:div {:class "row"} 
       [:div {:class "col"} 
-       [:p [:b "Keywords: "] (keywords p)]]]
+       [:p [:b "Keywords: "] (keywords-paper p)]]]
      [:div {:class "row"}
       [:div {:class "col abstract"} 
        (:abstract p)]]]))
@@ -287,6 +287,9 @@
                     :role "button"
                     :class "btn btn-program letter"} l]]))]]))))
 
+(defn keywords []
+  )
+
 (defn login []
   (when-not (s/get :nologin) 
     (when-not (s/get :logged)
@@ -323,6 +326,7 @@
        :session (session-detail)
        :user (user-detail)
        :participants (participants)
+       :keywords (keywords)
        :my-program (my-program)
        [:h2 "Under construction."])
      [:span {:class "invisible"} (s/get :reload)]]

@@ -28,24 +28,32 @@
 (def ucl (memoize (fn [u] (map letter-map (string/upper-case (:lastname u))))))
 
 (defn update-local-data [d]
-  (let [h (hash d)]
-    (let [oldh (s/get :data-hash)]
-      (when (not= h oldh)
-        (s/put! :data-hash h)
-        (let [data (reader/read-string d)
-              streams (sort-map-by-fn-value :order (:streams data))
-              users (sort-map-by-fn-value ucl (:users data))
-              data (assoc data :streams streams :users users)] 
-          (s/put! :data data)
-          (when oldh 
-            (.reload (.-location js/window))))))))
+  (let [h (hash d)
+        oldh (s/get :data-hash)]
+    (when (not= h oldh)
+      (s/put! :data-hash h)
+      (let [data (reader/read-string d)
+            streams (sort-map-by-fn-value :order (:streams data))
+            users (sort-map-by-fn-value ucl (:users data))
+            data (assoc data :streams streams :users users)] 
+        (s/put! :data data)
+        (when oldh 
+          (.reload (.-location js/window)))))))
+
+(defn check-app-version [d]
+  (let [h (hash d)
+        oldh (s/get :app-verson)]
+    (when (and oldh (not= h oldh))
+      (s/put! :app-verson h)
+      (.reload (.-location js/window)))))
 
 (defn get-data []
-  (let [timeout 300000
+  (let [timeout 30000
         last-fetch (s/get :last-fetch)
         now (js/Date.)]
     (when (or (nil? last-fetch) (> (- now last-fetch) timeout))
       (s/put! :last-fetch (js/Date.))
       (GET (str (s/get :conf) ".edn") {:handler update-local-data})
+      (GET "js/compiled/euro_program_app.js" {:handler check-app-version})
       (mp/init-mysessions)
       (js/setTimeout get-data timeout))))
