@@ -157,27 +157,45 @@
         [:b {:style {:color "red"}} (:name s)]] [:br] 
        [:a {:href (str "#stream/" (:stream s))} 
         [:i {:style {:color "black"}} (:name stream)]]]]
-     (when (= (s/get :page) :user)
-       (let [uid (s/get :user)]
-         (list
-           (when (some #(= uid %) (:chairs s))
-             ^{:key (str "CH" id)}
-             [:div {:class "row session pt-1"} 
-              [:div {:class "col"} 
-               [:b "Session chair"]]] ) 
-           (let [papers (filter 
-                          (fn [p] (some #(= uid %) (:authors (get (:papers d) p)))) 
-                          (:papers s))]
-             (doall
-               (for [pid papers]
-                 (let [p (get (:papers d) pid)] 
-                   ^{:key (str "P" pid)}
+     (case (s/get :page)
+       :user (let [uid (s/get :user)]
+               (list
+                 (when (some #(= uid %) (:chairs s))
+                   ^{:key (str "CH" id)}
                    [:div {:class "row session pt-1"} 
                     [:div {:class "col"} 
-                     [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
-                      (if (= (first (:authors p)) uid)
-                       [:b (:title p)]
-                       (:title p))]]])))))))]))
+                     [:b "Session chair"]]] ) 
+                 (let [papers (filter 
+                                (fn [p] (some #(= uid %) (:authors (get (:papers d) p)))) 
+                                (:papers s))]
+                   (doall
+                     (for [pid papers]
+                       (let [p (get (:papers d) pid)] 
+                         ^{:key (str "P" pid)}
+                         [:div {:class "row session pt-1"} 
+                          [:div {:class "col"} 
+                           [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
+                            (if (= (first (:authors p)) uid)
+                              [:b (:title p)]
+                              (:title p))]]]))))))
+       :keyword (let [kid (s/get :keyword)]
+                  (list
+                    (let [papers (filter 
+                                   (fn [pid] 
+                                     (let [p (get (:papers d) pid)] 
+                                       (some #(= kid %) (list (:keyword1 p) 
+                                                              (:keyword2 p)
+                                                              (:keyword3 p))))) 
+                                   (:papers s))]
+                      (doall
+                        (for [pid papers]
+                          (let [p (get (:papers d) pid)] 
+                            ^{:key (str "P" pid)}
+                            [:div {:class "row session pt-1"} 
+                             [:div {:class "col"} 
+                              [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
+                               (:title p)]]]))))))
+       "")])) 
 
 (defn timeslot []
   (let [d (s/get :data)
@@ -227,6 +245,18 @@
       [:div {:class "col text-center"} [:h2 (:firstname u) " " (:lastname u)]]]
      [:div {:class "sessions"}
       (doall (map session (:sessions u)))]]))
+
+(defn keyword-detail []
+  (let [d (s/get :data)
+        id (s/get :keyword)
+        k (get (:keywords d) id)] 
+    [:div
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} [:h3 [:a {:href "#keywords"} "Keywords"]]]]
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} [:h2 (:name k)]]]
+     [:div {:class "sessions"}
+      (doall (map session (:sessions k)))]]))
 
 (defn stream []
   (let [d (s/get :data)
@@ -338,6 +368,7 @@
        :user (user-detail)
        :participants (participants)
        :keywords (keywords)
+       :keyword (keyword-detail)
        :my-program (my-program)
        [:h2 "Under construction."])
      [:span {:class "invisible"} (s/get :reload)]]

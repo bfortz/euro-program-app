@@ -66,6 +66,10 @@
 (secretary/defroute "/keywords" []
   (s/put! :page :keywords))
 
+(secretary/defroute "/keyword/:id" [id]
+  (s/put! :keyword (reader/read-string id))
+  (s/put! :page :keyword))
+
 (secretary/defroute "/my-program" []
   (s/put! :page :my-program))
 
