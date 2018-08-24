@@ -29,13 +29,16 @@
 
 (defn update-local-data [d]
   (let [h (hash d)]
-    (when (not= h (s/get :data-hash))
-      (s/put! :data-hash h)
-      (let [data (reader/read-string d)
-            streams (sort-map-by-fn-value :order (:streams data))
-            users (sort-map-by-fn-value ucl (:users data))
-            data (assoc data :streams streams :users users)] 
-        (s/put! :data data)))))
+    (let [oldh (s/get :data-hash)]
+      (when (not= h oldh)
+        (s/put! :data-hash h)
+        (let [data (reader/read-string d)
+              streams (sort-map-by-fn-value :order (:streams data))
+              users (sort-map-by-fn-value ucl (:users data))
+              data (assoc data :streams streams :users users)] 
+          (s/put! :data data)
+          (when oldh 
+            (.reload (.-location js/window))))))))
 
 (defn get-data []
   (let [timeout 300000
