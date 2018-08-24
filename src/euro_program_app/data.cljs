@@ -1,5 +1,6 @@
 (ns euro-program-app.data
   (:require [reagent.session :as s]
+            [reagent.cookies :as c]
             [cljs.reader :as reader]
             [euro-program-app.myprogram :as mp]
             [clojure.string :as string]
@@ -43,9 +44,9 @@
 
 (defn check-app-version [d]
   (let [h (hash d)
-        oldh (s/get :app-verson)]
+        oldh (c/get :app-version)]
     (when (and oldh (not= h oldh))
-      (s/put! :app-verson h)
+      (c/set! :app-version h)
       (.reload (.-location js/window)))))
 
 (defn get-data []
