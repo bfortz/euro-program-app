@@ -49,7 +49,7 @@
       (.reload (.-location js/window)))))
 
 (defn get-data []
-  (let [timeout 30000
+  (let [timeout 300000
         last-fetch (s/get :last-fetch)
         now (js/Date.)]
     (when (or (nil? last-fetch) (> (- now last-fetch) timeout))

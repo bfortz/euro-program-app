@@ -172,9 +172,9 @@
                (for [pid papers]
                  (let [p (get (:papers d) pid)] 
                    ^{:key (str "P" pid)}
-                   [:div {:class "row session pt-1" :style {:color "green"}} 
+                   [:div {:class "row session pt-1"} 
                     [:div {:class "col"} 
-                     [:a {:href (str "#abstract/" pid)} 
+                     [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
                       (if (= (first (:authors p)) uid)
                        [:b (:title p)]
                        (:title p))]]])))))))]))

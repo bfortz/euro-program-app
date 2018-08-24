@@ -10,7 +10,7 @@
   (let [link (str "#" id)
         title (->> (split (str id) #"-")
                    (map capitalize)
-                   (reduce #(str %1 " " %2) ))
+                   (reduce #(str %1 " " %2) ))
         pagekw (keyword id)]
     `[:a {:class (str "nav-item nav-link" 
                       (when (= (s/get :page) ~pagekw) " disabled" ))
