@@ -26,9 +26,9 @@
   (let [kwnames (:keywords (s/get :data))
         kws (->> (list :keyword1 :keyword2 :keyword3)   
                  (map #(% p))
-                 (map #(get-in kwnames [% :name]))
+                 (map #(vector :a {:href (str "#keyword/" %)} (get-in kwnames [% :name])))
                  (filter identity))]
-    (reduce #(str %1 ", " %2) (first kws) (rest kws))))
+    (reduce #(conj %1 ", " %2) (vector :span (first kws)) (rest kws))))
 
 (comment (keywords-paper (get-in (s/get :data) [:papers 48])))
 
@@ -147,14 +147,16 @@
             (:room (get rooms (:track s)))
             (:specialroom s))]
     ^{:key (str "S" id)}
-    [:a {:href (str "#session/" id) 
-         :role "button"
-         :class "btn btn-program col"}
+    [:div {:role "button"
+           :class "btn-program col"}
      [:div {:class "row session"}
       [:div {:class "col-4 col-md-3 col-lg-2"} 
        (str (:day t) (:time t) "-" (:track s)) [:br] r]
-      [:div {:class "col"} [:b {:style {:color "red"}} (:name s)] [:br] 
-       [:i {:style {:color "black"}} (:name stream)]]]
+      [:div {:class "col"} 
+       [:a {:href (str "#session/" id)} 
+        [:b {:style {:color "red"}} (:name s)]] [:br] 
+       [:a {:href (str "#stream/" (:stream s))} 
+        [:i {:style {:color "black"}} (:name stream)]]]]
      (when (= (s/get :page) :user)
        (let [uid (s/get :user)]
          (list
@@ -172,9 +174,10 @@
                    ^{:key (str "P" pid)}
                    [:div {:class "row session pt-1" :style {:color "green"}} 
                     [:div {:class "col"} 
-                     (if (= (first (:authors p)) uid)
+                     [:a {:href (str "#abstract/" pid)} 
+                      (if (= (first (:authors p)) uid)
                        [:b (:title p)]
-                       (:title p))]])))))))]))
+                       (:title p))]]])))))))]))
 
 (defn timeslot []
   (let [d (s/get :data)
@@ -296,15 +299,7 @@
         [:ul
          (for [[id k] kws]
            ^{:key (str "K" id)}
-           [:li (:name k)]
-           )
-         ]
-       ]
-
-      ]
-     ]
-    )
-  )
+           [:li [:a {:href (str "#keyword/" id) } (:name k)]])]]]]))
 
 (defn login []
   (when-not (s/get :nologin) 
