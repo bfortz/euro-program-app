@@ -63,6 +63,9 @@
   (s/put! :first letter)
   (s/put! :page :participants))
 
+(secretary/defroute "/keywords" []
+  (s/put! :page :keywords))
+
 (secretary/defroute "/my-program" []
   (s/put! :page :my-program))
 

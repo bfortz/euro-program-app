@@ -35,7 +35,8 @@
       (let [data (reader/read-string d)
             streams (sort-map-by-fn-value :order (:streams data))
             users (sort-map-by-fn-value ucl (:users data))
-            data (assoc data :streams streams :users users)] 
+            keywords (sort-map-by-fn-value :name (:keywords data))
+            data (assoc data :streams streams :users users :keywords keywords)] 
         (s/put! :data data)
         (when oldh 
           (.reload (.-location js/window)))))))

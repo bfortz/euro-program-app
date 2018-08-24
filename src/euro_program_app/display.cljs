@@ -288,6 +288,22 @@
                     :class "btn btn-program letter"} l]]))]]))))
 
 (defn keywords []
+  (let [kws (:keywords (s/get :data))]
+    [:div
+     [:h2 "Keywords"]
+     [:div {:class "row"}
+      [:div {:class "col"}
+        [:ul
+         (for [[id k] kws]
+           ^{:key (str "K" id)}
+           [:li (:name k)]
+           )
+         ]
+       ]
+
+      ]
+     ]
+    )
   )
 
 (defn login []
@@ -340,4 +356,5 @@
    (m/nav-link schedule)
    (m/nav-link my-program)
    (m/nav-link streams)
-   (m/nav-link participants)])
+   (m/nav-link participants)
+   (m/nav-link keywords)])
