@@ -45,7 +45,7 @@
 (defn check-app-version [d]
   (let [h (hash d)
         oldh (c/get :app-version)]
-    (when (and oldh (not= h oldh))
+    (when (not= h oldh)
       (c/set! :app-version h)
       (.reload (.-location js/window)))))
 
