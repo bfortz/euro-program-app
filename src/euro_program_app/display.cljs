@@ -169,6 +169,7 @@
                  (let [papers (filter 
                                 (fn [p] (some #(= uid %) (:authors (get (:papers d) p)))) 
                                 (:papers s))]
+                   ^{:key (str "PAPERS" id)}
                    [:ul {:class "container pt-2"}
                     (doall
                       (for [pid papers]
@@ -180,22 +181,21 @@
                               [:b (:title p)]
                               (:title p))]])))])))
        :keyword (let [kid (s/get :keyword)]
-                  (list
-                    (let [papers (filter 
-                                   (fn [pid] 
-                                     (let [p (get (:papers d) pid)] 
-                                       (some #(= kid %) (list (:keyword1 p) 
-                                                              (:keyword2 p)
-                                                              (:keyword3 p))))) 
-                                   (:papers s))]
-                      [:ul {:class "container pt-2"}
-                       (doall
-                         (for [pid papers]
-                           (let [p (get (:papers d) pid)] 
-                             ^{:key (str "P" pid)}
-                             [:li {:style {:color "green"}}
-                              [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
-                               (:title p)]])))])))
+                  (let [papers (filter 
+                                 (fn [pid] 
+                                   (let [p (get (:papers d) pid)] 
+                                     (some #(= kid %) (list (:keyword1 p) 
+                                                            (:keyword2 p)
+                                                            (:keyword3 p))))) 
+                                 (:papers s))]
+                    [:ul {:class "container pt-2"}
+                     (doall
+                       (for [pid papers]
+                         (let [p (get (:papers d) pid)] 
+                           ^{:key (str "P" pid)}
+                           [:li {:style {:color "green"}}
+                            [:a {:href (str "#abstract/" pid) :style {:color "green"}} 
+                             (:title p)]])))]))
        "")])) 
 
 (defn timeslot []
@@ -356,6 +356,8 @@
 
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
+  (set! (.-scrollTop (.-body js/document)) 0)
+  (set! (.-scrollTop (.-documentElement js/document)) 0) 
   (js/setTimeout d/get-data 1000)
   (if (s/get :data) 
     [:div
