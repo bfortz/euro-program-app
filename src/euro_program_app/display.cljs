@@ -219,7 +219,7 @@
               :role "button"
               :class "btn btn-primary btn-sm"}
           [:i {:class "material-icons"} "arrow_forward"]])]]
-     [:div {:class "sessions"}
+     [:div {:id "sessions"}
       (doall (map session (:sessions t)))]]))
 
 (defn schedule []
@@ -244,7 +244,7 @@
       [:div {:class "col text-center"} [:h3 [:a {:href "#participants"} "Participants"]]]]
      [:div {:class "row"} 
       [:div {:class "col text-center"} [:h2 (:firstname u) " " (:lastname u)]]]
-     [:div {:class "sessions"}
+     [:div {:id "sessions"}
       (doall (map session (:sessions u)))]]))
 
 (defn keyword-detail []
@@ -256,7 +256,7 @@
       [:div {:class "col text-center"} [:h3 [:a {:href "#keywords"} "Keywords"]]]]
      [:div {:class "row"} 
       [:div {:class "col text-center"} [:h2 (:name k)]]]
-     [:div {:class "sessions"}
+     [:div {:id "sessions"}
       (doall (map session (:sessions k)))]]))
 
 (defn stream []
@@ -268,7 +268,7 @@
       [:div {:class "col text-center"} [:h3 [:a {:href "#streams"} "Streams"]]]]
      [:div {:class "row"} 
       [:div {:class "col text-center"} [:h2 (:name s)]]]
-     [:div {:class "sessions"}
+     [:div {:id "sessions"}
       (doall (map session (:sessions s)))]]))
 
 (defn my-program []
@@ -280,7 +280,7 @@
      [:div {:class "row"}
       [:div {:class "col"}
        [:p "To add or remove a session from your program, click on the star on the session page."]]]
-     [:div {:class "sessions"}
+     [:div {:id "sessions"}
       (doall (map session s))]]))
 
 (defn streams []
@@ -358,6 +358,7 @@
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
   (set! (.-scrollTop (.-body js/document)) 0)
   (set! (.-scrollTop (.-documentElement js/document)) 0) 
+  (when-let [elt (dom/by-id "sessions")] (set! (.-scrollTop elt) 0))
   (js/setTimeout d/get-data 1000)
   (if (s/get :data) 
     [:div
