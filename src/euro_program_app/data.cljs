@@ -3,6 +3,7 @@
             [reagent.cookies :as c]
             [cljs.reader :as reader]
             [euro-program-app.myprogram :as mp]
+            [secretary.core :as secretary :include-macros true]
             [clojure.string :as string]
             [ajax.core :refer [GET]]))
 
@@ -49,6 +50,14 @@
       (c/set! :app-version h)
       (.reload (.-location js/window)))))
 
+(defn static-pages [d]
+  (let [pages (reader/read-string d)]
+    (s/put! :static-pages pages)
+    (doseq [[p f] pages] 
+      (secretary/defroute (str "/" (name p)) []
+      (s/put! :url f)
+      (s/put! :page :static)))))
+
 (defn get-data []
   (let [timeout 300000
         last-fetch (s/get :last-fetch)
@@ -57,5 +66,12 @@
       (s/put! :last-fetch (js/Date.))
       (GET (str (s/get :conf) ".edn") {:handler update-local-data})
       (GET "js/compiled/euro_program_app.js" {:handler check-app-version})
+      (GET (str (s/get :conf) "/pages.edn") {:handler static-pages}) 
       (mp/init-mysessions)
       (js/setTimeout get-data timeout))))
+
+(defn display-static-page [d]
+  (s/put! :static-page d))
+
+(defn get-static-page []
+  (GET (str (s/get :conf) "/" (s/get :url)) {:handler display-static-page}))

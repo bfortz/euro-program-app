@@ -1,8 +1,8 @@
 (ns euro-program-app.display
-  (:require [reagent.session :as s]
+  (:require [euro-program-app.data :as d]
+            [reagent.session :as s]
             [reagent.cookies :as c]
             [clojure.string :as string]
-            [euro-program-app.data :as d]
             [domina :as dom])
   (:require-macros [euro-program-app.macros :as m]))
 
@@ -354,6 +354,10 @@
               :role "button"
               :class "btn btn-primary"} "Never ask"]]]])))
 
+(defn static []
+  (d/get-static-page)
+  "")
+
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
   (set! (.-scrollTop (.-body js/document)) 0)
@@ -374,17 +378,49 @@
        :keywords (keywords)
        :keyword (keyword-detail)
        :my-program (my-program)
+       :static (static)
        [:h2 "Under construction."])
+     (when (= (s/get :page) :static)
+       [:div {:dangerouslySetInnerHTML {:__html (s/get :static-page)}}])
      [:span {:class "invisible"} (s/get :reload)]]
     [:h2 "Loading program data. Please wait..."]))
 
 (defn title []
   (s/get :confname))
 
+(defn nav-link [id]
+  (let [link (str "#" id)
+        title (->> (string/split id #"-")
+                   (map string/capitalize)
+                   (reduce #(str %1 " " %2)))
+        pagekw (keyword id)]
+    ^{:key (str "M" id)} 
+    [:li {:class "nav-item"} 
+     [:a {:class (str "nav-link"
+                      (when (= (s/get :page) pagekw) " disabled"))
+          :href link} title]]))
+
+(defn nav-dd-link [id]
+  (let [link (str "#" id)
+        title (->> (string/split id #"-")
+                   (map string/capitalize)
+                   (reduce #(str %1 " " %2)))
+        pagekw (keyword id)]
+    ^{:key (str "M" id)} 
+    [:a {:class "dropdown-item" :href link} title]))
+
 (defn navbarNavAltMarkup []
-  [:div {:class "navbar-nav"}
-   (m/nav-link schedule)
-   (m/nav-link my-program)
-   (m/nav-link streams)
-   (m/nav-link participants)
-   (m/nav-link keywords)])
+  [:ul {:class "navbar-nav"}
+   (nav-link "schedule")
+   (nav-link "my-program")
+   (nav-link "streams")
+   (nav-link "participants")
+   (nav-link "keywords")
+   [:li {:class "nav-item dropdown"}
+    [:a {:class "nav-link dropdown-toggle" :href "#" :id "navbarDropdownMenu"
+         :role "button" :data-toggle "dropdown" :aria-has-popup "true" 
+         :aria-expanded "false"} "More"]
+    [:div {:class "dropdown-menu" 
+           :aria-labelledby "navbarDropdownMenu"}
+     (doall (map (comp nav-dd-link name first) (s/get :static-pages)))]]])
+
