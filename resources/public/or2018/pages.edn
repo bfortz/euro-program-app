@@ -1,3 +1,4 @@
 {:rooms "rooms.html",
  :location "location.html",
+ :reception "reception.html"
  :about "about.html"}
