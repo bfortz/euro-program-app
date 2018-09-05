@@ -415,12 +415,12 @@
    (nav-link "my-program")
    (nav-link "streams")
    (nav-link "participants")
-   (nav-link "keywords")
    [:li {:class "nav-item dropdown"}
     [:a {:class "nav-link dropdown-toggle" :href "#" :id "navbarDropdownMenu"
-         :role "button" :data-toggle "dropdown" :aria-has-popup "true" 
+         :role "button" :data-toggle "dropdown" :aria-haspopup "true" 
          :aria-expanded "false"} "More"]
     [:div {:class "dropdown-menu" 
            :aria-labelledby "navbarDropdownMenu"}
+     (nav-dd-link "keywords")
      (doall (map (comp nav-dd-link name first) (s/get :static-pages)))]]])
 

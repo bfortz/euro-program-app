@@ -26,6 +26,7 @@
    "or2018/floor-2.jpg"
    "or2018/pages.edn"
    "or2018/rooms.html"
+   "or2018/location.html"
    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
    "https://fonts.googleapis.com/icon?family=Material+Icons"
    "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
