@@ -55,8 +55,10 @@
     (s/put! :static-pages pages)
     (doseq [[p f] pages] 
       (secretary/defroute (str "/" (name p)) []
-      (s/put! :url f)
-      (s/put! :page :static)))))
+        (s/put! :url f)
+        (s/put! :page :static))
+      (when (= js/location.hash (str "#" (name p)))
+        (secretary/dispatch! (str "/" (name p)))))))
 
 (defn get-data []
   (let [timeout 300000

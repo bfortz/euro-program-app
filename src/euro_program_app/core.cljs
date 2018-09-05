@@ -109,7 +109,7 @@
 (defn init! []
   (s/put! :conf "or2018")
   (s/put! :confname "Operations Research 2018")
-  (s/put! :page :schedule)
+	(s/put! :page :schedule)
   (hook-browser-navigation!)
   (data/get-data)
   (mount)

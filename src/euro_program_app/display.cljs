@@ -30,8 +30,6 @@
                  (filter identity))]
     (reduce #(conj %1 ", " %2) (vector :span (first kws)) (rest kws))))
 
-(comment (keywords-paper (get-in (s/get :data) [:papers 48])))
-
 (defn paper-details [paperid]
   (let [d (s/get :data)
         p (get-in d [:papers paperid])

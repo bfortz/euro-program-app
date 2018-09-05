@@ -1,4 +1,5 @@
 {:rooms "rooms.html",
  :location "location.html",
- :reception "reception.html"
+ :reception "reception.html",
+ :gala-dinner "gala.html",
  :about "about.html"}
