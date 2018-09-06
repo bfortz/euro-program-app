@@ -1,5 +1,7 @@
 {:rooms "rooms.html",
  :location "location.html",
+ :workshops "workshops.html",
+ :get-together "get_together.html",
  :reception "reception.html",
  :gala-dinner "gala.html",
  :about "about.html"}
