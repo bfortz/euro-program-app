@@ -8,7 +8,7 @@
             [ajax.core :refer [GET]]))
 
 (defn letter-map [l] 
-  (let [lm {"Ä" "A", "ä" "a", "Ç" "C", "ç" "c", "Ö" "O", "ö" "o", "Ş" "S", "ş" "s", "Ü" "U", "ü" "u" }]
+  (let [lm {"Ä" "A", "ä" "a", "Ç" "C", "ç" "c", "É" "E", "é" "e", "È" "E", "è" "e", "Ö" "O", "ö" "o", "Ş" "S", "ş" "s", "Ü" "U", "ü" "u" }]
     (get lm l l)))
 
 (defn up-first [u]
@@ -27,7 +27,7 @@
                      (< k1 k2))))] 
     (into (sorted-map-by ck) m)))
 
-(def ucl (memoize (fn [u] (map letter-map (string/upper-case (:lastname u))))))
+(def ucl (memoize (fn [u] (map letter-map (string/upper-case (str (:lastname u) " " (:firstname u)))))))
 
 (defn update-local-data [d]
   (let [h (hash d)
