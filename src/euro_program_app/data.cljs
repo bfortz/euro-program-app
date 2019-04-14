@@ -40,8 +40,10 @@
             keywords (sort-map-by-fn-value :name (:keywords data))
             data (assoc data :streams streams :users users :keywords keywords)] 
         (s/put! :data data)
-        (when oldh 
-          (.reload (.-location js/window)))))))
+        (comment 
+          "not sure this is needed"
+          (when oldh 
+            (.reload (.-location js/window))))))))
 
 (defn check-app-version [d]
   (let [h (hash d)

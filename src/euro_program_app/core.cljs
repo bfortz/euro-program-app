@@ -20,10 +20,15 @@
 (secretary/set-config! :prefix "#")
 
 (secretary/defroute "/" []
-  (s/put! :page :schedule))
+  (if (s/get :conf) 
+    (s/put! :page :schedule)
+    (s/put! :page :select-conference)))
 
 (secretary/defroute "/schedule" []
   (s/put! :page :schedule))
+
+(secretary/defroute "/select-conference" []
+  (s/put! :page :select-conference))
 
 (secretary/defroute "/timeslot/:id" [id]
   (s/put! :timeslot (reader/read-string id)) 
@@ -107,12 +112,30 @@
     (.register js/navigator.serviceWorker "service-worker.js")))
 
 (defn init! []
-  (s/put! :conf "or2018")
-  (s/put! :confname "Operations Research 2018")
-	(s/put! :page :schedule)
+  (when-let [conf (c/get :conf)]
+    (s/put! :conf conf))
+  (if (s/get :conf)
+    (do 
+      (s/put! :page :schedule)
+      (data/get-data))
+    (do 
+      (s/put! :data {})
+      (s/put! :page :select-conference)))
   (hook-browser-navigation!)
-  (data/get-data)
   (mount)
   (make-progressive!))
 
 (defonce init (init!))
+
+(comment
+  (let [conf "ifors"] 
+    (s/put! :last-fetch nil)
+    (s/put! :conf conf)
+    (c/set! :conf conf))
+  (c/remove! :conf)
+  (c/get :conf)
+  (s/get :conf)
+  (s/get :last-fetch)
+  (s/get :page)
+  (s/put! :confname "TEST")
+  )

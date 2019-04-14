@@ -242,7 +242,9 @@
       [:div {:class "col text-center"} [:h3 [:a {:href "#participants"} "Participants"]]]]
      [:div {:class "row"} 
       [:div {:class "col text-center"} [:h2 (:firstname u) " " (:lastname u)]]]
-     [:div {:id "sessions"}
+     [:div {:class "row"} 
+      [:div {:class "col text-center"} (:department u) [:br] (:institution u)]] 
+     [:div {:id "sessions" :class "mt-3"}
       (doall (map session (:sessions u)))]]))
 
 (defn keyword-detail []
@@ -361,7 +363,8 @@
   (set! (.-scrollTop (.-body js/document)) 0)
   (set! (.-scrollTop (.-documentElement js/document)) 0) 
   (when-let [elt (dom/by-id "sessions")] (set! (.-scrollTop elt) 0))
-  (js/setTimeout d/get-data 1000)
+  (if (s/get :conf)
+    (js/setTimeout d/get-data 1000))
   (if (s/get :data) 
     [:div
      (login)
@@ -420,5 +423,6 @@
     [:div {:class "dropdown-menu" 
            :aria-labelledby "navbarDropdownMenu"}
      (nav-dd-link "keywords")
+     (nav-dd-link "select-conference")
      (doall (map (comp nav-dd-link name first) (s/get :static-pages)))]]])
 

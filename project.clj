@@ -16,7 +16,7 @@
                  [domina "1.0.3"]
                  [cljs-ajax "0.7.4"]]
 
-  :plugins [[lein-figwheel "0.5.16"]
+  :plugins [[lein-figwheel "0.5.18"]
             [lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]]
 
   :source-paths ["src"]
@@ -51,9 +51,9 @@
 
 
   :profiles {:dev {:dependencies [[binaryage/devtools "0.9.10"]
-                                  [figwheel-sidecar "0.5.16"]
-                                  [com.cemerick/piggieback "0.2.2"]]
+                                  [figwheel-sidecar "0.5.4-6"]
+                                  [cider/piggieback "0.4.0"]]
                    :source-paths ["src" "dev"]
-                   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
+                   :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"
                                                      :target-path]}})
