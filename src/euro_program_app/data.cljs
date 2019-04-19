@@ -35,7 +35,7 @@
     (when (not= h oldh)
       (s/put! :data-hash h)
       (let [data (reader/read-string d)
-            streams (sort-map-by-fn-value :order (:streams data))
+            streams (sort-map-by-fn-value :name (:streams data))
             users (sort-map-by-fn-value ucl (:users data))
             keywords (sort-map-by-fn-value :name (:keywords data))]
         (s/put! :data (assoc data :streams streams :users users :keywords keywords))))))
