@@ -358,13 +358,24 @@
   (d/get-static-page)
   "")
 
+(defn select-conference []
+  (let [confs (s/get :conferences)]
+    [:div {:class "row"}
+     [:div {:class "col"}
+      [:p "Please choose a conference below."]
+      [:ul
+       (for [[conf confname] confs]
+         ^{:key (str "C" conf)}
+         [:li [:a {:href (str "#conference/" conf)} confname]])]]]))
+
 (defn main []
   (dom/remove-class! (dom/by-id "navbarNavAltMarkup") "show") 
   (set! (.-scrollTop (.-body js/document)) 0)
   (set! (.-scrollTop (.-documentElement js/document)) 0) 
   (when-let [elt (dom/by-id "sessions")] (set! (.-scrollTop elt) 0))
   (if (s/get :conf)
-    (js/setTimeout d/get-data 1000))
+    (js/setTimeout d/get-data 1000)
+    (d/get-conferences))
   (if (s/get :data) 
     [:div
      (login)
@@ -380,6 +391,7 @@
        :keyword (keyword-detail)
        :my-program (my-program)
        :static (static)
+       :select-conference (select-conference)
        [:h2 "Under construction."])
      (when (= (s/get :page) :static)
        [:div {:dangerouslySetInnerHTML {:__html (s/get :static-page)}}])
@@ -416,13 +428,13 @@
    (nav-link "my-program")
    (nav-link "streams")
    (nav-link "participants")
+   (nav-link "keywords")
    [:li {:class "nav-item dropdown"}
     [:a {:class "nav-link dropdown-toggle" :href "#" :id "navbarDropdownMenu"
          :role "button" :data-toggle "dropdown" :aria-haspopup "true" 
          :aria-expanded "false"} "More"]
     [:div {:class "dropdown-menu" 
            :aria-labelledby "navbarDropdownMenu"}
-     (nav-dd-link "keywords")
      (nav-dd-link "select-conference")
      (doall (map (comp nav-dd-link name first) (s/get :static-pages)))]]])
 

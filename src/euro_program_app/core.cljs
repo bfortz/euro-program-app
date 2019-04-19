@@ -85,6 +85,16 @@
   (s/put! :nologin true)
   (c/set! :nologin true))
 
+(secretary/defroute "/conference/:conf" [conf]
+  (when (not= conf (s/get :conf)) 
+    (s/put! :data nil)
+    (s/put! :static-pages nil)
+    (s/put! :last-fetch nil)
+    (c/set! :conf conf)
+    (s/put! :conf conf))
+  (let [[_ confname] (first (filter #(= (first %) conf) (s/get :conferences)))]
+    (s/put! :confname confname)) 
+  (s/put! :page :schedule))
 
 ;; History
 ;; must be called after routes have been defined
@@ -112,8 +122,6 @@
     (.register js/navigator.serviceWorker "service-worker.js")))
 
 (defn init! []
-  (when-let [conf (c/get :conf)]
-    (s/put! :conf conf))
   (if (s/get :conf)
     (do 
       (s/put! :page :schedule)
@@ -123,19 +131,23 @@
       (s/put! :page :select-conference)))
   (hook-browser-navigation!)
   (mount)
-  (make-progressive!))
+  (make-progressive!)
+  (when-let [conf (c/get :conf)]
+    (data/get-conferences)
+    (js/setTimeout #(secretary/dispatch! (str "/conference/" conf)) 100)))
 
 (defonce init (init!))
 
 (comment
-  (let [conf "ifors"] 
+  (let [conf "or2018"] 
     (s/put! :last-fetch nil)
     (s/put! :conf conf)
     (c/set! :conf conf))
   (c/remove! :conf)
   (c/get :conf)
-  (s/get :conf)
+  (s/get :conferences)
   (s/get :last-fetch)
   (s/get :page)
   (s/put! :confname "TEST")
+  (:timeslots (s/get :data))
   )
