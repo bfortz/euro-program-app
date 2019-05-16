@@ -40,12 +40,12 @@
   (-> js/caches
       (.open app-cache-name)
       (.then (fn [cache]
-               (-> (.put cache request (.clone response)))))))
+               (-> (.put cache request response))))))
 
 (defn- fetch-and-update-cache [request]
   (-> (js/fetch request)
       (.then (fn [r]
-               (update-cache request r)
+               (update-cache request (.clone r))
                r))))
 
 (defn fetch-event [e]
@@ -55,7 +55,7 @@
                      (.match request)
                      (.then (fn [r]
                               (or r updated-response))))]
-    (.respondWith e (.clone response))))
+    (.respondWith e response)))
 
 (.addEventListener js/self "install" #(.waitUntil % (install-service-worker %)))
 (.addEventListener js/self "fetch" fetch-event)
