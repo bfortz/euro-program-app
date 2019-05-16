@@ -55,7 +55,7 @@
                      (.match request)
                      (.then (fn [r]
                               (or r updated-response))))]
-    (.respondWith e response)))
+    (.respondWith e (.clone response))))
 
 (.addEventListener js/self "install" #(.waitUntil % (install-service-worker %)))
 (.addEventListener js/self "fetch" fetch-event)
