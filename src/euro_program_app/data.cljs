@@ -31,7 +31,10 @@
 
 (defn update-local-data [d]
   (let [h (hash d)
+        conf (s/get :conf)
         oldh (s/get :data-hash)]
+    (let [[_ confname] (first (filter #(= (first %) conf) (s/get :conferences)))]
+      (s/put! :confname confname)) 
     (when (not= h oldh)
       (s/put! :data-hash h)
       (let [data (reader/read-string d)
