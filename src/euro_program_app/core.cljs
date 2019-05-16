@@ -129,7 +129,9 @@
     (do (s/put! :conf conf)
         (s/put! :page :schedule)
         (data/get-data) 
-        (data/get-conferences))
+        (data/get-conferences)
+        (let [[_ confname] (first (filter #(= (first %) conf) (s/get :conferences)))]
+          (s/put! :confname confname)))
     (do 
       (s/put! :data {})
       (s/put! :page :select-conference))))
