@@ -5,12 +5,12 @@
     {
       "src": "images/icons-192.png",
       "type": "image/png",
-    "sizes": "192x192"
+    "sizes": "192x76"
     },
     {
       "src": "images/icons-512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x202"
     }
   ],
   "start_url": "/conferences/program/",
