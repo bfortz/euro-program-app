@@ -122,19 +122,17 @@
     (.register js/navigator.serviceWorker "service-worker.js")))
 
 (defn init! []
-  (if (s/get :conf)
-    (do 
-      (s/put! :page :schedule)
-      (data/get-data))
-    (do 
-      (s/put! :data {})
-      (s/put! :page :select-conference)))
   (hook-browser-navigation!)
   (mount)
   (make-progressive!)
-  (when-let [conf (c/get :conf)]
-    (data/get-conferences)
-    (js/setTimeout #(secretary/dispatch! (str "/conference/" conf)) 100)))
+  (if-let [conf (c/get :conf)]
+    (do (s/put! :conf conf)
+        (s/put! :page :schedule)
+        (data/get-data) 
+        (data/get-conferences))
+    (do 
+      (s/put! :data {})
+      (s/put! :page :select-conference))))
 
 (defonce init (init!))
 
