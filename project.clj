@@ -6,15 +6,15 @@
   
   :min-lein-version "2.7.1"
 
-  :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.10.339"]
-                 [org.clojure/core.async  "0.4.474"]
+  :dependencies [[org.clojure/clojure "1.10.0"]
+                 [org.clojure/clojurescript "1.10.520"]
+                 [org.clojure/core.async  "0.4.490"]
                  [reagent "0.8.1"]
-                 [reagent-forms "0.5.42"]
-                 [reagent-utils "0.3.1"]
-                 [secretary "1.2.3"] 
+                 [reagent-forms "0.5.43"]
+                 [reagent-utils "0.3.3"]
+                 [clj-commons/secretary "1.2.4"] 
                  [domina "1.0.3"]
-                 [cljs-ajax "0.7.4"]]
+                 [cljs-ajax "0.8.0"]]
 
   :plugins [[lein-figwheel "0.5.18"]
             [lein-cljsbuild "1.1.7" :exclusions [[org.clojure/clojure]]]]
@@ -51,8 +51,8 @@
 
 
   :profiles {:dev {:dependencies [[binaryage/devtools "0.9.10"]
-                                  [figwheel-sidecar "0.5.4-6"]
-                                  [cider/piggieback "0.4.0"]]
+                                  [figwheel-sidecar "0.5.18"]
+                                  [cider/piggieback "0.4.1"]]
                    :source-paths ["src" "dev"]
                    :repl-options {:nrepl-middleware [cider.piggieback/wrap-cljs-repl]}
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"

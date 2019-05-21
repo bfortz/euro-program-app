@@ -125,12 +125,12 @@
   (hook-browser-navigation!)
   (mount)
   (make-progressive!)
+  (s/put! :confname "Conference Program")
   (if-let [conf (c/get :conf)]
     (do (s/put! :conf conf)
         (s/put! :page :schedule)
         (data/get-data) 
-        (data/get-conferences)
-        )
+        (data/get-conferences))
     (do 
       (s/put! :data {})
       (s/put! :page :select-conference))))

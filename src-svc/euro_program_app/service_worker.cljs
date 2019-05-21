@@ -54,7 +54,7 @@
         response (-> js/caches
                      (.match request)
                      (.then (fn [r]
-                              (or r (.clone updated-response)))))]
+                              (or r updated-response))))]
     (.respondWith e response)))
 
 (.addEventListener js/self "install" #(.waitUntil % (install-service-worker %)))
