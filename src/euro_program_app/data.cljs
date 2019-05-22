@@ -8,7 +8,7 @@
             [ajax.core :refer [GET]]))
 
 (defn letter-map [l] 
-  (let [lm {"Ä" "A", "ä" "a", "Ç" "C", "ç" "c", "É" "E", "é" "e", "È" "E", "è" "e", "Ö" "O", "ö" "o", "Ş" "S", "ş" "s", "Ü" "U", "ü" "u" }]
+  (let [lm {"Ä" "A", "Á" "A", "ä" "a","Č" "C", "Ç" "C", "ç" "c", "É" "E", "é" "e", "È" "E", "è" "e", "Ö" "O", "ö" "o", "Ş" "S", "ş" "s", "Ü" "U", "ü" "u", "Ż" "Z", "Ž" "Z" }]
     (get lm l l)))
 
 (defn up-first [u]
@@ -27,7 +27,9 @@
                      (< k1 k2))))] 
     (into (sorted-map-by ck) m)))
 
-(def ucl (memoize (fn [u] (map letter-map (string/upper-case (str (:lastname u) " " (:firstname u)))))))
+(defn add-ucl [m u] 
+  (let [[id x] u] 
+    (assoc-in m [id :ucl] (apply str (map letter-map (string/upper-case (str (:lastname x) " " (:firstname x))))))))
 
 (defn update-local-data [d]
   (let [h (hash d)
@@ -39,7 +41,8 @@
       (s/put! :data-hash h)
       (let [data (reader/read-string d)
             streams (sort-map-by-fn-value :name (:streams data))
-            users (sort-map-by-fn-value ucl (:users data))
+            users (reduce add-ucl (:users data) (:users data))
+            users (sort-map-by-fn-value :ucl users)
             keywords (sort-map-by-fn-value :name (:keywords data))]
         (s/put! :data (assoc data :streams streams :users users :keywords keywords))))))
 
@@ -76,7 +79,8 @@
       (get-conferences)
       (GET (str (s/get :conf) ".edn") {:handler update-local-data})
       (GET "js/compiled/euro_program_app.js" {:handler check-app-version})
-      (GET (str (s/get :conf) "/pages.edn") {:handler static-pages}) 
+      (GET (str (s/get :conf) "/pages.edn") {:handler static-pages 
+                                             :error-handler #(js/console.log "Ignoring non-existent pages files")}) 
       (mp/init-mysessions)
       (js/setTimeout get-data timeout))))
 
