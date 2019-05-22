@@ -378,6 +378,7 @@
     (d/get-conferences))
   (if (s/get :data) 
     [:div
+     [:button {:class "add-button btn btn-primary"} "Add to home screen"]
      (login)
      (case (s/get :page)
        :schedule (schedule)
@@ -396,7 +397,9 @@
      (when (= (s/get :page) :static)
        [:div {:dangerouslySetInnerHTML {:__html (s/get :static-page)}}])
      [:span {:class "invisible"} (s/get :reload)]]
-    [:h2 "Loading program data. Please wait..."]))
+    [:div 
+     [:button {:class "add-button btn btn-primary"} "Add to home screen"]
+     [:h2 "Loading program data. Please wait..."]]))
 
 (defn title []
   (s/get :confname))

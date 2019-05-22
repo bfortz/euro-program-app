@@ -70,3 +70,7 @@ iframe {
 .navbar-brand {
   margin-left: 0.5rem;
 }
+
+.add-button {
+  display: none;
+}

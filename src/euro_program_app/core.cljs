@@ -119,7 +119,19 @@
 
 (defn- make-progressive! []
   (when js/navigator.serviceWorker
-    (.register js/navigator.serviceWorker "service-worker.js")))
+    (.register js/navigator.serviceWorker "service-worker.js") 
+    (let [addBtn (.querySelector js/document ".add-button")
+          installapp (fn [e] 
+                       (let [addBtn (.querySelector js/document ".add-button")] 
+                         (.preventDefault e)
+                         (set! (.-display (.-style addBtn)) "block") 
+                         (.addEventListener addBtn "click" 
+                                            #(do
+                                               (set! (.-display (.-style addBtn)) "none")
+                                               (.prompt e)
+                                               (.userchoice e)))))]
+      (.addEventListener js/window "beforeinstallprompt" installapp)
+      (set! (.-display (.-style addBtn)) "none"))))
 
 (defn init! []
   (hook-browser-navigation!)
