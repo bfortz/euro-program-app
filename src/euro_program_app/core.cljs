@@ -141,7 +141,7 @@
   (if-let [conf (c/get :conf)]
     (do (s/put! :conf conf)
         (s/put! :page :schedule)
-        (data/get-data) 
+        (js/setTimeout (data/get-data) 100) 
         (data/get-conferences))
     (do 
       (s/put! :data {})
