@@ -160,5 +160,4 @@
   (s/get :last-fetch)
   (s/get :page)
   (s/put! :confname "TEST")
-  (:timeslots (s/get :data))
-  )
+  (:timeslots (s/get :data)))

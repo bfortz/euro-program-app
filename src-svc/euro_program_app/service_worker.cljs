@@ -20,11 +20,13 @@
    "manifest.json"
    "images/icons-192.png"
    "images/icons-512.png"
-   "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+   "euro30.edn"
+   "https://www.euro-online.org/favicon.ico"
+   "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
    "https://fonts.googleapis.com/icon?family=Material+Icons"
-   "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+   "https://code.jquery.com/jquery-3.4.1.min.js" 
    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-   "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"])
+   "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"])
 
 (defn- install-service-worker [e]
   (js/console.log "[ServiceWorker] Installing")
