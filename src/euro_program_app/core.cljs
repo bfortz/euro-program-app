@@ -90,6 +90,7 @@
     (s/put! :data nil)
     (s/put! :static-pages nil)
     (s/put! :last-fetch nil)
+    (s/put! :mysessions nil)
     (c/set! :conf conf)
     (s/put! :conf conf))
   (let [[_ confname] (first (filter #(= (first %) conf) (s/get :conferences)))]
