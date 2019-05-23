@@ -47,7 +47,7 @@
   (c/set! :logged (reader/read-string d)))
 
 (defn init-mysessions []
-  (s/put! :mysessions (c/get (mysessions-cookie))) 
+  (s/put! :mysessions (sort-sessions (c/get (mysessions-cookie)))) 
   (s/put! :nologin (c/get :nologin))
   (s/put! :logged (c/get :logged))
   (GET "https://www.euro-online.org/web/accounts/logged/" {:handler logged :error-handler #() :with-credentials true})
