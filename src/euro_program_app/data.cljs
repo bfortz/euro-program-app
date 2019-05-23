@@ -1,5 +1,6 @@
 (ns euro-program-app.data
   (:require [reagent.session :as s]
+            [reagent.core :as r]
             [reagent.cookies :as c]
             [cljs.reader :as reader]
             [euro-program-app.myprogram :as mp]
@@ -31,6 +32,19 @@
   (let [[id x] u] 
     (assoc-in m [id :ucl] (apply str (map letter-map (string/upper-case (str (:lastname x) " " (:firstname x))))))))
 
+(defn async-users-update []
+  (let [data (s/get :data)
+        users (reduce add-ucl (:users data) (:users data))
+        users (sort-map-by-fn-value :ucl users)]
+    (s/put! :data (assoc data :users users))))
+
+(defn async-data-update []
+  (let [data (s/get :data)
+        streams (sort-map-by-fn-value :name (:streams data))
+        keywords (sort-map-by-fn-value :name (:keywords data))]
+    (s/put! :data (assoc data :streams streams :keywords keywords))
+    (js/setTimeout async-users-update 500)))
+  
 (defn update-local-data [d]
   (let [h (hash d)
         conf (s/get :conf)
@@ -39,12 +53,8 @@
       (s/put! :confname confname)) 
     (when (not= h oldh)
       (s/put! :data-hash h)
-      (let [data (reader/read-string d)
-            streams (sort-map-by-fn-value :name (:streams data))
-            users (reduce add-ucl (:users data) (:users data))
-            users (sort-map-by-fn-value :ucl users)
-            keywords (sort-map-by-fn-value :name (:keywords data))]
-        (s/put! :data (assoc data :streams streams :users users :keywords keywords))))))
+      (s/put! :data (reader/read-string d))
+      (js/setTimeout async-data-update 500))))
 
 (defn check-app-version [d]
   (let [h (hash d)
