@@ -20,4 +20,6 @@ nashorn_code_cache/
 .cljs_rhino_repl/
 resources/public/js/worker/
 resources/public/service-worker.js
+resources/public/*.repl
 *.old
+
