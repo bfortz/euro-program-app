@@ -2,7 +2,7 @@
   (:require [reagent.session :as s]
             [reagent.core :as r]
             [reagent.cookies :as c]
-            [cljs.reader :as reader]
+            [euro-program-app.edn :as reader]
             [euro-program-app.myprogram :as mp]
             [secretary.core :as secretary :include-macros true]
             [clojure.string :as string]
@@ -36,13 +36,14 @@
   (let [data (s/get :data)
         users (reduce add-ucl (:users data) (:users data))
         users (sort-map-by-fn-value :ucl users)]
-    (s/put! :data (assoc data :users users))))
+    (s/assoc-in! [:data :users] users)))
 
 (defn async-data-update []
   (let [data (s/get :data)
         streams (sort-map-by-fn-value :name (:streams data))
         keywords (sort-map-by-fn-value :name (:keywords data))]
-    (s/put! :data (assoc data :streams streams :keywords keywords))
+    (s/assoc-in! [:data :streams] streams)
+    (s/assoc-in! [:data :keywords] keywords)
     (js/setTimeout async-users-update 500)))
   
 (defn update-local-data [d]

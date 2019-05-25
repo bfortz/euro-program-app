@@ -14,6 +14,7 @@
                  [reagent-utils "0.3.3"]
                  [clj-commons/secretary "1.2.4"] 
                  [domina "1.0.3"]
+                 [org.clojure/tools.reader "1.3.2"]
                  [cljs-ajax "0.8.0"]]
 
   :plugins [[lein-figwheel "0.5.18"]

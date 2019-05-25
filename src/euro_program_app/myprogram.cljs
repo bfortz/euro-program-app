@@ -6,8 +6,9 @@
             [ajax.core :refer [GET]]))
 
 (defn sort-sessions [s]
-  (let [sessions (:sessions (s/get :data))] 
-    (sort-by #(+ (* 100 (:timeslot (get sessions %))) (:track (get sessions %))) s)))
+  (if-let [sessions (:sessions (s/get :data))] 
+    (sort-by #(+ (* 100 (:timeslot (get sessions %))) (:track (get sessions %))) s)
+    s))
 
 (defn mysessions-cookie []
   (keyword (str "mysessions-" (s/get :conf))))
