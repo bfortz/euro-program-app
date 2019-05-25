@@ -333,26 +333,28 @@
            [:li [:a {:href (str "#keyword/" id) } (:name k)]])]]]]))
 
 (defn login []
-  (when-not (s/get :nologin) 
-    (when-not (s/get :logged)
-      [:div {:class "login col-md-6"}
-       [:div {:class "row"}
-        [:div {:class "col"}
-         [:p "To synchronize your personalized program across your devices, please log in."]]]
-       [:div {:class "row"}
-        [:div {:class "col"}
-         [:a {:href (str "https://www.euro-online.org/web/accounts/login/?next=" 
-                         js/location.href)
-              :role "button"
-              :class "btn btn-primary"} "Log in"]]
-        [:div {:class "col"}
-         [:a {:href "#notnow" 
-              :role "button"
-              :class "btn btn-primary"} "Not now"]]   
-        [:div {:class "col"}
-         [:a {:href "#never" 
-              :role "button"
-              :class "btn btn-primary"} "Never ask"]]]])))
+  (when (and (s/get :conf) 
+             (s/get :data)
+             (s/get :nologin) 
+             (s/get :logged))
+    [:div {:class "login col-md-6"}
+     [:div {:class "row"}
+      [:div {:class "col"}
+       [:p "To synchronize your personalized program across your devices, please log in."]]]
+     [:div {:class "row"}
+      [:div {:class "col"}
+       [:a {:href (str "https://www.euro-online.org/web/accounts/login/?next=" 
+                       js/location.href)
+            :role "button"
+            :class "btn btn-primary"} "Log in"]]
+      [:div {:class "col"}
+       [:a {:href "#notnow" 
+            :role "button"
+            :class "btn btn-primary"} "Not now"]]   
+      [:div {:class "col"}
+       [:a {:href "#never" 
+            :role "button"
+            :class "btn btn-primary"} "Never ask"]]]]))
 
 (defn static []
   (d/get-static-page)
