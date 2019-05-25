@@ -44,6 +44,7 @@
         keywords (sort-map-by-fn-value :name (:keywords data))]
     (s/assoc-in! [:data :streams] streams)
     (s/assoc-in! [:data :keywords] keywords)
+    (mp/init-mysessions)
     (js/setTimeout async-users-update 500)))
   
 (defn update-local-data [d]
@@ -92,7 +93,6 @@
       (GET "js/compiled/euro_program_app.js" {:handler check-app-version})
       (GET (str (s/get :conf) "/pages.edn") {:handler static-pages 
                                              :error-handler #(js/console.log "Ignoring non-existent pages files")}) 
-      (mp/init-mysessions)
       (js/setTimeout get-data timeout))))
 
 (defn display-static-page [d]
