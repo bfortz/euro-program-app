@@ -335,6 +335,7 @@
 (defn login []
   (when (and (s/get :conf) 
              (s/get :data)
+             (s/get :mysessions)
              (s/get :nologin) 
              (s/get :logged))
     [:div {:class "login col-md-6"}
