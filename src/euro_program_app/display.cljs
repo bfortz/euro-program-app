@@ -33,7 +33,6 @@
 (defn paper-details [paperid]
   (let [d (s/get :data)
         p (get-in d [:papers paperid])
-        _ (println (type (:abstract p)))
         id (:session p)
         s (get-in d [:sessions id]) 
         t (get-in d [:timeslots (:timeslot s)])]
