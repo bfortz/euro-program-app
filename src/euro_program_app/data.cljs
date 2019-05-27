@@ -44,7 +44,6 @@
         keywords (sort-map-by-fn-value :name (:keywords data))]
     (s/assoc-in! [:data :streams] streams)
     (s/assoc-in! [:data :keywords] keywords)
-    (mp/init-mysessions)
     (js/setTimeout async-users-update 500)))
   
 (defn update-local-data [d]
@@ -56,7 +55,8 @@
     (when (not= h oldh)
       (s/put! :data-hash h)
       (s/put! :data (reader/read-string d))
-      (js/setTimeout async-data-update 500))))
+      (js/setTimeout async-data-update 500))
+    (mp/init-mysessions)))
 
 (defn check-app-version [d]
   (let [h (hash d)
