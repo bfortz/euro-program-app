@@ -1,0 +1,6 @@
+{;; :rooms "rooms.html",
+ :location "location.html",
+ :welcome-party "welcome_party.html"
+ :gala-dinner "gala.html",
+ :closing-party "closing.html",
+ :about "about.html"}
