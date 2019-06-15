@@ -1,4 +1,4 @@
-{;; :rooms "rooms.html",
+{:maps "maps.html",
  :location "location.html",
  :welcome-party "welcome_party.html"
  :gala-dinner "gala.html",
