@@ -34,14 +34,10 @@
   (c/set! (mysessions-cookie) (s/get :mysessions)))
 
 (defn merge-mysessions [d]
-  (let [old (set (s/get :mysessions))
-        newsessions (set (reader/read-string d))
-        ms (sort-sessions (cs/union old newsessions))
-        diff (cs/difference old newsessions)]
+  (let [ms (set (reader/read-string d))]
     (when (s/get :logged)
-      (doseq [id diff] (add-session (str id))))
-    (s/put! :mysessions ms)
-    (c/set! (mysessions-cookie) (s/get :mysessions))))
+      (s/put! :mysessions ms)
+      (c/set! (mysessions-cookie) (s/get :mysessions)))))
 
 (defn logged [d]
   (s/put! :logged (reader/read-string d))
