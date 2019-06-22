@@ -34,7 +34,7 @@
   (c/set! (mysessions-cookie) (s/get :mysessions)))
 
 (defn merge-mysessions [d]
-  (let [ms (set (reader/read-string d))]
+  (let [ms (sort-sessions (set (reader/read-string d)))]
     (when (s/get :logged)
       (s/put! :mysessions ms)
       (c/set! (mysessions-cookie) (s/get :mysessions)))))
