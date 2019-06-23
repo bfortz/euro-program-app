@@ -1,5 +1,6 @@
 (ns euro-program-app.display
   (:require [euro-program-app.data :as d]
+            [euro-program-app.myprogram :as mp]
             [reagent.session :as s]
             [reagent.cookies :as c]
             [clojure.string :as string]
@@ -272,7 +273,8 @@
       (doall (map session (:sessions s)))]]))
 
 (defn my-program []
-  (let [s (s/get :mysessions)]
+  (let [_ (mp/init-mysessions)))
+        s (s/get :mysessions)]
     [:div
      [:div {:class "row"} 
       [:div {:class "col"} 
