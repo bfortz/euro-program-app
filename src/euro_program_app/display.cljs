@@ -27,8 +27,8 @@
   (let [kwnames (:keywords (s/get :data))
         kws (->> (list :keyword1 :keyword2 :keyword3)   
                  (map #(% p))
-                 (map #(vector :a {:href (str "#keyword/" %)} (get-in kwnames [% :name])))
-                 (filter identity))]
+                 (filter #(not= 0 %))  
+                 (map #(vector :a {:href (str "#keyword/" %)} (get-in kwnames [% :name]))))]
     (reduce #(conj %1 ", " %2) (vector :span (first kws)) (rest kws))))
 
 (defn paper-details [paperid]
