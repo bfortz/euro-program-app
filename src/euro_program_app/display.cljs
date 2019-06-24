@@ -273,10 +273,7 @@
       (doall (map session (:sessions s)))]]))
 
 (defn my-program []
-  (let [_ (mp/init-mysessions)
-        ;; doing it twice to ensure we get fresh data from the service worker
-        _ (mp/init-mysessions)
-        s (s/get :mysessions)]
+  (let [s (s/get :mysessions)]
     [:div
      [:div {:class "row"} 
       [:div {:class "col"} 
