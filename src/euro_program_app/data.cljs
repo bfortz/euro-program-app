@@ -55,10 +55,10 @@
     (when (not= h oldh)
       (s/put! :data-hash h)
       (s/put! :data (reader/read-string d))
-      (js/setTimeout async-data-update 500)
-      (mp/init-mysessions)   
-      ;; doing it twice to ensure we get fresh data from the service worker
-      (mp/init-mysessions))))
+      (js/setTimeout async-data-update 500))
+    (mp/init-mysessions)   
+    ;; doing it twice to ensure we get fresh data from the service worker
+    (mp/init-mysessions)))
 
 (defn check-app-version [d]
   (let [h (hash d)
