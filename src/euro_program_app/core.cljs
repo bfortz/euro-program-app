@@ -143,7 +143,10 @@
     (do (s/put! :conf conf)
         (s/put! :page :schedule)
         (js/setTimeout (data/get-data) 100) 
-        (data/get-conferences))
+        (data/get-conferences)
+        (js/console.log (subs js/location.hash 1))
+        (when (= (first js/location.hash) "#")
+          (secretary/dispatch! (str "/" (subs js/location.hash 1)))))
     (do 
       (s/put! :data {})
       (s/put! :page :select-conference))))
