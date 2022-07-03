@@ -1,0 +1,30 @@
+Spatio-Temporal Variability of Distribution and Abundance of Sardine in Portuguese
+Continental Coast: Environmental Effects
+
+Daniela Silva, Raquel Menezes, Ana Moreno, Ana Teles-Machado, and Susana Garrido
+
+Scientific tools capable of identifying the distribution patterns of species are important
+as they contribute to improve knowledge about biodiversity and species
+abundance, to make sustainable management decisions and conserve biodiversity.
+This study aims to estimate the spatio-temporal distribution of sardine (Sardina
+pilchardus, Walbaum 1792) in the Western Iberian waters and Gulf of Cadiz, relating
+the spatio-temporal variability of biomass indicator with the environmental conditions.
+Acoustic data was collected during Portuguese spring acoustic (PELAGO)
+surveys conducted by the Portuguese Institute for Sea and Atmosphere (IPMA) over
+a total of 19920 hauls from 2000 to 2020 (gap in 2012). Daily environmental data was
+obtained for the region and time of study, particularly satellite derived sea surface
+temperature, chlorophyll-a concentration, bathymetry, and intensity and direction of
+ocean currents. Species Distribution Models are investigated to relate sardine presence/
+absence and biomass with the environmental conditions, aiming at predicting
+sardine distribution in unobserved locations and for the unobserved year of 2012.
+The hurdle Bayesian models become suitable since they allow to incorporate the
+specificities of the data: complex spatio-temporal dynamics, excess of zeros, and
+the difference between the occurrence and biomass under occurrence processes. The
+hurdle model is a two-part model such that species biomass is given by the product
+of these two processes. In addition to considering the spatio-temporal structure, the
+impact of the covariates with a time lag on biomass indicator is evaluated using a
+kernel gaussian function. Data from the west and south Iberian coasts are studied
+separately due to the shape of the coast and the different oceanographic conditions.
+
+Keywords: environmental effects, geostatistics, hurdle model, sardina pilchardus,
+          species distribution model

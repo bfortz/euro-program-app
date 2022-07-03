@@ -1,0 +1,51 @@
+Hotspot Cluster Detection Based on Spatial Hierarchical Structure and Its Software
+
+Fumio Ishioka, Shoji Kajinishi, and Koji Kurihara
+
+With the remarkable development of GIS in recent years, it has become easier to
+analyze and visualize a wide variety of geospatial data. Echelon analysis [3] was
+proposed as a method for objectively visualizing geospatial data by a topological
+hierarchical structure. An example application of using echelon analysis is hotspot
+detection, that is, detecting a subset of regions with significantly higher or lower
+relative risk in geospatial data. An echelon scan method we have proposed uses
+echelon’s hierarchical structures to perform hotspot detection [2], and thereby has
+become possible to detect an arbitrary shaped cluster even when large amounts of
+data are targeted, which is difficult to detect by the conventional method. In this
+study, we introduce the R package for the echelon analysis and echelon scan method
+we have developed [1], and the web application that can execute these methods while
+performing them interactively. In addition, an example of analysis using actual data
+will be demonstrated.
+
+Keywords: echelon analysis, echelon scan method, hotspot cluster
+
+References
+1. Ishioka, F.: echelon: The Echelon Analysis and the Detection of Spatial Clusters using 
+   Echelon Scan Method. R package version 0.1.0. (2020) 
+   https://cran.r-project.org/package=echelon
+2. Kurihara, K., Ishioka, F., Kajinishi, S.: Spatial and temporal clustering based on the 
+   echelon scan technique and software analysis. Jpn. J. Stat. Data Sci. 3, 313–332 (2020)
+3. Myers, W.L., Patil, G.P., Joly, K.: Echelon approach to areas of concern in synoptic 
+   regional monitoring. Environmental and Ecological Statistics. 4, 131–152 (1997)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+Nonparametric Regressions for Distributional Data
+
+Albert Meco, Javier Arroyo, and Antonio Irpino
+
+In distributional data individuals are described by means of distributions. While 
+distributions are complex data representations, several methods have been successfully
+proposed to analyze data represented by distributional variables, giving rise to the
+field distributional data analysis [1]. In particular, several authors have proposed
+regression methods to model some specific kinds of linear relationships that can
+take place among distributional variables. However, such methods may suffer in
+cases where the linear relationship in the data is not the one the method can deal
+with, or when the relationship in the data is not linear. In such cases, nonparametric
+regression methods would be able to effectively model the underlying relationship.
+  We propose three nonparametric regression methods for distributional data: the
+kernel regression and the locally weighted regression using the Dias-Brito [2] and
+the Irpino-Verde [3] linear regressions for distributional data. The performance of the
+proposed methods and the linear approaches will be compared by means of a Monte
+Carlo experiment that will consider different underlying relationships in the data. In
+addition, we propose the use of several statistical measures and plots to analyze the
+regression fit and its errors to better understand how the regressions work.
+
+Keywords: distributional data, nonparametric regression, locally-weighted learning
+
+References
+1. Brito, P., Dias, S. (eds.): Analysis of distributional data. Chapman and Hall/CRC, 
+   Boca Raton (2022)
+2. Dias, S., Brito, P.: Linear regression model with histogram-valued variables. 
+   Stat. Anal. Data Min. 8: 75-113 (2015)
+3. Irpino, A., Verde, R.: Linear regression for numeric symbolic variables: a least squares
+   approach based on Wasserstein Distance. Adv. Data Anal. Classif. 9, 81–106 (2015).
+
+
+
+
+
+

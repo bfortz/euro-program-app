@@ -1,0 +1,36 @@
+Fifty Years of Biplots: Some Remaining Enigmas and Challenges
+
+Jan Graffelman
+
+Biplots have found applications in many fields of science, where they are often used
+to detect groups, outliers or other regularities in multivariate data. A recent search
+at the web of science (using the core collection) reveals there are well over 2,200
+scientific articles that refer to biplots since the term was first coined by Gabriel [1].
+Several textbooks on biplots are available with a varying level of mathematical depth,
+though classical textbooks on multivariate analysis have been slow at incorporating
+the concept, or at recognising its universal value for all classical methods that are
+based on the singular value decomposition.
+  In applied scientific studies, several aspects of biplot construction and interpretation 
+are still not well understood, to the point that it is easy to find a poor biplot
+in a high-impact scientific journal. Some of the more problematic aspects will be
+addressed in the talk and concern: the choice of the multivariate method, aspect ratio, 
+biplot scaling, interpretation rules and (sub)optimality of approximations among
+others. There is a lot of software available for making biplots, but in spite of this, the
+truth is that many users would not be able to make an optimal biplot for representing
+one of the most elementary matrices: the correlation matrix.
+  The growing size of datasets being analysed poses an important challenge to
+biplot methodology. For example, by 2015 the 1,000 genomes project contained
+information on 88 million genetic polymorphisms for over 2,500 human individuals,
+obviously impossible to sensibly represent in a single biplot. In this situation, cases
+and variables are finally often presented in separate plots, thereby sacrificing the
+biplot’s most appealing feature: its ability to jointly represent and interpret observations 
+and variables. We address some examples in the high-dimensional context,
+where biplots are too dense, often have low goodness-of-fit, and where aggregation,
+clustering or filtering are needed to make their application feasible.
+
+Keywords: biplot, singular value decomposition, high-dimensional data
+
+References
+1. Gabriel, K.R.: The biplot graphic display of matrices with application to principal 
+   component analysis. Biometrika. 58(3), 453–467 (1971)
+

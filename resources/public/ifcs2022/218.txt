@@ -1,0 +1,45 @@
+Trade and Bank Credit of Portuguese SMEs: a Panel Data Application
+
+Carla Henriques, Pedro Pinto, and Carolina Cardoso
+
+Financial constraints are an obstacle to the growth and development of small and
+medium-sized enterprises (SME) [3]. The literature review shows that SMEs 
+preferentially resort to bank credit to face these constraints [2]. However, given the
+limitations to which they are subject and the constraints they encounter with the
+banking system, trade credit appears as an alternative for many companies [2].
+To study the determinants of bank credit and trade credit, regression models with
+panel data were used, considering a time horizon of ten years (2010 to 2019). The
+data were collected through the SABI (Iberian Balance Sheets Analysis System),
+selecting 5860 Portuguese SMEs with a total of 58,600 panel data records. The
+models include the firm’s information on the return on assets, collateral security,
+current ratio, turnover growth and Altman’s Z score of bankruptcy prediction [1],
+as independent variables. The time dummies were also included. Several models
+were estimated using fixed effects and random effects estimation and the same
+conclusions were drawn. This study is considered relevant for Portuguese SMEs,
+banking institutions and stakeholders, as the main factors that influence the use of
+bank credit and trade credit are analyzed along with an indicator of financial distress.
+
+Keywords: panel data, regression models, trade credit, bank credit
+
+References
+1. Altman, E. I.: Corporate Financial Distress: A Complete Guide to Predicting, Avoiding, and
+   Dealing with Bankruptcy (Frontiers in Finance Series). John Wiley & Sons (1983)
+2. D’Ignazio, A., Menon, C.: Causal Effect of Credit Guarantees for Small- and Medium-Sized
+   Enterprises: Evidence from Italy. The Scandinavian Journal of Ecnonomics, 122(1), 191-218.
+   (2020)
+3. Moscalu, M., Girardone, C., Calabrese, R.: SMEs’ growth under financing constrains and
+   banking markets integration in the euro area. Journal of Small Business Management. 58(4),
+   707–746 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+

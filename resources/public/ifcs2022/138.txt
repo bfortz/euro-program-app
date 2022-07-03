@@ -1,0 +1,32 @@
+Consistency of Trimmed Estimators of Scatter under the t-Distribution
+
+Andrea Cerioli, Lucio Barabesi, Luis Angel Garcìa-Escudero, and Agustìn Mayo-Iscar
+
+It is well known that trimmed estimators of multivariate scatter, such as the Minimum
+Covariance Determinant (MCD) estimator, are inconsistent unless an appropriate
+factor is applied to them in order to take the effect of trimming into account. This
+factor is widely recommended and applied when uncontaminated data are assumed
+to come from a multivariate Normal model (see, e.g., [4]). We address the problem
+of computing a consistency factor for the MCD estimator in a heavy-tail scenario,
+when uncontaminated data come from a multivariate Student’s C-distribution. The
+multivariate C-distribution has a representation as an infinite mixture o fNormals with
+scales depending on Gamma distribution. This representation allows estimation of
+the C-distribution parameters by using algorithms in the EM family. Additionally,
+the required consistency factor for trimmed estimators of multivariate scatter, such
+as the MCD, can be obtained through the corresponding consistency factors defined
+under the Normal model. We compare results from this mixture-based approach to
+analytical derivation of consistency factors that follows from the functional 
+representation of the MCD [2]. We also consider implications for outlier detection [1] 
+and robust clustering [3].
+
+Keywords: consistency factor, em algorithm, mcd, robust distance
+
+References
+1. Cerioli, A.: Multivariate Outlier Detection With High-Breakdown Estimators. J. Am. Stat.
+   Assoc. 105, 147–156 (2010)
+2. Croux, C., Haesbroeck, G.: Influence Function and Efficiency of the Minimum Covariance
+   Determinant Scatter Matrix Estimator. J. Multivar. Anal. 71, 161–190 (1999)
+3. Dotto, F., Farcomeni, A., Garcìa-Escudero, L.A., Mayo-Iscar, A.: A reweighting approach 
+   to robust clustering. Stat. Comp. 28, 477–493 (2018)
+4. Hubert, M., Debruyne, M., Rousseeuw, P.J.: Minimum covariance determinant and extensions.
+   WIREs Comput Stat. 10, e1421 (2018)

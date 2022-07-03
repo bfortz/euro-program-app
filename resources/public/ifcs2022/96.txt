@@ -1,0 +1,43 @@
+Some Biplot Alternatives
+
+Patrick Groenen
+
+Biplots provide a valuable tool for exploring and visualizing the relations between two
+entities, often individuals and attributes. They originate from principle components
+analysis, but have been applied to many other techniques that provide a decomposition
+between. The most well known biplot provides a projection interpretation: attributes
+are shown as vectors in a low-dimensional space, individuals as points, and the
+projection of an individual onto the direction of the variable is proportional to the
+reconstructed data value of this individual for that attribute. Here we discuss two
+alternatives to the standard biplot. The first one is the so-called area biplot [1] that
+can be used as an alternative to every standard projection biplot. Its main difference
+is that the estimate of the data is given by the area formed by the origin and two
+points. The second variety is the nonlinear biplot with a distance interpretation: the
+reconstructed value on a variable of each sample point is obtained by finding the
+nearest marker point on a nonlinear curve representing the variable [2]. Each type
+of biplot will be explained briefly and compared with the standard biplot.
+
+Keywords: biplot, visualisation
+
+References
+1. Gower, J.C., Groenen, P.J.F., van de Velden, M.: Area biplots. J Comput Graph Stat, 
+   19 (1), 46-61 (2010)
+2. Groenen, P.J.F., Le Roux, N.J., Gardner-Lubbe, S.: Spline-based nonlinear biplots. 
+   Adv Data Anal Classif, 9 (2), 219–238 (2015)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

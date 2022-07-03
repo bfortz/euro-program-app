@@ -1,0 +1,25 @@
+Elastic Regression for Irregularly Sampled Curves in R^d
+
+Lisa Steyer, Almond Stöcker, and Sonja Greven
+
+We propose regression models for curve-valued responses in two or more dimensions,
+where only the image but not the parametrisation of the curves is of interest.
+Examples of such data are handwritten letters, movement paths or outlines of objects.
+In the square-root-velocity framework [1], a parametrisation invariant distance
+for curves is obtained as the quotient space metric with respect to the action of 
+reparametrisation, which is by isometries. With this special case in mind, we discuss
+the generalisation of ’linear’ regression to quotient spaces more generally, before
+illustrating the usefulness of our approach for curves modulo re-parametrisation.
+We test this model in simulations and apply it to human hippocampi data, obtained
+from MRI scans [2]. Here we model how the shape of the hippocampus is related to
+age and Alzheimer’s disease. We address the issue of irregularly sampled curves by
+using splines for modelling smooth predicted curves.
+
+Keywords: elastic regression, sparse functional data, square-root-velocity framework,
+          warping
+
+References
+1. Srivastava, A. and Klassen, E.P.: Functional and Shape Data Analysis. In: Springer 
+   Series in Statistics. Springer New York (2016)
+2. Petersen, R.C. et al.: Alzheimer’s disease neuroimaging initiative (ADNI): clinical 
+   characterization. In: Neurology, 74(3):201–209, 2010.

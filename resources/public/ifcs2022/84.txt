@@ -1,0 +1,28 @@
+Functional Data Representation with Merge Trees
+
+Matteo Pegoraro and Piercesare Secchi
+
+Topological Data Analysis is a branch of data analysis aiming at representing data
+by means of topological information. Such representations are very different from
+classical statistical ones and posses interesting properties that can be used to tackle
+data analysis problems with a different perspective. We will represent functions by
+means of objects called merge trees, and with their properties we will look at the
+problem of alignment and smoothing of functional data within a benchmark case study.
+
+Keywords: functional data analysis, topological data analysis, merge trees, 
+          functional registration, smoothing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

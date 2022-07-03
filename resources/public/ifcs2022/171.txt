@@ -1,0 +1,30 @@
+A Time-Varying Text Based Ideal Point Model to Infer Partisanship in the U.S. Senate
+
+Sourav Adhikari, Bettina Grün, and Paul Hofmarcher
+
+Ideal point models analyze lawmakers’ votes, speeches, press statements and social
+media posts to quantify their political positions along a latent continuum. In this
+work, we extend the text based ideal point model [3] to obtain a time-varying version
+to study the evolution of the ideological positions of lawmakers over time and assess
+the change in partisanship among representatives from two political parties. We
+aim to confirm recent findings regarding the increase in partisanship manifested in
+speeches by Republicans and Democrats in the U.S. Senate during the last years
+[2]. These findings were drawn using a penalized estimator for measuring group
+differences in choices with high-dimensional data and text analysis was based on
+manually pre-defined topics. By contrast, the time-varying text based ideal point
+model estimated using variational inference [1] infers topics in a data-driven way
+and does not use party membership to determine the ideological positions and thus
+is not susceptible to overrating spurious differences in vocabulary use of different
+party members. Drawing the same substantive conclusions based on the results of
+two different statistical text analysis methods provides evidence for their robustness.
+
+Keywords: high-dimensional data, text mining, topic model, variational techniques
+
+References
+1. Blei, D., Kucukelbir, D., McAuliffe, J. D.: Variational inference: A review for 
+   statisticians. J. Am. Stat. Assoc. 112, 859–877 (2017)
+2. Gentzkow, M., Shapiro, J.M., Taddy, M.: Measuring group differences in high-dimensional
+   choices: Method and application to congressional speech. Econometrica. 87 1307–1340 (2019)
+3. Vafa, K., Naidu, S., Blei, D.: Text based ideal points. In: Proceedings of the 58th Annual
+   Meeting of the Association for Computational Linguistics, 5345–5357 (2020)
+

@@ -1,0 +1,27 @@
+Modeling a Most Specific Generalization in Domain Taxonomies
+
+Zh. Hayrapetyan and B. Mirkin et al.
+
+We define a most specific generalization of a fuzzy set of topics assigned to leaves
+of the rooted tree of a domain taxonomy. This generalization lifts the set to its
+“head subject” node in the higher ranks of the taxonomy tree. The head subject is
+supposed to “tightly” cover the query set, possibly involving some errors referred
+to as “gaps” and “offshoots”. We develop a method to globally maximize either the
+parsimony or the likelihood of a scenario involving gains and losses of the general
+concept manifested in a fuzzy cluster of leaf nodes of the taxonomy. Supplemented
+with fuzzy c-means clustering, this allows us to obtain meaningful generalizations
+for fuzzy thematic clusters of Data Science topics using several dozen thousand
+abstracts from issues of relevant research journals published from 2000 on.
+
+Keywords: generalization, maximum parsimony, maximum likelihood, fuzzy thematic cluster, 
+          research tendencies
+
+References
+1. The 2012 ACM Computing Classification System — Association for Computing Machinery.—2012.
+   — URL: https://www.acm.org/publications/class-2012.
+2. E. Chernyak, B. Mirkin. Refining a taxonomy by using annotated suffix trees and Wikipedia
+   resources // Annals of Data Science. Vol. 2, no. 1, 61-82, 2015.
+3. D. Frolov, S. Nascimento, T.I. Fenner, B. Mirkin. Parsimonious generalization of fuzzy 
+   thematic sets in taxonomies applied to the analysis of tendencies of research in 
+   Data Science. Information Sciences, 512, pp. 595-615, 2020. 
+

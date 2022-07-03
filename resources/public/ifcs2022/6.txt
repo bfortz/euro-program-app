@@ -1,0 +1,32 @@
+A New Decomposition of Orthogonal Matrices with Application to Common Principal Components
+
+Luca Bagnato and Antonio Punzo
+
+In many statistical problems, the estimation of a (d × d) orthogonal matrix Q is 
+involved [2]. The orthonormality constraints on Q often makes this estimation difficult.
+To cope with this problem, we use the well-known PLU decomposition [3], which
+factorizes any invertible (d × d) matrix as the product of a (d × d) permutation
+matrix P, a (d × d) unit lower triangular matrix L, and a (d × d) upper triangular
+matrix U. Thanks to the QR decomposition [3], we find the formulation of U when
+the PLU decomposition is applied to Q. We call the result as PLR decomposition;
+it produces a one-to-one correspondence between Q and the d (d − 1) /2 entries
+below the diagonal of L, which are advantageously unconstrained real values. Thus,
+once the decomposition is applied, regardless of the objective function under consideration, 
+we can use any classical unconstrained optimization method to find the minimum (or maximum) 
+of the objective function with respect to L. For illustrative purposes, we apply the PLR 
+decomposition in common principle components  analysis (CPCA) for the maximum likelihood 
+estimation of the common orthogonal matrix when a multivariate leptokurtic-normal distribution 
+is assumed in each group. Compared to the commonly used normal distribution, the leptokurtic-normal
+has an additional parameter governing the excess kurtosis [1]; this makes the estimation of Q in 
+CPCA more robust against mild outliers. The usefulness of the PLR decomposition in leptokurtic-normal 
+CPCA is illustrated by two biometric data analyses.
+
+Keywords: orthogonal matrix, matrix decomposition, common principal components, fg algorithm, 
+          leptokurtic-normal distribution
+
+References
+1. Bagnato, L., and Punzo, A., and Zoia, M.G.: The Multivariate Leptokurtic-Normal 
+   Distribution and its Application in Model-Based Clustering. Can. J. Stat. 45, 
+   95–119 (2017)
+2. Graybill, F.A.: An Introduction to Linear Statistical Models. McGraw-Hill (1976)
+3. Lutkepohl, H.: Handbook of Matrices. John Wiley & Sons, Chicester (1996)

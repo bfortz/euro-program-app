@@ -1,0 +1,35 @@
+Exact Computation of the Angular Halfspace Depth
+
+Stanislav Nagy and Rainer Dyckerhoff
+
+Directional data arise naturally as observations lying in the unit sphere of a d-dimensional 
+Euclidean space. The angular halfspace depth [2] is a nonparametric tool for the analysis of 
+directional data, with wide applications in e.g. classification and pattern recognition tasks. 
+The angular halfspace depth was proposed already in 1987 in [3], but its widespread use has been 
+hampered in practice by significant computational issues. We address these problems by considering 
+a simple projection scheme that allows reducing the computation of the angular halfspace depth to the
+task of evaluating a variant of the usual halfspace depth in a linear space [1]. Efficient algorithms 
+for exact computation and approximation of the angular halfspace depth are thus developed.
+
+Keywords: angular halfspace depth, computation, directional data analysis
+
+References
+1. Dyckerhoff, R., Mozharovskyi, P.: Exact computation of the halfspace depth. Comput. Statist.
+   Data Anal. 98, 19–30 (2016)
+2. Liu, R.Y., Singh, K.: Ordering directional data: concepts of data depth on circles and spheres.
+   Ann. Statist. 20(3), 1468–1484 (1992)
+3. Small, C.G.: Measures of centrality for multivariate and directional distributions. Canad. J.
+   Statist. 15(1), 31–39 (1987)
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+The Control of False Discovery Rate for Functional Data
+
+Niels Lundtorp Olsen, Alessia Pini, and Simone Vantini
+
+In functional data analysis (FDA), the object of statistical methods are functions,
+which are typically modeled as random elements of a Hilbert space. In this framework 
+inference is particularly challenging, since it deals with elements of infinite
+dimensional spaces. A popular topic in FDA is local inference, i.e., the continuous
+statistical testing of a null hypothesis along the domain. The principal issue in this
+topic is the infinite amount of tested hypotheses, which can be seen as an extreme
+case of multiple comparisons problem. Local inferential techniques are either based
+on simultaneous confidence bands, or on the definition of a p-value function, which
+provides a p-value at each point of the domain, guaranteeing a control of a quantity
+related with the error rate on the whole domain. In this work we focus on this second
+line, and in particular on the control of the false discovery rate (FDR), which is the
+expected proportion of false discoveries (rejected null hypotheses) among all discoveries, 
+and was first introduced in the seminal paper by Benjamini and Hochberg [1]. We define FDR 
+in the setting of functional data defined on a manifold domain.
+  We then introduce the functional Benjamini-Hochberg (fBH) procedure: a procedure
+able to control the previously defined functional FDR. Finally, the fBH procedure
+is applied to the analysis of daily temperatures on Earth. All details about the fBH
+procedure are reported in [2].
+
+Keywords: benjamini-hochberg procedure, multiple comparisons, null hypothesis testing, 
+          local inference
+
+References
+1. Benjamini, Y., Hochberg, Y.: Controlling the False Discovery Rate: A Practical and Powerful
+   Approach to Multiple Testing. Journal of the Royal Statistical Society: Series B, 57 (1) 289–300
+   (1995) doi: 10.1111/j.2517-6161.1995.tb02031.x
+2. Lundtorp Olsen, N., Pini, A., Vantini, S.: False discovery rate for functional data. Test (2021)
+
+

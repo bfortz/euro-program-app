@@ -1,0 +1,29 @@
+Mispecification Tests for Hidden Markov Models Based on a New Class of Finite Mixture Models
+
+Francesco Bartolucci, Silvia Pandolfi, and Fulvia Pennoni
+
+In the context of longitudinal data, we show that a general class of hidden Markov
+(HM, [1]) models may be equivalent to a class of finite mixture (FM, [3]) models
+based on an augmented set of components and suitable constraints on the conditional
+response probabilities, given these components. We formulate a misspecification test
+for the latent structure of an HM model comparing maximum likelihood values of
+the two models for the same data, and when the number of possible latent state
+sequences is excessive, we propose a multiple version of this test including the
+Bonferroni correction. The procedure is simple since it is based on the output
+of the Expectation-Maximization estimation algorithm [2]. The properties of this
+testing procedure are evaluated through a simulation study. An empirical application
+illustrates it through data from the National Longitudinal Survey of Youth, in which
+we jointly consider wages and years of experience after labour force entry. We show
+that the proposed testing procedure may also be used as an alternative model selection
+criterion for the number of latent states of an HM model to those usually employed.
+
+Keywords: expectation-maximization algorithm; likelihood ratio test; model selection;
+          multiple testing
+
+References
+1. Bartolucci, F., Farcomeni, A., Pennoni, F.: Latent Markov Models for Longitudinal Data. 
+   Boca Raton FL: Chapman & Hall/CRC. Taylor & Francis (2013)
+2. Dempster, A.P., Laird, N.M., Rubin, D.B.: Maximum likelihood from incomplete data via the
+   EM algorithm (with discussion). J. R. Stat. Soc. 39, 1–38, (1977)
+3. McLachlan, G., Lee, S.X., Rathnayake, S.I.: Finite mixture models. Annu. Rev. Stat. Appl.
+   10, 355–378 (2019)

@@ -1,0 +1,24 @@
+Evolution of Media Coverage on Climate Change and Environmental Awareness: 
+an Analysis of Tweets from UK and US Newspapers
+
+Gianpaolo Zammarchi, Maurizio Romano, and Claudio Conversano
+
+Climate change represents one of the biggest challenges of our time. Newspapers
+might play an important role in raising awareness on this problem and its consequences. 
+We collected all tweets posted by six UK and US newspapers in the last decade to assess 
+whether 1) the space given to this topic has grown, 2) any breakpoint can be identified 
+in the time series of tweets on climate change, and 3) any main topic can be identified 
+in these tweets. Overall, the number of tweets posted on climate change increased for all 
+newspapers during the last decade. Although a sharp decrease in 2020 was observed due to 
+the pandemic, for most newspapers climate change coverage started to rise again in 2021. 
+While different breakpoints were observed, for most newspapers 2019 was identified as a 
+key year, which is plausible based on the coverage received by activities organized by 
+the Fridays for Future movement. Finally, using different topic modeling approaches, we 
+observed that, while unsupervised models partly capture relevant topics for climate change, 
+such as the ones related to politics, consequences for health or pollution, semi-supervised
+models might be of help to reach higher informativeness of words assigned to the topics.
+
+Keywords: climate change, twitter, environment, time series, topic modeling
+
+
+

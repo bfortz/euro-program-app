@@ -1,0 +1,44 @@
+Statistical Assessment of Youth Inclusion in the National Labour Markets
+
+Beata Bal-Domanska
+
+The situation of youth in the labour market has been supported by national and 
+regional policies for many years. Despite the implemented activities aimed at 
+enhancing their professional standing, in many regions their situation is still 
+unfavourable comparing that of adults [1]. An attempt was taken up to develop the 
+typology of national labour markets regarding the inclusion of youth in terms of 
+dynamics and statistics. The inclusiveness of labour markets was defined as a 
+characteristic of the economy in which access to jobs is similar in all groups of 
+the economically active people. Classification methods (Ward’s method) and regression 
+methods determining long-term inclusiveness were used to develop the procedure for the 
+European labour markets typology in terms of youth inclusion [2]. As a result, the 
+countries were divided into 4 groups (favourable labour market for both youth and adults
+groups of workers; unfavourable for youth; difficult labour market; difficult labour
+market, particularly for youth) along with an assessment of the youth inclusion level.
+Based on the conducted analysis, it was concluded that in 2020 as many as 12 countries 
+out of 28 EU countries were included in the difficult labour market, particularly
+for youth group, another 11 represented the countries whose labour market situation
+can be characterized as unfavourable for youth, two countries (Latvia, Greece) were
+classified in the difficult labour market group, i.e. the countries where high 
+unemployment rate was accompanied by high youth inclusion level. Only the following 
+3 countries were included in the favoured labour market group: Germany, Austria and
+Denmark.
+
+Keywords: typology, panel data models, regression, labour market, youth, 
+          european countries
+
+References
+1. Asteriou D., Hall G.Stephen: Applied Econometrics. Macmillan Education, Palgrave, (2016)
+2. Choudhry, M.T., Marelli, E., Signorelli, M.: Youth and total unemployment rate: The impact
+   of policies and institutions. Rivista Internazionale Di Scienze Sociali 121, 63–86 (2013)
+
+
+
+
+
+
+
+
+
+
+

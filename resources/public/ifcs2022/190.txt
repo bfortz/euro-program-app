@@ -1,0 +1,28 @@
+A Rule-Based Approach to Scoring Systems
+
+Michael Rapp, Johannes Fürnkranz, and Eyke Hüllermeier
+
+Scoring systems have a long history of active use in safety-critical domains such
+as healthcare and justice, where they provide guidance for making objective and
+accurate decisions. While scoring systems have often been handcrafted by domain
+experts in the past, the use of machine learning algorithms to deduce decision models
+from historic data is becoming more prevalent, also due to an increased availability
+of data and computational resources. In this work, we present an overview of existing
+methods for the data-driven construction of scoring systems and propose a taxonomy
+for characterizing the different types of models they produce. We further provide a
+new perspective on the topic by establishing a connection between scoring systems
+and additive rule models, and propose a rule-based methodology that allows for
+constructing scoring systems with different characteristics. In an experimental study,
+we investigate the effects of various constraints that are typically imposed on the
+complexity of scoring systems to facilitate their use by human practitioners. We also
+investigate how existing rule learning techniques help reduce negative impacts in
+terms of predictive accuracy they may entail.
+
+Keywords: interpretable machine learning, scoring systems, rule learning
+
+
+
+
+
+
+

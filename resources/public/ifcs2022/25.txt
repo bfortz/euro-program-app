@@ -1,0 +1,22 @@
+Fuzzy Clustering by Hyperbolic Smoothing
+
+David Mas´ıs, Esteban Segura, Javier Trejos, and Adilson Xavier
+
+We propose a novel method for building fuzzy clusters of large data sets, using a
+smoothing numerical approach. The usual sum-of-squares criterion is relaxed so
+the search for good fuzzy partitions is made on a continuous space, rather than a
+discrete space as in classical methods [2]. The smoothing allows a conversion from a
+strongly non-differentiable problem into low dimensional differentiable subproblems
+of optimization without constraints, by using an infinitely differentiable function.
+For the implementation of the algorithm we used the statistical software R and the
+results obtained were compared to the traditional fuzzy C–means method, proposed
+by Bezdek [1].
+
+Keywords: clustering, fuzzy sets, numerical smoothing.
+
+References
+1. Bezdek, J.C.: Pattern Recognition with Fuzzy Objective Function Algorithms. 
+   Plenum Press, New York (1981)
+2. Hartigan, J.A.: Clustering Algorithms. Wiley, New York, NY (1975)
+
+

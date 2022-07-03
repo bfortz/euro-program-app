@@ -1,0 +1,46 @@
+Estimating Optimal Decision Trees for Treatment Assignment with k > 2 Treatment
+Alternatives: A Classification Problem with A unit- and Class- Dependent 
+Misclassification Cost
+
+Iven Van Mechelen and Aniek Sies
+
+For many medical and psychological problems, multiple treatment alternatives are
+available. Given data from a randomized controlled trial, an important challenge is
+to estimate an optimal decision rule that specifies for each patient the most effective
+treatment alternative given his or her pattern of pretreatment characteristics. At this
+point, optimality refers to the most favorable expected (potential) outcome if the
+rule would be applied to the entire population of patients of interest. The estimation
+problem at hand can be shown to come down to a classification problem with a unitand 
+class-dependent misclassification cost, that is, a misclassification cost that may
+depend on both the object that is misclassified and the class to which it is erroneously
+assigned.
+  Classification trees constitute an insightful class of solutions for problems of 
+decision rule estimation. Unfortunately, however, there is dearth of software tools for
+tree estimation that minimizes an object- and class-dependent misclassification cost,
+in particular for problems with k > 2 classes. In this talk, we explain how such an
+estimation can be achieved by means of a shrewd and novel type of application of a
+mainstream R-package for tree building, rpart, via a user-defined splitting function
+and a rectangular misclassification cost matrix. We illustrate with an application on
+the search for an optimal tree-based treatment regime in a randomized controlled
+trial on k = 3 different types of after-care for younger women with early-stage breast
+cancer. We finally argue that the proposed software solution may have relevance for various 
+other classification problems with a unit- and class-dependent misclassification cost, such 
+as credit card fraud detection and customer retention management.
+
+Keywords: classification trees, unit- and class-dependent misclassification cost,
+          optimal treatment regimes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

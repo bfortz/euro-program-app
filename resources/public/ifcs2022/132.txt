@@ -1,0 +1,35 @@
+Robustified Elastic Net Estimator for Multinomial Regression
+
+Fatma Sevinç Kurnaz and Peter Filzmoser
+
+The elastic net estimator has been proposed in particular for high-dimensional low
+sample size data sets [5], and it has been extended to generalized linear regression
+models [1]. A fully robust version of the elastic net estimator has been introduced
+for linear and logistic regression by [3]. This work is extended to the setting of 
+robust multinomial regression. Robustness is achieved by trimming the negative 
+log-likelihood function, and by introducing group-wise weights according to the 
+outlyingness of the observations. The procedure is implemented in the R package 
+enetLTS [4], using internally the R package glmnet [2]. Simulation studies and real 
+data examples are conducted to show the performance in comparison to the classical, 
+non-robust counterpart for multinomial regression.
+
+The work was supported by grant TUBITAK 2219 from the Scientific and Technological
+Research Council of Turkey.
+
+Keywords: elastic net penalty, multinomial regression, robustness, sparsity
+
+References
+1. Friedman, J., Hastie, T. and Tibshirani, R.: Regularization paths for generalized 
+   linear models via coordinate descent. Journal of Statistical Software, 33, 1–22, 2010.
+2. Friedman, J., Hastie, T. and Tibshirani, R., Narasimhan, B., Tay, K., Simon, N., Qian, J. 
+   and Yang, J. 2021: glmnet: Lasso and Elastic-Net Regularized Generalized Linear Models, 
+   R Foundation for Statistical Computing, Vienna, Austria. R package version 4.1–3, 
+   https://CRAN.Rproject. org/package=glmnet
+3. Kurnaz, F.S, Hoffmann, I. and Filzmoser, P.: Robust and sparse estimation methods for 
+   high-dimensional linear and logistic regression. Chemometrics and Intelligent Laboratory 
+   Systems, 172, 211–222 (2018).
+4. Kurnaz, F.S, Hoffmann, I. and Filzmoser, P.: enetLTS: Robust and sparse estimation 
+   methods for high-dimensional linear and logistic regression, R Foundation for Statistical 
+   Computing, Vienna, Austria. R package, https://CRAN.R-project.org/package=enetLTS
+5. Zou, H. and Hastie, T.: Regularization and variable selection via the elastic net, Journal 
+   of Royal Statistics Society Series B, 67, 301–320 (2005).

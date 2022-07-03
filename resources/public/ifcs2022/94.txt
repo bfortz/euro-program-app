@@ -1,0 +1,38 @@
+Assessing Common Principal Directions
+
+David Rodríguez Vítores and Carlos Matrán Bea
+
+In this paper we address the problem of comparing the principal axes of a covariance
+matrix with other given axes. The point of view adopted is based on the problem
+of optimal transport in families of location and shape, which gives rise to a very
+simple relation between the variances of the corresponding components in both
+bases. Our analysis includes the asymptotic behavior of the statistic involved, and
+the comparison of the method with other existing proposals in the literature.
+
+Keywords: wasserstein distance, common principal directions, multivariate analysis, 
+          spectral functions.
+
+References
+1. Flury, B.: Common principal components and related multivariate models. Wiley, 
+   New York (1988)
+2. Alvarez-Esteban, P.C., del Barrio, E., Cuesta-Albertos, J.A., Matrán, C.: A fixed-point 
+   approach to barycenters in Wasserstein space. J. Math. Anal. Appl. 441, 744–762 (2016)
+3. Lewis, A.S., Sendov, H.S.: Twice differentiable spectral functions. SIAM J. Matrix Anal.
+   Appl. Vol 23, No. 2, 368–386 (2001)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

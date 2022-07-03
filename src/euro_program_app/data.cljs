@@ -81,7 +81,16 @@
   (let [confs (reader/read-string d)]
     (s/put! :conferences confs)))
 
+(defn options [d]
+  (let [o (reader/read-string d)] 
+    (when (s/get :conf)
+      (doseq [[k v] (get o :defaults)]
+        (s/put! k v))  
+      (doseq [[k v] (get o (s/get :conf))]
+        (s/put! k v)))))
+
 (defn get-conferences []
+  (GET "options.edn" {:handler options})
   (GET "conferences.edn" {:handler conferences}))
 
 (defn get-data []
@@ -95,6 +104,7 @@
       (GET "js/compiled/euro_program_app.js" {:handler check-app-version})
       (GET (str (s/get :conf) "/pages.edn") {:handler static-pages 
                                              :error-handler #(js/console.log "Ignoring non-existent pages files")}) 
+      (GET "options.edn" {:handler options})
       (js/setTimeout get-data timeout))))
 
 (defn display-static-page [d]

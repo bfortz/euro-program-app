@@ -1,0 +1,54 @@
+Identification of Shared Genetic Loci Between Psychiatric Disorders and 
+Telomere Length and Evaluation of Their Role as Potential Drug Targets
+
+Claudia Pisanu, Anna Meloni, and Alessio Squassina
+
+Patients with psychiatric disorders such as bipolar disorder (BD), schizophrenia
+(SCZ) and major depression (MD) show features suggestive of accelerated cellular 
+aging such as shorter telomere length (TL). However, contrasting results have
+also been reported. We leveraged large genome-wide association studies to investigate 
+whether shared genetic factors might predispose patients to cellular aging or rather 
+play a counteractive role. For BD (41,917 cases, 371,549 controls), SCZ
+(69,369 cases, 236,642 controls) and MD (170,756 cases, 329,443 controls) we
+used datasets from the Psychiatric Genomics Consortium, while for TL a metaanalysis 
+including 78,592 individuals. We identified shared genetic loci with conjunctional false 
+discovery rate (conjFDR) [1]. Heritability and bivariate local genetic correlation was 
+investigated with LAVA, while target druggability with different tools, including DGIdb. 
+We identified two loci shared between BD and TL: 1) lead single nucleotide polymorphism (SNP) 
+rs113833990, conjFDR=0.03; 2) lead SNP rs12919664, conjFDR=0.002. The latter showed significant 
+heritability for BD (h2=0.0007, p=5.8E-06) and TL (h2=0.0004, p=0.006) and significant local 
+genetic correlation (rg=0.78, p=0.005). One locus shared between SCZ and TL (lead SNP rs143773357, 
+conjFDR=0.03) showed significant heritability (SCZ: h2=0.002, p=1.1E-09; TL: h2=0.0004, p=0.044) 
+and local genetic correlation (rg=0.78, p=0.007). For all loci, the lead SNP was associated with 
+increased TL and predisposition to psychiatric disorders. Our results suggest that shorter TL in
+patients with SCZ or BD could be at least partly counteracted by genetic factors.
+
+Keywords: genetic correlation, pleiotropy, genomics, psychiatry
+
+References
+1. Smeland, O.B., Frei, O., Shadrin, A. et al.: Discovery of shared genomic loci using the
+   conditional false discovery rate approach. Hum. Genet. 139, 85–94 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

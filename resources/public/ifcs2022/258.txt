@@ -1,0 +1,30 @@
+On the Use of the Choquet Fuzzy Integral to Aggregate Predictions of Time Series: 
+an Application to Economic (and Other Types of) Data
+
+Diogo Alves, José Matos, and Sandra Silva
+
+The Choquet Integral with respect to a given fuzzy measure is a powerful aggregation
+operator that fuses several sources of information into a single value [1]. An as of
+yet unexplored application is the use of the method to aggregate predictions of time
+series (as well as supervised learning representations) methods. Time series have an
+internal structure based on temporal ordering of the data, and the fact that changes in
+the relative ordering of observations would change the meaning of the data is a fact
+that presents its own set of challenges in the context of Machine Learning (see [2, 3]
+for examples of applications). The objective is twofold: first, to compare the methods
+used in terms of performance. Second, to obtain a model acting as an ensemble, able
+to muster the relative strengths of each method into a more accurate (in the sense of
+smaller in and out-of-sample errors with respect to its components) super predictor,
+in a "wisdom of crowds" effect. An application example with 8 time series (of both
+synthetic and "real-life" origin) is explored.
+
+Keywords: fuzzy measures, Choquet integral, time series forecasting, arima, 
+          supervised learning
+
+References
+1. Grabisch, M., Labreuche, C.: Fuzzy Measures and Integrals in MCDA. In: Greco, S., Ehrgott,
+   M., Figueira, J. (eds) Multiple Criteria Decision Analysis. International Series in Operations
+   Research & Management Science, vol 233, pp 553-603. Springer, New York, NY (2016)
+2. Ribeiro, M.H.D.M., Coelho, L.S.: Ensemble approach based on bagging, boosting and stacking
+   for short-term prediction in agribusiness time series. App. Soft Comp. 86, 105837 (2020)
+3. Cicceri, G., Inserra, G. and Limosani, M. A machine learning approach to forecast economic
+   recessions—an italian case study. Mathematics 8(2), 241 (2020)

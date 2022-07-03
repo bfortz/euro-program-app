@@ -1,0 +1,38 @@
+Is It Hate or Criticism? An Exploratory Approach to Negative Comments on YouTube
+
+Manuela Schmidt
+
+As many communities on YouTube develop around controversial topics, marginalized 
+identities, and extreme ideological positions, negative, anti-social or hateful
+commenting behavior on YouTube has garnered increasing interest. Whereas previous 
+studies analyze these comments by sentiment analysis or use of profanity only,
+in this exploratory approach, the analysis of negative comments on YouTube is 
+expanded on by combining sentiment analysis [1], a dictionary approach for defining
+and matching video topics using automatically generated transcripts, a dictionary
+matching for swear words [2], and video and comment metadata. A small group of
+content creators was selected for the analysis.
+  The combination of comment sentiment, the relation to a video and use of profanity 
+allowed for the classification into four groups of different sizes: Impoliteness,
+Incivility, Flaming and Criticism [3].
+  Comparing approaches, sentiment analysis alone shows a similar prevalence of
+negative comments between creators. When the classification is applied, a different
+distribution of negative groups between the creators is observable along expectations.
+The frequency, commonality, and difference of the language used show that while
+the groups share multiple expressions, especially those carrying a negative sentiment
+value, they make distinct use of crucial terms. While this classification is valuable
+for gaining insight and nuance into negative comments, some applicability issues for
+larger studies will also be discussed.
+
+Keywords: text mining, social science, social media, sentiment analysis
+
+References
+1. Thelwall, M., Buckley, K., Paltoglou, G.: Sentiment strength detection for the social web.
+   Journal of the American Society for Information Science and Technology, 63(1), 163—173
+   (2012)
+2. Dumm, S., Niekler, A. Methoden, Qualitätssicherung und Forschungsdesign. In M. Lemke,
+   G. Wiedemann (eds.), Text Mining in den Sozialwissenschaften, pp. 89–116. Springer VS,
+   Wiesbaden (2015)
+3. Barnes, R. Uncovering Online Commenting Culture: Trolls, Fanboys and Lurkers. Palgrave
+   Macmillan, Cham (2018)
+
+

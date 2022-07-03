@@ -1,0 +1,40 @@
+Application of Artificial Intelligence (AI) in Flood Risk Forecasting
+
+Minh Quang Tran, Ana Margarida Bento, Elisabete Teixeira, Hélder Sousa, and
+José Campos e Matos
+
+Floods are the most serious natural disasters currently, directly affecting people’s
+daily lives and causing many serious effects. The number of annual floods is increasing 
+with different intensity in several locations [1]. The sustainable development of
+people, critical infrastructure, the economy and society will be severely affected if
+no preventive or countermeasures are taken [2]. With the goal of minimizing damage
+by providing effective flood prevention and response solutions, forecasting requires
+high accuracy and long forecasting time. However, recently, along with the powerful
+development of computer science, big data and the development history of society, 
+artificial intelligence (AI) tools have the potential to perform this challenging
+task more accurately and faster than traditional methods, as highlighted in Pham et
+al. [3]. This investigation presents the application of AI in a comprehensive flood
+risk forecasting methodology, with the potential to provide a useful tool for flood
+management and definition of mitigation measures in urban areas, as well as for
+assisting in catastrophic events prevention.
+
+Keywords: artificial intelligence (AI), flood events, predictive model
+
+References
+1. The EU Floods Directive. https://ec.europa.eu/environment/water/flood_risk/.
+2. Kundzewicz, Z.W., Hegger, D.L.T., Matczak, P., Driessen, P.P.J. (2018): Flood-risk reduction:
+   Structural measures and diverse strategies. Proceedings of the National Academy of Sciences.
+3. Pham, B.T., Luu, C., Tran, P., Nguyen, H.D., Le, H.V., Quoc, T., Ta, H.T., Prakash, I. (2021):
+   Flood risk assessment using hybrid artificial intelligence models integrated with multi-criteria
+   decision analysis in Quang Nam Province, Vietnam. Journal of Hydrology 592(11)
+
+
+
+
+
+
+
+
+
+
+

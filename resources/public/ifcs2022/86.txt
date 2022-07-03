@@ -1,0 +1,40 @@
+Two-Stage Principal Component Analysis on Interval-Valued Data Using Patterned
+Covariance Structure
+
+Anuradha Roy
+
+A new approach is developed for facial recognition using principal component
+analysis of interval-valued data. We exploit patterned covariance structures in doing
+so and we accomplish this in two stages: first, we get eigenblocks and eigenmatrices
+of the patterned variance-covariance matrix, and then we analyze these eigenblocks
+and the corresponding principal vectors together in some appropriate way to get the
+principal components of the interval-valued data. We apply our method to the face
+recognition data in [1]. We take care of the three sequences of each face by using
+structured covariance matrices and answer the question whether three sequences
+belong to the same face or not. Face sequence recognition or classification is an
+important problem as face might slightly change due to several reasons. Results
+illustrating the accuracy and appropriateness of the new method over the existing
+methods are presented.
+
+Keywords: interval-valued data, patterned covariance structures, 
+          eigenblocks and eigenmatrices, principal vectors
+
+References
+1. Douzal-Chouakria, A., Billard, L. and Diday E.: Principal component analysis for 
+   intervalvalued observations. Stat. Anal. Data Min.: The ASA Data Science Journal, 
+   4(2), 229-246 (2011)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

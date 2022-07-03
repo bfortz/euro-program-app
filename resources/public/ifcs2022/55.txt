@@ -1,0 +1,28 @@
+Old and New Constraints in Model Based Clustering
+
+Luis A. García-Escudero, Agustín Mayo-Iscar, Gianluca Morelli, and Marco Riani
+
+Model-based approaches to cluster analysis and mixture modeling often involve
+maximizing classification and mixture likelihoods. Without appropriate constrains
+on the scatter matrices of the components, these maximizations result in ill-posed
+problems. Moreover, without constrains, non-interesting or “spurious” clusters are
+often detected by the EM and CEM algorithms traditionally used for the maximization 
+of the likelihood criteria. A useful approach to avoid spurious solutions is
+to restrict relative components scatter by a prespecified tuning constant. Recently
+new methodologies for constrained parsimonious model-based clustering have been
+introduced which include the 14 parsimonious models that are often applied in
+model-based clustering when assuming normal components as limit cases. In this
+paper we initially review the traditional approaches and illustrate through an example
+the benefits of the adoption of the new constraints.
+
+Keywords: model based clustering, mixture modelling, constraints
+
+
+
+
+
+
+
+
+
+

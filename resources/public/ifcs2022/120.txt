@@ -1,0 +1,44 @@
+Spatial Configuration of Fire Stations in Portugal
+
+Regina Bispo, Clara Yokochi, Francisca G. Vieira, Nádia Bachir, Pedro
+Espadinha-Cruz, José Pedro Lopes, Alexandre Penha, Marta B. Lopes, Filipe J.
+Marques, João Paulo Rodrigues, and António Grilo
+
+Fire stations (FS) provide a global emergency response to non-fire incidents, 
+e.g., vehicle crashes. Urban fires are nonetheless one of the most frequent 
+types of occurrences and sources of property damage that may lead to severe losses. 
+This severity is linked to the characteristic higher population densities and larger 
+building agglomerations in urban centers. In Portugal, FS are very non-uniformly 
+spatially distributed between municipalities both in terms of number and geographical 
+location. Since the spatial configuration of fire stations may considerably influence 
+the effectiveness of the provided services, national and regional governments need 
+research-based advice on how many and where to establish firefighting facilities. Hence, 
+based on information regarding urban and rural fires and vehicle crashes occurrences, 
+this study aimed at estimating the number of FS per municipality by fitting a Poisson 
+regression while accounting for spatial dependence. In addition, an unsupervised machine 
+learning clustering approach was used to assess the adequacy and efficiency of FS 
+locations, aiming to minimize the distance or the arrival time to the incidents.
+
+Keywords: fire, fire stations, Poisson regression, k-means
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

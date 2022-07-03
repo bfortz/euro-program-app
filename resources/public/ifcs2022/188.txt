@@ -1,0 +1,38 @@
+Nonlinear Approaches for Multiple Instance Learning
+
+Annabella Astorino, Matteo Avolio, and Antonio Fuduli
+
+Multiple Instance Learning (MIL) is a variant of traditional supervised learning
+consisting in classifying bags of instances. Differently from the traditional supervised
+learning scenario, each example is not represented by a fixed-length vector of features
+but by a bag of feature vectors called instances. In the training phase the classification
+labels are only provided for each entire bag whereas the labels of the instances inside
+them are unknown. The final task is to learn a model that predicts the labels of the
+new incoming bags together with the labels of the instances inside them.
+  We address the MIL problem in the case of two types of instances and two
+types of bags (positive and negative) through polyhedral approaches. The idea is
+to generate a polyhedral separation surface such that, for each positive bag, at least
+one of its instances is inside the polyhedron and all the instances of each negative
+bag are outside. We come out with two models. For solving the first one, starting
+from the MIL-SVM type model proposed in [1], we develope a technique based on
+iteratively separating the bags by means of successive maximum-margin polyhedral
+surfaces, obtained by solving successive linear programs. In the second, substituting
+the separating hyperplane with a maximum-margin polyhedral surface in the SVMtype model 
+presented in [2], we obtain a nonsmooth unconstrained optimization
+problem of DC (Difference of Convex) type that we solve by adapting the DCA
+algorithm. Numerical results are presented on a set of benchmark datasets.
+
+Keywords: multiple instance learning, SVM, polyhedral separation
+
+References
+1. Andrews, S.,Tsochantaridis,I., Hofmann, T.: Support vector machines for multiple-instance
+   learning. In: Becker, S., Thrun, S., Obermayer, K., (eds.) Advances in Neural Information
+   Processing Systems, pp. 561-568. MIT Press, Cambridge (2003).
+2. Bergeron, C., Moore, G., Zaretzki, J., Breneman, C.M., Bennett, K.P.: Fast bundle algorithm
+   for multiple-instance learning. IEEE Trans. Pattern Anal. Mach. Intell. 34, 1068–1079 (2012).
+
+
+
+
+
+

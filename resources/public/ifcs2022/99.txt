@@ -1,0 +1,43 @@
+Heterogeneous Random Forests
+
+Ye-eun Kim and Hyunjoong Kim
+
+Random forest (RF) is one of the most popular machine learning methods for classification 
+problems. Two factors that affect the performance of RF are known to be the accuracy of 
+individual trees and the diversity among trees. That is, the better the performance of each 
+classifier and the more heterogeneous the individual classifiers, the better the RF performance. 
+In this study, we propose a heterogeneous RF to increase the diversity of trees. The diversity 
+was induced by intentionally creating a tree that is heterogeneous from the previous trees. 
+Features used for splitting near the root node of the previous tree have lower weights when 
+constructing the feature subspace of the next tree. Therefore, Features that were dominant in 
+the previous tree are less likely to be used in the next tree and splitting features of root nodes 
+becomes more diverse. As a result of comparing accuracy in several real data, Heterogeneous RF 
+performed better than RF in data with dominant variables.
+
+Keywords: ensemble, random forests, decision tree
+
+References
+1. Breiman, L. Random Forests. Machine Learning. 45, 5–32 (2001)
+2. Han, S., Kim, H. & Lee, Y.S. Double Random Forest. Machine Learning. 109, 
+   1569–1586 (2020)
+3. Simon Bernar, Sebastien Adam & Laruent Heutte. Dynamic Random Forests. Pattern 
+   Recognition Letters, Elsevier. 33(12), 1580–1586 (2012)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

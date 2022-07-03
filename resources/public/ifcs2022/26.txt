@@ -1,0 +1,17 @@
+An Online Minorization-Maximization Algorithm
+
+Hien Duy Nguyen, Florence Forbes, Gersende Fort, and Olivier Cappé
+
+Modern statistical and machine learning settings often involve high data volume
+and data streaming, which require the development of online estimation algorithms.
+The online Expectation–Maximization (EM) algorithm extends the popular EM
+algorithm to this setting, via a stochastic approximation approach. We show that an
+online version of the Minorization–Maximization (MM) algorithm, which includes
+the online EM algorithm as a special case, can also be constructed in a similar
+manner. We demonstrate our approach via an application to the logistic regression
+problem and compare it to existing methods.
+
+Keywords: expectation–maximization, minorization–maximization, parameter estimation, 
+          online algorithms, stochastic approximation
+
+

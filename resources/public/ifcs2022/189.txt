@@ -1,0 +1,41 @@
+Franz Liszt’s Transcendental Études: an Evolutionary Analysis by Machine Learning
+
+Matteo Farné
+
+Musical data mining is a young discipline, that is gaining momentum in recent
+years (see [1]). In this paper, we apply the most relevant tools of Music Information
+Retrieval (MIR, see [2]) to Franz Liszt’s Transcendental Études, with the aim to
+mark the evolution of his composition style and musical grammar. We consider the
+three versions of Transcendental Études published by the composer in 1826, 1837
+and 1851. We perform a systematic evolutionary analysis of each Étude, and we
+compare different recordings of some Études.
+  For each trace, we estimate the amplitude spectrum, the envelope spectrum, and
+the spectrogram, in order to retrieve the musical content in terms of frequencies
+and intensity over time. Based on the estimated spectral features, we derive the
+chromagram, that is the redistribution of the spectrum over the twelve notes of the
+chromatic scale across all the registers. We also perform a segmentation based on the
+degree of novelty, intended as spectral dissimilarity, calculated frame-by-frame via
+the cosine distance. This process allows to discover and compare the macro-formal
+structure of the Études across the three published versions in terms of harmonic and
+melodic content.
+  Generally speaking, we learn that the first version represents a sketch of each
+Étude, the second version is a highly technical evolution of the first version, while
+the definitive version is characterized by the high degree of technical difficulty of
+the second version and the same formal clarity of the first version.
+
+Keywords: musical data mining, spectral analysis, Franz Liszt
+
+References
+1. Cancino-Chacón, C., Carlos E., Grachten, M., Goebl, W., Widmer, G.: Computational models
+   of expressive music performance: a comprehensive and critical review. Frontiers in Digital
+   Humanities. 5, 321–354 (2018)
+2. Müller, M. Fundamentals of music processing: audio, analysis, algorithms, applications.
+   Springer, 2015.
+3. Lartillot, O., Toiviainen, P., Eerola, T.: A MATLAB toolbox for music information retrieval.
+   In: Data analysis, machine learning and applications, pp. 261-268. Springer, (2008)
+
+
+
+
+
+

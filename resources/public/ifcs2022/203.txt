@@ -1,0 +1,34 @@
+Model-Based Clustering and Dimension Reduction for Multidimensional Social Networks
+
+Michael Fop, Silvia D’Angelo, and Marco Alfò
+
+Social network data are relational data recorded among a group of actors, interacting
+in different contexts. Often, the same set of actors can be characterized by multiple
+social relations, captured by a multidimensional network. A common situation is
+that of colleagues working in the same institution, whose social interactions can be
+defined on professional and personal levels. In addition, individuals in a network
+tend to interact more frequently with similar others, naturally creating communities.
+Latent space models for network data are useful to recover clustering of the actors,
+as they allow to represent similarities between them by their positions and relative
+distances in an interpretable low dimensional social space. We propose the infinite
+latent position cluster model for multidimensional network data, which enables 
+dimension reduction and model-based clustering of actors interacting across multiple
+social dimensions. The model is formulated within a Bayesian nonparametric framework, 
+which allows to perform automatic inference on the clustering allocations, the
+number of clusters, and the latent social space.
+
+Keywords: Bayesian nonparametric, latent space model, model-based clustering,
+          statistical network analysis
+
+
+
+
+
+
+
+
+
+
+
+
+

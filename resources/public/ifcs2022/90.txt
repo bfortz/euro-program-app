@@ -1,0 +1,43 @@
+How to Mitigate the Effect of Outliers on Balancing Technique
+
+Rasool Taban, Maria Do Rosario Oliveira, and Claudia Nunes Philippart
+
+Imbalanced data brings additional difficulties to the analysis of the data since the
+distribution of the number of observations across the known classes is skewed. The
+skewness implies that the number of observations in the Minority class is drastically
+smaller than the number of observations in the Majority class. This is a problem
+since, typically, the Minority class is the interesting and relevant class. Many real
+world applications face this issue due to their natural characteristics, such as fraud
+detection, rare disease detection, etc.
+  Balancing techniques are a common strategy to overcome imbalanced data problems,
+but the presence of outliers may lead to bias and poor results, especially when the
+outliers are located in the Minority class and we use classical methods.
+  In this work, first, we illustrate the negative effect of outliers on the performance
+of classical balancing techniques. Next, we propose a robust balancing technique
+to mitigate the effect of outliers - named RM-SMOTE – which combines the idea
+of SMOTE with robust Mahalanobis distance. We propose to automatically down
+weight atypical Minority class observations so that they have a low chance of being
+selected in the resampling step.
+  The performance of the RM-SMOTE is evaluated using simulated data with different
+levels of contamination, and benchmark imbalanced datasets. The results indicate
+the superiority of RM-SMOTE when handling different proportions of outliers. In
+cases where the observations are not linearly separable, RM-SMOTE superiority is
+even more evident.
+
+Keywords: imbalanced data, balancing techniques, robust mahalanobis distance,
+          over-sampling, smote
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

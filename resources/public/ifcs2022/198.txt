@@ -1,0 +1,40 @@
+Reinforced EM Algorithm Through Clever Initialization for Clustering with Gaussian
+Mixture Models
+
+Joshua Tobin, Chin Pang Ho, and Mimi Zhang
+
+Gaussian mixture models (GMMs) are a prominent clustering method that assume
+the data generating process to be a mixture distribution of a finite number of 
+Gaussian components. The clusters are taken to be the constituent components. GMMs
+are ubiquitous in clustering applications as they are both simple and flexible, 
+allowing the clusters to vary in terms of their shape, size and orientation. In practice,
+the Expectation Maximization (EM) algorithm is used to find maximum likelihood
+estimates of the GMM parameters. As the likelihood function is non-convex, care
+must be taken to ensure that EM is initialized with values close to the true parameters. 
+Present initialization methods fail to provide such estimates. The random
+initialization approach fails to ensure consistency between runs, and can cause EM
+to converge to arbitrarily bad values of the likelihood. A widely used deterministic
+approach initializes EM using partitions from likelihood-based hierarchical clustering. 
+This method is computationally infeasible for large datasets, and is ill-suited for
+detecting clusters of different sizes. We here propose initialization scheme which is
+applicable to large datasets and reliably produces consistent clustering outputs. We
+apply an efficient mode-finding criterion to generate a set of initial mean vectors.
+This set is then pruned through optimization of a convex objective with an adaptive
+cardinality penalty. We demonstrate how to prune the mean vectors one at a time,
+generating a sequence of nested clustering results. We provide guidance on how
+to select the optimal clustering from this sequence. We present theoretical guarantees 
+for the quality of our initialization and experimental results to verify that our
+algorithm works well in practice.
+
+Keywords: exemplar, Gaussian mixtures, density peaks, convex optimization.
+
+
+
+
+
+
+
+
+
+
+

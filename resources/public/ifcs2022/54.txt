@@ -1,0 +1,32 @@
+Clustering Rainfall by Simulated Annealing for Histogram Symbolic Data
+
+Alejandro Chacon and Javier Trejos
+
+We present the use of simulated annealing for clustering histogram symbolic data
+[2], by the minimization of a criterion based on a Huygens-type decomposition of
+inertia defined by Wasserstein distance. An efficient cooling scheme for simulated
+annealing was implemented [1], with variable length Markov chains, allowing a
+large exploration in the search space. A simplification of inertia change was found
+in order to efficiently use Metropolis rule. The algorithm was tested on maximum
+daily rainfall data sets for last 40 years in Costa Rica, in 14 meteorological stations
+in the Reventazon river basin. Results were compared to a k-means algorithm [3], ´
+with a general improvement in quality.
+
+Keywords: maximum daily rainfall, clustering, simulated annealing, symbolic data,
+          wasserstein distance
+
+References
+1. Aarts, E., Korst, J.: Simulated Annealing and Boltzmann Machines. Wiley, New York (1990)
+2. Billard, L., Diday, E.: Clustering Methodology for Symbolic Data. Wiley, New York (2020)
+3. Irpino, A., Verde, R., De Carvalho, F.A.T.: Dynamic clustering of histogram data based on
+   adaptive squared Wasserstein distances. Expert Systems with Appl. 41, 3351–3366 (2014)
+
+
+
+
+
+
+
+
+
+

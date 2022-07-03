@@ -1,0 +1,31 @@
+Copula-Based Non-Metric Unfolding on Augmented Data Matrix
+
+Marta Nai Ruscone and Antonio D’Ambrosio
+
+A multidimensional unfolding technique [1] that is not prone to degenerate solutions
+and is based on multidimensional scaling of a complete data matrix is proposed. We
+adopt the strategy of augmenting the data matrix, trying to build a complete 
+dissimilarity matrix, by using Copulas-based association measures [2] among rankings 
+(the individuals), and between rankings and objects (namely, a rank-order representation
+of the objects through tied rankings). The proposed technique leads to acceptable
+recovery of given preference structures. Application on real datasets show that our
+procedure returns non-degenerate unfolding solutions.
+
+Keywords: copulas, unfolding, multidimensional scaling
+
+References
+1. Cox, T.F. and Cox, M.A.A.: Multidimensional scaling. Chapman & Hall/CRC (2000)
+2. Nelsen, R.B.: An introduction to copulas. Springer, New York (2013)
+
+
+
+
+
+
+
+
+
+
+
+
+

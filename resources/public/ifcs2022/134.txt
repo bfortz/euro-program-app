@@ -1,0 +1,33 @@
+Latent Function-On-Scalar Regression Models for Observed Sequences of Correlated Binary
+Data: a Restricted Likelihood Approach
+
+Fatemeh Asgari and Valeria Vitelli
+
+In function-on-scalar regression problems, the response curve is sometimes observed
+as a sequence of correlated binary or multilevel data. This kind of situations can be
+handled via the family of generalized functional regression models, with several
+proposals in this direction already present in the literature [2, 3]. In this talk, we
+introduce a functional regression setting where the random response curve is unobserved,
+and only its dichotomized version as a sequence of correlated binary data is
+observed. We propose a practical computational framework for maximum likelihood
+analysis relying on the use of a complete data likelihood, which has the advantages of
+scaling to large datasets, and of handling non-equally spaced and missing observations
+effectively and flexibly. The proposed method is used in the Function-on-Scalar
+regression setting, with the latent response variable being a Gaussian random element
+taking values in a separable Hilbert space. We provide smooth estimations for
+the functional regression coefficients and principal components by introducing an
+adaptive Monte Carlo Expectation Maximization (MCEM) algorithm that circumvents
+selecting the smoothing parameters. The novel method is described in details
+in [1], where its performance is also demonstrated by simulated and real case studies, 
+and is implemented in the R package dfrr.
+
+Keywords: function-on-scalar regression, longitudinal binary data, mcem algorithm
+
+References
+1. Asgari, F., Alamatsaz, M.H., Vitelli, V., Hayati, S.: Latent function-on-scalar 
+   regression models for observed sequences of binary data: a restricted likelihood approach. 
+   arXiv preprint arXiv:2012.02635.(2020)
+2. Goldsmith, J., Zipunnikov, V., Schrack, J.: Generalized multilevel function-on-scalar 
+   regression and principal component analysis. Biometrics, 71, 344–353 (2015)
+3. Scheipl, F., Gertheiss, J., Greven, S.: Generalized functional additive mixed models. 
+   Electron. J. Stat. 10, 1455–1492 (2016)

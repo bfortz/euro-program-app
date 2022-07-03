@@ -1,0 +1,53 @@
+Visualization of the Number of New Positives for COVID-19 in Japan
+
+Yoshiro Yamamoto, Sanetoshi Yamada, Mayumi Tanahashi, and Tadashi Imanishi
+
+COVID-19 has been spreading in Japan and other parts of the world since 2020.
+In Japan, the number of newly confirmed positive cases is reported daily in the
+news. As the number of infected people increases, restraints on behavior and other
+measures have been taken to control the spread of infection. Our group has developed
+a system to visualize the number of positive cases of COVID-19 in five prefectures
+where university campuses are located, so that the status of the spread of COVID19 
+infection can be monitored. ([1],[2], http://covid-map.bmi-tokai.jp/) The system
+provides a visualization of the number of newly confirmed positive cases in each
+municipality, and is designed to provide an interactive function to provide the user
+with the information he or she wants to know. We present the details of the data
+collection method as well as the visualization information realized by this system.
+
+Acknowledgments This research was supported by a research grant (2021) from
+                the Tokai University Union Supporting Association. We would 
+                like to express our deepest gratitude.
+
+Keywords: covid-19, visualization, interactive plot
+
+References
+1. Tanahashi, M., Yamada, S., Imanishi, T., Yamamoto, Y.: Choropleth map of newly infected 
+   people with COVID-19. 2021 19th International Conference on ICT and Knowledge Engineering.
+   IEEE Xplore (2021)
+2. Tanahashi, M., Yamamoto, Y.: Visualization of the distribution of newly infected persons 
+   with COVID 19 in the prefecture. 2020 18th International Conference on ICT and Knowledge
+   Engineering. IEEE Xplore (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+Pitfalls of Automatic Optimization Procedures and Benchmarking in Cluster Analysis
+
+Quirin Stier and Michael C. Thrun
+
+The pitfalls and challenges of automatic approaches are outlined in the case that
+relevant and possibly prior unknown relationships in high-dimensional biological
+datasets are to be discovered [1]. Priorly, [2] proposed one or more unsupervised
+quality measures for the automatic selection of clustering algorithms and their 
+parameter optimization. However, employing optimization procedures within automated
+pipelines is biased and not recommended if we assume there may be only one optimal 
+partitioning of data, e.g., diagnoses or therapies [1]. Thus, the limitations of
+a clustering algorithm induced by a global clustering criterion cannot be overcome
+by optimizing the algorithm parameters which only reduces the variance but not the
+intrinsic bias of the criterion [1]. Furthermore, such optimization can yield 
+significant improvements even if the dataset does not possess any cluster structure. 
+Finally, our work shows that benchmarking clustering algorithms using first-order 
+statistics or box plots on a small number of trials leads to misleading comparisons 
+between algorithms. Assuming patterns in the data which can be recognizd by experts, 
+we use artifical generated datasets [3]. On these datasets, 41 open-source and state
+of-the-art algorithms standardized within R and Python in the “FCPS” library [4]
+are evaluated to disprove the claim of [2] that automatic algorithm and parameter
+selection by unsupervised quality measures is a viable approach in cluster analysis.
+
+Keywords: cluster analysis, benchmarking, quality measure
+
+References
+1. Thrun, M.C. Distance-based clustering challenges for unbiased benchmarking studies. 
+   Nature Scientific Reports 11, 18988, doi:10.1038/s41598-021-98126-1 (2021)
+2. Wiwie, C., Baumbach, J., Röttger, R. Comparing the performance of biomedical 
+   clustering methods. Nature Methods 12, 1033 (2015)
+3. Thrun, M.C., Ultsch, A. Clustering benchmark datasets exploiting the fundamental 
+   clustering problems. Data in Brief 30, 105501, doi:10.1016/j.dib.2020.105501 (2020)
+4. hrun, M.C., Stier, Q. Fundamental clustering algorithms Suite SoftwareX 13, 100642,
+   doi:10.1016/j.softx.2020.100642 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

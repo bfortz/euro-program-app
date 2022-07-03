@@ -1,0 +1,15 @@
+Detecting Differences in Italian Regional Health Services During Two Covid-19 Waves
+
+Lucio Palazzo and Riccardo Ievoli
+
+During the first two waves of Covid-19 pandemic, territorial healthcare systems
+have been severely stressed in many countries. The availability (and complexity)
+of data requires proper comparisons for understanding differences in performance
+of health services. We apply a three-steps approach to compare the performance of
+Italian healthcare system at territorial level (NUTS 2 regions), considering daily time
+series regarding both intensive care units and ordinary hospitalizations of Covid-19
+patients. Changes between the two waves at a regional level emerge from the main
+results, allowing to map the pressure on territorial health services.
+
+Keywords: regional healthcare, time series, multidimensional scaling, cluster analysis, 
+          trimmed k-means

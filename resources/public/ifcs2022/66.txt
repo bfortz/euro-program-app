@@ -1,0 +1,49 @@
+Combining Latent Class Analysis and Multiple Correspondence Analysis
+
+Alice Barth
+
+Both Latent Class Analysis (LCA) and Multiple Correspondence Analysis (MCA)
+are analysis methods to find patterns in complex categorical data tables. LCA 
+aims at representing heterogeneity in the observed data by estimating internally 
+homogeneous groups (the latent classes). It can thus be understood as a 
+probability-based clustering approach. MCA is a scaling method that reduces the 
+dimensionality of a multi-way frequency table. As such, it is an extension of 
+simple correspondence analysis (CA) for two-way frequency tables. Both CA and MCA 
+are often used to visualize relations in a lower-dimensional space. Several 
+possibilities of combining LCA and correspondence analysis have been discussed. 
+Some authors use MCA as a diagnostic tool to select variables which are subsequently 
+used in an LCA. Others propose to visualize results from an LCA using CA [1].
+  In this presentation, a different approach is discussed: the projection of LCA 
+results as passive variables into a two-dimensional space created by MCA, using the 
+example of relations between attitudes towards migration and socio-demographic 
+characteristics in Germany (World Values Survey Round 7, 2017). First, latent structures 
+in attitudes towards migration are estimated based on eight items such as ”immigration
+in your country increases unemployment” with answer options ”agree”, ”disagree” and ”hard 
+to say”. Information criteria indicate a four-class-solution. Second, a ”social space” is 
+constructed via MCA. Here, socio-demographic characteristics such as gender, highest 
+educational qualification, occupational group and size of town of residence are used. 
+The association of latent class membership with certain sociodemographic characteristics 
+is assessed by projecting the categories of the latent class variable (modal posterior 
+probabilities) into the two-dimensional MCA solution. Further, possibilities of preserving 
+information on individuals’ probabilities of class membership in this approach are discussed.
+
+Keywords: categorical data, latent class analysis, correspondence analysis
+
+References
+1. McCutcheon, A.: Correspondence Analysis Used Complimentary to Latent Class Analysis in
+   Comparative Social Research. In: Blasius, J., Greeenacre, M. (eds.) Visualization of 
+   CategoricalData, pp. 477-488. Academic Press (1998)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

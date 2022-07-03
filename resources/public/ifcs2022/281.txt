@@ -1,0 +1,37 @@
+An Introduction to S-Concordance and S-Discordance
+
+Edwin Diday
+
+In the 17th century, Galileo Galilei gave a duty to humanity by saying that we have to
+measure everything that is measurable and “make measurable” everything which is
+not. Here, our aim is to “make measurable” the notions of “concordance” and “discordance” 
+usually used between behaviours, events, ideas, results, etc. For example, we can measure 
+the “concordance” between a country and the European countries for some given variables 
+related to corona. Also, the “concordance” of a solar star with a collection of solar stars 
+having a planet, the “concordance” of a stock and a portfolio of stocks in their behaviour 
+during a given period, a new species with a family of species, etc. The Kendall “concordance” 
+and “discordance” are used to compare ordinal variables, that is why “s-concordance” and 
+“s-discordance” are used here (“s” for “symbolic” as symbolic data are used). The “s-concordance” 
+or “s-discordance” definition between a class c and a collection P of given classes for
+a given value x (or vector of values), needs two basic densities. Roughly said, the
+first is f_c(x) which expresses the proportion of the x value of a descriptive variable
+(which can be multidimensional) inside the class c and the second is g_x(c) which
+expresses the proportion of classes of P which have a proportion of the x value
+equal or close to f_c(x). Then, the “s-concordance” (resp. s-discordance) denoted
+S_conc(c, P, x) (resp. S_disc(c, P, x)) satisfies natural axioms. From the given data,
+specific families of concordance can be induced by using the copulas obtained from
+the joint distribution function of the random variables which densities are f_c and g_x.
+S-concordance and s-discordance differ from similarities and dissimilarities by their
+meaning but also by their axiomatic definition. The s-discordance has as a specific
+case the Tf-Idf. S-concordance and s-discordance have numerous impacts in data
+science. These impacts are illustrated in the case of the k-means, dynamical clustering, 
+hierarchical or pyramidal clustering, mixture decomposition, Latent Dirichlet Allocation, 
+statistical inference and likelihood. A potential application in genomics is presented.
+
+Keywords: symbolic data analysis, s-concordance, s-discordance, copulas
+
+References
+1. Diday, E.: Explanatory tools for Machine Learning in the Symbolic Data Analysis framework.
+   In: Diday, E., Guan, R., Saporta, G., Wang, H. (eds.) Advances in Data Science. ISTE-Wiley
+   (2020)
+2. Nelsen, R.B. An Introduction to Copulas. Lecture Notes in Statistics. Springer (1998)

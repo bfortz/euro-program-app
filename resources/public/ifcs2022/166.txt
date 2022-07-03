@@ -1,0 +1,28 @@
+Simultaneous Factorial Reduction and Clustering for Three-Mode Data Sets: 
+a Comparison
+
+Prosper Ablordeppey, Adelaide Freitas, Maurizio Vichi, and Giorgia Zaccaria
+
+Two iterative techniques, called T3Clus and 3Fkmeans, aimed at a simultaneous
+clustering of objects and a factorial dimensionality reduction of variables and 
+occasions on three-mode data sets, as well as a combination of these two procedures
+were proposed in [1]. In each iteration, T3Clus (3Fkmeans) is based on a sequential
+application of the Tucker2 algorithm and the k-means algorithm (vice versa). We
+have implemented the three simultaneous methods in Python. In this work, applications 
+on real data sets are presented to show the features of these three simultaneous
+methods when compared with tandem analyses which can be executed in two different ways. 
+In a tandem analysis only one sequential application of clustering and factorial 
+methodologies is performed.
+
+Keywords: three-mode data, clustering, factorial dimensionality reduction
+
+Acknowledgements This work was partially supported by the Center for Research and Development 
+                 in Mathematics and Applications (CIDMA, University of Aveiro) through the 
+                 Portuguese Foundation for Science and Technology (FCT - Fundação para a Ciência 
+                  e a Tecnologia), reference UIDB/04106/2020.
+
+References
+1. Vichi, M., Rocci, R., Kiers, H.: Simultaneous Component and Clustering Models for Threeway 
+   Data: Within and Between Approaches. Journal of Classification 24, 71–98 (2007)
+
+

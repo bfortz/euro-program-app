@@ -1,0 +1,55 @@
+Students’ Assessment Through a IRT and Archetypal Analysis Joint Strategy
+
+Lucio Palazzo and Francesco Palumbo
+
+Item response theory [1, IRT] measures latent traits from one or more sets of manifest
+variables, namely items, by defining the relations between the observed variables
+(e.g., item responses to a test) and the latent variables. Three of the five higher 
+education items that refer to student’s abilities, as defined by the Dublin descriptors, 
+are considered in this proposal: knowledge, application, judgment. IRT models assume
+that students belong to homogeneous groups concerning these abilities. Mixture
+IRT models [2, mixIRT] assume that the observed population is composed of latent
+subpopulations with class-specific quantitative parameters, representing a practical
+approach to finding groups by aggregating the units with respect to group’s average
+abilities. However, assessors generally want to discover "extreme" groups of students:
+the most skilled, but especially those profiles that have peculiar deficits for one or
+more learning abilities, to define a recommendation system helping the student to fill
+the gaps. Archetypical analysis (AA) represents an effective data partitioning alternative 
+to the clustering approaches around the means. The archetypes are observed or unobserved 
+extreme points lying on the convex-hull, minimizing the sum of the squared distances from 
+all points. The algorithm computes a membership vector for each unit with respect to each 
+archetype. This proposal integrates the mixIRT model with the probabilistic archetypal 
+analysis [3, PAA], presenting a hybrid estimation algorithm which iteratively computes 
+the latent variables and the units’ memberships to a set of k archetypes, where k is 
+assumed to be known.
+
+Keywords: item response theory, clustering, learning analytics
+
+References
+1. Hambleton, R. K., Swaminathan, H.: Item response theory, principles and applications.
+   Springer Science & Business Media (1985)
+2. Mislevy, Robert J., Verhelst, N.: Modeling item responses when different subjects employ
+   different solution strategies. Psychometrika 55.2, 195-215 (1990)
+3. Seth, S., Eugster, M.J.A.: Probabilistic archetypal analysis. Mach Learn 102.1, 85-113 (2016)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

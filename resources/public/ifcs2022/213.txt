@@ -1,0 +1,48 @@
+Experimental Study of Similarity Measures for Clustering Uncertain Time Series
+
+Michael Dinzinger, Michael Franklin Mbouopda, and Engelbert Mephu Nguifo
+
+Uncertain time series (uTS) are time series whose values are not precisely known.
+Each value in such time seris can be given as a best estimate and an error deviation
+on that estimate. These kind of time series are preponderant in transient astrophysics
+where transient objects are characterized by the time series of their light curves
+which are uncertain because of many factors including moonlight, twilight and atmospheric 
+factors. An example of uTS dataset can be found at (https://www.kaggle.com/c/PLAsTiCC-2018). 
+Similarly to traditional time series, machine learning can be used to analyze uTS. This 
+analyzis is generally performed in the literature using uncertain similarity measures. 
+In particular, uTS clustering has been performed using FOTS, an uncertain similarity measure 
+based on eigenvalues decomposition [3]. Elsewhere, the uncertain euclidean distance (UED), 
+which is based on uncertainty propagation has been proposed and used to perform the classification 
+of uTS [2]. Given UED performance on supervised classication, the goal of this work is to assess 
+the effectiveness of this uncertain measure for uTS clustering.
+  A preliminary experiment has been conducted in that direction, the source code and results of the 
+experiment are publicly available online (https://github.com/dim35216/UED_Clustering.git). In the 
+experiment, FOTS, UED and euclidean distance are compared as measures for uTS clustering using the
+datasets from [2]. The obtained results revealed that UED is a promising uncertain measure for uTS 
+clustering. As future direction, an extended experiment with other uncertain similarity measures such 
+as DUST and PROUD [1] will be conducted.
+
+Keywords: time series, clustering, uncertainty, similarity
+
+Acknowledgements This work has been partially supported by the LabEx IMobS3.
+
+References
+1. Dallachiesa, M., Nushi, B., Mirylenka, K., and Palpanas, T.: Uncertain timeseries Similarity:
+   Return to the Basics. In: VLDB Endowment, 2012, vol. 11, p. 1662–1673.
+2. Mbouopda, M. F. and Mephu Nguifo, E.: Uncertain time series classification with shapelet
+   transform. In: International Conference on Data Mining Workshops. IEEE, 2020. p. 259-266.
+3. Siyou Fotso, V. S., Mephu Nguifo, E., and Vaslin, P.: Frobenius correlation based u-shapelets
+   discovery for time series clustering. Pattern Recognition, 2020, vol. 103, p. 107301.
+
+
+
+
+
+
+
+
+
+
+
+
+

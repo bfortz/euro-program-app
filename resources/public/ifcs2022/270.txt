@@ -1,0 +1,53 @@
+Detecting Anomalies with TADGAN: a Case Study
+
+Inês Oliveira e Silva, Carlos Soares, Arlete Rodrigues, and Pedro Bastardo
+
+Generative Adversarial Networks (GAN) is neural network architecture to generate
+realistic artificial [2]. The generated data is typically used to learn more accurate
+models. The approach underlying GAN has been adapted for other tasks. One example are 
+TADGAN, which is an adaptation of GAN to detect anomalies in time series data [1]. A 
+time series anomaly is defined as a timepoint or period where a phenomenon displays 
+an unusual behavior. The TADGAN algorithm can be summarized has: 1. generate a time 
+series that is similar to the original one; 2. periods where the distance between the 
+original and the generated time series is very large are classified as anomalies. 
+The classification is affected by a sensitivity hyperparameter, which is a threshold 
+that defines the minimal distance between the time series for the period to be considered 
+anomalous. In this paper, we empirically evaluate TADGAN on the problem of detecting anomalies 
+in data from sensors of a fire detection system. Preliminary results indicate that the performance 
+of the method depends on the values of the sensitivity hyperparameter.
+
+Keywords: anomaly detection, artificial data, GAN
+
+References
+1. Alexander Geiger, Dongyu Liu, Sarah Alnegheimish, Alfredo Cuesta-Infante, and Kalyan 
+   Veeramachaneni. Tadgan: Time series anomaly detection using generative adversarial 
+   networks. 2020 IEEE International Conference on Big Data (Big Data), pages 33–43, 2020.
+2. Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil
+   Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial networks. Commun. ACM,
+   63(11):139–144, oct 2020.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

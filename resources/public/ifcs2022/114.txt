@@ -1,0 +1,50 @@
+Outliers Detection in Functional Data
+
+Amovin-Assagba Martial, Gannaz Irene, and Jacques Julien `
+
+The modern technologies ease the collection of massive data at high frequency. 
+From a statistical point of view, these data can be considered as functional data: 
+discrete observations of random functions. One of the key problems in functional data
+analysis, is the detection of outliers. For this purpose, we propose a robust method 
+based on contaminated Gaussian mixture models [1]. This model allows both to group 
+and to detect outliers in multivariate functional data. A mixture of multivariate 
+contaminated Gaussian distributions [2] is a Gaussian mixture where each cluster has 
+two components: one, with a large prior probability, represents normal observations, 
+and the other, with a small prior probability, represents outliers. Dimension reduction 
+methods based on [3], are used to introduce parsimony into the model. An ECM (Expectation-
+Conditional Maximization) algorithm is proposed for model inference and the choice of hyper-
+parameters is addressed through model selection. The model performs efficiently on simulated 
+data. It also helps to correctly detect outliers in the industrial data sets which motivated 
+this work.
+
+Keywords: outlier detection, contaminated gaussian mixture model, functional data,
+          model-based clustering, em algorithm
+
+References
+1. Amovin-Assagba, M., Gannaz, I., & Jacques, J.: Outlier detection in multivariate functional
+   data through a contaminated mixture model. arXiv preprint arXiv:2106.07222 (2021)
+2. Punzo, A., & McNicholas, P.D. : Parsimonious mixtures of multivariate contaminated normal
+   distributions. Biom. J., 58, 1506-1537 (2016)
+3. Schmutz, A., Jacques, J., Bouveyron, C., Cheze, L., & Martin, P. : Clustering multivariate
+   functional data in group-specific functional subspaces. Comput. Stat., 35, 1101-1131 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

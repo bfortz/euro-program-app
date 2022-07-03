@@ -1,0 +1,2 @@
+{:defaults {:nologin false}
+ "ifcs2022" {:nologin true}}

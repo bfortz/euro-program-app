@@ -1,0 +1,22 @@
+Similarity Forest for Time Series Classification
+
+Tomasz Gorecki, Maciej Luczak, and Pawe l Piasecki
+
+The idea of similarity forest comes from Sathe and Aggarwal [1] and is derived
+from random forest. Random forests proved to be one of the most excellent methods,
+showing top performance across a vast array of domains, preserving simplicity, time
+efficiency, still being interpretable at the same time. However, its usage is limited 
+to multidimensional data. Similarity forest does not require such representation — it 
+is only needed to compute similarities between observations. Thus, it may be applied
+to data, for which multidimensional representation is not available. In this paper,
+we propose the implementation of similarity forest for time series classification. We
+compare the performance of similarity forest with 1NN classifier and random forest
+on the UCR benchmark database. We show that similarity forest with DTW, taking
+into account mean ranks, outperforms other classifiers. The comparison is enriched
+with statistical analysis.
+
+Keywords: time series, time series classification, random forest, similarity forest
+
+References
+1. Sathe, S., Aggarwal, C.C.: Similarity Forests. Proc. of the 23rd ACM SIGKDD, 
+   395–403 (2017)

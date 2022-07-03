@@ -1,0 +1,48 @@
+Perturb and conquer. How classification can benefit from data perturbation
+
+Angela Montanari
+
+Data perturbation has a longstanding tradition in statistics. The bootstrap method
+and random forests are evergreen examples in this stream. The focus, in this talk,
+will be on the use of data perturbation for classification purposes. In particular, we
+will focus on perturbations obtained by random projections [1] and we will address
+issues ranging from variable selection [2] to imbalanced classes [3], from data shift
+to semi-supervised learning.
+
+The content of the talk is a joint work with Laura Anderlucci, Department of
+Statistical Sciences University of Bologna.
+
+Keywords: random projections, data shift, imbalanced classes
+
+References
+1. Cannings, T.I., Samworth, R.J.: Random-projection ensemble classification. J. R. Stat. Soc.
+   B 79, 959–1035 (2017)
+2. Fortunato, F., Anderlucci, L., Montanari, A.: One-class classification with application to
+   forensic analysis. J. R. Stat. Soc. C 69, 1227–1249 (2020)
+3. Falcone, R., Anderlucci, L., Montanari, A.: Matrix sketching for supervised classification 
+   with imbalanced classes. Data Mining and Knowledge Discovery 36, 174–208 (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

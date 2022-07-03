@@ -1,0 +1,24 @@
+Oracle-LSTM: a Neural Network Approach to Mixed Frequency Time Series Prediction
+
+Alessandro Bitetto and Paola Cerchiello
+
+In the context of macro-economic indicators there are two main concerns regarding
+the frequency of the variables. The first is related to MIxed DAta Sampling (MIDAS),
+i.e. some indicators are reported annually, some quarterly, other monthly. The second
+deals with the need of forecasting predictions between reporting dates, e.g. before
+the end of the year, and it is known as ”nowcasting”. Existing methods rely on
+the alignment of high-frequency input data to low-frequency target variable by the
+means of lagged variables and their temporal-decaying weighting. We develop a twosteps 
+algorithm that makes use of two Recurrent Neural Networks. The first, called Oracle, 
+is a Deep Autoregressive network and predicts the target variable at highfrequency 
+given past information. The second, called Predictor, is Long-Short Term Memory (LSTM) 
+network and learns the relationship between Oracle’s predictions and high-frequency 
+input  data. The prediction error is a weighted average of two terms: one compares the 
+observed low-frequency target with predictions of both Oracle and Predictor, the other 
+compares the Predictor’s high-frequency predictions with the Oracle’s ones. Our model 
+is tested on both simulated data, where we know the generated high-frequency data, and 
+real macro-economic data. Our results show better performances compared to classical 
+approach. Moreover, we apply gradientbased interpretability methods to estimate the 
+input features’ importance in the predictions.
+
+Keywords: mixed frequency data, artificial neural networks, lstm, nowcast

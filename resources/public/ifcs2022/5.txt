@@ -1,0 +1,17 @@
+Robustness Aspects of Optimized Centroids
+
+Jan Kalina and Patrik Janácek ˇ
+
+Centroids are often used for object localization tasks, supervised segmentation in
+medical image analysis, or classification in other specific tasks. This paper starts
+by contributing to the theory of centroids by evaluating the effect of modified
+illumination on the weighted correlation coefficient. Further, robustness of various 
+centroid-based tools is investigated in experiments related to mouth localization 
+in non-standardized facial images or classification of high-dimensional data in
+a matched pairs design. The most robust results are obtained if the sparse centroid
+based method for supervised learning is accompanied with an intrinsic variable
+selection. Robustness, sparsity, and energy-efficient computation turn out not to
+contradict the requirement on the optimal performance of the centroids.
+
+Keywords: centroids, weighted correlation, robustness, contamination, 
+          centroid optimization

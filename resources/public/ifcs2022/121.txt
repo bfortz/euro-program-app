@@ -1,0 +1,55 @@
+Urban Development Paths in Poland: Multidimensional Perspective
+
+Barbara Batóg and Jacek Batóg
+
+The development of countries and regions is strongly dependent on the socioeconomic 
+situation characterising the largest urban centres [3]. This is caused not only by a 
+higher intensity of processes taking place in urban space, but also by the predominance 
+of the population living in cities in comparison to rural areas. The increasing role of 
+urban systems in the creation of domestic product and the accumulation of services and 
+innovations on their area results in a growing interest in studying the phenomenon of 
+urbanisation and concentration of social and economic activities realised in urban 
+space [1]. The main objective of the study will be the construction of development paths 
+of the largest Polish cities, which are the capitals of a given region, in 2004-2020. 
+To achieve it, the authors will use their own methodological proposal from the area of 
+multidimensional analysis. An additional aspect of the study will be a comparison of the 
+similarity of the changes and levels of development of particular cities with the use of 
+selected measures of time series similarity and cluster analysis [2]. The analyses are to 
+answer the following research questions: (i) what was the socio-economic development of 
+Polish voivodship cities characterised by in the last years, (ii) has this development 
+proceeded in a similar way for all analysed cities, and (iii) what has been the impact of 
+the last two crises on the dynamics and heterogeneity of development of the analysed cities?
+
+Keywords: cities, development, economic crisis, multivariate analysis, temporal analysis
+
+References
+1. Bogdanski M.: Socio-economic potential of Polish cities – a regional dimension, Bull. Geogr.
+   Socio. Econ. Ser. 17, 13-20 (2012)
+2. Fanni Z., Khakpour B.A., and Heydari A.: Evaluating the regional development of border
+   cities by TOPSIS model (case study: Sistan and Baluchistan Province, Iran). Sustain. Cities
+   Soc. 10, 80-86 (2014)
+3. Zoeteman K., Mommaas H., and Dagevos J.: Are larger cities more sustainable? Lessons from
+   integrated sustainability monitoring in 403 Dutch municipalities. Environ. Dev. 17, 57-72
+   (2016)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

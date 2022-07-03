@@ -1,0 +1,42 @@
+Multinomial Multilevel Models with Discrete Random Effects: a Multivariate Clustering Tool
+
+Chiara Masci, Francesca Ieva, and Anna Maria Paganoni
+
+We propose a Semi-Parametric Mixed-Effects Multinomial regression model to deal
+with estimation and inference issues in the case of categorical data with a 
+hierarchical structure [1]. Considering a K−categories response, the proposed modelling
+assumes the probability of each response category to be identified by a set of fixed
+and random effects parameters, one for each logit, estimated by means of an EM
+algorithm [2]. Random effects are assumed to follow a discrete distribution with an
+a priori unknown number of support points, that identifies a latent structure at the
+highest level of grouping, where observations are clustered into (K−1)−dimensional
+subpopulations. This method is an extension of the MSPEM algorithm proposed in
+[4], in which we relax the independence assumption across random-effects relative
+to different response categories. Since the category-specific random effects arise
+from the same subjects, their independence assumption is seldom verified in real
+data and, by relaxing it, the proposed method properly fits the natural data structure,
+as emerges by the results of simulation and case studies. In the case study, we apply
+the algorithm to Politecnico di Milano data, to model different categories of student
+careers, where students are enrolled in 20 engineering degree courses. Results are
+compared to the ones of the parametric MCMCglmm appraoch [3].
+
+Keywords: mixed-effects models, categorical responses, discrete random effects,
+          higher education.
+
+References
+1. Agresti, A.: An introduction to categorical data analysis. Wiley (2018)
+2. Dempster, A.P., Laird, N.M., & Rubin, D.B.: Maximum likelihood from incomplete data
+   via the EM algorithm. Journal of the Royal Statistical Society: Series B, 39(1), 1-22 (1977).
+3. Hadfield, J.D.: MCMC methods for multi-response generalized linear mixed models: the
+   MCMCglmm R package. Journal of statistical Software, 33, 1-22 (2010).
+4. Masci, C., Ieva, F., & A.M. Paganoni: Semiparametric Multinomial Mixed-Effects Models: A
+   University Students Profiling Tool. Annals of Applied Statistics, in press (2022)
+
+
+
+
+
+
+
+
+

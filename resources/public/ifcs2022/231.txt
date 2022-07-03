@@ -1,0 +1,49 @@
+Model Extraction Based on Counterfactual Explanations
+
+Cecilia Salvatore and Veronica Piccialli
+
+Automated decision-making classification systems based on Machine Learning algorithms 
+are often used in many real-life scenarios such as healthcare, credit, or criminal
+justice. There is thus increasing interest in making Machine Learning systems trustworthy: 
+interpretability, robustness, and fairness are often essential requirements for
+the deployment of these systems [1]. In particular, according to the European Union’s
+General Data Protection Regulation (GDPR), automated decision-making systems
+should guarantee the ”right to explanations” [2], meaning that those affected by the
+decision may require an explanation. Counterfactual Explanations are becoming a
+de-facto standard for a post-hoc explanation [3]. Given an instance of a classification
+problem, belonging to a class, its counterfactual explanation corresponds to small
+perturbations of that instance that allow changing the classification outcome. The
+objective of this work is to try and exploit the information revealed by a small set
+of examples with their counterfactual explanations to build a surrogate model of the
+classification system. The idea is to define an optimization problem that provides in
+output a Forest of Optimal Trees as close as possible to the original classification
+model, given the information derived from the counterfactual points. This tool can
+be used, on one hand, to attack a target model; on the other hand, it is also possible
+to improve the target system by building a more interpretable and sparse model.
+Preliminary results show the viability of this approach.
+
+Keywords: optimal classification trees, milp, interpretable machine learning
+
+References
+1. Rudin, C.: Stop explaining black box machine learning models for high stakes decisions and
+   use interpretable models instead. Nat. Mach. Intell. 1, 206–215 (2019)
+2. Goodman, B., Flaxman, S.: European Union regulations on algorithmic decision-making and
+   a “right to explanation”. AI Mag. 38, 50–57 (2017)
+3. Verma, S., Dickerson, J., Hines, K.: Counterfactual explanations for machine learning: A
+   review. arXiv preprint arXiv:2010.10596 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

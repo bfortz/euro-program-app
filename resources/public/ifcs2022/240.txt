@@ -1,0 +1,52 @@
+Biplots for Categorical and Ordinal Data Based on Logistic Responses
+
+Jose Luis Vicente-Villardon
+
+A joint representation of individuals and variables in a data matrix is called a Biplot.
+Biplots were proposed 50 years ago in [1].
+  When variables are binary, nominal or ordinal, a classical linear biplot representation 
+is not adequate. More recently, biplots for categorical data, based logistic response models, 
+have been proposed for binary [2], or nominal data [3]. The coordinates of individuals and 
+variables are computed to have logistic responses along the biplot dimensions. The methods are 
+related to logistic regression in the same way as Classical Biplots are related to linear 
+regression, thus are referred as Logistic Biplots. In the same way as Linear Biplots are related 
+to Principal Components Analysis, Logistic Biplots are related to Latent Trait Analysis or Item 
+Response Theory. The geometry of those kinds of biplots for binary, nominal or ordinal data is 
+studied.
+  For binary data we obtain straight lines as representations of the variables.
+  For nominal data the representation of the variables on the biplot is not a straight
+line but a “prediction region” and for ordinal data a straight line is obtained if the
+“proportional odds” model is used.
+  Algorithms for the construction on the biplots based on gradient descent methods
+are also provided.
+  The applicability and interpretation of the logistic biplots is illustrated with several
+real data applications.
+
+Keywords: biplot, categorical data, logistic biplot
+
+References
+1. Gabriel, K. R. : The biplot graphic display of matrices with application to principal component
+   analysis. Biometrika, 58 (3), 453-467. (1971).
+2. Vicente-Villardon, J.L., Galindo, M.P., Blazquez-Zaballos, A.: Logistic biplots. In: Greenacre,
+   M., Blasius, J. (eds.) Multiple Correspondence Analysis and related methods, pp. 503-521.
+   Chapman and Hall, New York (2006)
+3. Hernandez-Sanchez, J. C., Vicente-Villardon, J. L. (2017). Logistic biplot for nominal data.
+   Advances in Data Analysis and Classification, 11 (2) 307-326.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

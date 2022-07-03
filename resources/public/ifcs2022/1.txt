@@ -1,0 +1,21 @@
+Unsupervised Classification of Categorical Time Series Through Innovative Distances
+
+Angel López-Oriona, José A. Vilar, and Pierpaolo D’Urso ´
+
+In this paper, two novel distances for nominal time series are introduced. Both
+of them are based on features describing the serial dependence patterns between
+each pair of categories. The first dissimilarity employs the so-called association
+measures, whereas the second computes correlation quantities between indicator
+processes whose uniqueness is guaranteed from standard stationary conditions. The
+metrics are used to construct crisp algorithms for clustering categorical series. The
+approaches are able to group series generated from similar underlying stochastic
+processes, achieve accurate results with series coming from a broad range of models 
+and are computationally efficient. An extensive simulation study shows that the
+devised clustering algorithms outperform several alternative procedures proposed in
+the literature. Specifically, they achieve better results than approaches based on 
+maximum likelihhod estimation, which take advantage of knowing the real underlying
+procedures. Both innovative dissimilarities could be useful for practitioners in the
+field of time series clustering.
+
+Keywords: categorical time series, clustering, association measures, 
+          indicator processes

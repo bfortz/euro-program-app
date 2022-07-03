@@ -1,0 +1,45 @@
+A Geometric Perspective on Functional Outlier Detection
+
+Moritz Herrmann and Fabian Scheipl
+
+Outlier detection in functional data faces specific challenges due to the information
+rich and complex nature of functional observations. We [1] consider the problem
+from a geometric perspective and present a general conceptualization based on the
+assumption that functional datasets are drawn from a manifold defined by the data’s
+modes of variation in shape, translation, and phase. Theoretical and experimental
+analyses demonstrate this conceptualization has important advantages. It considerably 
+improves theoretical understanding and allows to describe and analyze complex
+functional outlier scenarios consistently and in full generality, by differentiating 
+between structurally anomalous outlier data that are off-manifold and distributionally
+outlying data that are on-manifold, but at its margins. From a practical perspective, 
+we show that well-established manifold learning methods can be used to learn low-dimensional 
+vector-valued representations of functional observations to reliably infer and visualize the 
+geometric structure of functional datasets. Our experiments on synthetic and real data 
+demonstrate that using these representations in combination with the simple outlier scoring 
+method  Local Outlier Factors (LOF) yields performances at least on par with existing 
+functional-data-specific methods in a large variety of settings, without the highly specialized, 
+complex methodology and narrow domain of application these methods often entail.
+
+Keywords: functional data analysis, outlier detection, manifold learning, 
+          dimension reduction
+
+References
+1. Herrmann, M., Scheipl F.: A geometric perspective on functional outlier detection. Stats 4,
+   971-1011 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

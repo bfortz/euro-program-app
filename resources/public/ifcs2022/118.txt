@@ -1,0 +1,52 @@
+The Clustering Performance of a Weighted Combined Distance Between Time Series
+
+Margarida G. M. S. Cardoso, Ana Alexandra Martins, and João Lagarto
+
+Recently, [1], we proposed a new dissimilarity measure between time series - COMB,
+a uniform convex combination of four (normalized) distance measures: Euclidean;
+Pearson correlation based; Periodogram based; and a distance between estimated 
+autocorrelation structures. In this work, we propose a method to determine the 
+weights of the convex combination of distances in COMB: it relies on the concordance
+of clusterings obtained by each individual distance measure and COMB derived
+clustering. A weighted COMB measure is thus obtained, WCOMB. We then test
+the clustering performance of WCOMB vs. COMB by conducting an experimental
+analysis on all the time series datasets of the UCR archive. We evaluate the 
+concordance between the clusters obtained using K-Medoids and the original classes 
+(using adjusted Rand index) as well as the cohesion-separation of the clusters (using 
+the Silhouette index). In addition, we consider a clustering application - with data 
+from the Portuguese Transmission System Operator, on time series of electricity 
+consumption  (2014 to 2019) - to compare the performance of both methods. Significant
+differences between the average Silhouette values of clusters obtained were found.
+The concordance with the original classes’ structure exhibits similar performance in
+both approaches. We conclude that, for unsupervised leaning, it can be worthwhile
+to invest on deriving specific weights for the distances integrating COMB.
+
+Keywords: clustering, distance measures, time series
+
+References
+1. Cardoso, M.G.M.S., Martins, A.A.: The performance of a combined distance between time
+   series. In: Bispo, R., Henriques-Rodrigues, L., Alpizar-Jara, R. and de Carvalho, M. 
+   (eds.) Recent Developments in Statistics and Data Science - Proceedings of the XXV 
+   Congress of the Portuguese Statistical Society. Springer. (to be published)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

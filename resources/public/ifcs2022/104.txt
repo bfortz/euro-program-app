@@ -1,0 +1,51 @@
+Logistic Regression with Sparse Common and Distinctive Covariates
+
+Soogeun Park, Eva Ceulemans, and Katrijn Van Deun
+
+Having large sets of predictor variables from multiple sources concerning the same
+individuals is becoming increasingly common in research. On top of the variable
+selection problem, predicting the category in which the observations belong to
+using such data gives rise to an additional challenge of identifying the processes
+at play underneath the predictors. These processes are of particular interest in the
+setting of multi-source data because they can either be associated individually with
+a single data source or jointly with multiple sources. Although many methods have
+addressed the classification problem in high dimensionality, the additional challenge
+of distinguishing such underlying predictor processes from multi-source data has not
+received sufficient attention. To this end, we propose the method of Sparse Common
+and Distinctive Covariates Logistic Regression (SCD-Cov-logR). The method is a
+multi-source extension of principal covariates regression (PCovR) [1] that combines
+with generalized linear modeling framework to allow classification of a categorical
+outcome. PCovR is a dimension reduction method that extracts components that
+explain the xvariance in both predictor and outcome variables. In a simulation study,
+SCD-Cov-logR resulted in outperformance compared to related methods commonly
+used in behavioural sciences. We also demonstrate the practical usage of the method
+under an empirical dataset.
+
+Keywords: dimension reduction, logistic regression, multiblock data, 
+          principal covariates regression
+
+References
+1. De Jong, S., Kiers, H.A.: Principal covariates regression: part i. theory. Chemom. 
+   Intell. Lab. Syst. 14(1-3): 155–164 (1992)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

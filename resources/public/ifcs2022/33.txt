@@ -1,0 +1,42 @@
+Political and Religion Attitudes in Greece: Behavioral Discourses
+
+Panagiotidou Georgia and Chadjipadelis Theodore
+
+The research presented in this paper attempts to explore the relationship between
+religious and political attitudes. More specifically we investigate how religious 
+behavior, in terms of belief intensity and practice frequency, is related to specific
+patterns of political behavior such as ideology, understanding democracy and his set
+of moral values. The analysis is based on the use of multivariable methods and more
+specifically Hierarchical Cluster Analysis and Multiple Correspondence Analysis
+in two steps. The findings are based on a survey implemented in 2019 on a sample of
+506 respondents in the wider area of Thessaloniki, Greece. The aim of the research is
+to highlight the role of people’s religious practice intensity in shaping their political
+views by displaying the profiles resulting from the analysis and linking individual
+religious and political characteristics as measured with various variables. The final
+output of the analysis is a map where all variable categories are visualized, bringing
+forward models of political behavior as associated together with other factors such
+as religion, moral values and democratic attitudes.
+
+Keywords: political behavior, religion, democracy, multivariate methods, data analysis
+
+References
+1. Greenacre, M.: Correspondence Analysis in Practice. Chapman and Hall/CRC Press, Boca
+   Raton (2007)
+2. Marangudakis, M. Chadjipadelis, T.: The Greek Crisis and its Cultural Origins. Palgrave
+   Macmillan, New York (2019)
+3. Mayer, N.: Les modeles explicatifs du vote. L’Harmatan, Paris (1997)
+4. Michelat, G., Simon, M.: Classe, Religion et Comportement Politique. PFNSP-Editions 
+   Sociales, Paris (1977)
+5. Panagiotidou, G., Chadjipadelis, T.: First-time Voters in Greece: Views and Attitudes of 
+   Youth on Europe and Democracy. In Theodore Chadjipadelis, Berthold Lausen, Angelos Markos,
+   Tae Rim Lee, Angela Montanari and Rebecca Nugent (Eds), Studies in Classification, Data
+   Analysis and Knowledge Organization, 415-429, Springer (2020)
+6. Papadimitriou, G., Florou, G.: Contribution of the Euclidean and chi-square metrics to 
+   determining the most ideal clustering in ascending hierarchy (in Greek). In Annals in Honor 
+   of Professor I. Liakis, 546-581. University of Macedonia, Thessaloniki (1996)
+7. Rose, R.: Electoral Behavior: a comparative Handbook. Free Press, New York (1974)
+
+
+
+
+

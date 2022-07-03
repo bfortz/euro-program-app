@@ -1,0 +1,31 @@
+Clusters Based on Prediction Accuracy of Global Forecasting Models
+
+Pablo Montero-Manso, Ángel López-Oriona, and José A. Vilar
+
+In the context of model-based time series clustering, the quality of a given clustering
+relies on the predictive accuracy of the models that generated the cluster. Traditionally,
+a model is fitted to each time series and then a dissimilarity matrix is generated
+from distances between models. This approach has a few limitations. Time series
+are notoriously difficult to fit, exhibiting problems such temporal dependency, low
+sample size and nonstationarity. Moreover, when clustering a large number time
+series, we often have to rely on automatic fitting procedures without human supervision.
+These problems lead to models with poor predictive accuracy. However, a
+new paradigm has emerged in time series prediction, the so-called cross-learning or
+global model approach. A group of time series is pooled together and fitted with a
+single model, called a ‘global’ model, and a single predictive function is then used
+for all of the time series in the group. Global models are showing superior accuracy
+compared with traditional single-series (or ‘local’) models in a vast number of
+applications. Global models can be used for clustering, by finding a grouping that
+maximizes the predictive accuracy of the global models fitted to each group. This
+approach has an important side-effect, it introduces the conceptof predictive accuracy
+as a measure of a cluster quality: given a model class and a dataset,the quality
+of a given clustering is the average predictive error of the global. This measure also
+serves to select the often unknown parameter of the number of clusters.
+In this talk, we will introduce the idea of using global models for clustering time
+series, showcasing several algorithms and results on simulation and real datasets.
+The time series models include the classical linear autoregressive family, but also
+neural networks and decision trees. Finally, we will draw connections between global
+models and classic algorithms such as k-means and discuss implicit limitations of
+the approach.
+
+Keywords: clustering, time series, global models, data pooling, autoregression

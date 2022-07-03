@@ -1,0 +1,41 @@
+Hierarchies and Weak-Hierarchies as Interval Convexities
+
+P. Bertrand and J. Diatta
+
+There are several ways to characterize a hierarchy, one being a collection of nonempty
+subsets that are convex according to a type of interval function. This characterization
+in terms of interval convexity, extends to general classes of multilevel clusterings,
+thus providing a unifying theoretical framework [1, 2]. We expand this line of research, 
+with a special attention to specifications allowing the capture of clusterings
+usually constructed in data mining practice, such as the Apresjan and the single-link
+hierarchies. We propose: (a) New characterizations of hierarchies and weak hierarchies 
+as interval convexities, (b) Interval functions which induce known clustering schemes 
+such as the Single Link hierarchy or the Apresjan hierarchy, (c) A sequence of nested 
+families of interval convexities that is gradually increasing from the Apresjan hierarchy 
+to the Single-Link hierarchy, which enables the detection of redundant clusters.
+
+Keywords: weak hierarchy, interval convexity, single link hierarchy
+
+References
+1. Bertrand, P., Diatta, J.: Multilevel clustering models and interval convexities. Discrete Appl.
+   Math. 222, 54–66 (2017)
+2. Changat, M., Narasimha-Shenoi, P.-G., Stadler, P.-F.: Axiomatic characterization of transit
+   functions of weak hierarchies. Art Discrete Appl. Math. 2 #P1.01 (2019)
+3. Yu, Z., Liu, W., Liu, W., Yang, Y., Li, M., Kumar, B. V. K. V.: On order-constrained transitive
+   distance clustering. In: Proceedings of the AAAI Conference on Artificial Intelligence 30 (1)
+   (2016)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

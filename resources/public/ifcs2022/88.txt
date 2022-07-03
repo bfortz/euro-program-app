@@ -1,0 +1,51 @@
+Pooled Mean and Confidence Interval Estimation Combining Different 
+Sets of Summary Statistics
+
+Flora Ferreira, José Soares, Fernanda Sousa, Filipe Magalhães, Isabel Ribeiro, 
+and Pedro Pacheco
+
+Meta-analysis is increasingly used to combine the results of several studies in order
+to estimate the outcome of interest. When considering a continuous outcome, commonly 
+to estimate pooled mean and confidence interval sample means and standard
+deviations of primary studies are necessary, which are absent sometimes. Instead,
+the median along with various measures of spread are reported. Recently, the task of
+including the studies with the sample size, the median, the range, and/or the quartiles
+range, in the pooled mean meta-analysis has been achieved by estimating the sample
+mean and standard deviation of each study [1]. The methods proposed in [1] and in
+other previous studies (e.g. [2]) to estimate the missing sample mean and standard
+deviation have been widely used to meta-analyze the means mostly in medical research. 
+Each of these methods assumes that the sets of summary statistics reported
+in the studies include the median, the sample size, and as measures of spread the
+minimum and maximum values and/or the first and third quartiles, not covering all
+possibilities. Some studies report 10th and 90th percentiles (interdecile range) as
+an additional or unique measure of spread. In this study, we present an approach
+to estimate the pooled mean and its confidence interval using the estimated means
+and standard deviations of studies with different sets of summary statistics as an
+extension of previous works. Simulation studies were used to evaluate the performance 
+of the existing and proposed approaches. Finally, real data in current market
+research which is of great value to support companies’ decision-making including
+salary estimate and product price estimate were empirically evaluated.
+
+Keywords: confidence interval, meta-analysis, pool data
+
+References
+1. McGrath, S., et al.: Estimating the sample mean and standard deviation from commonly
+   reported quantiles in meta-analysis. Stat. Methods Med. Res. 29 (9), 2520–2537 (2020)
+2. Luo, D., et al.: : Optimally estimating the sample mean from the sample size, median, 
+   mid-range, and/or mid-quartile range. Stat. Methods Med. Res. 27(6), 1785–1805 (2018)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

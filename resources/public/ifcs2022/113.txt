@@ -1,0 +1,43 @@
+Detecting Fabricated Interviews Using the Hamming Distance
+
+Joerg Blasius
+
+In the research literature on survey methodology, there is considerable discussion
+of interviewer effects and how to prevent data fabrication; however, there is little
+discussion on the detection of data fabrication by interviewers in published data,
+and there are even fewer papers examining the phenomenon of employees of survey
+research organizations fabricating data. Among them, Blasius and Thiessen ([1])
+show for the PISA 2009 principal data that employees of survey research organizations 
+in some countries duplicate cases to generate data. While the authors focus on
+exact copies, more sophisticated data fabrication techniques might include duplicating 
+whole cases and changing a few entries afterwards. By calculating Hamming distances and 
+applying them to the same data, we show that - in some countries in particular - large 
+parts of the data have been duplicated, and most of them have been retrospectively modified 
+to a small degree.
+
+Keywords: fabricated data, string distances, pisa data
+
+References
+1. Blasius, J., Thiessen, V.: Should we trust survey data? Assessing response simplification 
+   and data fabrication. Soc.Sci.Res. 52, 479–493 (2015)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

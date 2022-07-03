@@ -1,0 +1,34 @@
+Envelope-Based Support Vector Machine Classifier
+
+Alya Alzahrani and Andreas Artemiou
+
+The envelope method is a relatively new and efficient dimension reduction technique
+that was introduced in the regression framework by Cook 2010 [1]. In this work,
+we extended this method to classification and developed a new projection-based 
+approach based on a Support Vector Machine (SVM) classifier. Our proposed classifier
+is obtained by combining the envelope method and SVM to achieve a better and more
+efficient classification. Using the idea of the envelope to extract a lower-dimensional
+subspace projected the data on has advanced the classification performance.
+
+Keywords: classification, dimension reduction, support vector machine, 
+          envelope methods.
+
+References
+1. Cook, R. Dennis, Bing Li, and Francesca Chiaromonte. Envelope models for parsimonious
+   and efficient multivariate linear regression. Statistica Sinica. 927-960 (2010)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

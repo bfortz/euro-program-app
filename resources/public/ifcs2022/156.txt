@@ -1,0 +1,29 @@
+Attitudes Toward Statistics in the 3rd Cycle of Basic Education in Portugal
+
+Adelaide Freitas, Ana Julieta Morais, Pedro Sá Couto, and Anabela Rocha
+
+Statistics learning during the first school years is essential to provide all the citizens
+with Statistical Literacy that allows them to correctly read statistical information.
+While attitudes towards Statistics is a topic widely investigated at university level,
+it is scarce for students in the 3rd cycle of basic education (12-15 years-old). The
+well known questionnaire SATS-36© (Survey of Attitudes Toward Statistics, version
+Pos) [1] was culturally adapted to Portuguese (European) language and for students
+of that school cycle. Based on a sample of 215 students from schools in the central
+region of Portugal, a model with four factors (Affect, Interest, Value, and Effort) is
+proposed for the adapted scale. Randomly partitioning the data into a training sample
+and a test sample, the following analyses were performed to define the model: (i)
+Exploratory Factorial Analysis on training samples, showing invariance property of
+the 4-dimensional model; and (ii) Confirmatory Factorial Analysis on test samples,
+showing adequacy of the 4-factorial structure. The structure of the proposed model
+is compared with (a few) other models proposed in other countries.
+
+Keywords: sats-36©, exploratory factorial analysis, confirmatory factorial analysis
+
+Acknowledgements: Work partially supported by the Center for Research and Development 
+in Mathematics and Applications (CIDMA, University of Aveiro) through
+FCT (Fundação para a Ciência e a Tecnologia), reference UIDB/04106/2020.
+
+References
+1. Schau, C.: Students’ attitudes: The “other” important outcome in statistics education. 
+   Ann. Mat. Pura. Appl. Proceedings of Joint Statistical Meetings. San Francisco, 3673–3681 
+   (2003)

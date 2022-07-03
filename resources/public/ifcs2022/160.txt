@@ -1,0 +1,30 @@
+Divide and Conquer: a Clustering Method for Hierarchical and Nested Data Structures
+
+Andrej Svetlošák, Miguel de Carvalho, Gabriel Martos Venturini, and Raffaella Calabrese
+
+Joint clustering on data with nested or hierarchical structures can be challenging.
+Results obtained by similarity-based methods (i.e. via K-means and K-medoids)
+often do not reflect the structure of the data, while model-based clustering (i.e. via
+mixture models), as we show, likely to leads to the same number of components
+on each margin, i.e. same number of groups on each level of the hierarchy. We
+address these drawbacks of joint models by proposing a novel approach for cluster 
+analysis—to which we refer to as divide and conquer clustering—that lies on
+the interface between model-based clustering and similarity-based clustering. The
+approach consists of three steps and provides interpretable cluster solutions while
+allowing differing number of components on the margins. We achieve this by first
+estimating the margins of each hierarchy level by recently introduced non-local prior
+mixtures, which have the advantage of treating the number of components as a model
+parameter. Secondly, we learn about a set of joint clusters (proto clusters) that are
+obtained via a Voronoi tessellation on the product space of the marginal component means. 
+Finally, the final joint clusters are the Voronoi faces centred at local
+density maxima of the joint distribution. These are obtained by dividing up proto
+clusters with a density below a threshold between the remaining Voronoi faces. In
+this sense the high density areas divide and conquer low density regions. We analyse
+and compare the performance of our method with selected state of the art clustering
+methods. The results on both simulated data and real datasets suggest an on par or
+better performance than competing methods.
+
+Keywords: cluster analysis, model-based clustering, similarity-based clustering,
+          non-local priors, hierarchical and nested data structures
+
+

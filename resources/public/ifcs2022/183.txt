@@ -1,0 +1,34 @@
+Sensor System for Standardizing Articulation Patterns According to Korean Phonemes
+
+Seong Tak Woo and Da Hee Oh
+
+A sensor system (consisting of approximately 70 channels on an artificial plate) was
+established for articulation pattern standardization, and the characteristics of Korean
+speech were analyzed. Articulation pattern information was obtained using a sensor
+with a group of healthy participants. The measured signals were analyzed using a
+bio-signal (tongue contact) processing module and viewer program. Notably, the data
+were obtained from only two healthy adults, and certain limitations remain in the
+application of data analysis technologies (such as neural network/regression model).
+As a preliminary study, we conducted repeated measures analysis of variance to
+determine the difference in the closure time and contact area according to the 
+utterance unit, meaning, and syllable structure. Specifically, we attempted to determine
+the presence of the preceding consonant (C) in two successive consonants (VCCV)
+with the same articulation place. Results of experiments demonstrated that the 
+articulation sensor and analysis method can be applied to standardize pronunciation
+patterns. Although extensive healthy group data and analytical techniques remain to
+be identified, the findings can provide insights regarding initial experimental setup
+(proposed sensor, acquisition method, etc.) for standardization studies.
+
+Keywords: articulation pattern, tongue strength, analysis of variance, speech therapy, 
+          communication disorders
+
+References
+1. Dagenais, P.A., Lorendo, L.C., McCutcheon, M.J.: A study of voicing and context effects
+   upon consonant linguapalatal contact patterns. Journal of Phonetics 22, 225–238 (1994)
+2. Braislin, M.A.G., Cascella, P.W.: A preliminary investigation of the efficacy of oral 
+   motor exercises for children with mild articulation disorders. International Journal of 
+   Rehabilitation Research 28, 262–266 (2005)
+
+
+
+

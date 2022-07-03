@@ -1,0 +1,37 @@
+Variable Screening in High Dimensional Regression via Random Projection Ensembles
+
+Laura Anderlucci, Matteo Farnè, Giuliano Galimberti, and Angela Montanari
+
+Random projections (RP) are a fairly new tool for dimension reduction employed in
+several multivariate data analysis contexts (see, e.g. [2],[3]). In this paper, we present
+a novel approach based on RP ensemble for variable screening in the multiple linear regression 
+framework. By employing axis-aligned random projections, column sub-sampling is performed, thus 
+constituting an even cheaper way of randomized dimension reduction outside the class of 
+Johnson-Lindenstrauss transforms. Differently from the approach proposed in [1], the method allows 
+to account for the correlation among the predictors, and returns a variable ranking based on their
+importance.
+  We provide numerical results based on synthetic and real data as well as basic theoretical results 
+that characterize the proposed solution.
+
+Keywords: variable screening, random projections, high-dimensional linear regression
+
+References
+1. Fan, J., Lv, J.: Sure independence screening for ultrahigh dimensional feature space. J. R. Stat.
+   Soc. B 70, 849–911 (2008)
+2. Gataric, M., Wang, T. and Samworth, R. J.: Sparse principal component analysis via axisaligned 
+   random projections. J. R. Stat. Soc. B 82, 329–359 (2020)
+3. Thanei, G.A., Heinze, C., Meinshausen, N.: Random Projections for Large-Scale Regression.
+   In: Ahmed, S. (eds) Big and Complex Data Analysis, pp. 51-68. Contributions to Statistics.
+   Springer, Cham (2017)
+
+
+
+
+
+
+
+
+
+
+
+

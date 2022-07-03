@@ -1,0 +1,50 @@
+A General Framework for Implementing Distance Measures for Categorical Variables
+
+Carlo Cavicchia, Michel van de Velden, Alfonso Iodice D’Enza, and Angelos Markos
+
+In many statistical methods, distance plays an important role. For instance, data 
+visualization, classification and clustering methods require quantification of 
+distances among objects. How to define such distance depends on the nature of the 
+data and/or problem at hand. For distance between numerical variables, in particular 
+in multivariate contexts, there exist many definitions that depend on the actual observed
+differences between values. It is worth underlining that often it is necessary to rescale
+the variables before computing the distances. Many distance functions exist for numerical 
+variables, see [2] for a detailed list. For categorical data, defining a distance
+is even more complex as the nature of such data prohibits straightforward arithmetic
+operations. Specific measures therefore need to be introduced that can be used to
+describe or study structure and/or relationships in the categorical data. In this paper,
+we introduce a general framework that allows an efficient and transparent implementation 
+for distance between categorical variables. We show that several existing distances (for 
+example a distance measure proposed by Ahmad and Dey [1] that incorporates association among 
+variables) can be incorporated into the framework. Moreover, our framework quite naturally 
+leads to the introduction of new distance formulations as well.
+
+Keywords: categorical data, distance, cluster analysis
+
+References
+1. Ahmad, A. and Dey, L.: A k-mean clustering algorithm for mixed numeric and categorical
+   data. Data & Knowledge Engineering, 63, 2, 503–3527 (2007)
+2. Mardia, K.V.: Some properties of classical multidimesional scaling. Communications in 
+   Statistics - Theory and Methods, 7, 13, 1233–1241 (1978)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

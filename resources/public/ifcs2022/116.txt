@@ -1,0 +1,54 @@
+Robustness and Initialization Issues in Subspace Clustering
+
+Luis A. García-Escudero and Agustín Mayo-Iscar
+
+Observations are often assumed to cluster around lower-dimensional affine linear
+subspaces. In fact, this is one of the most frequently applied approaches when
+dealing with high or moderately high dimensional clustering problems. There are
+several subspace clustering approaches in the literature that attempt to find such
+clusters and their associated optimal underlying subspaces.
+  The detrimental effect that even a few outliers can have on cluster analysis,
+sometimes affecting even the correct determination of clusters, is well known. Robust
+subspace clustering methods try to discover those linear subspaces while avoiding
+the effect of outlying values. Detecting anomalies in the data can be an interesting
+problem in itself, as well as taking advantage of the subspace clustering structure to
+”reconstruct” the data prior to the data contamination process.
+  Some robustified subspace clustering methods, that follow from the application of
+trimming principles, will be reviewed. A proportion \alpha of entire cases were proposed
+to be trimmed in [1] and a proportion \alpha of individual cells were trimmed in [2]. These
+approaches provide good robustness but require the specification of a trimming rate
+\alpha. A proposal will be presented to determine \alpha based on the data.
+  The initialization of the iterative algorithms used to implement these trimming
+procedures is one of the most critical aspects for the good performance of these
+algorithms. Useful initialization strategies will also be provided.
+
+Keywords: subspace clustering, robustness, high-dimensions
+
+References
+1. García-Escudero, L.A., Gordaliza, A., San Martin, R., Van Aelst, S., Zamar, R.: Robust linear
+   clustering. J. R. Stat. Soc. Ser. B 71, 301–318 (2009)
+2. García-Escudero, L.A., Rivera-García, D., Mayo-Iscar, A., Ortega, J.: Cluster analysis with
+   cellwise trimming and applications for the robust clustering of curves. Inf. Sci. 573, 100–124
+   (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

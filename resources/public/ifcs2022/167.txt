@@ -1,0 +1,33 @@
+Clustering and Classifying Time Series in the Sktime Toolkit: a Practical Review of Latest
+Advances in the Field
+
+Anthony Bagnall
+
+sktime (https://github.com/alan-turing-institute/sktim) is an open source, scikit learn
+compatible, toolkit for machine learning with time series. It was conceived in 2019
+via a collaboration with the Alan Turing Institute and has matured through the growth
+of a vibrant open source community. It contains modules for a range of learning tasks
+such as forecasting, annotation and transformation. Researchers at UEA have played
+a key role in researching and implementing algorithms for time series classification
+(TSC) and clustering (TSCL) within the sktime framework. I will present a practical
+overview of the TSC and TSCL functionality available within sktime, with specific
+emphasis on our new classification algorithm, HIVE-COTEv2.0 [2] (HC2). HC2
+is a meta ensemble of four classifiers, built on four different data representations.
+It is state of the art for both univariate [1] and multivariate TSC [3]. I will also
+demonstrate how to develop a simple pipeline classifier and compare performance
+to our published results. The clustering module is a more recent addition to sktime.
+I will present some recent experimental clustering benchmark results and show how
+sktime can be used with other toolkits such as tslearn to perform TSCL.
+
+Keywords: time series classification, time series clustering, sktime
+
+References
+1. Bagnall A, Lines J., Bostrom A., Large J. and Keogh E. Middlehurst M., Large J., Flynn M.: 
+   Data Mining and Knowledge Discovery 31, 606––660 (2017)
+2. Middlehurst M., Large J., Flynn M., Lines J., Bostrom A. and Bagnall A: HIVE-COTE 2.0: a
+   new meta ensemble for time series classification. Machine Learning 110, 3211—3243 (2021)
+3. Ruiz A.P Flynn M, Large J., Middlehurst M., Bagnall A.: The great multivariate time series
+   classification bake off: a review and experimental evaluation of recent algorithmic advances.
+   Data Mining and Knowledge Discovery 35(2), 401––449 (2021)
+
+

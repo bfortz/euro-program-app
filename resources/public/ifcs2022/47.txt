@@ -1,0 +1,36 @@
+Clustering in FDA Mixing the Epigraph and the Hypograph Indexes 
+with Machine Learning Algorithms
+
+Belen Pulido, Alba M. Franco-Pereira, and Rosa E. Lillo
+
+Clustering is considered as one of the most used techniques in Data Science. 
+Clustering functional data is a challenging problem since it involves working in 
+an infinite dimensional space. In this work this problem is addressed by applying 
+the epigraph and the hypograph indexes to a functional dataset and thereby, converting 
+it from a functional data problem into a multivariate problem. See [1]. Once the 
+multivariate dataset is obtained, the techniques that have been fully studied in the 
+literature for clustering multivariate data can be applied, including both procedures 
+typical of the area of Statistics and those from the machine learning field. This 
+methodology is applied to both simulated and real datasets, and it is also compared to 
+two clustering techniques originally designed for functional data ([2] and [3]).
+
+Keywords: epigraph, hypograph, clustering, functional data, machine learning algorithms
+
+References
+1. Pulido, B., Franco-Pereira, A.M., Lillo, R.E.: Functional clustering via multivariate 
+   clustering. arXiv:2108.00217 [stat.ME] (2021)
+2. Martino, A., Ghiglietti, A., Ieva, F., Paganoni, A.M.: A k-means procedure based on a
+   Mahalanobis type distance for clustering multivariate functional data. Statistical Methods 
+   and Applications, 28(2), 301-322 (2019)
+3. Zambom, A.Z., Collazos, J.A., Dias, R.: Functional data clustering via hypothesis testing
+   k-means. Computational Statistics, 34(2), 527-549 (2019)
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+Group Lasso Penalty for Spatially Clustered Coefficient Regression
+
+Toshiki Sakai and Jun Tsuchida and Hiroshi Yadohisa
+
+Spatial data has variables with location information. One of the main purposes of
+spatial data analysis is to explain the relationships between objective variables and
+covariates according to this location information. Geographically weighted 
+regression (GWR) [1] is a method that allows regression coefficients to vary by location.
+However, Li and Sang [3] showed that GWR can lead to numerical instability in estimations 
+at locations with few surrounding observation points. They then proposed
+spatially clustered coefficients (SCC) regression using the fused lasso penalty. SCC
+enables the regression coefficients to be estimated with greater numerical stability
+than in GWR.
+  However, these methods do not assume groups among the covariates. The results
+hence tend to be difficult to interpret.
+  Herein, we propose a method that combines SCC and the group lasso penalty [2].
+The proposed method makes it easier for regression coefficients to be the same at
+nearby locations while facilitating interpretation by selecting covariates on a 
+groupby-group basis.
+
+Keywords: geographically weighed regression, fused lasso, spatial data
+
+References
+1. Brunsdon et al.: Geographically weighted regression : a method for exploring spatial 
+   nonstationarity. Geographical Analysis 28, 281–298 (1996)
+2. Yuan, M. and Lin, Y.: Model selection and estimation in regression with grouped variables.
+   Journal of the Royal Statistical Society: Series B (Statistical Methodology) 68, 49–67 (2006)
+3. Li, F. and Sang, H.: Spatial homogeneity pursuit of regression coefficients for large datasets.
+   Journal of the American Statistical Association. 114, 1050–1062 (2019)
+
+
+

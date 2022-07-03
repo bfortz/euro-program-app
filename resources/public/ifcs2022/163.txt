@@ -1,0 +1,28 @@
+User Segmentation Based on Online Behavioural Data via Ensemble Predictions and Clustering
+
+Stella Hadjiantoni, Hui Yang,Yunfei Long, Ruta Petraityte, and Berthold Lausen
+
+We use unsupervised clustering and supervised ensemble machine learning to identify 
+segments of users defined by behavioural data. Hierarchical clustering is used as
+an explorative method and to identify users with similar behavioural patterns based
+on their online activity data (aka click data from mondaq.com). We assess estimated
+clusters by parametric bootstrap evaluation [1]. Stable clusters are used as additional
+features in ensemble prediction of win-loss probabilities for potential clients. We
+improve the interpretability of the machine learning model by ensembles of optimal
+trees [2, 3]. Our approach is compared with several machine learning models as
+random forest, neural networks and logistic regression.
+
+Keywords: bootstrap assessment of cluster stability, ensemble of optimal trees,
+          win-loss probabilities of potential clients
+
+References
+1. Lausen, B., Degens, P.O.: Evaluation of the reconstruction of phylogenies with DNA-DNA
+   hybridization data. In: Bock, H.-H. (ed.) Classification and Related Methods of Data Analysis:
+   Proceedings of the First Conference of the International Federation of Classification Societies
+   (IFCS), North-Holland, Amsterdam (1988)
+2. Khan, Z., Gul, A., Perperoglou, A., Miftahuddin, M., Mahmoud, O., Adler, W., Lausen, B.:
+   Ensemble of optimal trees, random forest and random projection ensemble classification.
+   Advances in Data Analysis and Classification 14, 97–116 (2020)
+3. Khan, Z., Gul, N., Faiz, N., Gul,A., Adler, W., Lausen, B.:Optimal trees selection for 
+   classification via out-of-bag assessment and sub-bagging. IEEE Access 9, 28591–28607 (2021)
+

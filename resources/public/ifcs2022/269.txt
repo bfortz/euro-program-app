@@ -1,0 +1,58 @@
+Hybrid Forecasting Combinations by Feature Based Metalearning
+
+Moises Santo, Andre C.P.L.F. de Carvalho, and Carlos Soares
+
+A challenge in time series forecasting is selecting the technique that will induce the
+best forecasting model for a given time series. Metalearning is a good alternative to
+reduce the computational cost and attend to the high need for specialized knowledge
+in this area [1]. In recent works, model selection frameworks successfully applied
+metalearning to select time series forecasting methods. Allied to metalearning, combining 
+forecasts is an up-and-coming alternative to investigate. One of the main
+results of a time series competition to assess time series forecasting models, the
+Makridakis M4 competition was the victory of a hybrid method that combined the
+forecasts of statistical and machine learning models [3]. Several time series forecasting 
+approaches have applied Seasonal-Trend decomposition based on Loess (STL) and Empirical Mode 
+Decomposition (EMD) to divide the time series into components with different properties to 
+generate hybrid forecasting models. However, the models for each component have usually been 
+selected arbitrarily. This work investigates the automatic selection of promising hybrid model 
+combinations for univariate time series forecasting by using feature-based metalearning. According 
+to previous experiments [2], under certain conditions, the application of the STL decomposition
+method for the formation of additive hybrid combinations presents better results than the use of 
+individual models.
+
+Keywords: time series, hybrid forecasting, metalearning
+
+References
+1. Brazdil, P., Carrier, C.G., Soares, C, Vilalta, R.: Metalearning: Applications to data mining.
+   Springer Science & Business Media (2008)
+2. Silvestre, G.D., Santos, M.R., Carvalho, A.C.P.L.F.: Seasonal-Trend decomposition based on
+   Loess+ Machine Learning: Hybrid Forecasting for Monthly Univariate Time Series. In: 2021
+   International Joint Conference on Neural Networks (ĲCNN), pp. 1-7. IEEE (2021)
+3. Smyl, S.: A hybrid method of exponential smoothing and recurrent neural networks for time
+   series forecasting. International Journal of Forecasting 36, 75-85 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

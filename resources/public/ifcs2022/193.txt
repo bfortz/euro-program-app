@@ -1,0 +1,40 @@
+On Explaining Model Change Based on Feature Importance
+
+Maximilian Muschalik, Fabian Fumagalli, Barbara Hammer, and Eyke Hüllermeier
+
+Understanding the decisions of complex machine learning (ML) models is vital for
+leveraging ML ethically and responsibly in everyday applications [1]. The research
+field of Explainable Artificial Intelligence (XAI) aims at increasing the interpretability 
+of otherwise opaque ML systems. While XAI mainly focuses on static learning
+tasks, we are interested in explaining models in dynamic learning environments,
+such as online learning from real-time data streams, where models are trained in an
+incremental rather than a batch mode. Models in such dynamic settings need to react
+and adapt to changes in their environment. We motivate the problem of explaining
+these dynamic models by directly explaining the model change, i.e., the difference
+between models before and after adaptation, instead of the models per se. We discuss 
+how this problem may be approached by agnostic explanation methods such
+as Feature Importance (FI) and, more specifically, an adaption of the well-known
+Permutation Feature Importance (PFI) [2]. We present an incremental version of PFI
+and showcase how existing algorithms for detecting changes in data streams can be
+adapted to explain model change directly.
+
+Keywords: explainable artificial intelligence, explaining model change, 
+          incremental learning, permutation feature importance
+
+Acknowledgements We gratefully acknowledge funding by the Deutsche Forschungsgemeinschaft
+                 (DFG, German Research Foundation): TRR 318/1 2021–438445824.
+
+References
+1. Adadi, A. and Berrada M.: Peeking Inside the Black-Box: A Survey on Explainable Artificial
+   Intelligence (XAI). IEEE Access. 6, 52138–52160 (2018)
+2. Breiman, L.: Random forests. Mach. Learn. 45(1), 5–32. (2001)
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+Interpretable Multi-Class Trees for Travel Choice Mode Analysis
+
+Christian Riccio, Andrea Papola, Michele Staiano, and Roberta Siciliano
+
+Analysis of travel mode choice is fundamental to forecast travel demand when 
+planning intervention on the supply system. Commonly, this is conducted via Random
+Utilities Models (RUMs) which relies on the random utility theory [1]. Recently, the
+large availability of travel demand data, mainly from smartphones, has increasingly
+led to the use of machine learning models that find their ideal context of use in big
+data. Although such models are generally capable of good performance, their intrinsic 
+black-box nature is a critical aspect. Hence, to fruitfully apply Machine Learning
+approaches to travel mode choice, some enhancements must be considered. Recently,
+interpretable machine learning approach [2] has been proposed. The main idea is
+to improve the output results of random forests with some additional aids. This
+paper provides a new framework to approach interpretable machine learning using
+tree-based methods in combination with classical models. The basic rationale with
+the main theoretical aspects can be found in old papers [3, 4, 5]. A fresh approach
+integrating logistic regression and latent budget models will be demonstrated for a
+multi-class response problem typical in transportation studies.
+
+Keywords: tree-based methods, logistic regression, travel mode choice
+
+References
+1. Cascetta, E., Papola, A.: Random utility models with implicit availability/perception of choice
+   alternatives for the simulation of travel demand. Transport. Res. C-Emer. 9(4), 249–263 (2001)
+2. Kim, E-J.: Analysis of Travel Mode Choice in Seoul Using an Interpretable Machine Learning
+   Approach. J. Adv. Transp. 2021, 6685004 (2021)
+3. Siciliano, R., Mola, F.: Multivariate data analysis and modeling through classification and
+   regression trees. Comput. Stat. & Data An. 2021, 6685004 (2021)
+4. Siciliano, R.: Latent budget trees for multiple classification. I In: Vichi, M., Opitz, O. (eds)
+   Classification and Data Analysis. Studies in Classification, Data Analysis, and Knowledge
+   Organization. Springer, Berlin, Heidelberg (1999)
+5. Mola, F., Klaschka, J., Siciliano, R.: Logistic classification trees. In: Prat, A. (ed.) COMPSTAT
+   1996, pp. 373-378. Physica-Verlag, Heidelberg (1996)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

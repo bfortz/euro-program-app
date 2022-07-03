@@ -1,0 +1,42 @@
+Bayesian Classification and Non-Bayesian Label Estimation via EM Algorithm to Identify
+Differential Expression in Omics Data: a Comparative Study
+
+Marilia Antunes and Lisete Sousa
+
+Analyses of omics data (biomolecules including large macromolecules such as proteins 
+and nucleic acids, as well as small molecules such as metabolites and natural
+products) allow comprehensive genome-wide analysis of complex diseases, offering
+a major advantage over previous candidate gene analysis or pathway analysis. One of
+the main goals in high-throughput data analysis is the identification of biomolecules
+among several thousands that differ between different sample groups.
+  Omics data classification problem is studied considering the ratio of the expression
+levels and a non-observed categorical variable indicating how differentially expressed
+each biomolecule is: non differentially expressed, down-regulated or up-regulated.
+Assuming that the ratios follow a mixture of gamma distributions, two methods are
+proposed [1]. The first method is based on a hierarchical Bayesian model. The conditional 
+probability of a biomolecule to belong to each group is calculated and the
+biomolecule is assigned to the group for which this conditional probability is higher.
+The second method uses the EM algorithm to estimate the most likely group label
+for each biomolecule, that is, to assign the biomolecule to the group which contains
+it with the higher estimated probability. Both approaches are applied to omics data
+and results are compared.
+
+Keywords: differential expression, EMalgorithm, hierarchical Bayesian model,
+          mixture models
+
+References
+1. Antunes, M., Sousa, L.: Bayesian classification and non-Bayesian label estimation via EM
+   algorithm to identify differentially expressed genes: a comparative study. Biometrical J. 
+   50(5), 824–836 (2008)
+
+
+
+
+
+
+
+
+
+
+
+

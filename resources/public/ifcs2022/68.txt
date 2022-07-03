@@ -1,0 +1,46 @@
+Parameter Estimation for Mixtures of Linear Mixed Models: 
+the EM, CEM and SEM Algorithms
+
+Luísa Novais and Susana Faria
+
+Parameter estimation for mixture models is one of the main and most complex
+problems regarding these type of models. In particular, maximum likelihood 
+estimation, via the Expectation-Maximization (EM) algorithm, is among the most 
+used methods for estimating the parameters of mixture models. However, the EM 
+algorithm is known to converge slowly and the initialization strategy to be 
+adopted also plays an important role in the estimation of the parameters by this 
+algorithm. In order to overcome these issues, alternative versions of the EM 
+algorithm have been developed over time. In this work, the performance of the 
+EM algorithm is compared to the performance of two modified versions of this 
+algorithm, the Classification Expectation-Maximization (CEM) algorithm and the 
+Stochastic ExpectationMaximization (SEM) algorithm, in the estimation of the 
+parameters for mixtures of linear mixed models through a simulation study.
+
+Keywords: maximum likelihood estimation, mixture models, simulation study
+
+Acknowledgements The research of L. Novais was financed by FCT - Fundação para a Ciência e
+Tecnologia, through the PhD scholarship with reference number SFRH/BD/139121/2018.
+
+References
+1. Dempster, A., Laird, N., Rubin, D.: Maximum likelihood from incomplete data via the EM
+   algorithm. J. R. Stat. Soc. B. Met. 39(1), 1–38 (1977)
+2. Faria, S., Soromenho, G.: Fitting mixtures of linear regressions. J. Stat. Comput. Sim. 
+   80(2), 201–225 (2010)
+3. Novais, L., Faria, S.: Comparison of the EM, CEM and SEM algorithms in the estimation of
+   finite mixtures of linear mixed models: a simulation study. Comput. Stat. 36(4), 
+   2507–2533 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

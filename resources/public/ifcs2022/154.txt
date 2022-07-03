@@ -1,0 +1,30 @@
+Comparison of Pixel Based Segmentation Methods in Papillary Thyroid US Images
+
+Neslihan Gökmen İnan, İsmail Meşe, Düzgün Yıldırım, and Ozan Kocadağlı
+
+Thyroid nodules are one of the endocrine diseases caused by abnormal growth of
+cells. Ultrasonography (US) is an efficient tool that is routinely used to identify these
+nodules. Thyroid nodule segmentation on US images is a valuable and, it has a great
+importance for the diagnosis of thyroid cancer. Despite US imaging is considered as
+the best option, the high incidence rate increases the burden of radiologists in terms
+of diagnosing the thyroid cancer cases at early stages and their levels [1]. In such a
+case, the contour and region-based segmentation methods have a potential to extract
+some important features called as biomarkers which allow radiologists to make more
+accurate diagnosis. In this context, this study aims to compare the contour and regionbased 
+segmentation methods with respect to the feature extraction performance. In
+this study, US images of 187 papillary carcinoma patients were analyzed. The image
+segmentation quality was evaluated with respect to dice coefficient measurement and
+ROC analysis results such as TN, FP, AUC, g-score, f-measure [2]. Also, the validity
+of the pixel-based methods were achieved with the extracted features obtained from
+the manual segmentation methods performed by expert radiologists. The analysis
+results showed that the automatic segmentation methods are superior performance
+to the manual ones according to the various statistical performance criteria.
+
+Keywords: thyroid us image, pixel-based segmentation, papillary carcinoma
+
+References
+1. Chen, J., You, H., Li, K. : A review of thyroid gland segmentation and thyroid nodule
+   segmentation methods for medical ultrasound images. Computer methods and programs in
+   biomedicine. 185, 105329 (2020)
+2. Koundal, D., Gupta, S., Singh, S. : Computer aided thyroid nodule detection system using
+   medical ultrasound images. CBiomedical Signal Processing and Control. 40, 117-130 (2018)

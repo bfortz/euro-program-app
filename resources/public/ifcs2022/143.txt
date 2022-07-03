@@ -1,0 +1,28 @@
+Classification of Viral Pneumonia Images via Multiple Instance Learning
+
+Antonio Fuduli, Matteo Avolio, Eugenio Vocaturo, and Ester Zumpano
+
+We present an application of the Multiple Instance Learning (MIl) paradigm to the
+classification of pneumonia X-ray images, considering three different categories:
+radiographies of healthy people, of people with bacterial pneumonia and of people
+with viral pneumonia. The proposed algorithms, which are very fast in practice,
+appear promising especially if we take into account that no preprocessing technique
+on the images has been used.
+  In particular we will focus on the application of three different MIL instancespace
+approaches: MIL-RL [1], based on a Lagrangian relaxation technique, mi-SPSVM [2], 
+which combines the classical Support Vector Machine approach with
+the Proximal Support Vector Machine technique and MIL-kink [3], which provides
+a separation hyperplane fixing in advance the normal and computing the bias by
+nonsmooth techniques.
+  Numerical results on some real-world data sets are presented.
+
+Keywords: multiple instance learning, classification problems, image recognition
+
+References
+1. Astorino, A., Fuduli, A., Gaudioso, M.: A Lagrangian relaxation approach for binary 
+   multiple instance classification. IEEE Trans. Neural Netw. Learn. Syst. 30, 2662–2671 
+   (2019)
+2. Avolio, M., Fuduli, A.: A semiproximal support vector machine approach for binary 
+   multiple instance learning. IEEE Trans. Neural Netw. Learn. Syst. 32, 3566–3577 (2021)
+3. Fuduli, A., Gaudioso, M., Khalaf,W., Vocaturo, E.,: A heuristic approach for multiple 
+   instance learning by linear separation. Soft Comput. 26, 3361–3368 (2022)

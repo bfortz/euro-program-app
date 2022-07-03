@@ -1,0 +1,45 @@
+Creating Homogeneous Sectors: Criteria and Applications of Sectorization
+
+Cristina Lopes, Maria Margarida Lima, Elif Göksu Öztürk, Ana Maria Rodrigues,
+Ana Catarina Nunes, Cristina Oliveira, José Soeiro Ferreira, and Pedro Filipe Rocha
+
+Sectorization is the process of grouping a set of previously defined basic units
+(points or small areas) into a fixed number of sectors. Sectorization is also known
+in the literature as districting or territory design [1], and is usually performed to
+optimize one or more criteria regarding the geographic characteristics of the territory
+and the planning purposes of sectors. The most common criteria are equilibrium,
+compactness and contiguity, which can be measured in many ways [2].
+  Sectorization is similar to clustering but with a different motivation. Both aggregate 
+smaller units into groups. But, while clustering strives for inner similarity of
+data, sectorization aims at outer homogeneity [1]. In clustering, groups should be
+very different from each other, and similar points are classified in the same cluster.
+In sectorization, groups should be very similar to each other, and therefore very
+different points can be grouped in the same sector.
+  We classify sectorization problems into four types: basic sectorization, sectorization 
+with service centers, resectorization, and dynamic sectorization. A Decision
+Support System for Sectorization, D3S, is being developed to deal with these four
+types of problems. Multi-objective genetic algorithms were implemented in D3S
+using Python, and a user-friendly web interface was developed using Django. Several 
+applications can be solved with D3S, such as political districting, sales territory
+design, delivery service zones, and assignment of fire stations and health services to
+the population.
+
+Keywords: sectorization, clustering, decision support system, optimization
+
+References
+1. Kalcsics, J., Nickel, S., Schroeder,M.: Towards a unified territorial design approach - 
+   Applications, algorithms and GIS integration. TOP 13(1), 1–56 (2005)
+2. Rodrigues, A.M., Ferreira, J.S.: Measures in Sectorization Problems. In: Póvoa, A., 
+   de Miranda, J. (eds.) Operations Research and Big Data 15. Springer, Cham. (2015)
+
+
+
+
+
+
+
+
+
+
+
+

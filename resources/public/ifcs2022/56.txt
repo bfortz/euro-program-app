@@ -1,0 +1,37 @@
+Optimized Symbolic Correspondence Analysis for Multi-Valued Variables
+
+Jorge Arce Garro and Oldemar Rodríguez Rojas
+
+In this paper, we propose an Optimized Correspondence Factorial Analysis (OCFA)
+method to analyze a data table with set-valued symbolic variables. This is an 
+extension of Symbolic Correspondence Factorial Analysis (SCFA). OCFA is a combination 
+between Symbolic Correspondence Factorial Analysis, based on an interval contingency 
+data table and integer optimization. The idea is to choose the best matrix of integer 
+values inside the interval contingency data table. We are interested in studying two 
+different objective functions: the first one search to minimize the distance between 
+projections and the original points, while the second one search to maximize the 
+explained variance. To solve these problems, we generalize the concepts of row and column 
+profiles to interval row and interval column profiles, respectively. Further, we propose 
+two theorems to find the coordinates of the interval contingency table in the factorial axes. 
+All of the methods proposed in this paper can be executed in the RSDA package, developed in R 
+that can be downloaded from CRAN.
+
+Keywords: symbolic data analysis, correspondence analysis, multi-valued variables, 
+          interval contingency table
+
+References
+1. Billard, L. and Diday, E. (2006). Symbolic Data Analysis: Conceptual Statistics and Data
+   Mining (United Kingdom: John Wiley & Sons Ltd)
+2. Rodriguez, O. (2021). RSDA: R to Symbolic Data Analysis. R package version 3.0.9
+3. Takagia, I. and Yadohisab, H. (2011). Correspondence analysis for symbolic contingency tables 
+   based on interval algebra. Procedia Computer Science 6, 352–357. 10.1016/j.procs.2011.08.065
+
+
+
+
+
+
+
+
+
+

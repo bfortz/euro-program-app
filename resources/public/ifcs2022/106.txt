@@ -1,0 +1,47 @@
+Prediction of Diabetes via Bayesian Network Classifier from Exposure to Environmental
+Polluting Chemicals Data
+
+Rosy Oh, Hong Kyu Lee, Youngmi Kim Pak, and Man-Suk Oh
+
+Early prediction of diabetes and identification of risk factors for diabetes may prevent
+or delay diabetes progression. In this study we developed an interactive online
+application that provides predictive probabilities of normal, prediabetes, diabetes
+in 4 years using Bayesian network classifier, a machine learning technique. The
+Bayesian network (BN) was trained using a dataset from Ansung cohort of the
+Korean Genome and Epidemiological Study (KoGES) in 2008 with follow-up data in
+2012. The dataset contained not only traditional risk factors (current diabetes status,
+Sex, Age, etc.) for future diabetes but also serum biomarkers (AhRL, MIS-ATP,
+MIS-ROS) for the level of exposure to environmental polluting chemicals (EPC).
+Based on accuracy and AUC, Tree augmented BN with 11 variables from feature
+selection was used as our prediction model. The online application implementing
+our BN prediction system provided a tool that shows customized diabetes prediction
+for the users but also allows them to simulate the effects of controlling risk factors
+on future diabetes. The prediction results from our method showed that the EPC
+biomarkers had dominant and interactive effects on future diabetes and use of the
+EPC biomerkers together with commonly used risk factors as predictors substantially
+improved the prediction performance.
+
+Keywords: diabetes mellitus, glucose intolerance, machine learning, bayesian network, 
+          environmental pollutants
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

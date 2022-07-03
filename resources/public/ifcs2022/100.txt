@@ -1,0 +1,48 @@
+Embedded Word MCA Biplots for Sentiment Visualisation: 
+Application to COVID-19 Related Tweets
+
+Zoe-Mae Adams, Johane Nienkemper-Swanepoel, Niel le Roux, and Sugnet Lubbe
+
+Social media platforms are continually gaining popularity which results in vast
+amounts of shared data in the form of images, videos and text. Twitter is a micro-
+blogging platform which allows the sharing of short messages that are labelled
+according to a specific key word (i.e. tag), representing a relevant topic or theme.
+These messages reflect personal opinions with subjective content which could provide 
+insight to grasp the underlying attitude towards specific topics. During the global 
+COVID-19 pandemic users could easily share messages by using social media platforms 
+containing information on for example regulations on lockdown or vaccination. Twitter’s 
+application programming interface (API) allows the procurement of posts made on the 
+platform for a specific Twitter tag, timeframe and location within a specified radius. 
+In this study the unstructured pieces of text, Tweets, are processed and the sentiment 
+of the remaining words are classified using two lexicons. Multi-dimensional visualisation 
+enables the exploration of the associations between the Twitter users based on the resultant 
+sentiment scores of their posts. A multiple correspondence analysis (MCA) biplot is embedded 
+with the extracted words to enable the simultaneous interpretation of the underlying sentiment 
+of the processed Tweets. This paper presents two case studies of COVID-19 related Tweets.
+The first case study considers posts made by South African users in three cities (Cape
+Town, Johannesburg and Durban), with the second case study evaluating the sentiment towards 
+COVID-19 on a global scale by considering three predominantly English-speaking countries 
+(South Africa, Australia and United Kingdom).
+
+Keywords: biplots, covid-19 tweets, multiple correspondence analysis, 
+          sentiment classification, web scraping
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

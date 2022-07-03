@@ -1,0 +1,29 @@
+A clusterwise regression method for distributional data
+
+R. Verde, A. Balzanella and A. Irpino
+
+This work deals with a cluster-wise regression method for distributional data. The set
+of objects to be clustered are described by distributional variables {Y, X_1, . . . , X_p},
+with Y the response variable and X_j´s the predictors. Each object is represented by
+p + 1 probability functions, or empirical ones. Our proposal is based on a K-means
+clustering type-algorithm, where the centroid of the clusters are represented by linear
+regression models and the objects are assigned to the clusters according to minimum
+sum of squared errors. [1] and [2] proposed two regression models for distributional
+data based on a Non Linear Least Squared method and on the Wasserstein metric in a
+linear space. The constrain of non-negativity were imposed to guarantee the outcome
+is still a distributional variable. In consideration of the most recent developments
+in distributional data analysis (DDA), we introduce a transformation of the qf’s in
+quantile density functions [3], which allows to map density functions in an Hilbert
+space and overcome some challenge in DDA. Applications on synthetic and real data
+have corroborated the new method.
+
+Keywords: symbolic data analysis, distributional data, quantile density functions
+
+References
+1. Irpino, A., Verde, R.: Linear regression for numeric symbolic variables: a least squares
+   approach based on Wasserstein Distance, Advances in Data Analysis and Classification 9 (1)
+   81-106 (2015)
+2. Dias, S., Brito, P.: Linear regression model with histogram-valued variables, Statistical 
+   Analysis and Data Mining: The ASA Data Science Journal 8 (2) 75-113 (2015)
+3. Petersen, A., Muller, H.: Functional data analysis for density functions by transformation 
+   to a Hilbert space, Annals of Statistics 44 (1) 183-218 (2016)

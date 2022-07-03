@@ -1,0 +1,55 @@
+Joint Sparse Principal Component Analysis A Simulation Study
+
+Tra Le and Dr. Katrijn Van Deun
+
+Measurement invariance is of great importance in the social and behavioral sciences, 
+as it allows for generalization of latent constructs across different groups,
+typically by investigating the equality of factor structures. Traditionally, in settings
+where the loadings for the different groups are not known beforehand, exploratory
+factor analysis is commonly used. However, it has several drawbacks, including that
+most methods cannot handle data with fewer observations than variables and other
+problems (subjective thresholds for loading differences, unrealistic assumptions, 
+instability with small sample size, large amount of computational sources needed,
+etc.). To overcome these drawbacks, joint sparse principal component analysis (joint
+SPCA) has been proposed, which adopts a regularized and cardinality constrained
+least-square approach. The aim of this paper is to compare it with the best available
+EFA method, namely multigroup factor rotation (MGFR) [1] A simulation study
+was carried out to evaluate the performance of joint SPCA in comparison with the
+MGFR technique, on three types of performance measures: recovery rate of the
+zero/non-zero pattern in the loadings, Tucker’s congruence, and computation time.
+Following the setup by [1], we varied the number of groups, group sizes, number
+of components, type and size of loading differences, and the number of loading
+differences. Based on the first two measures, joint SPCA performed slightly less
+well than MGFR which reported a goodness-of-loading-recovery statistic for optimally 
+rotated loadings of .99. Averaged across 6000 simulated datasets, joint SPCA
+had a recovery rate and Tucker congurence of .96 (SD = .06) and .98 (SD = .02),
+respectively. The CPU time increased as the conditions got more complex. Averaged
+across 50 replications for each condition, the shortest time was 5.3s (2 groups) and
+the longest time was 21.3s (4 groups) on an i5 processor with 8GB RAM.
+
+Keywords: multigroup, pca, measurement invariance
+
+References
+1. De Roover, K., Vermunt, J.: On the exploratory road to unraveling factor 
+   loading  noninvariance: A new multigroup rotation approach. Struct. Equ. Model. 
+   26, 905–923 (2019)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

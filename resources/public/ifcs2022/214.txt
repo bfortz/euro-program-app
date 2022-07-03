@@ -1,0 +1,38 @@
+Joint Sparse Principal Component Analysis
+
+Katrĳn Van Deun
+
+Comparing multivariate relations between different groups forms the core of many
+studies in the empirical sciences. Latent variable approaches such as principal 
+component and factor analysis are most useful (and used) to explore such multivariate
+relations. The loadings are key to the interpretation of these latent variable models
+as they express the strength of association of the observed variables with the latent
+variables. Preferably variables load on one or a few components/factors only and
+have zero loadings elsewhere as this eases interpretation. In addition, when comparing 
+multiple groups, also a clear distinction between those variables that function
+in the same way over groups and those that do not is needed: Loadings should be
+exactly equal between those groups where the variables function in the same way
+and unequal elsewhere. In this paper we propose a multigroup latent variable model,
+called joint sparse principal component analysis, that has these properties. Sparsity
+is imposed using cardinality constraints while equal loadings are obtained as the
+result of a fusion penalty. We efficiently solve the estimation problem by use of an
+alternating optimization procedure that includes the alternating direction method
+of multipliers (ADMM) as one of the steps. Tuning of the cardinality and fusion
+penalty is based on the index of sparseness. We illustrate with an example on the
+co-occurrence of experienced symptoms by cancer survivors belonging to different
+tumor types.
+
+Keywords: multigroup data, regularized pca, admm
+
+
+
+
+
+
+
+
+
+
+
+
+

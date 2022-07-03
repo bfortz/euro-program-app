@@ -1,0 +1,25 @@
+Variational Autoencoder with Gamma Mixture for Clustering Right-Skewed Data
+
+Jinwon Heo and Jangsun Baek
+
+Generative models such as generative adversarial network (GAN), autoencoder (AE),
+and variational autoencoder (VAE) enable model-based clustering to be undertaken
+because they can learn and extract significant features from data. Among them, variational
+autoencoder with deep embedding (VaDE) is an unsupervised clustering
+method proposed within the VAE framework by assuming Gaussian distribution
+for both the marginal distribution of the latent feature vector and the conditional
+distribution of data given the latent vector. Several analyses of many real microarray
+datasets have suggested that the empirical distribution of gene expression levels
+is approximately right-skewed like log-normal with some extreme values depending
+on the biological samples under investigation. Therefore, the above approach
+is sensitive to both non-normality of the data and extreme expression levels. We
+propose a new VAE approach based on gamma mixture that efficiently fits data
+with right-skewed distribution. We derive the evidence lower bound (ELBO) and
+optimize the ELBO using the reparameterization trick for gamma distribution and
+Stochastic Gradient Variational Bayes estimator. The proposed method is applied to
+some high-dimensional real gene expression datasets and single-cell RNA-seq data
+with small sample sizes and shows its better performance over the existing generative
+models including statistical model-based method such as mixtures of common
+t-factor analyzers.
+
+Keywords: clustering, variational autoencoder, gamma distribution

@@ -1,0 +1,37 @@
+High-Dimensional Linear Regression Estimation
+
+Mauro Iannuzzi and Matteo Farnè
+
+The least square solution for the estimation of the parameters in a multiple linear
+regression model is not unique when the number of variables is larger than the number 
+of units and can be very inaccurate when the number of units is larger than the
+number of variables, but the covariate space is high-dimensional.
+  In [1] a new estimator for large covariance matrices is proposed. The method is
+called UNALCE (UNshrunk ALgebric Covariance Estimator) and is based on the
+decomposition of the high-dimensional covariance matrix into the sum of a low rank
+(L) and a sparse (S) component.
+  In this poster the effect of different covariance estimators on the statistical 
+properties of the estimates of the regression coefficients in a multiple linear regression
+model is assessed through a wide simulation study.
+  The goal is to test whether, if appropriately optimized, UNALCE is able to
+increase the accuracy in estimation, given a high-dimensional context. The results
+are compared with the standard least squares one (when feasible), with the RIDGE
+[2] and with ALCE (a variant of UNALCE that stops before the unshrinkage step).
+
+Keywords: multiple linear regression, high dimensions, nuclear norm
+
+References
+1. Farné, M., Montanari, A.: A large covariance matrix estimator under intermediate spikiness
+   regimes. Journal of Multivariate Analysis 176, 104577 (2020)
+2. Hoerl, A.E., Kennard, R.W.: Ridge regression: Biased estimation for nonorthogonal problems.
+   Technometrics 12(1), 55–67 (1970)
+
+
+
+
+
+
+
+
+
+

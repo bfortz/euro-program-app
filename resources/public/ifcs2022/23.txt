@@ -1,0 +1,22 @@
+A Proposal for Formalization and Definition of Anomalies in Dynamical Systems
+
+Jan Michael Spoor, Jens Weber, and Jivka Ovtcharova
+
+Although many scientists strongly focus on anomaly detection in different applications 
+and domains, there currently exists no universally accepted definition of anomalies and 
+outliers bib2. Using an approach based on control theory and dynamical systems, as well 
+as a definition for anomalies as described by philosophy of science bib5, the authors 
+propose a generalized framework viewing anomalies as key drivers of progress for a better 
+understanding of the dynamical systems around us. By mathematically defining anomalies and 
+delimiting deviations within expectations from completely unforeseen instances, this paper 
+aims to be a contribution to set up a universally accepted definition of anomalies and outliers.
+
+Keywords: anomaly detection, outlier analysis, dynamical systems
+
+References
+1. Hodge, V.J.; Austin, J.A.: Survey of Outlier Detection Methodologies. Artif Intell Rev 22, 
+   pp. 85-126 (2004)
+2. Spoor, J.M.; Weber, J.; Ovtcharova, J.: A Definition of Anomalies, Measurements and Predictions 
+   in Dynamical Engineering Systems for Streamlined Novelty Detection. Accepted for the 8th International 
+   Conference on Control, Decision and Information Technologies (CoDIT), Istanbul (2022)
+

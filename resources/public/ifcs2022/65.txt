@@ -1,0 +1,36 @@
+Depth-Based Two-Sample Testing
+
+Felix Gnettner, Claudia Kirch, and Alicia Nieto-Reyes
+
+Depth functions provide measures of the deepness of a point with respect to a given
+set of observations. This non-parametric concept can be applied in spaces of any 
+dimension and entails a center-outward ordering for the given data. A two-sample test
+has been previously proposed that is based on depth-ranks and offers opportunities
+for further investigations: Observing that the corresponding test statistic LS(X, Y)
+is not symmetric with respect to the two samples X and Y, the power can be greatly
+increased if LS(X, Y) and LS(Y, X) are jointly considered. Within the last years,
+depths with respect to functional data have been established that we combine with
+this procedure to obtain new non-parametric two-sample tests for functional data.
+We investigate the asymptotic behaviour of this modified test procedure for several
+classes of depths including depths for functional data.
+
+Keywords: two-sample test, depth, non-parametric
+
+References
+1. Liu, R.Y., Singh, K.: A Quality Index Based on Data Depth and Multivariate Rank Tests.
+   Journal of the American Statistical Association. 88:421, 252–260 (1993)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

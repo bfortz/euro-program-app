@@ -1,0 +1,45 @@
+Correlation-Based Iterative Clustering Methods for Time Course Data
+
+Michelle Carey, Shuang Wu, Guojun Gan, and Hulin Wu
+
+Many pragmatic clustering methods have been developed to group data vectors or
+objects into clusters so that the objects in one cluster are very similar and objects
+in different clusters are distinct based on some similarity measure. The availability
+of time course data has motivated researchers to develop methods, such as mixture
+and mixed-effects modelling approaches, that incorporate the temporal information
+contained in the shape of the trajectory of the data. However, there is still a need for
+the development of time-course clustering methods that can adequately deal with
+inhomogeneous clusters (some clusters are quite large and others are quite small).
+  We propose two such methods, hierarchical clustering (IHC) and iterative
+pairwise-correlation clustering (IPC). We evaluate and compare the proposed methods to 
+the Markov Cluster Algorithm (MCL) and the generalised mixed-effects model (GMM) using 
+simulation studies and an application to a time course gene expression data set from a 
+study containing human subjects who were challenged by a live influenza virus. We identify 
+four types of temporal gene response modules to influenza infection in humans, i.e., single-gene 
+modules (SGM), small-size modules (SSM), medium-size modules (MSM) and large-size modules (LSM).
+
+Keywords: functional data analysis, inhomogeneous clusters, high-dimensional data analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

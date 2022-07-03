@@ -1,0 +1,52 @@
+Dimensionality Reduction and Multivariate Time Series Classification
+
+Veronne Yepmo, Angeline Plaud, and Engelbert Mephu Nguifo
+
+In this work we tackle the problem of dimensionality reduction when classifying
+multivariate time series (MTS). Multivariate time series classification is a 
+challenging task, especially as sparsity in raw data, computational runtime and 
+dependency among dimensions increase the difficulty to deal with such complex data.
+  In a recent work, a novel subspace model named EMMV (Ensemble de Mhistogrammes 
+Multi-Vues) [1] that combines M-histograms and multi-view learning together with 
+an ensemble learning technique to handle the MTS classification task was reported. 
+The aforementioned model has shown good results when compared to state of the art 
+MTS classification methods. Before performing the classification itself, EMMV reduces 
+the dimension of the multivariate time series using correlation analysis, and uses 
+after that a random selection of the views. In this work, we explore two more 
+alternatives to the dimensionality reduction method used in EMMV, the goal being to 
+check the efficiency of randomness on EMMV. The first technique named Temporal Laplacian 
+Eigenmaps [2] comes from manifold learning and the second one named Fractal Redundancy 
+Elimination [3] comes from the fractal theory. Both are nonlinear dimensionality reduction 
+algorithms in contrast to correlation analysis which is linear, meaning that the first cited 
+are able to eliminate more correlations than the latter.
+  We then conduct several experiments on available MTS benchmarks in order to compare the 
+different techniques, and discuss the obtained results.
+
+Keywords: multivariate time series, dimensionality reduction, classification
+
+Acknowledgements: This work was partially supported by LabEx IMobS3 and 
+                  IMI2-H2020 Project NeuroDeRisk.
+
+References
+1. Plaud, A., Mephu Nguifo, E. and Charreyron, J.: Classification des séries temporelles 
+   multivariées par l’usage de Mgrams. French Machine Learning conf. (CAP), 2019, July, 
+   Toulouse. https://hal.archives-ouvertes.fr/hal-02162093.
+2. Lewandowski, M., et al.: Temporal extension of laplacian eigenmaps for unsupervised 
+   dimensionality reduction of time series. 20th IEEE ICPR, 2010. p. 161-164.
+3. Oliveira, J. and Cordeiro, R.: Unsupervised dimensionality reduction for very large datasets:
+   Are we going to the right direction ? Knowledge-Based Systems. 2020, vol. 196, p. 105777
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

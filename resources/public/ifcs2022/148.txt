@@ -1,0 +1,33 @@
+Robust Classification in High Dimensions Using Regularized Covariance Estimates
+
+Valentin Todorov and Peter Filzmoser
+
+High-dimensional highly correlated data exist in many application domains which
+requires the development of appropriate statistical methods. The classical classification
+methods like LDA and QDA become practically useless in such a setting because
+they will suffer from the singularity problem if the number of observed variables p
+exceeds the number of observations n. Numerous regularization techniques with the
+purpose to stabilize the classifier and achieve an improved classification performance
+have been developed and there exist several studies comparing various regularization
+techniques trying to facilitate the choice of a method. However, these methods are
+vulnerable to the presence of outlying observations (outliers) in the training data set
+which can influence the obtained classification rules and make the results unreliable.
+On the other hand, the high breakdown versions of discriminant analysis proposed in
+the literature, like [3] do not work or are not reliable in high dimensions. We propose
+to utilize the recently introduced regularized versions of the minimum covariance
+determinant (MCD) estimator - the regularized MCD (RMCD) estimator [2] and
+the minimum regularized covariance determinant (MRCD) estimator [1] to define
+the robust discriminant rules which will combine high robustness to outliers with
+applicability in high dimensions. The computations can be done with the R package
+rrcov available at CRAN. Simulated and real data examples show that the proposed
+methods perform better than the existing ones in a wide range of settings.
+
+Keywords: regularization, high-dimensional classification, robust covariance estimation
+
+References
+1. Boudt, K., Rousseeuw, P.J., Vanduffel, S., Verdonck, T.: The minimum regularized 
+   covariance determinant estimator. Statistics and Computing 30(1), 113–128 (2020).
+2. Croux, C., Gelper, S., Haesbroeck, G.: Regularized minimum covariance determinant 
+   estimator. Technical report, Mimeo New York (2012).
+3. Hubert, M., Van Driessen, K.: Fast and Robust Discriminant Analysis. Computational 
+   Statistics & Data Analysis 45, 301–320 (2004).

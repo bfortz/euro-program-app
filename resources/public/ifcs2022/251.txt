@@ -1,0 +1,48 @@
+Biplot Representation of Partial Least Squares Regression for Binary Responses
+
+Laura Vicente-Gonzalez and Jose Luis Vicente-Villardon
+
+In this work we describes biplot representation for visualization of Partial Least
+Squares Regression for Binary Responses (PLS-BLR). The PLS-BLR is a generalization 
+of Partial Least Squares Regression [3] to handle a matrix of continuous predictors 
+and a set of binary responses. The resulting biplot will be a combination of a traditional 
+representation for numeric data and a Logistic Biplot as described by [2] or [1].
+  First we describe the base methods, PLSR, PLSR-BLR and their associated biplots, then 
+the connection among them. Finally we present an application to real data.
+  Software packages for the calculation of the main results are also provided.
+
+Keywords: biplot, binary data, PLS, PLS-BLR
+
+References
+1. Demey, J., Vicente-Villardon, J.L., Galindo, M.P., Zambrano, A.: Identifying Molecular 
+   Markers Associated With Classification Of Genotypes Using External Logistic Biplots. 
+   Bioinform., 24(24),2832-2838, 2008
+2. Vicente-Villardon, J.L., Galindo, M.P., Blazquez-Zaballos, A.: Logistic biplots. In: 
+   Greenacre, M., Blasius, J. (eds.) Multiple Correspondence Analysis and related methods., 
+   pp. 503-521. Chapman and Hall, New York (2006)
+3. Wold., H.: Soft modeling by latent variables: the nonlinear iterative partial least squares
+   (NIPALS) approach. J. Appl. Probab. , 12(S1), 117-142, (1975)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

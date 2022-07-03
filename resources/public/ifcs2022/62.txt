@@ -1,0 +1,32 @@
+Trends in Data Stream Mining
+
+João Gama
+
+Learning from data streams is a hot topic in machine learning and data mining.
+We describe our recent work on emerging issues related to learning from data
+streams. We discuss two quite different problems. The first use case is an application
+of data stream techniques to fraud detection. We propose an algorithm for the
+interconnected by-pass fraud problem. This real-world problem requires processing
+high-speed telecommunications data and providing fraud alarms in real-time. The
+proposed solution clearly illustrates the need for online data stream processing.
+Hyper-parameter tunning is a popular topic in offline learning. Nevertheless, few
+algorithms have been presented for the online setting. We present one of the first
+algorithms for online hyper-parameter tuning for streaming data. We discuss the Self
+hyper-Parameter Tunning (SPT) algorithm, an optimization algorithm for online
+hyper-parameter tuning from non-stationary data streams. SPT works as a wrapper
+over any streaming algorithm and can be used for classification, regression, and
+recommendation.
+
+Keywords: fraud detection, hyper-parameter tuning, learning from data streams
+
+
+
+
+
+
+
+
+
+
+
+

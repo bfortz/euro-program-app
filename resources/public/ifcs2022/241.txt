@@ -1,0 +1,47 @@
+Predictors of Quantitative Skills in Degree Schemes at University
+
+Alex Partner, Adi Lausen, Alexei Vernitski, Chris Saker, and Berthold Lausen
+
+In the United Kingdom, students are required to study mathematics up until the age
+of 16. After this age it ceases to become compulsory, despite students remaining in
+education until the age of 18. This means that only 20% of students on UK degree
+schemes have studied mathematics between the ages of 16-18 [1]. Comparing this
+figure with over 50% uptake in comparable countries, the UK falls short in terms of
+maths skills in Higher Education and industry [2].
+  In this paper, we will discuss the findings of a two-wave study that we conducted at
+a UK Higher Education institution with first-year undergraduate students. We conducted 
+the first wave of the study at the start of the university term to understand the
+effect mathematical literacy has on their maths and statistics performance. Further,
+we investigated the extent maths anxiety, personality traits and metacognition impact 
+on their performance accuracy. Results showed that post-16 mathematics, low
+mathematics anxiety, low conscientiousness and low extraversion were associated
+with better maths and statistics performance at the start of the university term. Only
+higher agreeableness (working with others) was associated with higher improvement
+of maths and statistics performance after one term.
+
+Keywords: personality traits, mathematics anxiety, confidence judgements
+
+References
+1. Smith, A.: Report of Professor Sir Adrian Smith’s review of post-16 mathematics. London:
+   DfE (2017)
+2. Hodgen, J., Pepper, D., Sturman, L., Ruddock, D.: Is the UK an outlier? An international
+   comparison of upper secondary mathematics education. The Nuffield Foundation (2010)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

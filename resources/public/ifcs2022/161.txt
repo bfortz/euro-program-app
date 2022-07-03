@@ -1,0 +1,34 @@
+Off-Target Predictions in CRISPR-Cas9 Gene Editing Using Machine Learning
+
+Ali Mertcan Kose and Ozan Kocadagli
+
+Recently, CRISPR (Clustered Regularly Interspaced Short Palindromic Repeated)
+applications widely appear in gene editing for treatment of cancer. Therefore,
+CRISPR Cas-9 system is a robust method for effectively editing the genome of
+cell. CRISPR locus is composed of DNA in genes located on cell. DNA/Target 
+sequence occurs 23 endonucleases. Off/on-target sequence are diagnosed with 
+matching between endonucleases and Guide RNA. The prediction of off-target mutations
+in CRISPR-Cas9 is a hot topic because of its relevance to gene editing research.
+In literature, Off/on target levels are often evaluated by CFD/MIT scores in terms
+of binary classification. Instead of those scores, determining more than 2 classes
+by the latent class analysis (LCA) in the pre-processing step helps to interpret, and
+classify more accurately. In this study, a benchmark dataset that consists of Human
+(Homo-sapiens) - (GRCh37/hg19) + SNPs: 10000 Genomes, ExaC was used. In the
+analysis, LCA produced three significant classes related to the off-target scores over
+benchmark dataset. These classes are identified as high (7.1%), middle (86.5%),
+low (6.4%). Afterwards, the estimated off-target scores were modeled by machine
+learning methods such as Xgboost, SVM, ANN and decision trees etc. where the
+benchmark dataset was partitioned by 10-fold cross-validation procedure. 
+The analysis results figure out the effect of locus structures and mismatching positions 
+on the off-target. The best model is Xgboost with accuracy (AUC=100%).
+
+Keywords: latent class analysis, machine learning, crispr, off target scoring
+
+References
+1. Kang, S.H., Lee, W. jae, An, J.H., Lee, J.H., Kim, Y.H., Kim, H., . . . Lee, S. H. : 
+   Predictionbased highly sensitive CRISPR off-target validation using target-specific 
+   DNA enrichment. Nat Commun. 11(1), 1–11 (2020)
+2. Leibowitz, M.L., Papathanasiou, S., Doerfler, P.A., Blaine, L.J., Sun, L., Yao, Y., . . . 
+   Pellman, D.: Chromothripsis as an on-target consequence of CRISPR–Cas9 genome editing. 
+   Nat Genet. 53(6), 895–905 (2021)
+

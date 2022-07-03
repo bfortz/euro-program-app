@@ -1,0 +1,54 @@
+Modeling Three-Way RNA Sequencing Data Using Data Transformations and Matrix-Variate
+Gaussian Mixture Models
+
+Theresa Scharl and Bettina Grun
+
+RNA sequencing of time-course experiments leads to three-way count data where
+the dimensions are the genes, the time points and the biological units. Clustering
+of RNA-seq data allows to detect groups of co-expressed genes over time. After
+standardization, the counts of individual genes across time points and biological
+units constitute compositional data. Rau and Maugis [1] propose an approach for
+analyzing two-way RNA-seq data where they only have genes and time points as
+dimensions or the biological units are flattened out. For two-way data, they investigate
+the use of data transformations in conjunction with Gaussian mixture models. In this
+work we want to extend their approach to three-way data and investigate suitable
+data transformations for three-way data before clustering the data using matrixvariate 
+Gaussian mixture models. Finite mixtures of matrix-variate distributions are
+implemented in the R package MatTransMix [2]. Using a matrix-variate Gaussian
+mixture model already represents a more parsimonious model formulation than
+using a Gaussian mixture model after flattening out the biological units. Additional
+parsimonity may be gained by assuming that different sets of parameters are identical
+across clusters, thus allowing also for an easier interpretation of the fitted model.
+The proposed three-way clustering approach will be applied to RNA-seq data from
+E. coli bioproduction processes and also compared to the two-way approach after
+flattening out the biological units.
+
+Keywords: model-based clustering, three-way data, rna sequencing
+
+References
+1. Rau, A., Maugis-Rabusseau, C.: Transformation and model choice for RNA-seq co-expression
+  analysis. Brief. Bioinformatics 19, 425–436 (2018)
+2. Zhu, X., Sarkar, S., Melnykov, V.: MatTransMix: an R Package for Matrix Model-Based
+   Clustering and Parsimonious Mixture Modeling. J Classif 39, 147–170 (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

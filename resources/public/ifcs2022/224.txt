@@ -1,0 +1,38 @@
+Exploratory Graph Analysis for Configural Invariance Assessment of a Test
+
+Alex Cucco, Lara Fontanella, Sara Fontanella, and Nicola Pronello
+
+Self-report survey instruments are frequently used to investigate differences between
+groups of respondents, such as citizens of different nations in cross-country comparative 
+analyses. In this context, a main methodological problem pertain to the configural invariance 
+of the measurement instrument, which holds if the latent structure has the same pattern across 
+different groups across the groups. In this work, to address this issue, we adopt an exploratory 
+approach rooted in the framework of graph theory. Specifically, considering a multi-group comparative 
+analysis and measurement instruments consisting of ordered categorical indicators, we discuss the
+use of exploratory graph analysis to assess the instrument configural invariance. In
+this framework, networks are used to represent latent constructs, and the covariance
+between observable indicators is explained in terms of a pattern of causal interactions
+between the items. Hence, we assume that if the measurement instrument functions
+invariantly across the groups, the group specific correlation-based networks will be
+characterised by a similar structure. The network structures are estimated through a
+Bayesian approach with sparse inducing priors and network embedding will be used
+to investigate the structure similarity. Through a simulation study we demonstrate
+that the proposed method is able to identify the differences. Finally, the proposed
+approach is applied to test the configural invariance of the Democracy Scale adopted
+in the European Social Survey.
+
+Keywords: psychometric networks, bayesian sparse modelling, dimensionality reduction
+
+
+
+
+
+
+
+
+
+
+
+
+
+

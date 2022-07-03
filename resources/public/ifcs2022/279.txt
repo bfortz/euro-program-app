@@ -1,0 +1,30 @@
+Current Challenges in Interpretable Machine Learning and Partitioning Approaches
+
+Bernd Bischl
+
+Model-agnostic interpretation methods in machine learning produce explanations
+based on non-linear, non-parametric prediction models. Explanations are often 
+represented in the form of summary statistics or visualizations, e.g., feature 
+importance values or effects. Many interpretation methods either describe the 
+behavior of a black-box model locally for a specific observation or globally for 
+the entire model and input space. Methods that produce regional explanations and 
+lie between local and global explanations are rare and not well studied, but offer 
+a flexible way to combine advantages of both types of explanations. Here, we will 
+focus on subgroup approaches for IML methods, where interpretable areas in the input 
+space are often induced by a combination of recursive partitioning and IML. These 
+subgroup approaches will be studied in the contexts of interpretable permutation 
+feature importance and PDPs [1], interaction detection [2], and interpretable 
+hyperparameter tuning [3].
+
+Keywords: machine learning, interpretable machine learning, xai
+
+References
+1. Molnar, C., König, G., Bischl, B., & Casalicchio, G. (2020). Model-agnostic Feature 
+   Importance and Effects with Dependent Features – A Conditional Subgroup Approach. 
+   arXiv preprint arXiv:2006.04628.
+2. Herbinger, J., Bischl, B., & Casalicchio, G. (2022, May). REPID: Regional Effect Plots
+   with implicit Interaction Detection. In International Conference on Artificial Intelligence 
+   and Statistics (pp. 10209-10233). PMLR.
+3. Moosbauer, J., Herbinger, J., Casalicchio, G., Lindauer, M., & Bischl, B. (2021). Explaining
+   Hyperparameter Optimization via Partial Dependence Plots. Advances in Neural Information
+   Processing Systems, 34.

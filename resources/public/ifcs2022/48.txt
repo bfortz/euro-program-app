@@ -1,0 +1,39 @@
+Improving Classification of Documents by Semi-Supervised Clustering 
+in a Semantic Space
+
+Jasminka Dobsa and Henk A.L. Kiers
+
+In the paper we propose method for representation of documents in a semantic 
+lowerdimensional space based on the modified Reduced k-means method which penalize
+clusterings that are distant from classification of train documents given by experts.
+Iterative method of the Reduced k-means (RKM) [1] enables simultaneously clustering 
+of documents and extraction of factors. By projection of documents represented in the 
+vector space model on extracted factors, documents are clustered in the semantic space 
+in a semi-supervised way because clustering is guided by classification given by experts, 
+which enables improvement of classification performance of test documents.
+  Classification performance is tested for classification by logistic regression and support 
+vector machines (SVMs) for classes of Reuters-21578 data set. It is shown that representation 
+of documents by the RKM method with penalization improves average precision of classification 
+for 25 largest classes of Reuters collection for about 5,5% with the same level of average 
+recall  in comparison to the basic representation in the vector space model. In the case on 
+classification by logistic regression, representation by the RKM with penalization improves 
+average recall for about 1% in comparison to the basic representation.
+
+Keywords: classification of textual documents, lsa, reduced k-means
+
+References
+1. De Soete, G., Carroll, J.D.: K-means clustering in a low-dimensional Euclidean space.
+   In: Diday, E., Lechevallier, Y., Schader, M., Bertrand, P., Burtschy, B. (eds.) New 
+   Approaches in Classification and Data Analysis. Studies in Classification, Data Analysis, 
+   and Knowledge Organization, pp. 212-219. Springer, Heidelberg (1994)
+
+
+
+
+
+
+
+
+
+
+

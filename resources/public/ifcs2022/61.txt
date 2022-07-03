@@ -1,0 +1,37 @@
+A Moment-Free Measure of Multivariate Skewness
+
+Andrzej Sokolowski and Malgorzata Markowska
+
+Multivariate skewness measures proposed in the literature are usually generalizations
+of univariate ones, and are based on the third central moment or Pearson’s relation
+between mode, mean and standard deviation. Popular measure was proposed by
+Mardia [2], and good review of other propositions can be found in [1]. The aim of
+the paper is to propose a new measure of sample multivariate skewness which uses
+the idea of a ”mirror observation”. The measure is calculated on standardized data.
+The ”mirror observation” is an artificial point lying on the line from the given data
+point through the coordinate origin, within the same distance to the origin as the
+actual point, and located on the other side of the origin. Then the distance from the
+real data point closest to the mirror one is used in the construction of the measure,
+which is finally the average over all data points. The problem of assymetry sign
+is discussed as well as the distribution of the measure under multivariate normal
+distribution. The empirical example compares the multivariate skewness of different
+socio-economic spheres in European Union countries distribution.
+
+Keywords: multivariate skewness, nearest neighbor, european union countries
+
+References
+1. Balakrishnan N. and Scarpa B.: Multivariate measures of skewness for the skew-normal
+   distribution. J. Multivariate Anal. 104, 73-87 (2012).
+2. Mardia K.V.: Measures of multivariate skewness and kurtosis with applications. 
+   Biometrika 36, 519-530 (1970)
+
+
+
+
+
+
+
+
+
+
+

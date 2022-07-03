@@ -1,0 +1,16 @@
+Localization Processes for Functional Data Classification
+
+Antonio Elías, Raúl Jiménez, and J. E. Yukich
+
+We propose an alternative to k-nearest neighbors for functional data whereby the
+approximating neighboring curves are piecewise functions built from a functional
+sample. Using a locally defined distance function that satisfies stabilization criteria,
+we establish pointwise and global approximation results in function spaces when
+the number of data curves is large enough. We exploit this feature to develop the
+asymptotic theory when a finite number of curves is observed at time-points given
+by an i.i.d. sample whose cardinality increases up to infinity. We use these results
+to study the problem of functional classification and outlier detection. For such
+problems our methods are competitive with and sometimes superior to benchmark
+predictions in the field.
+
+Keywords: functional data classification, nearest neighbors, outlier detection

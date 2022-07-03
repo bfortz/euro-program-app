@@ -1,0 +1,36 @@
+Are Attitudes Toward Immigration Changing in Europe? An Analysis Based on
+latent Class IRT Models
+
+Ewa Genge and Francesco Bartolucci
+
+We analyze the changing attitudes toward immigration in EU host countries in the last
+few years (2010-2018) on the basis of the European Social Survey data. These data are
+collected by the administration of a questionnaire made of items concerning different
+aspects related to the immigration phenomenon. For this analysis, we rely on a latent
+class approach considering a variety of models that allow for:(i) multidimensionality;
+(ii) discreteness of the latent trait distribution; (iii) time-constant and time-varying
+covariates; and (iv) sample weights. Through these models we find latent classes of
+Europeans with similar levels of immigration acceptance and we study the effect of
+different socio-economic covariates on the probability of belonging to these classes
+for which we provide a specific interpretation. In this way we show which countries
+tend to be more or less positive toward immigration and we analyze the temporal
+dynamics of the phenomenon under study.
+
+Keywords: discrete latent variables; european social survey; expectation-maximization
+          algorithm; item response theory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

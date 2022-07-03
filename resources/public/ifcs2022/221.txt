@@ -1,0 +1,47 @@
+PD-Clustering for Mixed Data Type
+
+Francesco Palumbo and Cristina Tortora
+
+Data clustering aims to find homogeneous groups in the data using systematic
+numerical methods; non-hierarchical algorithms can offer considerable advantages
+over other approaches. Above all, they are easily parallelizable. In a few words,
+they solve an optimization problem to find two quantities: the cluster memberships
+and the cluster parameters, which depend on each other. Therefore, algorithms
+alternatively compute the two quantities, optimizing the same criterion at each step,
+and stop when the criterion reaches a minimum (maximum). The membership can
+be crisp or probabilistic: a point is assigned to all the clusters with a degree of
+membership. Probabilistic Distance Clustering (PDC) maximizes the classifiability
+of all the observations assuming that the belonging probability to each cluster is
+inversely proportional to the distance from the cluster center [1].
+To jointly consider mixed data variables, one possible solution is to re-code all
+variables in a single data type through pre-processing, which can seriously weaken
+the true association structure. Some satisfactory clustering methods for mixed data
+exist, but they tend to be slow. The primary issue in clustering mixed data is the
+identification of a unified similarity metric. The most popular approaches based on
+this idea are k-prototypes [3] and KAy-means for MIxed LArge data (Kamila) [2].
+This proposal extends the PDC to mixed-type data using a dissimilarity for mixedtype 
+data and redefining the cluster centers. The cluster parameters that optimize the
+criterion are based on the updated dissimilarity and integrated into the algorithm.
+The performance of the new algorithm are compared to K-prototype and Kamila.
+
+Keywords: probabilistic distance clustering, mixed data
+
+References
+1. A. Ben-Israel, C. Iyigun, Probabilistic d-clustering, J Class 25 (1) (2008) 5–26.
+2. A. H. Foss, M. Markatou, kamila: Clustering mixed-type data in R and Hadoop, J Stat Softw
+  83 (13) (2018) 1–45.
+3. G. Szepannek, clustmixtype: User-friendly clustering of mixed-type data in r, The R Journal
+   10 (2) (2018) 200–208.
+
+
+
+
+
+
+
+
+
+
+
+
+

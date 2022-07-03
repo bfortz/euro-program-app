@@ -1,0 +1,60 @@
+Google Trends as a Macroeconomic Predictor: Behind the Scenes
+
+Eduardo Andre Costa and Maria Eduarda Silva
+
+Data sourced from online activities and particularly from Google Trends (GT) has
+been gaining importance in the literature as predictors for economic indicators. 
+Recent research evidence relationships between GT and a range of outcomes, thus
+establishing GT as a complementary data source. GT yields a measure of the interest 
+of Google search-engine users in a subject or a specific keyword over time,
+resulting in a normalised index [1]. The benefits of GT as a data supplier include
+its promptness, inexpensive collection costs, mixed sampling frequency and approaches 
+to diversified research areas. There are, however, two issues associated with GT that 
+require attention. The first regards the frequency of the returned index, which depends 
+on the time length and span required, leading to limited historical data in high-frequency 
+sampling. If daily data are necessary, then GT is limited to 9-months of data, whereas 
+monthly sampling grants more than 5-years of data. Since GT normalises indexes, stacking 
+multiple time frames to obtain extended periods of high-frequency data would conceal 
+eventual trends in the underlying data; thus, temporal disaggregation procedures must be 
+applied [2]. The second issue involves the data source sampling noise since different 
+indexes are produced on distinct days, even when all the other constraints (time length, 
+time span, subject and keywords) are kept constant. As GT considers aggregated searches 
+based on samples, performing collections over multiple days and summarising them into a 
+single measure controls for the data uncertainty [1]. This work addresses the construction 
+of  a time series predictor from GT’s indexes in a nowcasting exercise with mixed frequency 
+data.
+
+Keywords: google trends, data source, high-frequency sampling
+
+Acknowledgements Eduardo Andre Costa gratefully acknowledges support from CEF.UP/FCT
+                 (UIDB/04105/2020) and FCT (2021.07583.BD).
+
+References
+1. McLaren, N., Shanbhogue, R. Using internet search data as economic indicators. Bank Engl.
+   Q. Bull. 51(2), 134–140 (2011)
+2. Eichenauer, V.Z., Indergand, R., Martínez, I.Z., Sax, C. Obtaining consistent time series 
+   from Google Trends. Econ. Inq. 60(2), 694–705 (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

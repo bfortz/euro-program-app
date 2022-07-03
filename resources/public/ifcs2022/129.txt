@@ -1,0 +1,22 @@
+Kurtosis-Based Projection Pursuit for Matrix-Valued Data
+
+Una Radojicic, Klaus Nordhausen, and Joni Virta
+
+A classical problem in image processing is that of discriminatory feature extraction,
+where gray-scale images are naturally represented as matrices. We develop
+projection pursuit for data that admit a natural representation in matrix form, where
+another common data type admitting this representation is e.g. a univariate spatial
+data collected on a regular grid. For projection indices we propose extensions of
+the classical kurtosis and Mardia’s multivariate kurtosis. The first index estimates
+projections for both sides of the matrices simultaneously, while the second index
+finds the two projections separately. Both indices are shown to recover the optimally
+separating projection for two-group Gaussian mixtures in the full absence of any
+label information. We further establish the strong consistency of the corresponding
+sample estimators. Simulations and a real data example on hand-written postal code
+data are used to demonstrate the method.
+
+Keywords: discriminant analysis, matrix-variate gaussian mixture, rank-1 projection
+
+References
+1. Radojicic, U., Nordhausen, K., and Virta, J.: Kurtosis-based projection pursuit 
+   for matrix-valued data. arXiv preprint arXiv:2109.04167 (2021).

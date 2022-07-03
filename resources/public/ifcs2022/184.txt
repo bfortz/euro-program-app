@@ -1,0 +1,35 @@
+Combining KDE and DBSCAN Clustering to Understand Road Traffic Accidents: 
+the Case of Setúbal, Portugal
+
+Pedro Nogueira, Marcelo Silva, Paulo Infante, Paulo Rebelo Manuel, Leonor Rego,
+Anabela Afonso, and Gonçalo Jacinto
+
+Road traffic accidents (RTA) constitute a scourge that modern societies face, with
+an increasing death toll each passing year. Deep knowledge of the conditioning
+factors might help to mitigate this problem. Understanding the RTA location and
+what variables play a role are keys to foster road safety and outline prevention
+policies. The analysis of hotspots location based on RTA is the most common
+approach to understand the relations between neighboring accidents, looking for
+spatial significance. Herein, it is proposed that the comparison and analysis of
+hotspots with the clusters defined by DBSCAN algorithm is a valid tool to further
+clarify the spatial distribution of RTA. Data from the Portuguese district of Setúbal
+between the years 2016 and 2019 was used and the following datasets/subsets were
+defined: i) all accidents, ii) accidents with victims, and iii) accidents with fatalities
+and/or major injuries. The Kernel Density Estimation (KDE) was used with a quartic
+function to define the hotspots in QGIS.
+The comparison of the hotspots with DBSCAN results allow us to conclude that:
+A) datasets i) and ii) have similar hotspot locations and there is no relation between
+hotspots and DBSCAN clusters, a single cluster comprises all the hotspots, being
+the other for small patches randomly distributed in the studied area; B) For dataset
+iii) the hotspots are not well defined, with one exception, whereas DBSCAN creates
+two clusters, separating urban areas with dense traffic, from more rural areas with
+traffic concentrated in high-speed roads; C) Moreover, for dataset iii) the remaining
+DBSCAN clusters define RTA in specific low traffic roads. These low traffic roads
+are, therefore, the targets that are prone to deepen the studies for understanding the
+location of RTA with fatalities or major injuries.
+
+Keywords: road traffic accidents, kernel density estimation map, DBSCAN, QGIS
+
+
+
+

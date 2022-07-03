@@ -1,0 +1,18 @@
+Categorical Data Analysis and Visualization
+
+Rosaria Lombardo and Erich Beh
+
+The impact of the internet, social media and smart devices means that people are
+becoming increasingly literate with use of these technologies and it has changed
+how we engage with others on a professional and personal level. For the analyst, the
+capacity to adapt to such changes has impacted upon the tools designed for analyzing 
+“big data”, i.e. huge amount of numerical and categorical data. One of the most 
+important tools is that of “visualization”. 
+  With focus on categorical data, this tutorial, after briefly introducing association 
+indices, models and methods, will outline some cutting-edge visualization tools and 
+techniques.
+
+Content: A Quick Historical Overview of the Visualization of Categorical Data;
+         The Contingency Table and the Chi-Squared Statistic; Measures of Symmetric 
+         Association for I x J Contingency Tables; Correspondence Analysis (symmetrical,
+         non-symmetrical, ordinal) and Multiple and Multi-way Correspondence Analysis.

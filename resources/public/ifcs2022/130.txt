@@ -1,0 +1,31 @@
+Outlier Detection: a Procedure to Capture Atypical Groups of Observations
+
+Ana Helena Tavares and Vera Afreixo and Paula Brito
+
+In thiswork, we introduce the concept of atypical group of observations and propose a
+procedure for its identification. By atypical group, we mean a cluster of observations
+whose ‘mean’ pattern stands out from the majority of the ‘mean’ patterns of the
+remaining clusters. Challenges that arise in atypical group detection are firstly to
+identify a meaningful segmentation of the data, and secondly to flag the atypical
+segments. Our work focus on data whose elements are discrete distributions.
+If heterogeneous datasets, where distinct patterns coexist, can validly be clustered,
+then the class prototypes provide a simplified description of data. Thus, the key idea
+of our proposal is to combine a clustering method with a functional outlyingness
+criterion to capture atypical class prototypes.
+To identify a segmentation of the distributional data we iteratively combine two
+steps. The first creates a hierarchy of clusters, while the second flags atypical curves
+within each cluster, based on a measure of functional outlyingness which accounts for
+the shape of the distributions [1]. Segments with atypical curves, are forwarded for
+(sub)clustering, and the procedure is repeated until no outlying curves are identified
+in clusters. Once the final partition is obtained, each cluster is represented by a
+class prototype, whose outlyingness is evaluated according to the same functional
+approach. Clusters with an atypical class prototype are pointed as atypical.
+We apply our procedure to investigate clusters of genomic words in human DNA
+by studying their inter-word lag distributions. These experiments demonstrate the
+potential of the new method for identifying clusters of words with outlying patterns.
+
+Keywords: outlyingness, clustering, distributional data, functional data
+
+References
+1. Rousseeuw, P. J., Raymaekers, J., Hubert, M.: A measure of directional outlyingness 
+   with applications to image data and video. J Comput Graph Stat. 27:2, 345-359 (2018)

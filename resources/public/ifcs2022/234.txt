@@ -1,0 +1,48 @@
+Model-Based Tri-Clustering
+
+Rafika Boutalbi, Lazhar Labiod, and Mohamed Nadif
+
+Classical clustering procedures seek to separately construct an optimal partition of
+rows or columns or sometimes of rows and columns simultaneously. In this latter, 
+co-clustering methods organize the data into homogeneous blocks. Methods of this kind
+have practical importance in a wide variety of applications. However, tensor data
+representation is a handy tool to represent data with complex structures. The threeway 
+tensors are used in different fields like recommender systems, medical fields and
+social studies. Thereby, extending co-clustering to tri-clustering is a good manner
+to harness this kind of data. Several tri-clustering algorithms have been proposed
+in the literature. As suggested in [1] and through our investigations, we propose
+to classify the existing tri-clustering methods into five families: stochastic, greedy,
+genetic, tensor factorization and co-clustering based approaches. In our proposal
+we propose a flexible model-based tri-clustering. In order to use the model in a
+clustering setting, we want to jointly infer the latent variables Z, W, S and learning
+the model parameters. We develop an approach based on Variational ExpectationMaximization 
+and we derive, thereby, effective tri-clustering algorithms capable to reveal homogeneous 
+sub-tensors from a 3-way tensor sparse or not. We illustrate the performances of these 
+algorithms through numerical experiments on simulated and real-case datasets comparing with 
+baseline algorithms [2, 3] in different fields including text-mining.
+
+Keywords: tri-clustering, tensor, data science, text-mining
+
+References
+1. Henriques, R., d Madeira, S. C.: Triclustering algorithms for three-dimensional data analysis:
+   a comprehensive survey. In: ACM Comput. Surv. 51(5), 1-43 (2018)
+2. Guigourès, R., Boullé, M., Rossi, F.: Discovering patterns in time-varying graphs: a triclustering 
+   approach. In: Advances in Data Analysis and Classification. 12(3), 509-536 (2018)
+3. Boutalbi, R., Labiod, L., and Nadif, M. Tensorclus: A python library for tensor (co)-clustering.
+   In: Neurocomputing, pp. 464–468, (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

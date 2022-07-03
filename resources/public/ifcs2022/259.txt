@@ -1,0 +1,64 @@
+Classification Over Text, Relational Databases and Graphs - Software and Case Studies
+
+Tomáš Kliegr
+
+Best performing methods often produce models that are hard to interpret, leading
+to the so-called accuracy-interpretability trade-off. Also, each data type typically
+requires a different type of model, such as BERT transformers for text or node
+embeddings for graphs. In projects involving multiple modalities, this leads to a mix
+of opaque models, an interpretability and interoperability Babylon.
+  This talk will cover rule-based methods as a possible “white-box” Swiss knife applicable 
+to multiple data types, including tabular data, text and even large knowledge
+graphs with millions of edges and nodes.
+  Given the advances in model-agnostic explanation algorithms, do rule models
+still have an edge in interpretability over the more opaque classification workhorses
+such as random forests? The talk will hint at answers through use cases worked on
+at DIKE, such as comparing rule-based explanations with LIME and Shapley plots
+in the context text-mining of research articles on COVID-19 [1]. We will also cover
+tools such as the arc R package for rule-based classification of tabular data [2], the
+Action rule mining system [3], the cloud-based EasyMiner rule classifier and editor
+[4], and the RDFRules rule learner for knowledge graphs [5].
+
+Keywords: knowledge graphs, rules, explainable machine learning
+
+Acknowledgements Presented research was partly supported by support of the CIMPLE project
+                 (CHIST-ERA-19-XAI-003) and VSE IGA 40/2021.
+
+References
+1. Beranová, L., Joachimiak, M.P., Kliegr, T., Rabby, G., and Sklenák, V. Why was this
+   cited? explainable machine learning applied to covid-19 research literature. Scientometrics
+   (2022), 1–37.
+2. Hahsler, M., Johnson, I., Kliegr, T., and Kuchař, J. Associative classification in r: arc,
+   arulesCBA, and rCBA. R Journal 9, 2 (2019).
+3. Sýkora L., and Kliegr, T. Action Rules: Counterfactual Explanations in Python. RuleML
+   Challenge (2020).
+4. Vojíř, S., Zeman, V., Kuchař, J., and Kliegr, T. Easyminer.eu: Web framework for interpretable 
+   machine learning based on rules and frequent itemsets. Knowledge-Based Systems 150
+   (2018), 111–115.
+5. Zeman, V., Kliegr, T., and Svátek, V. RDFrules: Making RDF rule mining easier and even
+   more efficient. Semantic Web 12, 4 (2021), 569–602
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

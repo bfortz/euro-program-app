@@ -1,0 +1,44 @@
+COVID-19 Pandemic: A Methodological Model for the Analysis of Government’s Preventing
+Measures and Health Data Records
+
+Theodore Chadjipadelis and Sofia Magopoulou
+
+The study aims to investigate the associations between the government’s response
+measures during the COVID-19 pandemic and weekly incidence data (positivity
+rate, mortality rate and testing rate) in Greece. The study focuses on the period from
+the detection of the first case in the country (26th February 2020) to the first week of
+2022 (08th January 2022). Data analysis was based on Correspondence Analysis on
+a fuzzy-coded contingency table, followed by Hierarchical Cluster Analysis (HCA)
+on the factor scores. Results revealed distinct time periods during which interesting
+interactions took place between control measures and incidence data.
+
+Keywords: hierarchical cluster analysis, correspondence analysis, covid-19,
+          evidence-based policy making
+
+References
+1. As¸an, Z., Greenacre, M.: Biplots of fuzzy coded data. Fuzzy Sets and Systems, 183(1), 
+   57-71 (2011)
+2. Chadjipadelis, T.: Facebook profile, https://www.facebook.com/theodore.chadjipadelis (2022)
+3. Benzecri, J.P.: L’Analyse des Données. 2. L’Analyse des Correspondances. Dunod, Paris (1973) ´
+4. Hale, T., Petherick, A., Phillips, T., and Webster, S.: Variation in government responses to
+   COVID-19. Blavatnik school of government working paper, 31, 2020-11 (2020)
+5. Karapistolis, D.: Software Method of Data Analysis MAD. (2010) http://www.pylimad.gr/
+6. Markos A., Moschidis O., Chadjipadelis T.: Hierarchical clustering of mixed-type data based
+   on barycentric coding (2022) https://arxiv.org/submit/4142768
+7. Moschidis O., Chadjipadelis T.: A method for transforming ordinal variables. In: Palumbo F., 
+   Montanari A., Vichi M. (eds) Data Science. Studies in Classification, Data Analysis, and 
+   Knowledge Organization. Springer, Cham. https://doi.org/10.1007/978-3-319-55723-6 22 (2017)
+8. Papadimitriou, G., Florou, G.: Contribution of the Euclidean and chi-square metrics to 
+   determining the most ideal clustering in ascending hierarchy (in Greek). In Annals in Honor 
+   of Professor I. Liakis, 546-581. University of Macedonia, Thessaloniki (1996)
+
+
+
+
+
+
+
+
+
+
+

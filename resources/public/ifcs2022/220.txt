@@ -1,0 +1,28 @@
+Conditional Gaussian Mixture Modeling
+
+Volodymyr Melnykov and Yang Wang
+
+Due to a potentially high number of parameters, finite mixture models are often at
+the risk of overparameterization even for a relatively low number of components.
+This can lead to overfitting and result in mixture order underestimation. One of
+the most popular approaches to alleviate this issue is to reduce the number of
+parameters by considering parsimonious models. The vast majority of techniques
+in this area focus on the reparameterization of covariance matrices associated with
+mixture components. We propose an alternative approach that shows great modeling
+flexibility. The utility of the proposed methodology is demonstrated on simulated as
+well as well-known classification data sets.
+
+Keywords: finite mixture model, model-based clustering, parsimonious models
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+Robust Classification for Toroidal Data
+
+Giovanni Saraceno, Luca Greco, and Claudio Agostinelli
+
+Circular data commonly occur in many different fields, such as biology, meteorology
+and geology, where observations can be measured by angles. Here, we consider the
+problem of classifying circular observations into one of possible distinct populations
+and we focus on the situations where observations can be thought as points that lie on
+the surface of a Torus. Some proposals can be found in literature for the classification
+of circular data, however this problem is poorly explored in case of toroidal data.
+In general, the traditional procedures for the classification problem can be greatly
+affected by inaccurancies in features and labels of training data. Hence, we propose
+a procedure based on the weighted likelihood technique which is able to classify
+new data points scattered on a p-dimensional torus following multivariate Wrapped
+Normal distributions. In particular, the Weighted CEM algorithm proposed by [1]
+is applied on the training data set considering the classes separately. Ineed, this
+estimator is able to handle the model inadequacies in the fitting process by an
+effective downweighting of observations not following the assumed model. In this
+way, a pair of robust location and scale estmates are available for each group. In a
+second step, a set of data-dependent weights is computed for the testing data points
+for each group-based estimates. Finally, the resulting weights are used to classify
+each observations into one of the groups or none of them. The finite sample behavior
+of the proposed procedure is investigated by a Monte Carlo numerical study and real
+data examples.
+
+Keywords: classification, multivariate wrapped distributions, robust estimators,
+torus, weighted likelihood
+
+References
+1. G. Saraceno and C. Agostinelli and L. Greco (2021). Robust estimation for multivariate
+   wrapped models. METRON, 79:225–240.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

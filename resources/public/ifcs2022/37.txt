@@ -1,0 +1,21 @@
+Towards a Bi-Stochastic Matrix Approximation of K-Means and Some Variants
+
+Lazhar Labiod and Mohamed Nadif
+
+The k-means algorithm and some k-means variants have been shown to be useful and
+effective to tackle the clustering problem. In this paper we embed k-means variants
+in a bi-stochastic matrix approximation (BMA) framework. Then we derive from
+the k-means objective function a new formulation of the criterion. In particular, we
+show that some k-means variants are equivalent to algebraic problem of bi-stochastic
+matrix approximation under some suitable constraints. For optimizing the derived
+objective function, we develop two algorithms; the first one consists in learning a
+bi-stochastic similarity matrix while the second seeks for the optimal partition which
+is the equilibrium state of a Markov chain process. Numerical experiments on real
+data-sets demonstrate the interest of our approach.
+
+Keywords: k-means, reduced k-means, factorial k-means, bi-stochastic matrix
+
+
+
+
+

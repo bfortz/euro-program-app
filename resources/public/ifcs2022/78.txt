@@ -1,0 +1,47 @@
+Probabilistic Clustering with Local Alignement of Italian COVID-19 Death Curves
+
+Marzia A. Cremona, Tobia Boschi, and Francesca Chiaromonte
+
+Italy is one of the most hardly hit countries in the world by the COVID-19 pandemic.
+A striking aspect of the pandemic in Italy has been its heterogeneity. Indeed, Italian
+regions were hit at different times and with different strengths, especially during the
+first wave. We consider official COVID-19 death curves, as well as excess mortality
+curves for the 20 Italian regions. The goal is to cluster these misaligned functional
+data, in order to assess whether there are regions sharing similar pandemic patterns
+[1]. Importantly, we are looking for clusters based on a local similarity among curves,
+since patterns might differ only on a (misaligned) portion of the domain.
+  We develop probabilistic K-mean with local alignment (probKMA), a new functional data 
+analysis method to locally cluster a set of curves and discover functional motifs, i.e. 
+typical “shapes” that may recur several times along and across the curves capturing 
+important local characteristics of these curves [2]. Using probKMA as a probabilistic 
+clustering method to group COVID-19 curves we find two starkly different first waves of 
+COVID-19 pandemics; an “exponential” one unfolding in Lombardia and the worst-hit areas 
+of the north, and a milder, “flat(tened)” one in the rest of the country. Local alignments 
+of curves provide an indication of the lags between different regions, which can be employed 
+in subsequent analyses to associate patterns of mortality with functional covariates such as 
+mobility and positivity [1].
+
+Keywords: functional data analysis, local clustering, covid-19
+
+References
+1. Boschi, T., Di Iorio, J., Testa, L., Cremona, M.A., Chiaromonte F.: Functional data 
+   analysis characterizes the shapes of the first COVID-19 epidemic wave in Italy. 
+   Scientific Reports 11:17054 (2021)
+2. Cremona, M.A., Chiaromonte F.: Probabilistic K-mean with local alignment for clustering
+   and motif discovery in functional data. arXiv 1808.04773 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

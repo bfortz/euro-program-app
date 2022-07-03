@@ -1,0 +1,31 @@
+Some Issues in Robust Clustering
+
+Christian Hennig
+
+Some key issues in robust clustering are discussed with focus on Gaussian mixture
+model based clustering, namely the formal definition of outliers, ambiguity between
+groups of outliers and clusters, the interaction between robust clustering and the
+estimation of the number of clusters, the essential dependence of (not only) robust
+clustering on tuning decisions, and shortcomings of existing measurements of cluster
+stability when it comes to outliers.
+
+Keywords: gaussian mixture model, trimming, noise component, number of clusters, 
+          user tuning, cluster stability
+
+References
+1. Garcia-Escudero, L.A., Gordaliza, A., Matran, C., Mayo-Iscar, A., Hennig, C.: Robustness ´
+   and Outliers. In: Hennig, C., Meila, M., Murtagh, F., Rocci, R. (eds.) Handbook of Cluster
+   Analysis, pp. 653-678. Chapman & Hall/CRC, Boca Raton FL (2016)
+2. Hennig, C.: Dissolution point and isolation robustness: robustness criteria for general cluster
+   analysis methods. J. Multivariate Anal. 99, 1154–1176 (2008)
+3. Hennig, C., Coretto, P.: An adequacy approach for deciding the number of clusters for
+   OTRIMLE robust Gaussian mixture-based clustering. Aust. N. Z. J. Stat. (2021) 
+   doi: 10.1111/anzs.12338
+
+
+
+
+
+
+
+

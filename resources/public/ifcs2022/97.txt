@@ -1,0 +1,56 @@
+The Weighted RV Coefficient: Exact Moments by Invariant Orthogonal Integration
+
+François Bavaud
+
+Weighted configurations (f, D), describing the squared Euclidean dissimilarities D
+between n objects endowed with a normalized vector of weights f, are pervasive
+in Data Analysis. Weighted classical MDS, returning the configuration coordinates
+maximizing the low-dimensional proportion of inertia, obtains as a straightforward
+generalization of the well-known Torgerson-Gower procedure. It is based upon the
+spectral decomposition of the matrix of weighted scalar products or kernel K.
+  Comparing two weighted configurations (f, D_X) and (f, D_Y ) with identical
+weights f can be performed by computing the coefficient CV_XY = trace(K_X K_Y),
+or its normalized version RV_XY = CV_XY / \sqrt(CV_XX CV_YY) \in [0, 1], which 
+constitutes the weighted extension of the RV similarity coefficient [1].
+  In the literature, there seems to be no complete agreement for the expressions of
+the null expectation of the RV first moments, permitting to asses the significance of
+the association between two configurations. We propose a new procedure consisting
+to integrate out products of orthogonal matrices occurring in the spectral decompositions 
+of K_X and K_Y , yielding exact expressions for the three first moments of
+the weighted RV coefficient; they depend on n and on the spectral moments of the
+eigenvalues of K_X and K_Y (their scree graphs), but not on f.
+  Besides its relevance for applications (the scope of data analytic problems able to
+be expressed by various kernels, including conditional kernels, seems inexhaustible),
+the present approach sheds new light on some formal issues of interest, such as:
+• Under the null distribution, the skewness of the RV coefficient is here proportional
+  to the product of both spectral skewness, thus implying a positive RV skewness
+  for most ”natural” configurations, as often noticed in the literature [2].
+• The traditional Moran test of spatial auto-correlation fits info the present framework, 
+  and its application can be generalized to multivariate features (and weighted
+  regions) by the introduction of an exact variance-deflating correction.
+
+Keywords: weighted rv coefficient, permutation test, orthogonal haar integration
+
+References
+1. Robert, P. and Escoufier, Y.: A unifying tool for linear multivariate statistical methods: 
+   the RV-coefficient. Journal of the Royal Statistical Society: Series C 25(3), 257–265 (1976)
+2. Josse, J., Pagès, J., and Husson, F.: Testing the significance of the RV coefficient. 
+   Computational Statistics & Data Analysis 53(1), 82–91 (2008)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

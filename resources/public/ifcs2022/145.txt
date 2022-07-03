@@ -1,0 +1,36 @@
+Biplots: A Sophisticated Multivariate Approach or a User-Friendly Technique?
+
+M. Rui Alves
+
+Predictive biplots are based on the visualization of the results of multivariate analyses
+through the relations between the objects and the original variables equipped with
+measuring scales, avoiding the interpretation of latent variables, making them a
+useful tool for non-statisticians. However, to achieve this desideratum, biplots need
+to be automatically simplified as is commonly done with any multivariate analysis.
+Through the definition of an axis mean standard predictive error (mspe), which
+evaluates the error that is made by the analyst when reading a biplot axis, it is
+possible to automatically select the axes to be included in the biplots, to define the
+number of dimensions necessary to conveniently describe any given problem, to
+enable the evaluation of outliers and avoid common overestimations. A series of
+"AutoBiplot" functions have been written in R to produce PCA [1] and CCA [2]
+biplots and can be easily adjusted to many other multivariate analyses [3]. Apparently
+forgotten, interpolative biplots can be used in laboratory practical work, and can be
+automatically produced following a similar strategy, based on the definition of an
+overall standard interpolative error (osie).
+Although the techniques for the automatic production of biplots are available, a
+wide use of biplots is still restricted mainly to statisticians. Therefore, a good way
+to commemorate fifty years of biplots may be to envisage ways of rendering these
+methods available to any person needing to apply multivariate analysis.
+
+Keywords: biplots, multivariate, autobiplots
+
+References
+1. Alves, M. R.: Evaluation of the predictive power of biplot axes to automate the construction 
+   and layout of biplots based on the accuracy of direct readings from common outputs of 
+   multivariate analyses: 1. application to principal component analysis. J. Chem., 26(5), 180–190 
+   (2012)
+2. Alves, M.R.: Getting full control of canonical correlation analysis with the AutoBiplot.CCA
+   function. AIP Conference Proceedings 1738, 370015 (2016);
+3. Barbosa, C., Oliveira, M. B., Alves, M. R.: Chemometrics in food authentication. In: Oliveira, B., 
+   Mafra, I., Amaral, J. (eds) Current topics on food authentication, pp. 237-268. Transworld
+   Research Network, Kerala, India (2011).

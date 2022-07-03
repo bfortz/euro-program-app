@@ -1,0 +1,25 @@
+Model Based Clustering of Functional Data with Mild Outliers
+
+Cristina Anton and Iain Smith
+
+We propose a procedure, called CFunHDDC, for clustering functional data with
+mild outliers which combines two existing clustering methods: the functional high
+dimensional data clustering (FunHDDC) [1] and the contaminated normal mixture
+(CNmixt) [2] method for multivariate data. We adapt the FunHDDC approach to data
+with mild outliers by considering a mixture of multivariate contaminated normal
+distributions. To fit the functional data in group-specific functional subspaces we
+extend the parsimonious models considered in FunHDDC, and we estimate the
+model parameters using an expectation-conditional maximization algorithm (ECM).
+The performance of the proposed method is illustrated for simulated and real-world
+functional data, and CFunHDDC outperforms FunHDDC when applied to functional
+data with outliers.
+
+Keywords: functional data, model-based clustering, contaminated normal distributions, 
+          em algorithm
+
+References
+1. Bouveyron, C., Jacques, J: Model-based clustering of time series in group-specific 
+   functional subspaces. Adv. Data. Anal. Classif. 5(4), 281–300 (2011)
+2. Punzo, A., McNicholas, P.D.: Parsimonious mixtures of multivariate contaminated normal
+   distributions. Biom. J., 58, 1506–1537 (2016)
+

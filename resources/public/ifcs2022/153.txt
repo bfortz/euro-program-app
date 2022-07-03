@@ -1,0 +1,28 @@
+Visualization of IATA Regions in Air Transport Before and After the COVID-19 Pandemic
+
+Tüzün Tolga İnan, Neslihan Gökmen İnan, Aylin Yaman Kocadağlı, and Ozan Kocadağlı
+
+COVID-19 Pandemic has affected all transport modules including air passenger
+transportation (ATP) as an unprecedented global crisis. This study aims to visualize
+the position of International Air Transport Association (IATA) Regions considering
+some important key indicators such as gross domestic product, human development index, 
+tourism arrival, national and international ATP numbers [1]. Also, this study deals with 
+revealing out the negative impact of this global crisis on ATP during COVID-19 Pandemic 
+between 2019-2021. In this study, to analyze ATP, three common airline metrics were gathered 
+to figure out significant factors that lead to similarities between regions in terms of global 
+crisis’s negative impact for each year. Factor analysis (FA) and multidimensional scaling (MDS) 
+were applied to IATA dataset [2]. MDS has brought out some substantial inferences. For instance, 
+Europe, North and Latin America have similarities in positively, whereas Africa, Asia Pacific
+and Middle East show these similarities negatively since they are located close to each other. 
+The location of regions has changed due to COVID-19 Pandemic compared to 2019 in MDS. 
+Thus, ATP recovery is better in the Middle East compared to Africa and the Asia Pacific; however, 
+this recovery circulation seems far from being adequate when compared to others. To sum up, these 
+findings may help aviators to manage the strategic perspective of ATP more professionally.
+
+Keywords: covid-19 pandemic, air passenger transportation, strategic perspective
+
+References
+1. Scholl, W., Schermuly, C.C.: The impact of culture on corruption, gross domestic product,
+   and human development. Journal of Business Ethics 163(1), 171–189 (2020)
+2. Nyoja, E.T., Ragab, M.R.: Economic Impacts of Public Air Transport Investment: A Case
+   Study of Egypt. Sustainability 14(5), 2651 (2022)

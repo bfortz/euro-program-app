@@ -1,0 +1,53 @@
+Using Excel and R for Teaching Statistics and Data Analysis
+
+W.H. Moolman
+
+The presentation is about the use of computer software in teaching Statistics and Data
+Analysis with the purpose of enhancing students learning experience and preparing
+them better for a career. The software that comes to mind in this regard are Excel
+(part of MS Office) and R (available free of charge).
+  The effects of Covid-19 resulted in the teaching and assessment at many universities 
+being moved from classroom to online. With teaching and assessment online the emphasis 
+is more on understanding concepts, computing results and interpreting computer output. 
+In such a teaching environment the use of computer software like Excel and R is essential.
+  Problem: How and when to use Excel (spreadsheet based) and R (computing code based) in 
+teaching?
+  Methodology: This depends very much on who are being taught and the goals to be achieved 
+by using the software.
+  Results: Depending on the type of teaching, Excel and R can be used separately or to 
+complement each other.
+  Implications: Excel and R can be used at every level of teaching from demonstrating simple 
+concepts to complicated Data Mining and bootstrapping calculations.
+  All these issues and more will be discussed in the presentation.
+
+Keywords: learning, spreadsheet, computing
+
+References
+1. Dell’Omodarme, M. and Valle, G.: Teaching Statistics with Excel and R. Available at https:
+   //doi.org/10.48550/arXiv.physics/0601083 (2006)
+2. Duller, C., Kepler, J.: Teaching Statistics with Excel A Big Challenge for Students and 
+   Lecturers. Australian Journal of Statistics, 37(2), 195-206 (2008)
+3. Hyndman, R.: Why R is better than Excel for teaching Statistics. Part of a conversation on
+   the Australian and New Zealand R mailing list (2010). Available at https://robjhyndman.
+   com/hyndsight/rvsexcel/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

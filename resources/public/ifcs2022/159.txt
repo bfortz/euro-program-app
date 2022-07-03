@@ -1,0 +1,32 @@
+Industry Sector Detection in Legal Articles Using Transformer-Based Deep Learning
+
+Hui Yang, Stella Hadjiantoni, Yunfei Long, Ruta Petraitytè, and Berthold Lausen ˙
+
+Industry analysis, which identifies multiple industry sectors hidden in massive legal
+texts, could benefit greatly to business activities of legal professions such as 
+improving customer services by detecting overall industry trends across legal topics.
+However, manual industry labeling on enormous legal information will be expensive and 
+time-consuming. This research investigated an AI-powered approach to
+automatically recognise industry sectors using transformer-based deep learning [1]
+which had shown advantages on a set of Natural Language Processing (NLP) tasks
+recent years. In this study, a dataset consisting of over 1,700 annotated legal articles
+was curated for the identification of six industry sectors. Two main research questions 
+will be answered by the outcome of our work: (1) Like other NLP tasks that
+mostly focus on the analysis at word token or sentence level, do transformer models
+also perform well on the full-text articles? (2) Compared with large-scale general
+domain data, could transformer models work effectively on a small legal-specific
+domain dataset? Our experimental results showed that the transformer-based predictive 
+models achieved the F1 scores ranged between 0.73 and 0.83 on the detection of
+the six industry sectors. When the word sequence length was increased to 1,024 or
+2,048 words, the performance got slight worse compared with that of the relatively
+short word sequences (e.g., 512). The research results suggested that transformer
+models are sensitive to the data size, text structure, and domain area to some extent.
+
+Keywords: industry sector detection, text classification, transformer models
+
+References
+1. Devlin, J., Chang, M.W., Lee, K., Toutanova, K.: BERT: pre-training of deep 
+   bidirectional transformers for language understanding. In: Proceedings of the 
+   NAACL-HLT 2019 Conference, pp. 4171-86. Minnesota (2019)
+
+

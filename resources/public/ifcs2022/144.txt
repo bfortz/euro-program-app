@@ -1,0 +1,23 @@
+Resampling, Relabeling, and Raking for Extremely Imbalanced Classification
+
+Hae-Hwan Lee, Seunghwan Park, and Jongho Im
+
+In this presentation, we consider the binary classification of extremely imbalanced
+data. Imbalanced data classification is often challengeable, especially for
+high-dimensional data, because unequal classes deteriorate classifier performance.
+Undersampling the majority class or oversampling the minority class are popular
+methods to construct balanced samples, facilitating classification performance improvement.
+However, many existing sampling methods cannot be easily extended
+to high-dimensional data and mixed data, including categorical variables, because
+they often require approximating the attribute distributions, which becomes another
+critical issue. To handle these issues, we propose a new sampling strategy employing
+resampling, relabeling, and raking procedures, such that the attribute values of the
+majority class are imputed for the values of the minority class in the construction of
+balanced samples. Our proposed algorithm is attractive in practice, considering that
+it does not require density estimation for synthetic data generation in oversampling
+and is not bothered by mixed-type variables. In addition, the proposed sampling
+strategy is robust to classifiers in the sense that classification performance is not sensitive
+to choosing the classifiers. Also the proposed method can be directly applied
+to one-class classification problem.
+
+Keywords: calibration, mixed-type, one-class classification

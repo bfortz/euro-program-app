@@ -1,0 +1,40 @@
+Barriers to Industry Digitization in Poland from the Perspective of High 
+and Medium-High Technology Sector Enterprises
+
+Elzbieta Sobczak, Marcin Pelka, and Karolina Pokorska
+
+Nowadays digital transformation remains one of the most important trends in the
+development of the economy. It consists in the absorption of modern technologies, 
+which include, i.a. artificial intelligence, machine learning, 3D printing, cloud
+computing. Digital transformation is the basis for constructing technological and
+competitive advantage of an enterprise. Enterprises are affected by many of factors
+impeding the implementation of digital technologies. Due to diverse operating conditions, 
+individual barriers to digitization may have different significance for various
+enterprises. The research aims to identify the key barriers to investing in digitization
+in Poland and relating them to the attributes of enterprises. The research material was
+collected using the diagnostic survey method and applying the survey technique. The
+time scope of the research covered 2020. The methods of multivariate data analysis
+were used, with particular emphasis on correspondence analysis and logit regression.
+
+Keywords: digitalization, barriers of digitalization, enterprises from high and
+          medium-high technology
+
+References
+1. Gobble, M. M.: Digitalization, digitalization, and innovation. Research-Technology 
+   Managment. 61(4), 56-59 (2018).
+2. Khan, S., Khan, S., & Aftab, M.: Digitalization and its impact on economy. 
+   International Journal of Digital Library Services. 5(2), 138-149 (2015).
+3. Mugge, P., Abbu, H., Michaelis, T., Kwiatkowski, A., & Gudergan G.: Patterns of 
+   digitalization. A practical guide to digital transformation. Research-Technology 
+   Management. 63(2), 27-35 (2020).
+
+
+
+
+
+
+
+
+
+
+

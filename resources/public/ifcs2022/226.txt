@@ -1,0 +1,46 @@
+Misalignment of Spectral Data: Constrained Optimization in a Functional Data Analysis
+Framework
+
+Francesca Di Salvo, Delia Francesca Chillura Martino, and Gabriella Chirco
+
+Across several branches of sciences, a large number of applications involves data
+represented as functions and curves, for which functional data analysis can play a
+central role in solving a variety of problem formulations. With some thecnologies,
+the obtained data are spectra containing a vast amount of information concerning the
+composition of a sample: in order to infer the chemical composition of the materials
+from spectra, functional data analysis offers a valuable mean for characterizing
+the spectral response through identification of peaks position and intensity. The
+collection of data from different measurement may exhibit similar peak pattern but
+display misalignment in their peaks. In general, the multiple alignment is crucial in
+the subsequent analysis; the method proposed faces with the challenge of random
+shifts in the peaks and implements constraints in a proper objective function to
+optimize the alignment. The constraints are based on a priori information that is
+formalized in the choice of a set of peaks across functions. Spectrum data from
+X-ray Fluorescence (XRF) and Total Reflectance-Fourier Transform Infra-Red (TRFTIR) 
+spectroscopies are considered to illustrate the approach and to provide useful
+comparison with other approaches.
+
+Keywords: multple alignment, functional data analysis, constrained registration
+
+References
+1. Houhou, R., Rösch, P., Popp, J., Bocklitz, T.: Comparison of functional and discrete data
+   analysis regimes for Raman spectra. Anal. and Bioanal. Chem.413, 5633–5644, (2021)
+2. Marron, J.S., Ramsay, J.O., Sangalli L. M., Srivastava, A.: Functional Data Analysis of
+   Amplitude and Phase Variation. Stat. Sci. 30, No. 4, 468–484, (2015)
+3. Srivastava, A., Klassen, E.P.: Functional and Shape Data Analysis. Springer Series in 
+   Statistics, Springer-Verlag, New York (2016)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

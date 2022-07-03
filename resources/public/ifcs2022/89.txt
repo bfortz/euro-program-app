@@ -1,0 +1,44 @@
+Fitting an Accelerated Failure Time Model with Time-Dependent Covariates
+via Nonparametric Gaussian Scale Mixtures
+
+Ju-young Park, Byungtae Seo, and Sangwook Kang
+
+An accelerated failure time (AFT) model is a popular regression model in survival
+analysis. It models the relationship between the failure time and a set of covariates via
+a log link with an addition of a random error. The model can be either parametric or
+semiparametric depending on the degree of specification of the error distribution. The
+covariates are usually assumed to be fixed - ‘time independent’. In many biomedical
+studies, however, ‘time-dependent’ covariates are frequently observed and Cox and
+Oakes [1] proposed an AFT model with time-dependent covariates.
+In this work, we consider a semiparametric time-dependent AFT model. We assume
+that the distribution of the baseline failure time as an infinite scale mixture of
+Gaussian densities. Thus, this model is highly flexible compared to that assumes a
+one-component parametric density. We consider a maximum likelihood estimation
+and propose an algorithm based on the constrain newton method [2] for estimating
+model parameters and mixing distributions. The proposed methods are investigated
+via simulation studies to assess the finite sample properties. The proposed methods
+are illustrated with a real data set.
+
+Keywords: time dependent covariates, nonparametric gaussian-scale mixture, 
+          constrain newton method, survival analysis
+
+References
+1. Cox, D.R, and D. Oakes.: Analysis of Survival Data. Chapman & Hall, London (1984)
+2. Wang, Y.: On fast computation of the non-parametric maximum likelihood estimate of a
+   mixing distribution. Journal of the Royal Statistical Society: Series B. 69.2, 185–198 (2007)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

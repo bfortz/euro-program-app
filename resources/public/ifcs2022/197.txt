@@ -1,0 +1,42 @@
+The Usefulness of Selected Machine Learning Methods for Estimating Missing Data to
+Supplement Databases Used for Corporate Bankruptcy Prediction
+
+Barbara Pawelek and Jozef Pociecha
+
+Socio-economic consequences of corporate bankruptcies and forecasting the risk
+firms’ bankruptcy enjoys unflagging interest among researchers and practitioners.
+Financial indicators that are the basis for building forecasting models very often
+contain data shortages. In our previous research, we supplemented the missing
+data primarily by median of a given variable, determined separately for bankrupt
+and non-bankrupt firms [2]. The aim of the paper is presentation the results of
+investigations on the usefulness of selected machine learning methods for estimation
+values of missing data (e.g. multivariate imputation method based on random forests),
+to supplement databases used for building and estimations corporate bankruptcy
+prediction models. The study included three databases designed to forecast the
+bankruptcy of enterprises in Poland one year, two years and three years in advance.
+Various mechanisms for generating data gaps were considered [1]. Selected methods
+were used to estimate missing data, such as: mean, median, k-nearest neighbors,
+classification tree, multivariate imputation based on random Forests or predictive
+mean matching [3], and others.
+
+Keywords: missing data, bankruptcy prediction, machine learning
+
+References
+1. Kauermann, G., Küchenhoff, H., Heumann, C.: Statistical Foundations, Reasoning and 
+   Inference. For Science and Data Science. Springer, Cham (2021)
+2. Pociecha, J., Pawelek, B., Baryla, M., Augustyn, S.: Classification Models as Tools of
+   Bankruptcy Prediction – Polish Experience. In: Mola, F., Conversano, C., Vichi, M. (eds.)
+   Classification, (Big) Data Analysis and Statistical Learning. Springer, Cham (2018)
+3. van Buuren, S., Groothuis-Oudshoorn, K.: mice: Multivariate Imputation by Chained Equations 
+   in R. J. Stat. Softw. 45(3), 1-67 (2011)
+
+
+
+
+
+
+
+
+
+
+

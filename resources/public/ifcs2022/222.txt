@@ -1,0 +1,44 @@
+Biplots in Dimension Reduction and Clustering
+
+Alfonso Iodice D’Enza, Angelos Markos, and Michel van de Velden
+
+In unsupervised learning, dimension reduction (e.g., PCA) and distance-based 
+clustering are often applied sequentially: the distances used to cluster the 
+observations are computed on the reduced dimensions. Since the dimension reduction 
+step does not take into account the possible cluster structure, it is possibly detrimental 
+to the clustering step. Methods for joint dimension reduction and clustering combine the
+two in a single optimization problem which is solved using iterative procedures alternating 
+the two steps. Just like for principal component methods, different approaches
+have been proposed that deal with continuous, categorical or mixed-type data. In
+particular, for continuous data, reduced K-means [1] combines principal component
+analysis with K-means clustering; for categorical data, cluster correspondence analysis [2] 
+combines correspondence analysis with K-means; for mixed-type data, mixed Reduced K-means [3] 
+combines factor analysis for mixed data with K-means. The biplot visualization of the solution 
+is of particular interest for interpretation purposes: in fact, the low-dimensional map can be 
+very helpful for cluster characterization. In this work, we illustrate the use of biplots in the 
+context of dimension reduction and clustering.
+
+Keywords: biplot, dimension reduction, clustering
+
+References
+1. De Soete, G., Carroll, J. D.: K-means clustering in a low-dimensional Euclidean space. In: E.
+   Diday, et al. (eds.), New approaches in classification and data analysis, pp. 212–219, Springer,
+   Heidelberg (1994)
+2. van de Velden, M., Iodice D’Enza, A., Palumbo, F.: Cluster correspondence analysis. 
+   Psychometrika 82(1), 158–185 (2017)
+3. van de Velden, M., Iodice D’Enza, A., Markos, A.: Distance-based clustering of mixed data.
+   Wiley Interdisciplinary Reviews: Computational Statistics 11(3), e1456 (2019)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

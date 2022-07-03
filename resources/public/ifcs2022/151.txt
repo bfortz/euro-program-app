@@ -1,0 +1,22 @@
+Some Descriptive Statistics of Aggregated Symbolic Data
+
+Junji Nakano, Nobuo Shimizu, and Yoshikazu Yamamoto
+
+When we have a huge amount of data, we sometimes are interested in comparing meaningful 
+groups of data, not individual observations. Aggregated symbolic data (ASD) expresses 
+a group of observations that have continuous and categorical variables by using up to 
+second moments of variables. ASD for a group of data is equivalent to the set of means, 
+variances, and correlations for continuous variables, Burt matrix for categorical variables, 
+and means of a continuous variable against one value of a categorical variable. 
+As ASD for many categorical variables is still complicated, it is preferable to have simple 
+measures of location and dispersion for a categorical variable, and a measure of the correlation 
+between two categorical and/or continuous variables. We propose such measures by specifying 
+appropriate scores to categorical values. They are compared with measures that are defined as
+extensions of the polychoric correlation coefficient [1].
+
+Keywords: categorical variable, continuous variable, measure of correlation, measure of dispersion, 
+          measure of location
+
+References
+1. Olsson, U.: Maximum Likelihood Estimation of the Polychoric Correlation Coefficient, 
+   Psychometrika, 12, 443–460 (1979)

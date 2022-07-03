@@ -1,0 +1,45 @@
+The Use of Regression to Partition a Dataset of Interval Observations
+
+Lynne Billard and Fei Liu
+
+The use of regression modelling has an extensive history; likewise, clustering
+methodologies have existed for some time. In this work, we extend the dynamical 
+partitioning concepts developed initially by Diday and Simon [1] combined with
+the k-means clustering approach of MacQueen [3], to a k-regression algorithm to
+enable clustering of interval-valued observations based on regression models. The
+usefulness of the algorithm is verified through some simulated data (as in the plots
+below) and applied to real data sets. More details can be found in [2].
+
+Keywords: k-means, k-regression algorithm, dynamical partitioning
+
+References
+1. Diday, E., Simon, J. C.: Clustering analysis. In: Fu, K.S. (ed.) Digital Pattern Recognition, 
+   pp. 47-94. Springer, Berlin (1976)
+2. Liu, F., Billard, L.: Partition of interval-valued observations using regression. Pattern 
+   Recognition (2022)
+3. MacQueen, J.: Some methods for classification and analysis of multivariate observations. 
+   In: LeCam, L. M., Neyman, J. (eds.) Proceedings of the 5th Berkeley Symposium on Mathematical
+   Statistics and Probability, University of California Press, Berkeley 1, pp. 281-299 (1967)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

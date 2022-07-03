@@ -1,0 +1,32 @@
+Model Free Predictive Inference for Functional Kriging Techniques Based 
+on Conformal Prediction
+
+Andrea Diana, Elvira Romano, and Jorge Mateu
+
+In the last years several geostatistical predictive techniques like universal kriging,
+kriging with external drift and kriging with residuals has been extended to the
+functional framework to predict curve at unmonitored location. Here we present
+a new approach for model-free spatial prediction for kriging methods based on
+the conformal prediction. We propose non conformity measures for this class of
+predictive methods and introduce a local spatial conformal prediction algorithm that
+yields valid functional prediction intervals without any distributional assumption.
+Practical solutions are provided to construct conformal intervals and are compared
+with existing validation methods. The approach is illustrated on some well known
+data sets, on simulated and on a real data.
+
+Keywords: functional data modelling, prediction, model validation, conformal prediction
+
+References
+1. Degras, D.A.: Simultaneous confidence bands for nonparametric regression with functional
+   data. Statist. Sinica 21, (2011)
+2. Diquigiovanni, J., Fontana, M., Vantini, S.: Conformal Prediction Bands for Multivariate
+   Functional Data. Journal of Multivariate Data Analysis (2022).
+3. Franco-Villoria, M., Ignaccolo, R.: Bootstrap based uncertainty bands for prediction in 
+   functional kriging,  Spatial Statistics, Volume 21, Part A,pp. 130-148, (2017).
+4. Franco-Villoria, M. Ignaccolo, R.: Universal, Residual, and External Drift Functional Kriging.
+   In: Geostatistical Functional Data Analysis. Giraldo, R., Mateu, J. (eds.) Wiley & Sons Ltd,
+   pp. 55-72, (2022).
+5. Giraldo, R., Delicado, P. and Mateu, J. (2011). Ordinary kriging for function-valued spatial
+   data. Environmental and Ecological Statistics, 18, 411-426.
+6. Ignaccolo, R., Mateu, J. and Giraldo, R. :Kriging with external drift for functional data for air
+   quality monitoring. Stochastic Environmental Research and Risk Assessment, 28, 1171-1186, (2014)

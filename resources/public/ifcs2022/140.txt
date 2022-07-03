@@ -1,0 +1,21 @@
+Some Factors That Influence the Nature of Road Traffic Accidents
+
+Paulo Infante, Gonçalo Jacinto, Anabela Afonso, Leonor Rego, Vitor Nogueira,
+Paulo Quaresma, José Saias, Daniel Santos, Pedro Nogueira, Marcelo Silva,
+Rosalina Pisco Costa, Patrícia Gois, and Paulo Rebelo Manuel
+
+Road traffic accidents are one of the major social problems in modern societies. Data
+science plays an important role in its explanation and prediction. One of the main
+objectives of accident data analysis is to identify the main factors associated with a
+road traffic accident. The present study aims to contribute to the identification of the
+determinants for the nature (collision, car crash or pedestrian runing over) of road
+accidents. Four-year road accident data from 2016 to 2019 in a district of Portugal
+is analyzed. Three logit models, a multinomial logit regression model and several
+machine learning algorithms are used, and their performance is compared. Findings
+show that some determinants which can explain the nature of the accident are:
+geographical factors (municipality, in/outside localities and parking areas), temporal
+factors (air temperature and wheater), time of the day (hour, day of the week and
+month), drivers’ characteristics (gender and age), vehicles’ features (type and age)
+and road characteristics (straight/curved track and road type).
+
+Keywords: generalized linear models, machine learning, road traffic accidents

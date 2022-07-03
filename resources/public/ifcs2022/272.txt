@@ -1,0 +1,62 @@
+Statistical Learning with Dynamic Interaction Data for Public Health
+
+Charles Bouveyron
+
+This work focuses on the problem of statistical learning with dynamic relational data
+for two specific public health problems: the analysis of the COVID-19 publication
+network and the study of a large-scale pharmacovigilance data set. On the one hand,
+the Covid-19 epidemic presented a unique use case for researchers and institutions in
+the health field where the ability to monitor and synthesize scientific publications on
+a given theme has proven to be strategic. Indeed, with more than 5000 publications
+and pre-publications per month on the Covid-19 virus, it has proved essential for
+researchers and doctors to have tools capable of synthesizing publications on this
+subject by grouping them on the basis of the research themes they mobilize. On the
+other hand, pharmacovigilance is a central medical discipline aiming at monitoring
+and detecting public health events (adverse drug reactions) caused by medicines and
+vaccines. As the current expert detection of safety signals is unfortunately incomplete
+due to the workload it represents, we investigate here an automatized method of
+safety signal detection from ADR data. To address those problems, we proposed
+two generative models for clustering the nodes of a dynamic graph, accounting
+for the content of textual edges as well as their frequency, in the first case, and
+the co-clustering of dynamic count data, for pharmacovigilance. In both cases, the
+continuous time is handled by partitioning the considered time period, allowing the
+detection of temporal breaks in the signals.
+
+Keywords: clustering, interaction data, dynamic data, generative model, em algorithm
+
+Acknowledgements This work has been supported by the French government, through the 3IA
+                 Côte dAzur Investment in the Future project managed by the National 
+                 Research Agency (ANR) with the reference number ANR-19-P3IA-0002.
+
+References
+1. C. Bouveyron, M. Corneli, P. Latouche and F. Rossi: The dynamic stochastic topic block 
+   model for dynamic networks with textual edges, Statistics and Computing, vol. 29, 
+   pp. 677–695 (2019).
+2. G. Marchello, A. Fresse, M. Corneli and C. Bouveyron: Co-clustering of evolving count
+   matrices in pharmacovigilance with the dynamic latent block model, Preprint HAL 03146769,
+   Université Côte d’Azur (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

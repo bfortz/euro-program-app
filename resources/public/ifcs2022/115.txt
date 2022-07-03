@@ -1,0 +1,56 @@
+Accuracy Measures for Binary Classification based on Quantitative Group Tests
+
+Rui Santos, Joao Paulo Martins, and Miguel Felgueiras
+
+Classification of a large number of individuals using individual tests can be expensive
+and time-consuming. Hence, taking a sample from different individuals and mixing
+it into a homogeneous fluid (the pooled sample) may be a methodology to be taken
+into account. Based on quantitative group testing, different classification procedures
+can be performed to save resources, although the probability of misclassification
+may increase due to the dilution of the discriminant substance in the pooled sample.
+In this work, the specificity (\Phi_\epsilon) and sensitivity (\Phi_s) of a classification 
+methodology based on quantitative group tests are used to create a ROC curve which depends 
+on the sensitivity and specificity from individual and group tests (i.e., from the cut-off 
+points applied in the individual and in the group tests), as well as on the group size. These
+ROC curves are applied to assess the reliability of classification of some methodologies based 
+on quantitative group tests. The results were computed by simulation using populations with 106
+individuals, different distributions for the discriminant substance (Gaussian, Weibull, Pareto, 
+Levy, among others) setting different measures for the quality of the individual tests \Phi_s = 
+\Phi_\epsilon \in {0.99, 0.95, 0.9, 0.8, 0.7}, prevalence rates p \in {0.001, 0.005, 0.01, 0.05, 
+0.1} and group sizes n \in {2, 5, 10, 20, 50, 100}. In some cases, it is possible to almost maintain 
+the accuracy of the individual test and achieve a significant gain in efficiency.
+
+Keywords: classification, dilution effect, group test, roc curve, simulation
+
+References
+1. Hughes-Oliver, J.: Pooling experiment for blood screening and drug discovery, screening 
+   methods for experimentation in industry, Drug Discovery and Genetics, Springer, 48–68 (2006)
+2. Kim, H., Hudgens, M., Dreyfuss, J., Westreich, D., Pilcher, D.: Comparison of group testing 
+   algorithms for case identification in the presence of testing error, Biometrics 63, 1152–63 (2007)
+3. Santos, R., Martins, J.P., Felgueiras, M.: An Overview of Quantitative Continuous Compound
+   Tests. In Bourguignon, J.P., Jeltsch, R., Pinto, A., Viana, M. (eds.) Dynamics, Games and
+   Science, CIM Series in Mathematical Sciences 1, 627–641 (2015)
+4. Santos, R., Martins, J., Felgueiras, M., Ferreira, L.: Accuracy Measures for Binary Classification 
+   Based on a Quantitative Variable, REVSTAT-STAT J 17(2), 223–244 (2019)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

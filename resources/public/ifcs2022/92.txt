@@ -1,0 +1,41 @@
+Registration of 24-Hour Accelerometric Rest-Activity Profiles and Its Application 
+to Human Chronotypes
+
+Erin I. McDonnell, Vadim Zipunnikov, Jennifer A. Schrack, Jeff Goldsmith, and Julia Wrobel
+
+By collecting data continuously over 24 hours, accelerometers and other wearable
+devices can provide novel insights into circadian rhythms and their relationship
+to human health. Existing approaches for analyzing diurnal patterns using these
+data, including the cosinor model and functional principal component analysis,
+have revealed and quantified population-level diurnal patterns, but considerable
+subject-level variability remained uncaptured in features such as wake/sleep times
+and activity intensity. This remaining informative variability could provide a better 
+understanding of chronotypes, or behavioral manifestations of one’s underlying
+24-hour rhythm. Curve registration, or alignment, is a technique in functional data
+analysis that separates “vertical” variability in activity intensity from “horizontal”
+variability in time-dependent markers like wake and sleep times; this data-driven approach 
+is well-suited to studying chronotypes using accelerometer data. We develop
+a parametric registration framework for 24-hour accelerometric rest-activity profiles
+represented as dichotomized into epoch-level states of activity or rest. Specifically,
+we estimate subject-specific piecewise linear time-warping functions parametrized
+with a small set of parameters. We apply this method to data from the Baltimore
+Longitudinal Study of Aging and illustrate how estimated parameters give a more
+flexible quantification of chronotypes compared to traditional approaches.
+
+Keywords: functional data analysis, alignment, clustering
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

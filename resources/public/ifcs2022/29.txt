@@ -1,0 +1,23 @@
+Stability of Mixed-Type Cluster Partitions for Determination of the Number of Clusters
+
+Rabea Aschenbruck, Gero Szepannek, and Adalbert F.X. Wilhelm
+
+For partitioning clustering methods, the number of clusters has to be determined
+in advance and is therefore an important issue. Besides the application of so-called
+internal validation indices, the determination of an optimal number of clusters can
+be achieved with stability indices. In this paper several stability based validation
+methods are investigated with regard to the k-prototypes algorithm for mixed-type
+data, which is an extension to the popular k-means algorithm.
+  Under consideration are the Jaccard coefficient, the Simple Matching coefficient
+and the indices published by Fowlkes and Mallows as well as by von Luxburg.
+Furthermore, the weighted average of cluster-wise stability values based on the
+Jaccard index and a numerical approximation of the stability value interpretation
+proposed by Ben-Hur et al. were investigated. The stability based approaches are
+compared to common internal validation indices in a comprehensive simulation
+study in order to analyze preferability as a function of the underlying data generating
+process.
+
+Keywords: cluster stability, cluster validation, mixed-type data
+
+
+

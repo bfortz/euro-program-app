@@ -1,0 +1,17 @@
+Clustering Adolescent Female Physical Activity Levels with an Infinite Mixture Model on Random Effects
+
+Amy LaLonde, Tanzy Love, Deborah Rohm Young, and Tongtong Wu
+
+Physical activity trajectories from the Trial of Activity in Adolescent Girls (TAAG)
+capture the various exercise habits over female adolescence. Previous analyses of
+this longitudinal data from the University of Maryland field site, examined the effect
+of various individual-, social-, and environmental-level factors impacting the change
+in physical activity levels over 14 to 23 years of age. We aimed to understand the
+differences in physical activity levels after controlling for these factors. Using a
+Bayesian linear mixed model incorporating a model-based clustering procedure for
+random deviations that does not specify the number of groups a priori, we find that
+physical activity levels are starkly different for about 5% of the study sample. These
+young girls are exercising on average 23 more minutes per day.
+
+Keywords: bayesian methodology, markov chain monte carlo, mixture model, reversible jump, 
+          split-merge procedures

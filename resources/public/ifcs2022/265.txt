@@ -1,0 +1,50 @@
+Comparison of Similarity Measures for Categorical Data in Hierarchical Clustering
+
+Zdenek Sulc and Hana Rezankova
+
+This contribution examines 13 similarity measures for data characterized by nominal
+variables in hierarchical clustering. Most of the measures come from [1], where
+they were initially studied in outlier detection tasks, and two of them are newly
+proposed in [2]. The inspected measures consider additional characteristics of the
+clustered dataset, such as a frequency distribution of categories or the number of
+categories of a given variable, which should lead to a better cluster quality than
+the commonly used simple matching approach. The experiment is conducted on 60
+generated datasets. It compares and evaluates the similarity measures regarding the
+quality of the produced clusters in hierarchical clustering using the mean ranked
+scores of two internal evaluation criteria. The calculations are performed using the
+nomclust R package [3]. The obtained results determine which similarity measures
+are the most suitable for use with a given number of variables or a linkage algorithm.
+
+Keywords: similarity measures, nominal variables, hierarchical clustering
+
+References
+1. Boriah, S., Chandola, V., Kumar, V.: Similarity measures for categorical data: a 
+   comparative evaluation. In: Proceedings of the eighth SIAM International Conference 
+   on Data Mining, pp. 243–254. (2008)
+2. Sulc, Z., Rezankova, H. Comparison of Similarity Measures for Categorical Data in 
+   Hierarchical Clustering. J Classif 36, 58–72. (2019)
+3. Sulc, Z., Cibulkova, J., Rezankova, H. Nomclust 2.0: an R package for hierarchical 
+   clustering of objects characterized by nominal variables. Comput Stat (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

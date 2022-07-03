@@ -1,0 +1,49 @@
+Quantile-Distribution Functions and Their Use for Classification
+
+Edoardo Redivo, Cinzia Viroli, and Alessio Farcomeni
+
+We develop a flexible parametric framework for the estimation of quantile functions.
+The method involves the specification of an analytical quantile distribution function
+for the data at hand [1]. We focus on quantile functions that are linear with respect
+to their parameters, such as the flattened generalized logistic distribution [2]: these
+can adapt to a wide range of distributional shapes and allow for the estimation to be
+carried out through a computationally efficient least-squares method based on the
+order statistics.
+  Inferential properties of this estimator, such as its asymptotic distribution, are 
+derived, and these allow for the definition of a test of hypothesis for the equality of 
+two distributions. The properties of the test are evaluated via a simulation study.
+  Our method of quantile function estimation is implemented as a density estimation
+method in the naive Bayes classifier. This innovation is compared to standard approaches 
+for the classifier in a simulation study, and is illustrated on a real data set coming 
+from microRNA profiling in human Medulloblastoma. Moreover, the test of hypothesis is 
+shown to be useful as a variable selection method.
+
+Keywords: quantile function estimation, naive bayes, variable selection
+
+References
+1. Gilchrist, W.: Statistical Modelling with Quantile Functions. Taylor & Francis, 
+   Andover (2000)
+2. Chakrabarty, T.K., Sharma, D.: A generalization of the quantile-based flattened 
+   logistic distribution. Ann. Data. Sci. 8, 603–627 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

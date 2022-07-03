@@ -1,0 +1,56 @@
+An Extension of Edge Reduction for Large Networks
+
+Pedro Campos
+
+In Network Science, edge reduction in graphs has been studied by several authors
+for many years [2] [1]. The applications are varied, from telecommunications, to
+Internet of Things (IoT), and fraud detection. In fraud detection, the objective is
+to simplify the structure of networks to better identify money laundering patterns.
+In most literature, edge reduction techniques are based on network structure and
+link weights. In this work we use node attributes and edge attributes to reduce the
+structure of large graphs, where the edges and nodes are characterized by a large
+amount of features. For the reduction task we use an adaptation of Supervised PCA,
+an algorithm that uses a subset of features based on their association with the outcome
+([4]), but we extend the edge reduction by using a double reduction both at the levels
+of nodes and edges using a double Supervised PCA (2X-SPCA). An illustrative
+application of the method is made with a variant of PaySim, a Synthetic Financial
+Dataset For Fraud Detection ([3]), containing more than 6 million of transactions
+(the edges) between more than 2 million users (the nodes). An outcome variable -
+isFraud – is used, assigning the edge to a transaction made by the fraudulent agents
+inside the simulation.
+
+Keywords: edge reduction, double supervised PCA, fraud detection
+
+References
+1. Papageorgiou, A., Cheng, B., and Kovacs, E., "Real-time data reduction at the network edge
+   of Internet-of-Things systems," 2015 11th International Conference on Network and Service
+   Management (CNSM), 2015, pp. 284-291, doi: 10.1109/CNSM.2015.7367373.
+2. Hambrusch, S.E., Lim, H. (1999). Minimizing the Diameter in Tree Networks Under Edge
+   Reductions. Parallel Process. Lett., 9, 361-371.
+3. Lopez-Rojas, E.A., Elmir, A., and Axelsson, S., "PaySim: A financial mobile money simulator
+   for fraud detection". In: The 28th European Modeling and Simulation Symposium-EMSS,
+   Larnaca, Cyprus. 2016
+4. Bair, E., Hastie, T., Paul, D., Tibshirani, R. (2006). Prediction by Supervised Principal 
+   Components. Journal of the American Statistical Association, 101(473), 119–137.
+   http://www.jstor.org/stable/30047444
+5. Hamburger, C.: Quasimonotonicity, regularity and duality for nonlinear systems of partial
+   differential equations. Ann. Mat. Pura. Appl. 169, 321–354 (1995)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

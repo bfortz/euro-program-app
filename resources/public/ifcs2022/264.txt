@@ -1,0 +1,42 @@
+Vine Copula Mixture Models and Clustering for Non-Gaussian Data
+
+Ozge Sahin and Claudia Czado
+
+The majority of finite mixture models suffer from not allowing asymmetric tail
+dependencies within components and not capturing non-elliptical clusters in 
+clustering applications. Since vine copulas are very flexible in capturing these 
+dependencies, a novel vine copula mixture model for continuous data is proposed. 
+The model selection and parameter estimation problems are discussed, and further, 
+a new model-based clustering algorithm is formulated. The use of vine copulas in
+clustering allows for a range of shapes and dependency structures for the clusters.
+The simulation experiments illustrate a significant gain in clustering accuracy when
+notably asymmetric tail dependencies or/and non-Gaussian margins within the coponents 
+exist. The analysis of real data sets accompanies the proposed method. The model-based 
+clustering algorithm with vine copula mixture models outperforms others, especially for 
+the non-Gaussian multivariate data.
+
+Keywords: dependence, ecm algorithm, model-based clustering, multivariate finite mixtures, 
+          pair-copula
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

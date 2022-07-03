@@ -1,0 +1,26 @@
+Depth-Based Classifiers for Partially Observed Functional Data
+
+Antonio Elías, Raúl Jiménez, Anna M. Paganoni and Laura M. Sangalli
+
+Partially observed functional data are frequently encountered in applications and are
+the object of an increasing interest by the literature. We here address the problem
+of classification in the context of partially observed functional data based on Depth
+to-Depth classifiers [1]. To do that, we propose an integrated functional depth for
+partially observed functional data [2], dealing with the very challenging case where
+partial observability can occur systematically on any observation of the functional
+dataset. In particular, differently from many techniques for partially observed 
+functional data, we do not request that some functional datum is fully observed, nor 
+we require that a common domain exist, where all of the functional data are recorded.
+Because of this, our proposal can also be used in those frequent situations where
+reconstructions methods and other techniques for partially observed functional data
+are inapplicable. By means of simulation studies, we demonstrate the very good
+performances of the proposed depth on finite samples. We illustrate our proposal
+with a classification problem with data obtained from medical imaging.
+
+Keywords: classification, partially observed functional data, depth-to-depth
+
+References
+1. Cuesta-Albertos, J. A., Febrero-Bande, M., and Oviedo de la Fuente, M.: 
+   The DD^G-classifier in the functional setting. TEST, 26, 119–142 (2017)
+2. Elías, A., Jiménez, R., Paganoni, A. M. and Sangalli, L.: Integrated depths 
+   for partially observed functional data. J. Comput. Graph. Stat.. (2022)

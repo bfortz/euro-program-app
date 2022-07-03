@@ -1,0 +1,55 @@
+Towards Deep and Interpretable Rule Learning
+
+Johannes Fürnkranz
+
+Inductive rule learning is concerned with the learning of classification rules from
+data. Learned rules are inherently interpretable and easy to implement, so they are
+very suitable for formulating learned models in many domains. Nevertheless, current
+rule learning algorithms have several shortcomings. First, with respect to the current
+praxis of equating high interpretability with low complexity, we argue that while
+shorter rules are important for discrimination, longer rules are often more interpretable 
+than shorter rules, and that the tendency of current rule learning algorithms
+to strive for short and concise rules should be replaced with alternative methods that
+allow for longer concept descriptions. In general, the mere syntactic comprehensibility 
+of the learned concepts does often not yield convincing or plausible rules,
+and factors such as semantic coherence or the a priori relevance of used conditions
+should be explicitly encoded as objectives in an interpretable rule learning algorithm. 
+Human cognitive biases can be one possible road towards the design of an interpretability 
+bias for rule learning [3]. Second, we think that the main impediment of current rule 
+learning algorithms is that they are not able to learn deeply structured rule sets, unlike 
+the successful deep learning techniques. Both points are currently under investigation in 
+our group, and we will show some preliminary results [1, 2].
+
+Keywords: inductive rule learning, interpretability, explainable AI, deep learning
+
+References
+1. Beck, F., Fürnkranz, J.: An empirical investigation into deep and shallow rule learning.
+   Frontiers Artif. Intell. 4:689398 (2021)
+2. Beck, F., Fürnkranz, J., Quoc, P.H.V.: Structuring rule sets using binary decision diagrams. 
+   In: Proceedings of the 5th International Joint Conference on Rules and Reasoning (RuleML+RR),
+   Leuven, Belgium, pp. 48–61. Springer (2021)
+3. Fürnkranz, J., Kliegr, T., Paulheim, P.: On cognitive preferences and the plausibility of 
+   rulebased models. Mach. Learn. 109(4):853–898 (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

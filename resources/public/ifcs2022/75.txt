@@ -1,0 +1,51 @@
+The Biplot Inner Product for Interpretation and Derivation of Eigenvector Methods
+
+Cajo J. F. ter Braak
+
+To celebrate K. Ruben Gabriel’s biplot paper [1], I describe its influence, via my
+supervisor Leo C. A. Corsten, on my first to last papers (1981-2021) and on my
+teaching. Being not just a plot of two sets of items, Gabriel’s biplot shifted attention
+from the meaning of individual PCA axes to inference from the first 2-3 axes together
+via the inner product interpreted geometrically, namely as the product of the arrow
+lengths and the cosine of their angle or as the product of the lengths of the one
+arrow and the other projected on to it. These simple equations cannot only be
+used for interpreting biplots, I will show that they can also be used to derive the
+eigen equations. Whereas later, even non-linear, extensions turned the arrows in to
+calibrated, possibly curved, lines, I always promoted inference using the rank order
+of the projection points.
+  Gabriel showed that the biplot could be used beyond PCA, for example, in canonical
+correlation analysis and variants thereof [2]. Double-constrained correspondence
+analysis even allows for plots with four sets of items, pairs of which approximated
+different summary statistics of the method [3].
+  I will also briefly describe how the distinction between predictive and interpolative
+biplot was discovered and how multivariate analysis was taught in the 70-80s in
+France and Japan, compared to the English literature that was focussing more on
+weighted least-squares approximation and Gabriel’s biplot interpretation of factorial
+diagrams.
+
+Keywords: biplot, inner product, pca, canonical correlation analysis, 
+          double constrained correspondence analysis
+
+References
+1. Gabriel, K.R.: The biplot graphic display of matrices with application to principal 
+   component analysis. Biometrika 58, 453–467 (1971)
+2. ter Braak, C.J.F.: Interpreting canonical correlation analysis through biplots of 
+   structural correlations and weights. Psychometrika. 55, 519–531 (1990)
+3. ter Braak, C.J.F., Smilauer, P., Dray, S.: Algorithms and biplots for double constrained 
+   correspondence analysis. Environ. Ecol. Stat. 25, 171–197 (2018)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

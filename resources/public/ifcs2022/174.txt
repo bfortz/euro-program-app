@@ -1,0 +1,40 @@
+Clustering Count Data Using Compositional Methods
+
+Marc Comas-Cufí, Josep A. Martín-Fernández, Glòria Mateu-Figueras, and
+J. Palarea-Albaladejo
+
+Multivariate count data are multivariate vectors of non-negative integers. When
+the total number of counts depends on varying external factors (e.g. duration of the
+counting process or ability to measure a count), the relative magnitude of the observed
+values is of special importance. These data are called point-counting data in some
+applied fields, and they are affected by compositional variability and multinomial
+counting uncertainties [4]. For clustering analysis purposes, it is crucial to consider
+both sources of variability. Compositional variability is commonly modeled using
+the Dirichlet or the logratio-normal distribution, leading respectively to the classical
+Dirichlet-multinomial distribution and the logratio-normal-multinomial (LRNM)
+distribution [2]. In model-based clustering, these models are usually included as
+components in a finite mixture model [1,3].
+  In this contribution, we propose a fast approach for clustering analysis of pointcounting 
+data based on the LRNM model. A part of the procedure takes care of the
+compositional aspect through logratio coordinates, including the treatment of zero
+counts as necessary. Moreover, through the computation of the posterior distribution
+conditioned to the measured variability and the observed data, the multinomial
+variability is accounted for by using simulated samples of the latent compositional
+process. These samples are combined into a final partition of the original sample by
+using clustering ensembling methods. We will illustrate our proposal using different
+datasets.
+
+Keywords: multivariate count data, clustering, compositional data analysis
+
+References
+1. Comas-Cufí, M., Martín-Fernández, J.A., Mateu-Figueras, G. and Palarea-Albaladejo, J.:
+   Model-based clustering of count data based on the logistic-normal-multinomial distribution.
+   2017 International Federation of Classification Societies Conference, Tokyo, Japan (2017)
+2. Comas-Cufí, M., Martín-Fernández, J.A., Mateu-Figueras, G. and Palarea-Albaladejo, J.:
+   Modelling count data using the logratio-normal-multinomial distribution. SORT 44(1), 
+   99–126 (2020)
+3. Fang, Y. and Subedi, S.: Clustering microbiome data using mixtures of logistic normal 
+   multinomial models. arXiv preprint: 2011.06682 (2020)
+4. Vermeesch, P.: Statistical models for point-counting data. Earth and Planetary Science Letters
+   501, 112–118 (2018)
+

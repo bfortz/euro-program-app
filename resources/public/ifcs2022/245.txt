@@ -1,0 +1,52 @@
+Patterns of Cooperation for Polish Authors of research Publications in Economics, 
+Business and Medicine Area
+
+Urszula Cieraszewska, Paweł Lula, Magdalena Talaga, and Marcela Zembura
+
+The analysis of the publication activity has not only great cognitive importance, but
+it should be treated as an important tool supporting scientific activity management.
+The authors’ attention has been directed to this aspect of scientific productivity
+research, which concerns the analysis of main features of the network of cooperation
+among authors and the identification of the most frequent patterns of cooperation
+[1, 2].
+  The authors are planning to:
+1. identify the type of networks in the context of random networks (Erdős - Rényi -
+Gilbert model) and small-world networks (Watts–Strogatz model),
+2. carry out an analysis of the structure of author teams and determine their size,
+diversification of institutions and countries represented by authors and lastingness
+of teams,
+3. study the relationship between essential features of authors’ teams and main
+measures reflecting publication significance expressed by journal prestige and
+the number of citations of a given paper,
+4. compare networks of authors and patterns of cooperation for economics, business
+and medicine area.
+  The analysis will be performed using data from Scopus database describing
+research publications of Polish authors working in the field of economics, business
+and medicine.
+
+Keywords: scientific productivity, patterns of cooperation, network models
+
+References
+1. Cook, D.J., Holder, L.B. (eds.): Mining Graph Data. Wiley-Interscience (2010)
+2. Pieńkosz, K., Wojciechowski, J.: Grafy i sieci. Wydawnictwo Naukowe PWN, Warszawa
+   (2013)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

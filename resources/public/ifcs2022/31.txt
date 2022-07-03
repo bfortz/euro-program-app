@@ -1,0 +1,31 @@
+Emotion Classification Based on Single Electrode Brain Data: 
+Applications for Assistive Technology
+
+Duarte Rodrigues, Luis Paulo Reis, and Brígida Mónica Faria ´
+
+This research case focused on the development of an emotion classification system
+aimed to be integrated in projects committed to improve assistive technologies.
+An experimental protocol was designed to acquire an electroencephalogram (EEG)
+signal that translated a certain emotional state. To trigger this stimulus, a set of
+clips were retrieved from an extensive database of pre-labeled videos[1]. Then,
+the signals were properly processed, in order to extract valuable features [2] and
+patterns to train the machine and deep learning models.There were suggested 3
+hypotheses for classification: recognition of 6 core emotions; distinguishing between
+2 different emotions and recognising if the individual was being directly stimulated
+or merely processing the emotion. Results showed that the first classification task
+was a challenging one, because of sample size limitation. Nevertheless, good results
+were achieved in the second and third case scenarios (70% and 97% accuracy scores,
+respectively) through the application of a recurrent neural network.
+
+Keywords: emotions, brain-computer interface, eeg, machine/deep learning
+
+References
+1. Cowen, A., Keltner, D.: Self-report captures 27 distinct categories of emotion bridged by
+   continuous gradients In: Proceedings of the National Academy of Sciences of the United
+   States of America (2017) doi: 10.1073/pnas.1702247114.
+2. Jenke, R., Peer, A., Buss, M.: Feature Extraction and Selection for Emotion Recognition from
+   EEG. In: IEEE Transactions on Affective Computing, vol. 5, no. 3, pp. 327-339, (2014) 
+   doi: 10.1109/TAFFC.2014.2339834
+
+
+

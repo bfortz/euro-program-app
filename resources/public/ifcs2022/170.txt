@@ -1,0 +1,33 @@
+PLS-Based Principal Balances for Regression and Classification with 
+High-Dimensional Compositional Data
+
+V. Nesrstová, I. Wilms, K. Hron, J. A. Martín-Fernández, P. Filzmoser, 
+and J. Palarea-Albaladejo
+
+Compositional data naturally occur in many different research fields, such as 
+geochemistry or metabolomics. Due to their relative nature, compositions cannot be
+directly analysed using standard statistical methods. Instead, it is common to express
+compositional data as log-ratio coordinates with respect to an orthonormal basis of
+their sample space, see [1, 3], named as orthonormal logratio (olr) coordinates.
+Principal balances (PBs) are a specific class of olr coordinates, which are a suitable 
+choice in a high-dimensional context, see [2]. They are constructed such that
+the first few coordinates capture most of the original data variability. In this work,
+we adapt the PB procedure introduced in [2] to be used for variable selection in
+regression and classification problems with a high-dimensional composition acting
+in an explanatory role. Moreover, hereby we extend popular logcontrast models to
+consider other potentially interesting (orthonormal) logcontrasts. For this, partial
+least squares (PLS) estimation is embedded into the construction of the PBs. The
+performance of the proposal is demonstrated using simulated and real-world data.
+
+Keywords: high-dimensional compositional data, principal balances, 
+          pls regression and classification
+
+References
+1. Filzmoser, P., Hron, K., Templ, M.: Applied compositional data analysis. Springer, Cham
+   (2018)
+2. Martín-Fernández, J.A., Pawlowsky-Glahn, V., Egozcue, J.J., Tolosona-Delgado, R.: Advances
+   in principal balances for compositional data. Math. Geosci. 50, 273–298 (2018)
+3. Pawlowsky-Glahn, V., Egozcue, J.J, Tolosana-Delgado, R.: Modeling and analysis of 
+   compositional data. John Wiley & Sons (2015)
+
+

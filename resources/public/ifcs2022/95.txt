@@ -1,0 +1,41 @@
+Clustering with Missing Data: Which Imputation Model for Which Cluster Analysis Method?
+
+Vincent Audigier, Ndèye Niang, and Matthieu Resche-Rigon
+
+Multiple imputation (MI) is a popular method for dealing with missing values. One
+main advantage of MI is to dissociate the imputation phase and the analysis one.
+However, both are related since they are based on distribution assumptions that have
+to be consistent. This point is well known as congeniality.
+  In this talk, we discuss congeniality of imputation models and clustering on
+continuous data. First, we theoretically highlight how two joint modelling (JM)
+MI methods, using either general location model (JM-GL) or Dirichlet process
+mixture (JM-DP), could be congenial with various clustering methods. Then, we
+propose a new fully conditional specification (FCS) MI method with the same
+theoretical properties as JM-GL. Finally, we extend this FCS MI method from
+normal distribution to account for more complex distributions. Based on an extensive
+simulation study, all MI methods are compared for various cluster analysis methods
+(k-means, k-medoids, mixture model, hierarchical clustering).
+  This study highlights the partition accuracy is always improved when the imputation 
+model accounts for clustered individuals. From this point of view, standard
+MI methods ignoring such a structure should be avoided. JM-GL and JM-DP should
+be recommended when data are distributed according to a Gaussian mixture model,
+while FCS methods outperform JM ones on data involving more complex distributions.
+
+Keywords: clustering, missing data, multiple imputation, congeniality
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

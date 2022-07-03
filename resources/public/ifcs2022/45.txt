@@ -1,0 +1,38 @@
+A Trivariate Geometric Classification of Decision Boundaries for Mixtures of Regressions
+
+Filippo Antonazzo and Salvatore Ingrassia
+
+Mixtures of regressions play a prominent role in regression analysis when it is
+known the population of interest is divided into homogeneous and disjoint groups.
+This typically consists in partitioning the observational space into several regions
+through particular hypersurfaces called decision boundaries. A geometrical analysis
+of these surfaces allows to highlight properties of the used classifier. In particular, 
+a geometrical classification of decision boundaries for the three most used mixtures of
+regressions (with fixed covariates, with concomitant variables and random covariates) 
+was provided in case of one and two covariates, under Gaussian assumptions and in presence 
+of only one real response variable. This work aims to extend these results to a more complex 
+setting where three independent variables are considered.
+
+Keywords: mixtures of regressions, decision boundaries, hyperquadrics, modelbased clustering
+
+References
+1. DeSarbo, W.S., Cron, W.L.: A maximum likelihood methodology for clusterwise linear
+   regression. J. Classif. 5, 249–282 (1988)
+2. Grun, B., Leisch, F.: FlexMix version 2: finite mixtures with concomitant variables 
+   and varying and constant parameters. J. Stat. Softw. 28, 1–35 (2008)
+3. Hennig, C.: Identifiablity of models for clusterwise linear regression. J. Classif. 17, 
+   273–296 (2000)
+4. Ingrassia S., Minotti S.C., Vittadini G.: Local Statistical Modeling via a Cluster-Weighted
+   Approach with Elliptical Distributions. J. Classif. 29, 363-401 (2012)
+5. Ingrassia, S., Punzo, A.: Decision boundaries for mixtures of regressions. J. Korean Stat. Soc.
+   45, 295-306 (2016)
+6. Wedel, M.: Concomitant variables in finite mixture models. Stat. Neerl. 56, 362–375 (2002)
+
+
+
+
+
+
+
+
+

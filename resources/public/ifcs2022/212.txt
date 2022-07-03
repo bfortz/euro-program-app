@@ -1,0 +1,46 @@
+Density Modelling via Functional Data Analysis
+
+Stefano A. Gattone and Tonio Di Battista
+
+Recent technological advances have eased the collection of big amounts of data
+in many research field. In this scenario an useful statistical technique is density
+estimation which represents an important source of information. One dimensional
+density functions represent a special case of functional data subject to the constraints
+to be non-negative and with a constant integral equal to one [1]. Because of these
+constraints, densities functions do not form a vector space and a naive application of
+functional data analysis (FDA) methods may lead to non valid estimates. To address
+this issue two main strategies can be found in the literature. In the first, the probability
+density functions (pdfs) are mapped into a linear functional space through a suitably
+chosen transformation [2]. Established methods for Hilbert space valued data can
+be applied to the transformed functions and the results are moved back into the
+density space by means of the inverse transformation. In the second strategy, pdfs
+are treated as an infinite dimensional compositional data since they are part of some
+whole which only carry relative information. An approach based on the Aitchison
+geometry for compositional data has been sketched in [3, 4]. In this work, by means
+of a suitable transformation, densities are embedded in the Hilbert space of square
+integrable functions where standard FDA methodologies can be applied.
+
+Keywords: constrained estimator, functional data analysis, probability density functions.
+
+References
+1. Ramsay, J.O. and Silverman, B.W.: Functional Data Analysis, 2nd edn. Springer, New York
+   (2005)
+2. Petersen, A. and Muller, H.: Functional data analysis for density functions by transformation
+   to a Hilbert space. Ann. Stat. 32(1), 183–218 (2016)
+3. Delicado, P.: Dimensionality reduction when data are density functions. Comput. Stat. Data.
+   Anal. 55, 401–420 (2011)
+4. Hron, K., Menafoglio, M., Templ, M., Hruzova, K. and Filzmoser, P.: Simplicial principal
+   component analysis for density functions in Bayes spaces. Comput. Stat. Data. Anal. 94,
+   330–350 (2016)
+
+
+
+
+
+
+
+
+
+
+
+

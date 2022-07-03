@@ -1,0 +1,24 @@
+Testing Equality of Multivariate Coefficients of Variation
+
+Marc Ditzhaus and Łukasz Smaga
+
+The univariate coefficient of variation is well known unit-free variability measure,
+which is often applicable. There are a few its multivariate extensions, and no one is
+assumed to be a default [2]. Moreover, only for one of the multivariate coefficients
+of variation, statistical tests are known for verifying their equality in several groups
+[1, 3]. In this paper, we would like to fill this gap. We prove that the asymptotic
+distribution of the estimators of multivariate coefficients of variation is normal with
+appropriate variances. Using this result, we construct a Wald-type test statistics,
+whose distributions are approximated by the permutation method. The properties of
+the obtained tests are investigated in simulation studies. We consider the control of
+type I error level and power.
+
+Keywords: multivariate coefficient of variation, permutation method, statistical test
+
+References
+1. Aerts, S., Haesbroeck, G.: Robust asymptotic tests for the equality of multivariate 
+   coefficients of variation. Test 26, 163–187 (2017)
+2. Albert, A., Zhang, L.: A novel definition of the multivariate coefficient of variation. 
+   Biom. J. 52, 667–675 (2010)
+3. Ditzhaus, M., Smaga, Ł.: Permutation test for the multivariate coefficient of variation 
+   in factorial designs. J. Multivariate Anal. 187, 104848 (2022)

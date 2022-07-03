@@ -1,0 +1,34 @@
+Clustering Student Mobility Data in 3-Way Networks
+
+Vincenzo Giuseppe Genova, Giuseppe Giordano, Giancarlo Ragozini, 
+and Maria Prosperina Vitale
+
+The present contribution aims at introducing a network data reduction method for
+the analysis of 3-way networks [1] in which classes of nodes of different types are
+linked. The proposed approach enables simplifying a 3-way network into a weighted
+two-mode network by considering the statistical concept of joint dependence in a
+multiway contingency table. Starting from a real application on student mobility data
+in Italian universities [2], a 3-way network is defined, where provinces of residence,
+universities and educational programmes are considered as the three sets of nodes,
+and occurrences of student exchanges represent the set of links between them. The
+Infomap community detection algorithm [3] is then chosen for partitioning two-mode
+networks of students’ cohorts to discover different network patterns.
+
+Keywords: 3-way network, complex network, community detection, mobility data,
+          tertiary education
+
+References
+1. Batagelj, V., Ferligoj, A., Doreian, P.: Indirect Blockmodeling of 3-Way Networks. 
+   In: Brito P., Cucumel G., Bertrand P., de Carvalho F. (eds) Selected Contributions 
+   in Data Analysis and Classification. Studies in Classification, Data Analysis, and 
+   Knowledge Organization, pp. 151–159. Springer, Berlin, Heidelberg (2007)
+2. Columbu, S., Porcu, M., Primerano, I., Sulis, I., Vitale, M.P.: Geography of Italian 
+   student mobility: A network analysis approach. Socio Econ Plan Sci 73, 100918 (2021)
+3. Edler, D., Bohlin, L., Rosvall, M.: Mapping higher-order network flows in memory and
+   multilayer networks with infomap. Algorithms, 10, 112 (2017)
+
+
+
+
+
+

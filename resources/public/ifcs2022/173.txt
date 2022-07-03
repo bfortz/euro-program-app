@@ -1,0 +1,35 @@
+Bootstrapping Binary GEV Regressions for Massive Unbalanced Datasets
+
+Michele La Rocca, Marcella Niglio, and Marialuisa Restaino
+
+Research on rare events is constantly increasing over the years in many research areas.
+Examples include fraud detection, credit default prediction, bankruptcy prediction,
+customer/students churn predictions and accident occurrence. In all these cases, rare
+events data are usually defined as binary variables with fewer events (ones) than
+non-events (zeros). In other words, the degree of unbalance is more extreme in rare
+events than it is in the class of unbalanced data. However, both unbalanced and
+rare events data have been studied as statistical problems with possible applications
+in different fields such as biology, political science, engineering, economics and
+medicine. The unbalanced variables related to rare events are difficult to predict and
+explain, specially in high dimensional settings and in presence of massive datasets,
+where unbalancing might be even more critical.
+  The logistic model may not be appropriate for such data since it strongly underestimates 
+the probability of rare events because the estimators tend to be biased
+towards the majority class, which is usually less critical. Moreover, as underlined in
+the literature, the bias of the maximum likelihood estimators of logistic regression
+parameters in small sample sizes could be amplified in a rare events context. Thus,
+in this framework, there is an increasing interest in using the quantile function of the
+GEV distribution as a link function to investigate the relationship between the binary
+response variable and a set of predictors. The main advantage of this approach is
+that thanks to its skewness, the GEV link function has an asymmetric behaviour. It
+approaches one slower than it approaches zero, handling nicely rare events.
+  This work aims to estimate the probability of success given a set of features
+by using a generalized extreme value regression model for binary data, also taking
+into account the effects on the response variable of class imbalance in categorical
+predictors. Confidence intervals and hypothesis testing are constructed by using
+bootstrap methods, specifically designed for massive datasets, in multiple testing
+perspectives. The performance of our proposed procedure is evaluated by Monte
+Carlo simulation studies and applications to real datasets.
+
+Keywords: rare events data, GEV regression, bootstrap, multiple testing
+

@@ -1,0 +1,40 @@
+Clustering Intensive Longitudinal Data Through Mixture Multilevel Vector-Autoregressive
+Modeling
+
+Anja Ernst, Marieke Timmerman, Feng Ji, Bertus Jeronimus, and Casper Albers
+
+Experience sampling methodology is increasingly used in the social sciences to
+analyze individuals’ emotions, thoughts and behaviors in everyday-life. The resulting 
+intensive longitudinal data is often analyzed with the objective to describe the 
+inter-individual differences that are present within it. To accommodate inter-individual 
+differences to a greater extent than previously possible, a mixture multilevel 
+vector-autoregressive model is proposed. This model combines a mixture model at level 2 
+(individual level) with a multilevel vector-autoregressive model [1] that describes the 
+dynamic fluctuations present at level 1 (time-point level). This exploratory model identifies 
+mixture components of individuals who exhibit similar overall means, autoregressions, and 
+cross-regressions. Within each mixture component, multilevel coefficients allow additionally 
+for within-component variation on these vector-autoregressive coefficients. The advantage of 
+exploratory identifying mixture components and accounting for within-component variation is 
+demonstrated on data from the COGITO study. This data contains samples of individuals from
+disparate age groups of over 100 individuals each.
+
+Keywords: model-based clustering, time series analysis, applications in social sciences
+
+References
+1. Rovine, M.J., Walls, T.A.: Multilevel Autoregressive Modeling of Interindividual 
+   Differences in the Stability of a Process. In: Walls, T.A., Schafer, J.L. (eds.) 
+   Models for intensive longitudinal data, pp. 124–147. Oxford University Press (2006)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

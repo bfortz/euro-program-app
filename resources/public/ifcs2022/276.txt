@@ -1,0 +1,55 @@
+MARGOT: a Maximum MARGin Optimal Classification Tree
+
+Federico D’Onofrio and Marta Monaci and Giorgio Grani and Laura Palagi
+
+In recent years there has been a growing attention to machine learning models which
+are able to give explanatory insights on the decisions made by the algorithm. Thanks
+to their interpretability, decision trees have been intensively studied for classification
+tasks, and, due to the remarkable advances in mixed-integer programming (MIP),
+various approaches have been proposed to formulate the Optimal Classification Tree
+(OCT) problem as a MIP model starting from the seminal paper [2]. We present
+a novel MIQP formulation for binary classification using OCT and exploiting the
+generalization capabilities of Support Vector Machines. The maximum MARGin
+Optimal Classification Tree (MARGOT) selects at each node of the decision tree a
+maximum margin separating hyperplane using an l_2-norm linear SVM (see e.g. [1]
+and references therein). The resulting model combines such multivariate hyperplanes
+minimizing the global misclassification error. The model can also include feature
+selection constraints, following e.g. [3], which allows to define a hierarchy on the
+subsets of features which mostly affect the outcome. MARGOT has been tested on
+non-linearly separable synthetic datasets in a 2-features space in order to provide
+a graphical representation of the optimal hyperplanes. Finally, MARGOT has been
+tested on benchmark datasets from the UCI repository.
+
+Keywords: support vector machines, optimal decision trees, mixed integer quadratic programming
+
+References
+1. Piccialli, V. and Sciandrone, M.: Nonlinear optimization and support vector machines. Ann
+   Oper Res (2022).
+2. Bertsimas, D. and Dunn, J.: Optimal classification trees. Machine Learning, 7, 1039–1082
+   (2017).
+3. Labbé, M., and Martínez-Merino, L. I. and Rodríguez-Chía, A. M.: Mixed integer linear
+   programming for feature selection in support vector machine. Discrete Applied Mathematics
+   261, 276–304 (2019).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

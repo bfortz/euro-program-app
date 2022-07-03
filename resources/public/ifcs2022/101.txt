@@ -1,0 +1,49 @@
+Sequence-Aware Item Recommendations for Multiply Repeated User-Item Interactions
+
+Juan Pablo Equihua, Maged Ali, Henrik Nordmark, and Berthold Lausen
+
+Recommender systems are one of the most successful applications of machine learning 
+in a wide variety of application domains, such as e-commerce, media streaming,
+email marketing, and virtually every industry where personalisation facilitates better
+user experience or boosts customer engagement [1]. Their main goal is analysing
+past users’ behaviour to predict which items may be of interest for users, and are
+typically built with the use of matrix-completion techniques such as collaborative
+filtering. However, although these approaches have achieved tremendous success in
+several applications, their effectiveness is still limited when users might interact with
+the same items multiple times, or when user preferences change over time [2].
+  Inspired by Natural Language Processing techniques to process, and analyse
+sequences of text, we designed a recommender system that accounts to the order
+of user-item interactions in a sequential framework to make recommendations [3].
+This method is empirically shown to predict accurate probabilities of future user-item
+interactions in retail environments, and outperform matrix-completion and similar
+sequential approaches by increasing sales up to 130% in different A/B tests.
+
+Keywords: recommender systems, natural language processing, deep learning.
+
+References
+1. Massimo Q., Paolo C., Dietmar J.: Sequence-Aware Recommender Systems. ACM Computing
+   Surveys (2019)
+2. Thang D., Neil V., Brian K.: Generating Realistic Sequences of Customer-Level Transactions
+   for Retail Datasets. IEEE International Conference on Data Mining Workshops. 820-827 (2018)
+3. Young-Jun K., Lucas M., Matthias G.: Collaborative Recurrent Neural Networks for Dynamic
+   Recommender Systems. ACML (2016)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

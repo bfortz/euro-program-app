@@ -1,0 +1,45 @@
+Sampling Design for Uncovering Natural Laws in Compositional Data
+
+Lan Liang, Glòria Mateu-Figueras, and Jan Graffelman
+
+Natural law refers to a stable mathematical relationship being constructed by some
+parts of the composition obtained from nature. One of the common forms of natural
+laws in the composition is the constant logcontrast relationship between parts, usually
+indicating a compositional system at an equilibrium state. A statistical approach to
+detecting this form of law includes two steps: 1) collecting appropriate data for
+the analysis, and 2) choosing proper statistical methods to analyze the data. In
+the aspect of statistical methodology, ample studies have shown that the logratio
+principal component analysis (LR-PCA) is an effective tool for detecting the constant
+logcontrast patterns [1, 2]. However, though the sampling design is also an important
+aspect of statistical design, limited literature discusses its effect on drawing accurate
+conclusions about the laws in composition. Therefore, this study aims to investigate
+the limitations of different sampling methods on LR-PCA procedure and develop
+more suitable sampling strategies for law detection.
+  Through a simulation study of genotype frequencies in Hardy Weinberg Equilibrium (HWE), 
+we found that when generating a 3D compositional data set containing HWE law, if one variable 
+is assigned an exact value and thus has a small variance, the ratios between pair-wise variables 
+are close to constants. In this context, the LR-PCA may report the proportionality between two 
+parts instead of the law of interest. To avoid this problem, high heterogeneity in compositional 
+samples is required.
+
+Keywords: compositional data, natural law, constant logcontrast, 
+          logratio principal component analysis (LR-PCA), sampling
+
+References
+1. Aitchison, J.: Logratios and natural laws in compositional data analysis. Mathematical 
+  Geology. 31 (5), 563–580 (1999)
+2. Pawlowsky-Glahn, V., Egozcue, J.J., Tolosana-Delgado, R.: Modeling and Analysis of Compositional 
+   Data. John Wiley & Sons, Chichester (2015)
+
+
+
+
+
+
+
+
+
+
+
+
+

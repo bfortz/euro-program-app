@@ -1,0 +1,18 @@
+Clustering High-Dimensional Microbiome Data
+
+Sanjeena Dang (Subedi) and Wangshu Tu
+
+The human microbiome plays an important role in human health and disease status. 
+Next-generation sequencing technologies allow for quantifying the composition
+of the human microbiome. Clustering these microbiome data can provide valuable
+information by identifying underlying patterns across samples. Here, we develop a
+family of logistic normal multinomial factor analyzers (LNM-FA) by incorporating
+a factor analyzer structure. The family of models is suitable for high-dimensional
+microbiome data as the number of parameters in LNM-FA can be greatly reduced
+by assuming that the underlying latent factors is small. Parameter estimation is done
+using a computationally efficient variant of the alternating expectation conditional
+maximization algorithm that utilizes variational Gaussian approximations. The proposed 
+method is illustrated using simulated and real datasets.
+
+Keywords: cluster analysis, microbiome data, model-based clustering, 
+          high-dimensional data, mixture model.

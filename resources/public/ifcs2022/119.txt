@@ -1,0 +1,52 @@
+Symbolic Clustering Methods Applied to Interval Estimates of Production Cost Quantiles
+
+Dominique Desbois
+
+The decision to adopt one or another of the sustainable land management alternatives
+should not be based solely on their respective benefits in terms of climate change
+mitigation, but also on the performance of the productive systems used by the farms,
+assessing their environmental impacts through the cost of the specific resources
+used. This communication presents applications of the symbolic clustering methods,
+proposed in [1, 2] for interval data, to conditional quantile estimates of production
+costs in agriculture. The interval data clustering tools are used to obtain typologies of
+European countries and regions, on the basis of the conditional quantile distributions
+of agricultural production cost empirical estimates. A procedure to find optimal
+partitions along with various criteria is used. Some standard statistical tests are
+proceed. This work extends preliminary results published in [3]. The comparative
+analysis of the econometric results for the main products between European countries
+and regions illustrates the relevance of the typologies obtained for national and
+international comparisons based on their specific input productivity.
+
+Keywords: symbolic clustering, interval data, quantile estimates, agricultural production costs, 
+          micro-economics
+
+References
+1. Carvalho, F., Souza, R., Chavent, M., Lechevallier, Y.: Adaptive Hausdorff distances and
+   dynamic clustering of symbolic interval data. Pattern Recognition Letters, 27(3), 167–179 (2006)
+2. Chavent, M., Lechevalier, Y., Briant, O.: DIVCLUS-T: A monothetic divisive hierarchical
+   clustering method. Computational Statistics & Data Analysis, 52(2), 687–701 (2007)
+3. Desbois, D.: Applying interval PCA and clustering to quantile estimates: empirical distributions 
+   of fertilizer cost estimates for yearly crops in European Countries. Communications in Statistics: 
+   Case Studies, Data Analysis and Applications, 7(4), 695–716 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

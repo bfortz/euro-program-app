@@ -1,0 +1,60 @@
+A Showcase of New Methods for High Dimensional Data Viewing with Linear
+Projections and Sections
+
+Dianne Cook
+
+In the last few years there have been several huge strides in new methods available
+for exploring high-dimensional data using tours. Tours is the collective term for
+visualisations built on linear projections. Tours have two key elements: the path that
+generates a sequence, and the display to make of the low-dimensional projection.
+There are numerous path algorithms available (and implemented in the tourr [1]
+R package), including the old (grand, guided, little, local, manual), and the new
+(slice [2], sage [3]). This talk will show off these new tools and how they can be used
+for several contemporary problems, including understanding nonlinear dimension
+reductions (e.g. t-SNE) using the liminal [4] R package, and explainable artificial
+intelligence (XAI) using the cheem [5] R package. Step into the fascinating world of
+high-dimensions with me.
+
+This most recent methodology is joint with primarily Ursula Laa, German Valencia,
+Stuart Lee and Nicholas Spyrison.
+
+Keywords: statistical graphics, exploratory data analysis, tours, XAI, t-SNE, R
+
+References
+1. H. Wickham, D. Cook, H. Hofmann, and A. Buja. tourr: An R package for exploring
+   multivariate data with projections. Journal of Statistical Software, 40(2):1–18, 2011. 
+   URL http://www.jstatsoft.org/v40/i02/.
+2. U. Laa, D. Cook, and G. Valencia. A slice tour for finding hollowness in high-dimensional
+   data. Journal of Computational and Graphical Statistics, 29(3):681–687, 2020. 
+   URL https://doi.org/10.1080/10618600.2020.1777140.
+3. U. Laa, D. Cook, and S. Lee. Burning sage: Reversing the curse of dimensionality in the
+   visualization of high-dimensional data. Journal of Computational and Graphical Statistics,
+   31(1):40–49, 2022. URL https://doi.org/10.1080/10618600.2021.1963264.
+4. S. Lee. liminal: Multivariate data visualization with tours and embeddings, 2021. 
+   URL https://CRAN.R-project.org/package=liminal. R package version 0.1.2.
+5. N. Spyrison cheem: Interactively Explore the Support of Local Explanations with the Radial
+   Tour, 2022. URL https://CRAN.R-project.org/package=cheem. R package version 0.2.0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

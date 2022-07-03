@@ -1,0 +1,45 @@
+Multivariate Mapping of Soil Organic Carbon and Nitrogen
+
+Stephan van der Westhuizen, David P. Hofmeyr, and Gerard B.M. Heuvelink
+
+Soil maps, which can be effectively produced with statistical models in digital
+soil mapping (DSM), contain vital information on the spatial distribution of soil
+properties which are used in fields such as water- and land management and climate
+studies [1]. Soil maps are usually produced in a univariate manner, that is, each map
+is produced independently and therefore, when multiple soil properties are mapped
+the underlying covariance structure between these soil properties is ignored. This
+may lead to inconsistent soil maps, for example, organic carbon and nitrogen maps
+produced independently may show unrealistic carbon-nitrogen ratios. The latter is
+important as these ratios are used by map users to obtain information on residue
+decomposition and the nitrogen cycle in the soil. In the last decade the production of
+soil maps with machine learning models has become increasingly popular as these
+models are able to quantify complex non-linear relationships between a soil property
+and the environmental covariates. However, producing soil maps with multivariate
+machine learning models is still lacking and requires much investigation in DSM. In
+this talk we present the simultaneous mapping of soil organic carbon and nitrogen for
+the region consisting of Belgium, The Netherlands, Luxembourg, and Germany. The
+simultaneous mapping is performed with a multivariate random forest model [2],
+and we compare this model to that of two separate univariate random forest models.
+
+Keywords: random forest, digital soil mapping, multivariate analysis, 
+          machine learning
+
+References
+1. McBratney, A. B., Mendonça Santos, M.L., Minasny, B.: On digital soil mapping. 
+   Geoderma. 117, 3–52 (2003)
+2. Segal, M., Xiao, Y.: Multivariate random forests. WIREs Data Min. Knowl. Discovery. 
+   1, 80–87 (2011)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

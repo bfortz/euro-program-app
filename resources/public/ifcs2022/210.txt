@@ -1,0 +1,44 @@
+ExactTree: an R-Package for Globally Optimal Decision Trees
+
+E. Dusseldorp, J. Claramunt Gonzales, J.J. Meulman, S. Uysal, and B.J. Os
+
+Decision trees, such as Classification and Regression Trees (CART) are grown
+using binary recursive partioning. The goal is to predict a categorical outcome
+(classification) or a continuous outcome (regression) as good as possible using
+binary splits on predictor variables. Because our goal is to preserve interpretability,
+we focus in this paper on single trees. The tree algorithm starts with all objects in the
+root node and subsequently searches for the predictor variable and split point that
+leads to the maximum decrease in impurity (e.g., residual sum of squares); then the
+root node is split into two child nodes. This process is repeated at each node until a
+full tree is grown. A downside of this recursive procedure is the risk of arriving at a
+local minimum. Therefore, several attempts have been made to grow globally optimal
+trees, among which evolutionary trees [1], based on a meta-heuristic algorithm, and
+the method ExactTree [2, 3], that optimizes the entire tree structure globally using
+dynamic programming. We performed a benchmark study comparing both methods
+on predictive accuracy and stability. Results on part of the data sets showed similar
+predictive accuracies, but higher stability for ExactTree. In our presentation, we show
+the final results and demonstrate the R-package ExactTree for you.
+
+Keywords: decision trees, interpretable machine learning, classification, regression,
+          global optimization
+
+References
+1. Grubinger, T., Zeileis, A., Pfeiffer, K-P: evtree: Evolutionary learning of globally optimal
+   classification and regression trees in R. J. Stat. Softw. 61, 1–29 (2014)
+2. Os, B.J.: Dynamic Programming in Multivariate Data Analysis. Leiden University (2000)
+3. Meulman, J.J., Dusseldorp, E., Os, B.J.: An exact dynamic programming algorithm for regression 
+   trees. In: Van der Heĳden, M., Koren, B., Van der Mei, R.D., Van Vonderen, J.A.J. (eds.) 
+   Jan Karel Lenstra, the Traveling Science Man: Liber Amicorum, pp. 198–208. CWI, Amsterdam (2011).
+
+
+
+
+
+
+
+
+
+
+
+
+

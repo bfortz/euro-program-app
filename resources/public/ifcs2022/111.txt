@@ -1,0 +1,50 @@
+Time Resolved Feature Importance of a Biopharmaceutical Purification Process Using
+Permutation Based Methods
+
+Matthias Medl, Theresa Scharl, Astrid D¨urauer, and Friedrich Leisch
+
+Real-time monitoring of critical process parameters of biotechnological processes
+is a major step towards quality-by-design in the production of biopharmaceuticals.
+The emergence of novel monitoring devices has resulted in the accumulation of
+complex high-dimensional data. Recently, statistical models capable of predicting
+critical process parameters online -e.g. the product or impurity concentration- have
+been developed. However, to generate these models the variable space has been
+reduced manually based on expert knowledge. This presents a problem as (a) expert
+knowledge is not always available, especially for novel technologies, (b) experts
+might overlook important variables and (c) the importance of some variables might
+be unknown in general. Therefore, we propose a deep learning framework capable
+of predicting critical process parameters of a biopharmaceutical purification process
+based on the whole high-dimensional variable space (1400 variables). To achieve
+this, a neural network architecture consisting of two parallel strands that are 
+concatenated at the end has been developed. One strand consists of fully connected layers
+and takes standalone variables -e.g. pH, conductivity- as input, while the other strand
+consists of convolutional layers and utilizes whole Fourier transform infrared spectra
+as input. Using this method, the model itself learns, which variables contain useful
+information or not. By determining the variable importances with the model, 
+(a) previously unknown correlations and patterns can be identified to gain further 
+understanding about the underlying mechanics of the purification process and 
+(b) more accurate models can be generated that utilize all informative variables available.
+
+Keywords: deep learning, variable importance, permutation, bioprocess
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

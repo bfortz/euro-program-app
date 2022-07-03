@@ -1,0 +1,35 @@
+Alternating Optimization Framework for Sparse Simultaneous Component Analysis 
+Based on Data Integration
+
+Rosember Guerra-Urzola, Juan C. Vera, Katrijn Van Deun, and Klaas Sijtsma
+
+Given multiple data blocks from different sources sharing the same observations
+(such as psychological questionnaires or genetic risk scores), Simultaneous 
+Component Analysis (SCA) aims to find a few linear combinations of the variables
+that explain as much as possible the variability in the joined data set. However,
+rooting the analysis on all variables makes interpretability difficult, especially in
+high-dimensional settings. Therefore, looking for a sparse structure is natural; it
+identifies the common and distinctive source of variation across all data blocks.
+Solving the sparse SCA problem is intractable, given its combinatorial nature. Here,
+the nonconvex SCA problem is formulated as different convex maximization problems over 
+the sphere, inducing sparsity via cardinality constraint and lasso penalties.
+To solve these models, optimization algorithms based on the alternating directions
+methods are proposed; these algorithms find high-quality feasible solutions for large
+dimensions. Extensive experiments, including a real-world data set, are used to assess
+the solution quality, computational time, and scalability of the methods.
+
+Keywords: alternating optimization, dimension reduction, simultaneous component analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+

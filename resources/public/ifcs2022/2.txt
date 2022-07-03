@@ -1,0 +1,26 @@
+Anomaly Detection-Based Under-Sampling for Imbalanced Classification Problems
+
+You-Jin Park, Chun-Yang Peng, Rong Pan, and Douglas C. Montgomery
+
+In this research, we propose a new anomaly detection-based under-sampling method
+called ADU to improve the classification performance of imbalanced datasets by 
+effectively removing anomalies, such as outliers and noises. To detect the anomalies 
+in different clusters effectively, three useful approaches are considered. Specifically, 
+to detect the outliers belonging to the majority class, neighborhood-based and density
+based outlier detection methods, namely OBN (outlierness based on neighborhood) and 
+DBSCAN (density-based spatial clustering based on noise applications) are
+used [1, 2]. Finally, to eliminate the borderline noise samples in the majority class
+(i.e., the majority class samples with low membership probabilities), a membership
+probability-based under-sampling is proposed with changing the under-sampling rate
+so that a proportion of majority class samples can be removed.
+
+Keywords: classification, class imbalance, class overlap, under-sampling, 
+          membership probability
+
+References
+1. Gupta, U., Bhattacharjee, V., Bishnu, P.S.: A New Neighborhood-Based Outlier Detection
+   Technique. In: Nath, V., Mandal, J.K. (eds.) MCCS 2018, pp. 527-534. Springer, Singapore
+   (2018)
+2. Ester, M., Kriegel, H.P., Sander, J., Xu, X.: A density-based algorithm for discovering clusters
+   in large spatial databases with noise. In: Simoudis, E., Han, J., Fayyad U. (eds.) KDD 1996,
+   pp. 226-231. AAAI Press, Oregon, USA. (1996)

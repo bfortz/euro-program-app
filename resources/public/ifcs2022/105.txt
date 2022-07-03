@@ -1,0 +1,54 @@
+Analysis of the Damage Rate Using Typhoon Information
+
+Su Hoon Choi and Min Soo Kim
+
+According to the Intergovernmental Panel on Climate Change, the scale and intensity
+of damage are increasing as well as the frequency of meteorological disasters due to
+global warming. Typhoon usually occur between July and October, so they are similar
+to the harvest of crops, causing a lot of damage to farmers. In order to minimize
+damage to farmers caused by meteorological disasters, South Korea has implemented
+crop insurance since 2001. This study aims to analyze typhoon and damage rate by
+using crop insurance data. Since crop insurance is measured objectively and fairly
+for accurate actual damage judgment, analysis using crop insurance data is expected
+to be highly reliable. It will identify and analyze the relationship between typhoon
+information and the damage rate, and further present the expected typhoon damage
+rate for future typhoon. Considering the characteristics of the analysis data, the
+zero-inflated beta regression will be used to analyze the damage rate. In addition,
+by using Random Forest and XGBoost, which are representative machine learning
+models, we intend to compare the prediction results between models. As a result of
+the prediction, the performance of machine learning models was better than zeroinflated 
+beta regression. The results of this analysis are expected to be used not only to predict 
+the expected damage rate for future typhoon but also to prepare measures to reduce damage 
+to farmers.
+
+Keywords: typhoon, crop insurance, zero-inflated beta regression, machine learning
+
+References
+1. Tang, B., Frye, H.A., Gelfand, A.E., Silander Jr, J.A.: Zero-inflated Beta distribution 
+   regression modeling. arXiv preprint arXiv:2112.07249 (2021)
+2. Breiman, L.: Random forests. Machine learning, 45(1), 5-32 (2001)
+3. Chen, T., Guestrin, C.: Xgboost: A scalable tree boosting system. In Proceedings of the 
+   22nd acm sigkdd international conference on knowledge discovery and data mining, 785-794 
+   (2016)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

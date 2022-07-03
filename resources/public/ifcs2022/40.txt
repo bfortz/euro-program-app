@@ -1,0 +1,36 @@
+Supervised Classification via Neural Networks for replicated Point Patterns
+
+Katerina Pawlasova, Iva Karafiatova, and Jiri Dvorak
+
+A spatial point pattern is a collection of points observed in a bounded region of R^d,
+d ≥ 2. Individual points represent, e.g., observed locations of cell nuclei in a tissue
+(d = 2) or centers of undesirable air bubbles in industrial materials (d = 3). The main
+goal of this paper is to show the possibility of solving the supervised classification
+task for point patterns via neural networks with general input space [3]. To predict
+the class membership for a newly observed pattern, we compute an empirical estimate of 
+a selected functional characteristic (e. g., the pair correlation function). Then,
+we consider this estimated function to be a functional variable that enters the input 
+layer of the network. A short simulation example illustrates the performance of the proposed 
+classifier in the situation where the observed patterns are generated from two models with 
+different spatial interactions. In addition, the proposed classifier is compared with 
+convolutional neural networks [1] (with point patterns represented by binary images) and kernel 
+regression. Kernel regression classifiers for point patterns have been studied in our previous 
+work [2], and we consider them a benchmark in this setting.
+
+Keywords: spatial point patterns, pair correlation function, supervised classification, 
+          neural networks, functional data
+
+References
+1. Goodfellow, I., Bengio, Y., Courville, A.: Deep Learning. MIT Press, Cambridge (2016)
+2. Konasova, K., Dvorak, J.: Techniques from functional data analysis adaptable for spatial point ´
+   patterns (2021) Available as a part of the Proceedings of the 22nd European Young Statisticians
+   Meeting. https://www.eysm2021.panteion.gr/publications.html. Cited 10 Jan 2022
+3. Thind, B., Multani, K., Cao, J.: Deep Learning with Functional Inputs (2020) Available via
+   arxiv. https://arxiv.org/pdf/2006.09590.pdf. Cited 10 Jan 2022
+
+
+
+
+
+
+

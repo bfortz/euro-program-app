@@ -1,0 +1,27 @@
+Generalized Spatio-Temporal Regression with PDE Penalization
+
+Eleonora Arnone, Elia Cunial, and Laura M. Sangalli
+
+We develop a novel generalised linear model for the analysis of data distributed over
+space and time. The model involves a nonparametric term f, a smooth function over
+space and time. The estimation is carried out by the minimization of an appropriate
+penalized negative log-likelihood functional, with a roughness penalty on f that
+involves space and time differential operators, in a separable fashion, or an evolution
+partial differential equation. The model can include covariate information in a 
+semi-parametric setting. The functional is discretized by means of finite elements in 
+space, and B-splines or finite differences in time. Thanks to the use of finite elements, 
+the proposed method is able to efficiently model data sampled over irregularly shaped
+spatial domains, with complicated boundaries. To illustrate the proposed model we
+present an application to study the criminality in the city of Portland, from 2015 to
+2020.
+
+Keywords: functional data analysis, spatial data analysis, semiparametric regression
+          with roughness penalty
+
+
+
+
+
+
+
+

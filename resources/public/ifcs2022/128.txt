@@ -1,0 +1,27 @@
+Identification of Driver Genes in Glioblastoma via Regularized Classification
+
+Marta Belchior Lopes and Susana Vinga
+
+Tumor heterogeneity is a major driver of tumor progression and treatment failure.
+In the particular case of glioblastoma (GBM), the most common and aggressive
+primary brain malignancy, intratumoral molecular heterogeneity translates into different
+tumor cell clones in a single patient, with different selective advantages, which
+makes available therapy options ineffective. The identification of tumor molecular
+changes at the cell level is a key to understanding tumor heterogeneity and providing
+insights into the development of novel targeted therapies. With the rise of
+omics technologies, it is now possible to extract from a single cell a huge amount
+of information related to the cell functioning (e.g., genomics, transcriptomics, proteomics).
+However, these data came at the cost of high dimensionality (the number
+of features greatly outnumbering the number of observations), which requires appropriate
+statistical and machine learning tools to extract relevant information from
+these complex molecular networks. In this work, a strategy based on regularized
+logistic regression with network information is applied to single-cell RNA sequencing
+(RNA-seq) data from GBM patients for classifying cells into distinct neoplastic
+cell groups and normal cells, while selecting the features discriminating between the
+classes as putative GBM therapy targets. The relevance of the extracted features is
+supported by literature reports on their established role in GBM, their significance
+in the survival outcomes in bulk GBM RNA-Seq data, and their association with
+several Gene Ontology biological process terms.
+
+Keywords: glioblastoma, transcriptomics, regularized classification, high dimentionality,
+          network

@@ -1,0 +1,21 @@
+Detection of the Biliary Atresia using Deep Convolutional Neural Networks
+based on Statistical Learning Weights via Optimal Similarity and Resampling Methods
+
+Kuniyoshi Hayashi, Eri Hoshino, Mitsuyoshi Suzuki, Erika Nakanishi, Kotomi Sakai, 
+and Masayuki Obatake
+
+Recently, artificial intelligence methods have been applied in several fields, and their
+usefulness is attracting attention. Neural networks are representative online models
+for prediction and discrimination. Many online methods require large training data
+to attain sufficient convergence. Thus, online models may not converge effectively
+for low and noisy training datasets. For such cases, to realize effective learning 
+convergence in online models, we introduce statistical insights into an existing method
+to set the initial weights of deep convolutional neural networks. Using an optimal
+similarity and resampling method, we proposed an initial weight configuration approach 
+for neural networks. For a practice example, identification of biliary atresia
+(a rare disease), we verified the usefulness of the proposed method by comparing
+existing methods that also set initial weights of neural networks.
+
+Keywords: auc, bootstrap method, sensitivity and specificity, projection matrix
+
+

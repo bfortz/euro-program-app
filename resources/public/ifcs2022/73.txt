@@ -1,0 +1,46 @@
+Genomic Prediction Using Machine Learning Methods: 
+Performance Comparison on Synthetic and Empirical Data
+
+Vanda Lourenço, Joseph Ogutu, Rui Rodrigues, and Hans-Peter Piepho
+
+The accurate prediction of genomic breeding values is central to genomic selection
+(GS) in both plant and animal breeding studies. Genomic prediction (GP) involves
+the use of thousands of molecular markers spanning the entire genome and therefore
+requires methods able to efficiently handle high dimensional data. Machine learning
+(ML) methods, which encompass different groups of supervised and unsupervised
+learning methods, are becoming widely advocated for and used in GP studies. Although 
+several studies have compared the predictive performances of individual
+methods, studies comparing the predictive performance of different groups of methods 
+are rare. However, such studies are crucial for identifying (i) groups of methods
+with superior predictive performance and assessing (ii) the merits and demerits of
+such groups of methods relative to each other and to the established classical methods. 
+Here, we comparatively evaluate in terms of predictive accuracy and prediction
+errors (mean squared and mean absolute prediction errors) the genomic predictive
+performance of several groups of supervised ML methods. Specifically, regularized 
+(regularized, adaptive-regularized and group-regularized), ensemble (random
+forests and stochastic gradient boosting), instance-based (support vector machine)
+and deep-learning (feed-forward neural network) methods, using one simulated
+dataset (animal breeding population; three distinct traits) and three empirical maize
+breeding datasets (same trait; three distinct years). All the methods showed reasonably 
+high predictive performance for most practical selection decisions. However, our
+results show that the relative predictive performance of the groups of ML methods
+depends upon both the data and target traits and that for classical regularized methods, 
+increasing model complexity can incur huge computational cost but does not
+necessarily always substantially improve predictive accuracy. This rules out selection
+of one benchmark procedure among ML methods for genomic prediction.
+
+Keywords: genomic prediction, predictive accuracy, snps, supervised ml methods
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+On the Role of Data, Statistics and Decisions in a Pandemic
+
+Ursula Garczarek, Beate Jahn, Sarah Friedrich, Joachim Behnke, Joachim Engel,
+Ralf Munnich, Markus Pauly, Adalbert Wilhelm, Olaf Wolkenhauer, Markus Zwick, 
+Uwe Siebert, and Tim Friede
+
+A pandemic poses particular challenges to public health decision-making because of
+the need to continuously adapt public measures to rapidly changing evidence and data
+availability. This presentation provides an overview of the process of decision making
+using data in a pandemic and gives recommendations for the different steps from a
+statistical perspective. A range of modelling techniques with different goals including
+mathematical, statistical and decision-analytic models applied in the COVID-19
+context are briefly introduced. We discuss the importance of statistical literacy, and
+of effective dissemination and communication of findings.
+  One recommendation relates to the need and value of interdisciplinary cooperation. 
+Cooperation is central in a pandemic to the society at large, but also specifically
+within the field of data science: we should act as a specialist group rather than as
+individuals, broadly positioned and media-sensitive. The presentation is based on a
+manuscript summarizing the discussion of an interdisciplinary group [1].
+  Presenting this topic at the IFCS, we aim to foster the understanding of the goals
+of these modelling approaches and the specific data requirements that are essential
+for data collection and transformation, the interpretation of results and for successful
+interdisciplinary collaborations among statisticians, epidemiologists, public health
+experts, social sciences, and ethicists, as well as health decision and communication
+scientists.
+
+Keywords: pandemic, modelling, statistical literacy, decision making
+
+References
+1. Jahn, B., Friedrich, S., Behnke, J., Engel, J., Garczarek, U., Munnich, R., Pauly, M., 
+   Wilhelm, A., Wolkenhauer, O., Zwick, M., Siebert, U., Friede, T: On the role of data, 
+   statistics and decisions in a pandemic AStA Adv Stat Anal (forthcoming).
+   https://doi.org/10.48550/arXiv.2108.04068
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

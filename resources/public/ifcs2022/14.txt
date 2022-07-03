@@ -1,0 +1,18 @@
+A New Regression Model for the Analysis of Microbiome Data
+
+Roberto Ascari and Sonia Migliorati
+
+Human microbiome data are becoming extremely common in biomedical research
+due to the relevant connections with different types of diseases. A widespread discrete
+distribution to analyze this kind of data is the Dirichlet-multinomial. Despite its
+popularity, this distribution often fails in modeling microbiome data due to the strict
+parameterization imposed on its covariance matrix.
+  The aim of this work is to propose a new distribution for analyzing microbiome data
+and to define a regression model based on it. The new distribution can be expressed
+as a structured finite mixture model with Dirichlet-multinomial components. We
+illustrate how this mixture structure can improve a microbiome data analysis to cluster
+patients into ”enterotypes”, which are a classification based on the bacteriological
+composition of gut microbiota. The comparison between the two models is performed
+through an application to a real gut microbiome dataset.
+
+Keywords: count data, bayesian inference, mixture model, multivariate regression

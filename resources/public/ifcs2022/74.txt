@@ -1,0 +1,45 @@
+Impact Point Selection in Semiparametric Bifunctional Models
+
+Silvia Novo, German Aneiros, and Philippe Vieu
+
+Nowadays, most applied sciences have to deal with datasets containing one, or more,
+functional object. Thus, developing techniques for functional data analysis with high
+level of flexibility and interpretability has become a target in statistical research.
+  Accordingly, a new sparse semiparametric model is proposed, which incorporates
+the influence of two functional random variables in a scalar response in a flexible and
+interpretable manner. One of the functional covariates is included through a singleindex 
+structure, while the other is included linearly through the high-dimensional
+vector formed by its discretised observations. Due to the sparse nature of the linear
+component, variable selection is needed (see [1] for a review). The problem is that
+standard variable selection methods (such that the proposed in [2]) can provide inadequate 
+results. Then, two new algorithms are presented for selecting impact points in
+the linear component and estimating the model (see [3] for details). Both procedures
+utilise the functional origin of linear covariates. Finite sample experiments demonstrated 
+the scope of application of both algorithms. Some asymptotic results support
+both procedures. A real data application showed the applicability of the presented
+methodology from a predictive perspective and low computational cost.
+
+Keywords: functional data analyisis, variable selection, semiparametric regression
+
+References
+1. Aneiros, G., Novo, S., Vieu, P.: Variable selection in functional regression models: 
+   A review, J. Multivariate Anal., 188, 104871, (2021)
+2. Novo, S., Aneiros, G., Vieu, P.: Sparse semiparametric regression when predictors are 
+   mixture of functional and high-dimensional variables. Test, 30, 481–504 (2021)
+3. Novo, S., Vieu, P., Aneiros, G.: Fast and efficient algorithms for sparse semiparametric 
+   bifunctional regression, Aust. N. Z. J. Stat., 63, 606–638 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

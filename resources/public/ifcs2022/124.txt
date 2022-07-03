@@ -1,0 +1,56 @@
+Functional Data from Wearable Devices. A Review
+
+Nihan Acar-Denizli and Pedro Delicado
+
+With the recent development of sensor and information technologies, it is more and
+more common to collect data obtained from people by sensors or wearable devices
+in a continuous an automatic way, to which we refer as wearable device data. Mobile
+phones have sensors and accelerometers measuring from the number of steps that
+we have walk daily to our instantaneous stress level. In healthcare there are wearable
+devices that measure the amount of oxygen in the blood, the electrical activity of the
+heart over time and the concentration of glucose in blood. See [2].
+  Since wearable device data are usually continuous, time-dependent, and has high
+volume, Functional Data Analysis (FDA) are suitable for them. Through an exhaustive 
+literature revision, here we explore the possibilities that FDA offers as a generic
+methodology for analyzing wearable device data. In particular, we identify relevant
+problems in wearable data that can be approached using FDA, and we document open
+access datasets that can be used as benchmarks in posterior research on functional
+data coming from wearable devices.
+  As an example, in [1] data come from a clinical trial evaluating the beneficial
+effects of quinoa consumption on prediabetic subjects, which were monitored during
+8 weeks with FreeStyle Libre (a sensor applied to the back of the upper arm of subjects
+that records the data on glucose concentration every 15 minutes). The glucose values
+corresponding to the breakfast (from minute -30’ to +120’) were considered the
+functional response in a functional regression model fitted to measure the effect on
+glucose curves of diet type (rich in quinoa or not) and nutrient intakes.
+
+Keywords: accelerometer, glucose level curve, remote patient monitoring
+
+References
+1. Diaz-Rizzolo, D.A., Acar-Denizli, N., Kostov, B., Roura, E., Siso-Almirall, A., Delicado, P.,
+   Gomis, R.: Beneficial effects of quinoa consumption on glycaemia fluctuations: a pilot study
+   in old-age prediabetic subjects. Submitted. (2022)
+2. Goldsmith, J., Liu, X., Jacobson, J.S., Rundle, A.: New insights into activity patterns in
+   children, found using functional data analyses. Med. Sci. Sports Exerc., 48, 1723–1729 (2016).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+Kernel Smoothing-Based Probability Contours for Tumour Segmentation
+
+Wenhui Zhang and Surajit Ray
+
+Statistical imaging together with other machine learning techniques are the epitome
+of digitalizing healthcare and are culminating towards developing innovative tools
+for automatic analysis of three-dimensional radiological images — PET (Positron
+Emission Tomography) images [1]. However, the three major challenges in radiology are: 
+(1) increasing demand for medical imaging (2) decreasing turnaround times
+caused by mass data (3) diagnostic accuracy that leads to a quantification of images.
+To address these challenges along with ethical issues regarding the use of Artificial
+Intelligence in patient care, there is a need to develop a new framework of statistical
+analysis which can be readily used by clinicians and can be trained with a relatively
+lower number of samples. Most existing algorithms segments a 2D slice by assigning the 
+grid of pixels into the tumour or non-tumour class. Instead of a pixel-level
+analysis, we will assume that the true intensity comes from a smooth underlying
+spatial process which can be modelled by a kernel estimates [2]. In this project, we
+have developed a kernel smoothing-based probability contour method on PET image
+segmentation, which provides a surface over images that produces contour-based
+results rather than pixel-wise results, thus mimicking human observers’ behaviour.
+In addition, our methodology provides the tools for developing a probabilistic approach 
+with uncertainty measurement along with the segmentation. Our method is computational 
+efficient and can produce reproductive and robust results for tumour detection, 
+delineation and radiotherapy planning, together with other complementary modalities, 
+such as CT (Computed  tomography) images.
+
+Keywords: medical image segmentation, positron emission tomography, kernel, 
+          3d contouring, multi-modal segmentation
+
+References
+1. Hatt, M., et al.: Classification and evaluation strategies of auto-segmentation 
+   approaches for PET: Report of AAPM task group No. 211. Med. Phys. 44, e1–e42 (2017)
+2. Matioli, L.C., et al.: A new algorithm for clustering based on kernel density 
+   estimation. J. Appl. Stat. 45, 347–366 (2018)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

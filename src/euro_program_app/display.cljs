@@ -25,8 +25,10 @@
 
 (defn keywords-paper [p]
   (let [kwnames (:keywords (s/get :data))
-        kws (->> (list :keyword1 :keyword2 :keyword3)   
-                 (map #(% p))
+        kwlist (concat (:keywords p) (->> (list :keyword1 :keyword2 :keyword3)   
+                                          (map #(% p))))
+        kws (->> kwlist
+                 (filter identity)
                  (filter #(not= 0 %))  
                  (map #(vector :a {:href (str "#keyword/" %)} (get-in kwnames [% :name]))))]
     (reduce #(conj %1 ", " %2) (vector :span (first kws)) (rest kws))))
@@ -183,9 +185,10 @@
                   (let [papers (filter 
                                  (fn [pid] 
                                    (let [p (get (:papers d) pid)] 
-                                     (some #(= kid %) (list (:keyword1 p) 
-                                                            (:keyword2 p)
-                                                            (:keyword3 p))))) 
+                                     (some #(= kid %) (concat (:keywords p)
+                                                              (list (:keyword1 p) 
+                                                                    (:keyword2 p)
+                                                                    (:keyword3 p)))))) 
                                  (:papers s))]
                     [:ul {:class "container pt-2"}
                      (doall

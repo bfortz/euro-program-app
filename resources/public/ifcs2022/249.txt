@@ -1,0 +1,38 @@
+Transformation Mixture Modeling for Skewed Data Groups with Heavy Tails
+
+Yana Melnykov, Xuwen Zhu, and Volodymyr Melnykov
+
+Gaussian mixture models have been the most popular mixtures in literature over
+years. However, the validity of the normality assumption for individual groups is
+often violated. In such cases, distributions that can model skewness as well as heavy
+tail behavior are often chosen as mixture components. The proposed contaminated
+transformation mixture model employs the idea of transformations to symmetry and
+can effectively model skewness, heavy tails, and scatter in data. A model selection
+algorithm is proposed to find models that perform well in terms of the data fit but
+involve fewer parameters. The utility of the methodology is illustrated on simulated
+and classification data sets.
+
+Keywords: finite mixture model, cluster analysis, transformation, skewness
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

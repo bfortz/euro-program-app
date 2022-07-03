@@ -1,0 +1,35 @@
+A Likelihood Ratio Test for Choosing Input  Parameters  in Robust Model Based 
+Clustering
+
+Luis A. García-Escudero, Agustín Mayo-Iscar, Gianluca Morelli, and Marco Riani
+
+In the last twenty five years robust several proposals for maximum likelihood 
+estimation based on trimming and constraints have been developed. For these 
+procedures, consistency results have been obtained and their robustness has been 
+justified.
+  There remains an open issue, when applying estimators based on the joint application 
+of trimming and constraints, related to choosing the number of clusters, the level
+of trimming and the strength of the constraints imposed on the components’ scatter
+matrices. Some exploratory tools are available to help users make these decisions
+using so-called “ctlcurves”.
+  A new parametric bootstrap-based likelihood ratio test procedure has been developed 
+to identify combinations of input parameters associated to the most interesting
+clustering solutions. The statistical properties of this proposal and empirical evidence
+on its performance when applied to artificial and real data, including contaminating
+observations, will be presented.
+
+Keywords: model based clustering, trimming, constrained estimation
+
+
+
+
+
+
+
+
+
+
+
+
+
+

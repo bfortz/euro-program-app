@@ -1,0 +1,46 @@
+Comparison of Segmentation Approaches for Partial Least Squares Path Modeling 
+with Stability Assessment
+
+Sophie Dominique, Mohamed Hanafi, Fabien Llobell, Jean-Marc Ferrandi, 
+and Veronique Cariou
+
+In the social sciences, structural equation modeling has become an established
+method for analyzing complex interrelationships between manifest and latent 
+variables. In this context, the composite-based Partial Least Squares Path Modeling
+(PLS-PM) approach [2] has gained popularity over the past decades because of its
+versatility. Several segmentation methods dedicated to PLS-PM have been proposed
+to account for the potential heterogeneity of the data [3]. These techniques differ
+from each other in various aspects such as proceeding in two steps (PLS-PM then 
+segmentation) or not (simultaneous determination of local PLS-PM models per group),
+being based on finite mixture models, on a distance or more recently on alternate
+least squares algorithm [1], etc. In this presentation, we propose to compare these
+segmentation approaches both theoretically according to the criterion they optimize
+and practically by evaluating the stability of the different segmentations obtained 
+on the basis of a case study pertaining to marketing.
+
+Keywords: partial least squares, clustering, structural equation modeling, marketing
+
+References
+1. Fordellone, M., Vichi, M.: Finding groups in structural equation modeling through 
+   the partial least squares algorithm. Comput. Stat. and Data Anal. 147, 106957 (2020)
+2. Lohmoller, JB.: Predictive vs. Structural Modeling: PLS vs. ML. In: Latent Variable 
+   Path Modeling With Partial Least Squares, pp. 199-226. Springer, Heidelberg (1989)
+3. Sarstedt, M.: A review of recent approaches for capturing heterogeneity in partial 
+   least squares path modelling. J. of Model. in Manag. 3, 140-161 (2008)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+A Simulation Study on Variable Selection in Mixture Regression Models
+
+Susana Faria
+
+Finite mixture regression models provide a flexible tool for modeling data that arise
+from a heterogeneous population, where the relationship between the response and
+the covariates varies across the sub-populations [3]. In the applications of these
+models, a large number of covariates are often used and their contributions toward
+the response variable vary from one component to another of the mixture model.
+For this reason, variable selection assumes a great relevance for mixture models,
+something particularly notorious in the last few years.
+  Variable selection via penalized likelihood has attracted great attention in recent
+literature. In particular, [2] have investigated the variable selection problem for finite
+mixture regression models with versions of the penalty functions.
+  In this work we analyze the problem of variable selection in finite mixture regression 
+models in the presence of a large number of explanatory variables. We study the performance 
+of a penalized likelihood approach in identifying the most relevant subset of covariates using 
+the Classification Expectation-Maximization algorithm (CEM) [1].
+  Simulation examples indicate that the method works well in terms of both variable selection 
+and prediction accuracy.
+
+Keywords: mixture of linear models, variable selection, penalized likelihood, 
+          classification expectation-maximization (CEM) algorithm
+
+Acknowledgements: Supported by Portuguese funds through the Portuguese Foundation for Science and 
+                  Technology, within project PTDC/MAT-STA/28243/2017.
+
+References
+1. Celeux, G., Govaert, G.: A classification EM algorithm for clustering and two stochastic
+   versions. Computational Statistics & Data Analysis 14(3), 315-–332 (1992).
+2. Khalili A., Chen J.: Variable selection in finite mixture of regression models. J. Amer. 
+   Statist. Assoc. 102, 1025–1038 (2007).
+3. McLachlan G.J., Peel D.: Finite Mixture Models. Wiley, New York (2000).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+Model Performance Metrics for Sample Selection Bias Correction by Pseudo Weighting
+
+An-Chiao Liu, Ton de Waal, Katrijn Van Deun, and Sander Scholtus
+
+Many data sets have not been obtained with a known sampling mechanism and are
+termed as non-probability samples. Non-probability samples are often treated as a
+simple random sample when estimating a population parameter (e.g., population
+mean), and therefore may suffer from sample selection bias. To correct for selection
+bias, one approach is the pseudo-weighting method [2]. The pseudo-weighting
+assumes that an inclusion mechanism exists and the inclusion probabilities (propensities)
+may be estimated. The inverse of the estimated propensities are treated as the
+pseudo weights.
+However, weighting methods in general are sensitive to large variance. The resulting
+mean squared error after correction may be even larger than the mean squared
+error before correction [1]. A model assessment framework is needed for selection
+bias correction by weighting methods. Therefore, it is important to find a suitable
+indicator of model performance to evaluate the pseudo weights. Some performance
+metrics that may be useful for evaluation are discuss in this research.
+
+Keywords: sample selection bias, non-probability sample, performance metric
+
+References
+1. Meng, Xiao-Li. Statistical Paradises and Paradoxes in Big Data (I) Law of Large 
+   Populations, Big data Paradox, and the 2016 US Presidential Election. The Annals of 
+   Applied Statistics 12.2 (2018): 685-726.
+2. Elliott, Michael R., and Richard Valliant. Inference for nonprobability samples. 
+   Statistical Science 32.2 (2017): 249-264.

@@ -1,0 +1,41 @@
+Two Simple But Efficient Algorithms to Recognize Robinson Dissimilarities
+
+Mikhael Carmona, Guyslain Naves, Victor Chepoi, and Pascal Préa
+
+A dissimilarity d on a set S of size n is said to be Robinson [3] if its matrix can
+be symmetrically permuted so that its elements do not decrease when moving away
+from the main diagonal along any row or column. Equivalently, s admits a total
+order < such that i < j < k implies that d(i, j) <= d(i, k) and d(j, k) <=  d(i, k).
+Intuitively, d is Robinson if d can be represented by points on a line. Recognizing
+Robinson dissimilarities has numerous applications in seriation and classification.
+In this paper, we present two simple algorithms (inspired by Quicksort) to recognize
+Robinson dissimilarities. One of these algorithms uses partition refinement [2] and
+runs in O(n^2 lon n), the other one uses PQ-trees [1] and runs in O(n^3) in worst case
+and in O(n^2) on average.
+
+Keywords: robinson dissimilarities, classification, seriation, pq-trees, partition refinement
+
+Acknowledgements This work was supported in part by ANR project DISTANCIA (ANR-17-CE40-0015).
+
+References
+1. Booth, K.S., Lueker, G.S.: Testing for the consecutive ones property, interval graphs and 
+   graph planarity using PQ-tree algorithm, Journal of Computer and System Sciences 13, 335–379
+   (1976).
+2. Paige, R., Tarjan, R.E.: Three partition refinement algorithms, SIAM Journal on Computing
+   16, 973–989 (1987).
+3. Robinson, W.S.: A method for chronologically ordering archeological deposits. American
+   Antiquity 16 , 293–301 (1951)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

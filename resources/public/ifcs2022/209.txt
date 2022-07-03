@@ -1,0 +1,43 @@
+Fisher Discriminant Analysis for Interval Data
+
+Diogo Pinheiro, M. Rosário Oliveira, Igor Kravchenko, and Lina Oliveira
+
+In Data Science, entities are typically characterized by vectors of single-valued
+measurements, called conventional data. Symbolic Data Analysis can model more
+complex data structures like lists, intervals, histograms, or even distributions. These
+complex structures may result from the aggregation of conventional data according
+to the research interests or may exist in their own right. The complexity of these data
+structures brings new statistical challenges and the need of new methodologies to
+extract information from it, of which classification is a good example.
+  In this work, we propose an extension of the conventional Fisher Discriminant
+Analysis based on Mallows’ distance and Moore’s interval algebraic structure. The
+squared Mallows’ distance between two interval-valued vectors is written as an explicit 
+form of the sum of two squared Euclidean distances between the vectors of the
+interval’s centers and the vectors of the interval’s ranges. The ranges’ contribution is
+weighted according to the assumption of the micro-data distribution within intervals,
+extending previous work on this topic. This allows us to define associated symbolic
+covariances matrices that can be decomposed into within and between covariance
+matrices. Using Moore’s algebraic structure, we generalize Fisher’s objective function 
+to interval data, aiming to discriminate between two classes. Examples based
+on real problems are used to illustrate the advantages of this approach over the
+conventional one, which ignores the interval structure of the data.
+
+Acknowledgements This work was supported by Fundação para a Ciência e Tecnologia, Portugal,
+                 through the projects UIDB/04621/2020, PTDC/EGE-ECO/30535/2017 and 
+                 UID/MAT/04459/2020.
+
+Keywords: symbolic data analysis, classification, symbolic Fisher discriminant analysis, 
+          interval-valued data, Mallows’ distance
+
+
+
+
+
+
+
+
+
+
+
+
+

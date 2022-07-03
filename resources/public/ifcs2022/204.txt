@@ -1,0 +1,39 @@
+A Family of Skewed Power Exponential Mixture Models for Clustering and Classification
+
+Utkarsh J. Dang, Michael P.B. Gallaugher, Ryan P. Browne, and Paul D. McNicholas
+
+In model-based clustering, mixture models that can deal with varying cluster tailweight, 
+skewness, concentration, and kurtosis are increasingly becoming common.
+Mixtures of multivariate power exponential (MPE) distributions were previously
+shown to be competitive for clustering in comparison to other elliptical mixture
+distributions [1]. Here, we introduce a novel formulation of a multivariate skewed
+power exponential distribution and mixtures thereof to combine the flexibility of the
+MPE distribution with the ability to model cluster-specific skewness. These mixtures
+are more robust to departures from normality and can model skewness, varying tail
+weight, and peakedness within clusters. A family of parsimonious models is proposed
+using an eigen-decomposition of the scale matrix. For parameter estimation, a generalized 
+expectation-maximization approach combining minorization-maximization and optimization based 
+on accelerated line search algorithms on the Stiefel manifold is utilized. These mixtures are 
+implemented both in the model-based clustering and classification frameworks. We illustrate 
+performance on toy and benchmark data in a wide range of scenarios.
+
+Keywords: model-based clustering, multivariate skewed power exponential, mixture models, 
+          classification
+
+References
+1. Dang, U.J., Browne, R.P., McNicholas, P.D.: Mixtures of multivariate power exponential
+   distributions. Biometrics. 71, 1081–1089 (2015)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+Algorithms for Clustering COVID-19 Data: A Holistic Overview of Current Trends 
+and New Visual Approaches
+
+Eun-Kyung Lee
+
+COVID 19 was first discovered in China, and it spread worldwide and became a
+pandemic. Since then, many researchers have tried to analyze the temporal tracking
+of cases and death of COVID-19. In this talk, we focused on the predictive models and
+clustering methods of the time series of growth rates regarding confirmed cases and
+deaths of COVID-19. We reviewed the clustering method of time series data included
+in the papers since 2020. We compared various methods extensively, including
+the classic statistical methods (k-means, PCA, factor analysis, etc.), fuzzy time
+series models, functional data analysis models, and deep learning models. We also
+overviewed the visual approaches to the time course data and proposed new visual
+approaches. We applied these clustering and visualization methods to the cases and
+death of COVID-19 in each country for comparison.
+
+Keywords: covid 19, time series, cluster analysis, visualization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

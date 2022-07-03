@@ -1,0 +1,21 @@
+Latent Block Regression Model
+
+Rafika Boutalbi, Lazhar Labiod, and Mohamed Nadif
+
+When dealing with high dimensional sparse data, such as in recommender systems,
+co-clustering turns out to be more beneficial than one-sided clustering, even if one
+is interested in clustering along one dimension only. Thereby, co-clusterwise is a
+natural extension of clusterwise. Unfortunately, all of the existing approaches do not
+consider covariates on both dimensions of a data matrix. In this paper, we propose
+a Latent Block Regression Model (LBRM) overcoming this limit. For inference,
+we propose an algorithm performing simultaneously co-clustering and regression
+where a linear regression model characterizes each block. Placing the estimate of the
+model parameters under the maximum likelihood approach, we derive a Variational
+Expectation-Maximization (VEM) algorithm for estimating the model’s parameters.
+The finality of the proposed VEM-LBRM is illustrated through simulated datasets.
+
+Keywords: co-clustering, clusterwise, tensor, data mining
+
+
+
+

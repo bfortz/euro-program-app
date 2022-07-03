@@ -1,0 +1,33 @@
+Digital Development and Internet Use in the European Union Countries
+
+Fernanda Figueiredo and Adelaide Figueiredo
+
+In this study we analyze how people from the European Union countries are prepared
+to work and use in their lives the digital technologies. It is also interesting to know
+whether the least developed countries are close or quite distant from the others in
+this way to the digital.
+  We considered some variables associated with digital skills, digital economy
+and digital society, and collected the data from Eurostat database during the period
+2010-2020. To analyze the data, we applied a Double Principal Component Analysis
+(DPCA), a method of multivariate data analysis introduced in Bouroche [1] to analyze
+three-way data with quantitative variables. We considered six different data tables,
+corresponding to the years 2010, 2012, 2014, 2016, 2018 and 2020, with the same
+countries and variables. As the UK does not belong to the EU countries in 2020,
+and all the tables must have the same countries to apply a DPCA, we considered the
+values obtained in 2019 for the UK to include it in the analysis.
+  The results allow to identify the differences and similarities between countries
+and variables along the period of time 2010-2020, more precisely, to study the 
+evolution trends of the countries and the evolution of the relations between the 
+different variables.
+
+Keywords: digital, double principal component analysis, principal component analysis
+
+Acknowledgements This work is financed by National Funds through the Portuguese funding
+                 agency, FCT - Fundação para a Ciência e a Tecnologia, within the projects 
+                 UIDB/00006/2020 (CEAUL) and LA/P/0063/2020 (INESC TEC).
+
+References
+1. Bouroche, J.M.: Analyse des donnés ternaires: la double analyse en composantes principales.
+   Thèse de 3ème cycle. Université de Paris VI (1975)
+
+

@@ -1,0 +1,31 @@
+A Criterion for Selecting the Number of Time Series Clusters
+
+Daniel Pena and Ruey S. Tsay
+
+A new method is proposed to select the number of clusters in hierarchical clustering
+of a set of independent time series, including a test statistic for detecting existence
+of multiple cluster. The method focuses on the steps (height increments) of a dendrogram 
+and uses simulation to generate a reference distribution of the step. The proposed test 
+statistic employs an upper sample quantile of the dendrogram steps of the data and the 
+reference distribution. The largest step of the dendrogram is then used to select the 
+number of clusters. We provide theoretical justification for the proposed method and show 
+that it works well in simulation and applications. The performance of the criterion is 
+illustrated with different measures of similarity between the univariate time series features.
+
+Keywords: dendrogram heights; hierarchical clustering; linear time series models 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

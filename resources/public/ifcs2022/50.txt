@@ -1,0 +1,39 @@
+Clustering Validation in Hierarchical Cluster Analysis: an Empirical Study
+
+Osvaldo Silva, Aurea Sousa, and Helena Bacelar-Nicolau ´
+
+The evaluation of clustering structures is a crucial step in cluster analysis. This study
+presents the main results of the hierarchical cluster analysis of variables concerning
+a real dataset in the context of Higher Education. The goal of this research is to find
+a typology of some relevant items taking into account both the homogeneity and
+the isolation of the clusters. Two similarity measures, namely the standard affinity
+coefficient and Spearman’s correlation coefficient, were used, and combined with
+three probabilistic (AVL, AVB and AV1) aggregation criteria, from a parametric family
+in the scope of the VL (Validity Link) methodology [1]. The best partitions were
+selected based on some validation indices, namely the global STAT levels statistics
+and the measures P(I2, \Sigma) and \gamma [2], adapted to the case of similarity 
+coefficients [3]. In order to evaluate the clusters and identify their most representative 
+elements, the Mann and Whitney U statistics and the silhouette plot were also used.
+
+Keywords: clustering validation, affinity coefficient, spearman correlation coefficient, 
+           vl methodology
+
+References
+1. Bacelar-Nicolau, H.: Contributions to the Study of Comparison Coefficients in Cluster Analysis 
+  (in Portuguese). Univ. Lisbon (1980)
+2. Gordon, A.D.: Classification, 2nd Ed. Chapman & Hall, London (1999)
+3. Silva, O., Bacelar-Nicolau, H., Nicolau, F.C., Sousa, A.: Probabilistic approach for 
+   comparing partitions. In: Manca, R., McClean, S., Skiadas, C.H. (eds.) New Trends in 
+   Stochastic Modeling and Data Analysis, pp. 113-122. ISAST (International Society for 
+   the Advancement of Science and Technology), Athens (2015)
+
+
+
+
+
+
+
+
+
+
+

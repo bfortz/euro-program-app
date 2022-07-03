@@ -1,0 +1,24 @@
+True Sparsity Approaches in Classification via Conic Optimization
+
+Immanuel M. Bomze and Bo Peng
+
+Pursuing sparsity is an important issue in all classification tasks, in particular 
+in view of the nowadays increasing popular move towards explainable machine learning.
+Here we address this quest by linking the exact sparsity term/zero norm
+
+    ||x||_0 = number of nonzero xi ’s
+
+to copositive optimization. We present a novel, purely continuous model, which
+avoids any branching or use of large constants in implementation. The resulting model
+is a (nonconvex) quadratic optimization problem with complementarity constraints.
+We show that the copositive formulation is exact under mild conditions involving
+only the constraints, not the (classifying criterion) objective, and discuss strong
+duality to ensure tight bounds. The covered problem class includes sparse leastsquares 
+regression under linear constraints as well. Numerical comparisons between
+our method and other approximations are reported from the perspective of criterion
+value.
+
+Keywords: sparse classifier, constrained least squares, conic optimization
+
+
+

@@ -1,0 +1,47 @@
+Comparison of K-Mer and Alignment-Based Pre-Processing Approaches for Machine
+Learning Based Functional Annotation with 16S RRNA Data
+
+Rafal Kulakowski, Adi Lausen, Etienne Low-Decarie, and Berthold Lausen
+
+Over the last few decades, the continuing advancements in Next-GenerationSequencing 
+technologies provided new opportunities to obtain large volumes of biological sequence 
+data from uncultured environments. Moreover, continuing efforts to store labelled RNA, 
+DNA and protein sequences have opened opportunities to implement Machine Learning (ML) 
+techniques and build predictive tools that can estimate key characteristics of sequenced 
+environments. Traditionally, processing of biological sequences for comparative analysis 
+involved implementing sequence alignment techniques. However, alignment algorithms have 
+high computational costs that scale non-linearly with the number of sequences. Moreover, 
+current Multiple Sequence Alignment methods produce a representation of data, where a 
+format of each sequence is heavily dependent on other most similar sequences in the current
+set, making any subsequently trained predictive model unstable.
+  Our investigation focused on identifying scalable and effective data pre-processing
+techniques for the series of functional annotation tasks using 16S rRNA data [1]. To
+this end, we tested the use of a pairwise-alignment pre-processing technique, which
+we then compared to an alignment-free, k-mer based method. Additionally, we examined whether 
+combining both techniques improves the accuracy of ML classifiers. The results of our 
+experiments  showed that the k-mer frequencies provide the most favourable set of features 
+for these problems.
+
+Keywords: sequence alignment, k-mer, feature engineering, functional annotation,
+          classification
+
+References
+1. Kulakowski, R., Lausen, A, Low-Decarie, E., Lausen, B.: Classification Methods for 16S
+   rRNA Based Functional Annotation. Archives of Data Science, Series A 4 (1), 23 (2020).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

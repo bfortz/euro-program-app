@@ -1,0 +1,38 @@
+On the Measurement of Household Subjective  Poverty: Concepts and Application
+
+Aleksandra Łuczak and Sławomir Kalinowski
+
+Poverty is a multi-dimensional phenomenon that cannot be directly measured 
+correctly by a single indicator. Research on poverty uses both objective and 
+subjective indicators. Objective measures do not show the complete nature of 
+poverty as they only examine economic conditions, mainly household income or 
+expenses, or their basic needs. Hence, our research focuses on subjective poverty, 
+which includes the diversity of perceptions of poverty among respondents. The aim 
+of the research is to present and compare methodological approaches to the 
+construction of a synthetic measure of subjective household poverty. The research 
+took into account the aggregation of variables describing the past, present, and 
+future. The procedure of constructing a synthetic measure utilized the measure of 
+distance between triangular fuzzy numbers [2] and the generalized distance measure 
+[5]. However, the aggregation of variables relied on three fuzzy methods based on 
+the ideas of Hellwig [3], TOPSIS [4] and Chen [1]. The approaches were used to assess 
+the level of subjective household poverty in Poland. The study was based on data 
+collected using the CAWI method in April 2021. The use of fuzzy approaches to the 
+assessment of subjective poverty allows more precise determination of its level than 
+with the standard measurement. In addition, the subjective poverty measure can 
+also be used as a basis for formulating poverty reduction strategies.
+
+Keywords: subjective poverty, fuzzy Hellwig’s method, fuzzy TOPSIS, GDM
+
+References
+1. Chen S.M.: Evaluating weapon systems using fuzzy arithmetic operations, Fuzzy Set Syst 
+   77 (3), pp. 265–276 (1996).
+2. Chen, C.T. Extensions of the TOPSIS for group decision-making under fuzzy environment. 
+   Fuzzy Set Syst, 114, 1–9 (2000).
+3. Hellwig Z.: Zastosowania metody taksonomicznej do typologicznego podziału krajów ze 
+   względu na poziom ich rozwoju i strukturę wykwalifikowanych kadr. Statistical Review 4, 
+   307–327 (1968).
+4. Hwang C.L.; Yoon K.: Multiple attribute decision making: methods and applications. 
+   Springer-Verlag, New York (1981)
+5. Walesiak M.: Uogólniona miara odległości GDM w statystycznej analizie 
+   wielowymiarowej z wykorzystaniem programu R. Wyd. Uniwersytetu Ekonomicznego we 
+   Wrocławiu, Wrocław (2011)

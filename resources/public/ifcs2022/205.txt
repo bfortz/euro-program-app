@@ -1,0 +1,47 @@
+Analysis of Gini Splitting Criterion and Comparison with Maximum Likelihood Rule
+
+Amirah S. Alharthi and Charles C. Taylor
+
+A commonly used criterion in decision trees is the Gini index. Considering random
+variables from two populations, with priors p_1 and p_2, the expected value of the
+Gini function is given by the asymptotic result: (F_1(x) − F_2(x))^2 /{F(x) (1−F(x))},
+where class i has distribution function F_i(x) and F(x) = p_1 F_1(x) + p_2 F_2 (x) [1]. 
+In this population setting, x would be chosen to maximize this. This result is obtained
+by taking the conditional expectation of the weighted Gini expression: \sum_i N^2_Li / N_L 
++ N^2_Ri / N_R, in which the random variables N_L1 denote the number in class 1 to the left 
+of a split, etc. In contrast, the maximum likelihood (ML) classifier allocates according
+to arg max (p_1 f_1(x), p_2 f_2(x)), where f_i(x) is the density of the i-th population.
+  We consider the case of two normal populations, where (without loss of generality)
+f_1(x) is the standard normal distribution, and f_2(x) is normal with mean \mu > 0 and
+variance \sigma^2, to find cases in which the two splitting rules are the same, or differ.
+When p_1 = p_2 = 1/2 and \sigma = 1 both rules will split at x = \mu/2.
+  When \sigma = 1, then ML gives a split at \mu/2 + \mu^{−1} log(p_1/p_2), whereas an 
+approximate solution for the Gini split, obtained by taking the derivative of the log
+of the above expected value, then taking a Taylor series expansion around x = \mu/2
+and equating to zero, is: \mu/2 + 2P^2 \sqrt{2 \pi} (p_2 - p_1) / { 4P exp(-\mu^2/8 -
+\mu \sqrt{2 \pi} }, where P = 2 \Phi(\mu/2) − 1 and \Phi(·) is the CDF of the standard 
+normal distribution. When p_1 ≠ p_2, differences may be large, particularly as \mu gets 
+closer to 0. In this case when \sigma = 1, the Gini split is always in the interval (0, \mu). 
+When p_1 ≠ p_2 we have not been able to obtain an approximation to the Gini solution for 
+general \sigma. However, in some examples, it can be seen that the MLE split and Gini split 
+are generally closer together and there are cases in which neither split is in the 
+interval (0, \mu).
+
+Keywords: classification, gini index, maximum likelihood
+
+References
+1. Alharthi, A.S.: Weighted Classification Tree-based Ensemble Methods. PhD thesis, University
+   of Leeds, U.K. (2020)
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+An MML Embedded Approach for Estimating the Number of Clusters
+
+Claudia Silvestre, Margarida G.M.S. Cardoso, and Mário Figueiredo
+
+Assuming that the data originate from a finite mixture of multinomial distributions,
+we study the performance of an integrated Expectation Maximization (EM) algorithm
+considering Minimum Message Length (MML) criterion to select the number of
+mixture components. The referred EM-MML approach, rather than selecting one
+among a set of pre-estimated candidate models (which requires running EM several
+times), seamlessly integrates estimation and model selection in a single algorithm.
+Comparisons are provided with EM combined with well-known information criteria
+– e.g. the Bayesian information Criterion. We resort to synthetic data examples and
+a real application. The EM-MML computation time is a clear advantage of this
+method; also, the real data solution it provides is more parsimonious, which reduces
+the risk of model order overestimation and improves interpretability.
+
+Keywords: finite mixture model, em algorithm, model selection, minimum message length, 
+          categorical data
+
+References
+1. Figueiredo, M.A.T., Jain, A.K. : Unsupervised Learning of Finite Mixture Models. IEEE T.
+   Pattern Anal. 24, 381–396 (2002)
+2. Novais, L., Faria, S.,: Selection of the number of components for finite mixtures of linear
+   mixed models. J. Int. Math. 24(8), 2237–2268 (2021)
+3. Silvestre, C., Cardoso, M. G. M. S. and Figueiredo, M.: Feature selection for clustering
+   categorical data with an embedded modeling approach. Expert Syst. 32(3), 444–453 (2014).
+

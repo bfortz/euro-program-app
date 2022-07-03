@@ -1,0 +1,31 @@
+Using Clustering and Machine Learning Methods to Provide Intelligent Grocery
+Shopping Recommendations
+
+Nail Chabane, Mohamed Achraf Bouaoune, Reda Amir Sofiane Tighilt, Bogdan
+Mazoure, Nadia Tahiri, and Vladimir Makarenkov
+
+Nowadays, grocery lists make part of shopping habits of many customers. With the
+popularity of e-commerce and plethora of products and promotions available on
+online stores, it can become increasingly difficult for customers to identify products
+that both satisfy their needs and represent the best deals overall. In this paper, we
+present a grocery recommender system based on the use of traditional machine
+learning methods aiming at assisting customers with creation of their grocery lists
+on the MyGroceryTour platform which displays weekly grocery deals in Canada.
+Our recommender system relies on the individual user purchase histories, as well as
+the available products’ and stores’ features, to constitute intelligent weekly grocery
+lists. The use of clustering prior to supervised machine learning methods allowed us
+to identify customers profiles and reduce the choice of potential products of interest
+for each customer, thus improving the prediction results. The highest average F-score
+of 0.499 for the considered dataset of 826 Canadian customers was obtained using
+the Random Forest prediction model which was compared to the Decision Tree,
+Gradient Boosting Tree, XGBoost, Logistic Regression, Catboost, Support Vector
+Machine and Naive Bayes models in our study.
+
+Keywords: clustering, dimensionality reduction, grocery shopping recommendation, 
+          intelligent shopping list, machine learning, recommender systems
+
+
+
+
+
+

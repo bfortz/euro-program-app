@@ -1,0 +1,45 @@
+Hausdorff Distance: a Powerful Tool for Matching Households and Individuals in
+Historical Censuses
+
+Thais Pacheco Menezes, Michael Fop, and Thomas Brendan Murphy
+
+Matching households and individuals in historical censuses can be difficult due to
+the absence of unique identifiers, typographical errors, and changes in attributes over
+time. The tools of record linkage are of great assistance when linking households
+and individuals in historical censuses. In this work, we define a general multi-step
+record linkage procedure that allows the incorporation of household information
+to improve the process of matching entities across different databases. We propose
+using the Hausdorff distance when comparing households in historical censuses.
+A constrained logistic regression model with attribute level Hausdorff distances is
+developed to estimate the probability of a match between any two households. The
+probabilities from this model are then employed to match households across the
+databases. Subsequently, individuals within households are matched using a logistic
+regression based on attribute level distances. The probabilities estimated from this
+regression are used in a linear programming optimization framework to enforce oneto-one 
+matches between individuals in the matched household across the databases.
+The methodology is developed in application to record linkage of the Irish census
+databases of 1901 and 1911. The analysis focuses on a number of regions for which
+labels of matching households and individuals are available, allowing training and
+testing of the procedure. The approach is shown to yield 65.15% correct household
+matches for regions that are close to the region used for model training and 58.70%
+correct household matches for more distant regions. When matching individuals
+within households, an average correct individual match rate of 86.2% is found for
+individuals within correctly matching households.
+
+Keywords: census, Hausdorff distance, matching databases, record linkage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

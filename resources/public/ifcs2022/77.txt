@@ -1,0 +1,48 @@
+Generating Collective Counterfactual Explanations in Score-Based Classification 
+via Mathematical Optimization
+
+Jasone Ramírez-Ayerbe, Emilio Carrizosa, and Dolores Romero Morales
+
+Due to the increasing use of Machine Learning models in high stakes decisionmaking 
+settings, it has become increasingly important to be able to understand how
+models arrive at decisions. Assuming an already trained Supervised Classification
+model, an effective class of post-hoc explanations are counterfactual explanations 
+[2], i.e., a set of actions that can be taken by an instance such that the given 
+Machine Learning model would have classified it in a different class. In this talk, 
+for scorebased multiclass classification models, we propose novel Mathematical 
+Optimization formulations to construct the so-called collective counterfactual 
+explanations, i.e., explanations for a group of instances in which we minimize the 
+perturbation in the data (at the individual and group level) to have them labelled by 
+the classifier in a given group [1]. Although the approach is valid for any 
+classification model based on scores, we focus on additive tree models, like random 
+forests or XGBoost. Our approach is capable of generating diverse, sparse, plausible 
+and actionable collective counterfactuals. Real-world data are used to illustrate our 
+method.
+
+Keywords: collective counterfactual explanations, score-based classification, 
+          mathematical optimization
+
+References
+1. Carrizosa, E., Ramírez-Ayerbe, J., Romero Morales , D.: Generating Counterfactual 
+   Explanations in Score-Based Classification via Mathematical Optimization. Technical 
+   Report IMUS, Sevilla, Spain (2022) doi: 10.13140/RG.2.2.22996.12168/1
+2. Wachter, S., Mittelstadt, B., Russell, C.: Counterfactual explanations without 
+   opening the black box: Automated decisions and the GDPR. Harvard Journal of Law and 
+   Technology, 31 841 (2017)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+Parsimonious Mixtures of Seemingly Unrelated Contaminated Normal Regression Models
+
+Gabriele Perrone and Gabriele Soffritti
+
+In recent years, the research into multivariate linear regression based on finite mixture
+models has been intense. With such an approach, it is possible to perform regression
+analysis for a multivariate response by taking account of the possible presence of
+several unknown homogeneous groups, each of which is characterised by a different
+linear regression model. For a continuous multivariate response, mixtures of normal
+regression models are generally employed. However, in real data, mildly atypical
+observations can negatively affect the estimation of the regression parameters under
+a normal distribution in each mixture component. Robust methods insensitive to the
+presence of such observations have been recently introduced [1]. Furthermore, in
+some fields of research, a multivariate regression model with a different vector of
+covariates for each response should be specified, based on some prior information
+to be conveyed in the analysis. This approach has been recently embedded into the
+framework of Gaussian mixture models [2]. To take account of all these aspects,
+mixtures of seemingly unrelated contaminated normal regression models has been
+defined [3]. A further extension is presented here so as to ensure parsimony, which
+is obtained by imposing constraints on the component-covariance matrices. The
+resulting parsimonious mixtures of seemingly unrelated contaminated regression
+models are described together with an illustration of their practical usefulness.
+
+Keywords: contaminated normal distribution, ecm algorithm,  mixture of regression models, 
+          model-based cluster analysis, seemingly unrelated regression.
+
+References
+1. Mazza, A., Punzo, A.: Mixtures of multivariate contaminated normal regression models. Stat.
+   Pap. 169, 787–822 (2020)
+2. Galimberti, G., Soffritti, G.: Seemingly unrelated clusterwise linear regression. Adv. Data
+   Anal. Classif. 14, 235–260 (2020)
+3. Perrone, G., Soffritti, G.: Seemingly unrelated clusterwise linear regression for contaminated
+   data. Under review (2021)
+
+
+

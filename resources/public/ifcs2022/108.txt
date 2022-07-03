@@ -1,0 +1,43 @@
+Analysis of the Changes in the Polish Traditional Drugstores Market During COVID-19
+
+Marcin Pelka, Antonio Irpino, and Michal Swachta
+
+The COVID-19 pandemic has a significant impact on different aspects of economy.
+Usually the impact on traditonal economy. The paper presents the results of the
+analysis of the changes in the Polish traditional drugstores market during COVID-19
+situation (from 2019 till 2021). Three different approaches with dynamic multidimensional 
+scaling have been evaluated: classical data, symbolic interval-valued variables and symbolic 
+histogram variables. The results show that symbolic historgram variables are able to capture 
+all the variability in the data and refect all the changes.
+
+Keywords: histogram variables, mutidimensional scaling, drugstores, covid-19
+
+References
+1. Bock H.-H., Diday E. (eds), Analysis of symbolic data. Exploratory statistics for complex.
+   Springer, Heidelberg (2002)
+2. de Carvalho, F.A.T.: Histograms in symbolic data analysis. Annals of Operations Research,
+   55(2), 299-322 (1995).
+3. Irpino, A., & Verde, R.: A new Wasserstein based distance for the hierarchical clustering of
+   histogram symbolic data. In Data science and classification (pp. 185-192). Springer, Berlin,
+   Heidelberg (2006)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

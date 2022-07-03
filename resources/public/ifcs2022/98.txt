@@ -1,0 +1,51 @@
+Covariate Selection Method in Propensity Score Model for the Quantile Treatment Effect Estimation
+
+Takehiro Shoji, Jun Tsuchida, and Hiroshi Yadohisa
+
+Estimation of a treatment effect, which is the impact of a treatment on an outcome, 
+is important in some research areas, such as econometrics, social programs, and 
+policies. Quantile treatment effects (QTE) are primarily used in econometrics because
+they can characterize the heterogeneous treatment effects on different points of an
+outcome distribution. For estimating QTE, Firpo [2] proposed an estimation method
+using propensity scores.
+  In estimating of treatment effects using propensity scores, selection of covariates to
+include propensity score model is an important issue, and it is known that it is better
+to include covariates that are relevant to the outcome [1]. For achieving this issues,
+Outcome Adaptive Lasso (OAL) was employed as a covariate selection method for
+propensity score models[3]. However, OAL assumes an average treatment effect estimation 
+and not a quantile treatment effect estimation.
+  In this study, we propose a covariate selection method that includes propensity score
+models for quantile treatment effect estimation. Here, the central principle is changing 
+the weight term from an outcome regression model to a quantile regression model. This allows 
+for the selection of covariates related to an outcome at an interesting quantile corresponding 
+to QTE. Through numerical experiments, we compare the proposed method’s performance with that 
+of the existing methods, such as OAL.
+
+Keywords: propensity score, causal effect, quantile regression
+
+References
+1. Brookhart, M.A., Schneeweiss, S., Rothman, K.J., Glynn, R.J., Avorn, J., & Sturmer, T.:
+   Variable selection for propensity score models. American journal of epidemiology. 163(12),
+   1149–1156 (2006)
+2. Firpo, S.: Efficient semiparametric estimation of quantile treatment effects. Econometrica.
+   75(1), 259–276 (2007)
+3. Shortreed, S.M., & Ertefaie, A.: Outcome-adaptive lasso: variable selection for causal 
+   inference. Biometrics, 73(4), 1111–1122 (2017)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

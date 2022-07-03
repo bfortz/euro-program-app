@@ -1,0 +1,52 @@
+Time Series of Counts Under Censoring
+
+Isabel Silva, Maria Eduarda Silva, Isabel Pereira, and Brendan McCabe
+
+Censored time series arise when explicit limits are placed on the observed data
+and occur in several fields including environmental monitoring, economics, medical
+and social sciences. The censoring may due to measuring device limitations, such
+as detection limits in air pollution or mineral concentration in water. Censoring
+may also occur when constraints or regulations are imposed, such as in international 
+trade studies where exports and imports are subject to trade barriers or hours
+worked, often treated as censored variables. This work considers time series of counts
+under censoring, focusing on the Poisson first-order integer-valued autoregressive
+(PoINAR) models ([3] for details on PoINAR(1) models). This class, while being
+simple and flexible, is useful for modelling positive-valued and integer-valued time
+series possessing an autoregressive structure with non-negative serial correlation. We
+investigate two natural approaches to analyse censored PoINAR(1) time series under
+the Bayesian framework: the Approximate Bayesian Computation (ABC) methodology [2] and 
+the Gibbs sampler with Data Augmentation (GDA) approach [1]. Both approches may also be 
+valuable to analyse time series of counts with missing data.
+
+Keywords: bayesian estimation, censored time series, poisson inar(1) model
+
+References
+1. Chib, S.: Bayes Inference in the Tobit Censored Regression Model. J. Econom. 51, 
+   79–99 (1992)
+2. Plagnol V., Tavare S.: Approximate Bayesian computation and MCMC. In: Niederreiter H
+   (ed) Monte Carlo and quasi-Monte Carlo methods, pp. 99–113. Springer, Heidelberg 
+   (2004)
+3. Scotto, M.G., Weiß, C.H., Gouveia, S.: Thinning-based models in the analysis of integer
+   valued time series: a review. Stat. Model. 15, 590–618 (2015)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

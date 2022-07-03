@@ -1,0 +1,34 @@
+Outlier Detection for BIG Functional Data
+
+Rosa E. Lillo, Oluwasegun T. Ojo, and Antonio Fernandez-Anta
+
+The need to find influential users in social networks motivates a multidisciplinary
+line of research whose final result, from the point of view of Statistics, is the 
+development and implementation of several procedures for detecting outliers in functional
+data that are scalable for massive data and that are also competitive, in terms of performance, 
+with the most used algorithms in the usual literature on functional data. Brushstrokes of 
+theoretical contributions and various fields of practical application will be provided.
+
+Keywords: functional data, outlier detection, scalable algorithms
+
+References
+1. Azcorra, A, Cuevas R., Chiroque, L., Fernandez A., Laniado, H. Lillo, R.E, Romo J, Sguera, C.:
+   Unsupervised Scalable Statistical Method for Identifying Influential Users in Online Social
+   Networks. Scientific Reports 8, 6995 Nature, 
+   https://www.nature.com/articles/s41598-018-24874-2 (2018)
+2. Dai, W. and Genton, M.G.: Multivariate functional data visualization and outlier detection.
+   Journal of Computational and Graphical Statistics, 27(4):923–934. (2018)
+3. Huang, H. and Sun, Y. A decomposition of total variation depth for understanding functional
+   outliers. Technometrics, 61(4) 445–458.(2019)
+4. Ojo, O. Fernandez-Anta, A, Lillo, R. E., Sguera, C: Detecting and classifying outliers in big
+   functional data. Advances in Data Analysis and Classification 
+   https://doi.org/10.1007/s11634-021-00460-9, (2021)
+
+
+
+
+
+
+
+
+

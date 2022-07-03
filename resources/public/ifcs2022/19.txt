@@ -1,0 +1,20 @@
+On Parsimonious Modelling via Matrix-Variate t Mixtures
+
+Salvatore D. Tomarchio
+
+Mixture models for matrix-variate data have becoming more and more popular in
+the most recent years. One issue of these models is the potentially high number of
+parameters. To address this concern, parsimonious mixtures of matrix-variate normal 
+distributions have been recently introduced in the literature. However, when data
+contains groups of observations with longer-than-normal tails or atypical observations, 
+the use of the matrix-variate normal distribution for the mixture components may affect 
+the fitting of the resulting model. Therefore, we consider a more robust approach based 
+on the matrix-variate t distribution for modeling the mixture components. To introduce 
+parsimony, we use the eigen-decomposition of the components scale matrices and we allow 
+the degrees of freedom to be equal across groups. This produces a family of 196 parsimonious 
+matrix-variate t mixture models. Parameter estimation is obtained by using an AECM algorithm. 
+The use of our parsimonious models is illustrated via a real data application, where 
+parsimonious matrix-variate normal mixtures are also fitted for comparison purposes.
+
+Keywords: matrix-variate, mixture models, clustering, parsimonious models
+

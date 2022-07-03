@@ -1,0 +1,36 @@
+Reconstruction of Atomic Measure Based on Its Simplicial Depth
+
+Petra Laketa and Stanislav Nagy
+
+Statistical depth functions have been introduced in order to generalize the notions of
+ranks, orderings and quantiles in the multivariate case. Depth is a function that to
+any point x assigns the quantity which aims to describe how centrally positioned is x
+respect to a given measure. It is of importance to explore whether the depth function
+contains all the information of the underlying measure, i.e. does it characterise it. By
+characterising we mean that there is no other measure with the same depth function
+everywhere. We focus on the special case of simplicial depth, introduced in [1, 2]
+and the class of atomic measures. In this particular setup, under mild assumption
+of atoms being in general position, we prove that the characterisation property is
+satisfied and describe an algorithm for recovering atomic measure from its simplicial
+depth.
+
+Keywords: simplicial depth, atomic measures, reconstruction
+
+References
+1. Liu , R. Y.: On a notion of simplicial depth. Proc. Natl. Acad. Sci. U.S.A., 85(6), 
+1732–1734 (1988)
+2. Liu, R. Y.: On a notion of data depth based on random simplices. Ann. Statist., 18(1), 
+405-–414 (1990)
+
+
+
+
+
+
+
+
+
+
+
+
+

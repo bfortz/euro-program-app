@@ -1,0 +1,36 @@
+Symbolic Concordance and Discordance Illustrated on Data from an International
+Teaching and Learning Survey
+
+Simona Korenjak-Černe, Barbara Japelj Pavešić, and Edwin Diday
+
+A "similarity" as a "concordance" in data analysis represents mathematical modeling
+of the common words "similarity" and "concordance" used in our natural language.
+The similarity between a class c and a collection P of classes c’ for a category x is
+high if the mean of the similarities between the frequency of x in c and the frequency
+of x in c’ that varies in P is high. A class has high concordance with a given collection
+of classes for a category x if that category is frequent in that class and if, in addition,
+there are numerous classes in the given collection of classes for which the category
+x is also frequent. Similarity and concordance thus express two different kinds of
+knowledge. In this presentation, we introduce some measures of concordance and
+discordance between a class and a given collection of classes that fall within the
+framework of symbolic data analysis (SDA) [1].
+We will illustrate the use of new measures on the real dataset from the international
+large-scale assessment PIRLS 2016 [2] that measured the achievement of students
+in classical reading and reading from digital devices in more than 50 countries.
+Online reading is becoming an extremely important skill for younger generations and
+research is needed to understand how it develops along with classical reading from
+paper. We will study distributions of high and low-achieving students in informational
+reading from paper and online reading, and compare these across countries and
+within teachers of classes of students inside a specific country. For example, if we
+consider the teacher as a class and his or her students as individuals, by examining
+their reading ability, we can measure the concordance or discordance between the
+teacher’s student responses of a country and the other countries.
+
+Keywords: symbolic data analysis, symbolic concordance, symbolic discordance
+
+References
+1. Diday, E.: Explanatory tools for machine learning in the symbolic data analysis framework.
+   In: Diday, E., Guan, R., Saporta, G., Wang, H. (eds.) Advances in Data Science, pp. 3-30.
+   ISTE-Wiley (2020)
+2. PIRLS: Progress in Internationals Readings Literacys Study
+   https://timssandpirls.bc.edu/pirls2016

@@ -1,0 +1,36 @@
+Typology of Motivation Factors for Employees in the Banking Sector: 
+Multivariate Data Analysis
+
+Aurea Sousa, Osvaldo Silva, M. Grac¸a Batista, Sara Cabral, and H. Bacelar-Nicolau
+
+The main purpose of this work is to know the perceptions of bank employees on the
+main motivational factors in the organizational context. Data analysis was performed
+based on Categorical Principal Component Analysis (CatPCA) and some agglomerative 
+hierarchical clustering algorithms from VL parametrical family, applied to the
+items that aim to assess the aspects most valued by bankers. The CatPCA allowed
+to extract four principal components which explain almost 70% of the total data
+variance. The dendrograms provided by the hierarchical clustering algorithms over
+the same data, exhibit four main branches, which are associated with different main
+motivational factors. Moreover, CatPCA and clustering results show an important
+correspondence concerning the main motivations in this sector.
+
+Keywords: leadership, welfare, motivational factors, catpca, cluster analysis .
+
+References
+1. Bacelar-Nicolau: The affinity coefficient. In: Bock, H.-H. and Diday, E. (eds.) Analysis 
+   of Symbolic Data: Exploratory Methods for Extracting Statistical Information from Complex
+   Data, Series: Studies in Classification, Data Analysis, and Knowledge Organization, 
+   pp. 160-165. Springer-Verlag, Berlin (2000) doi: 10.1007/978-3-642-57155-8
+2. Lerman, I.C.: Foundations and Methods in Combinatorial and Statistical Data Analysis and
+   Clustering. Series: Advanced Information and Knowledge Processing. Springer-Verlag, Boston
+   (2016)
+
+
+
+
+
+
+
+
+
+

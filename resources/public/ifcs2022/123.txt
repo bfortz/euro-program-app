@@ -1,0 +1,38 @@
+Four Skewed Tensor Variate Distributions
+
+Michael P.B. Gallaugher, Peter A. Tait, and Paul D. McNicholas
+
+In recent years, data has become more and more complex, coming in many different
+forms. One such example is data that come in the form of higher order tensors.
+Some examples of these type of data are coloured images, video clips, and medical
+data. Just like in the multivariate and matrix variate cases, the tensor or multilinear
+normal distribution is most commonly used in the literature; however, in the area
+of clustering and classification, if the data is skewed or contain outliers, then the
+use of a tensor normal distribution may result in over fitting the number of groups.
+We will introduce four skewed tensor variate distributions which will be utilized for
+model-based clustering and classification. Parameter estimation and properties will
+be discussed, and simulated and real data will be used for illustration.
+
+Keywords: high-order data, tensors, skewed distributions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

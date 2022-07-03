@@ -1,0 +1,41 @@
+Bayesian Inference for the Generation Interval of COVID-19 in Busan, Korea
+
+Jayoeng Paek, Ilsu Choi, Kyeongah Nah, and Yongkuk Kim
+
+In epidemiological dynamics, there are important parameters to provide knowledge
+of disease transmission, such as reproduction number, generation interval, serial
+interval and incubation time. Among them, generation interval, which is the transmission 
+time difference between infector and infectee, is key parameter to estimate
+how quickly the disease spread out. However, it is hard to calculate generation time
+because the time when a person is infected is considerably uncertain. In this study,
+we estimate generation interval of COVID-19 in Busan, South Korea according to
+the emergence of new variants. Markov chain Monte Carlo (MCMC) method is used
+to estimate generation interval. In a simulation, distributions of generation interval
+and incubation period are assumed to follow gamma distribution. As a results, we
+provide quantiles of generation interval and pre-symptomatic transmission rates for
+periods with a newly predominant mutation.
+
+Keywords: generation interval, mcmc
+
+References
+1. Ganyani, T., Kremer, C., Chen, D., Torneri, A., Faes, C., Wallinga, J., Hens, N.: 
+   Estimating the generation interval for coronavirus disease (COVID-19) based on 
+   symptom onset data, March 2020. Eurosurveillance 25, 2000257 (2020)
+2. Hart, W.S., Maini, P.K., Thompson, R.N.: High infectiousness immediately before 
+   COVID19 symptom onset highlights the importance of continued contact tracing. 
+   Elife 10, e65534 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

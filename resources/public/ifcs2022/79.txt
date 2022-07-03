@@ -1,0 +1,52 @@
+Model Based Clustering and Outlier Detection with Missing Data
+
+Cristina Tortora, Hung Tong, and Louis Tran
+
+Cluster analysis is a data analysis technique that aims to produce smaller groups
+of similar observations in a data set. In model-based clustering, the population is
+assumed to be a convex combination of sub-populations, each of which is modeled by 
+a probability distribution. When the data are characterized by outliers the
+multivariate Student-t (T) and the contaminated normal distribution (CN) provide
+robust parameter estimates and therefore are more suitable choices compared to
+Gaussian Mixture models. Recently, the T and CN distributions have been extended
+to accommodate different tail behaviors across principal components, the models
+are referred to as multiple scaled distributions, i.e., MST and MSCN respectively.
+The mixture of CN has the advantage of automatically detecting outliers while the
+MSCN distribution, has the advantage of directional robust parameter estimates and
+outlier detection. The term “directional” implies that the parameter estimation and
+outlier detection procedures work separately for each principal component. Some
+practical limitations of the mentioned models are that they require the number of
+clusters to be known and the data set to be complete. This work has overcome the two
+mentioned limitations providing a study of indices to select the number of clusters
+and presenting recent extensions of the CN and MSCN mixtures to cluster data that
+contain values missing at random. All the discussed techniques are available in two
+convenient R packages MSclust and MixtureMissing.
+
+Keywords: model based clustering, outlier detection, missing values
+
+References
+1. Tong H., Tortora. C. Model-based clustering and outlier detection with missing data.
+   Advances in data analysis and classification, 1-26 2022
+2. Tran L. and Tortora C. How Many Clusters Are Best? Investigating Model Selection in 
+   Robust Clustering. In JSM Proceedings, Statistical Computing Section. Alexandria, VA: 
+   American Statistical Association. 1159-1180 2021
+3. Tong H., Tortora. C. Mixture Missing: Robust Model-Based Clustering for Data Sets with
+   Missing Values at Random. R package v. 1.0.2. 2022
+4. Tortora. C., Punzo A., Tran L. MSclust: Multiple-Scaled Clustering. R package v. 1.0. 
+   2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

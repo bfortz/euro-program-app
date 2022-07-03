@@ -1,0 +1,41 @@
+The Death Process in Italy Before and During the Covid-19 Pandemic: 
+a Functional Compositional Approach
+
+Riccardo Scimone, Alessandra Menafoglio, Laura M. Sangalli, 
+and Piercesare Secchi
+
+In this talk, based on [1], we propose a spatio-temporal analysis of daily death
+counts in Italy, collected by ISTAT (Italian Statistical Institute), in Italian provinces
+and municipalities. While in [1] the focus was on the elderly class (70+ years old),
+we here focus on the middle class (50-69 years old), carrying out analogous analyses
+and comparative observations. We analyse historical provincial data starting from
+2011 up to 2020, year in which the impacts of the Covid-19 pandemic on the overall
+death process are assessed and analysed. The cornerstone of our analysis pipeline
+is a novel functional compositional representation for the death counts during each
+calendar year: specifically, we work with mortality densities over the calendar year,
+embedding them in the Bayes space B^2 of probability density functions. This Hilbert
+space embedding allows for the formulation of functional linear models, which are
+used to split each yearly realization of the mortality density process in a predictable
+and an unpredictable component, based on the mortality in previous years. The
+unpredictable components of the mortality density are then spatially analysed in
+the framework of Object Oriented Spatial Statistics. Via spatial downscaling of the
+results obtained at the provincial level, we obtain smooth predictions at the fine
+scale of Italian municipalities; this also enable us to perform anomaly detection,
+identifying municipalities which behave unusually with respect to the surroundings
+
+Keywords: covid-19, o2s2, functional data analysis, spatial downscaling
+
+References
+1. Scimone, R., Menafoglio, A., Sangalli, L.M., Secchi,P. (2021): A look at the 
+   spatio-temporal mortality patterns in Italy during the COVID-19 pandemic through 
+   the lens of mortality densities. Spatial Statistics, 
+   doi: https://doi.org/10.1016/j.spasta.2021.100541, preprint available 
+   at https://mox.polimi.it/reports-and-theses/publication-results/?id=952
+
+
+
+
+
+
+
+

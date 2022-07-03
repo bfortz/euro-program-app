@@ -1,0 +1,41 @@
+Assessing the Status of Two Data-Limited Skates Landed in Portuguese Ports Using 
+an Empirical Catch Rule
+
+Erick Chatalov, Ivone Figueiredo, Lisete Sousa, and Bárbara Pereira
+
+Worldwide there are concerns on the impact of fisheries on marine ecosystems. The
+goal 14 of the UN sustainable development aims to Conserve and Sustainably use the
+Oceans, Seas and Marine Resources. To reach this goal it is required that fisheries be
+adequately managed. Despite that, for many fisheries the data available is deficient
+and do not allow to have reliable estimates of stock status. In those cases, international
+agreements request the adoption and implementation of the Precautionary Approach.
+Raja brachyura and Raja clavata are two elasmobranch species characterized by lifecycle 
+traits that make them particularly vulnerable to fishing. In Portuguese waters data available 
+for these species are limited despite their relative importance in Rajidae landings, being 
+mainly caught by fishing vessels operating bottom trawl and trammel nets. This study applies 
+the methodology proposed by Fischer et al. [1] for evaluating the performance of a modified 
+“2 over 3” rule as the management procedure, after a 100-year fishing history simulated from 
+age-structured operating models for datalimited stocks, using the available knowledge on 
+biological parameters of the two species. A genetic algorithm was applied to improve the 
+performance of a datalimited catch rule. Different levels of uncertainty on the input data 
+were explored and its impact on the estimation evaluated.
+
+Keywords: empirical catch rule, genetic algorithm, age-structured operating models, 
+          Rajidae species
+
+References
+1. Fischer, S.H., De Oliveira, J.A., Mumford, J.D., Kell, L.T.: Using a genetic algorithm to
+   optimize a data-limited catch rule. ICES J. Mar. Sci., 78(4), 1311–1323 (2021)
+
+
+
+
+
+
+
+
+
+
+
+
+

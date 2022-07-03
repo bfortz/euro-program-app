@@ -1,0 +1,34 @@
+Exploiting Pareto Density Estimation for Nonparametric Naïve Bayes Classifiers
+
+Quirin Stier and Michael C. Thrun
+
+In parametric Naïve Bayes classifiers, a variety of class conditional distributions
+are defined if prior knowledge about the structures in data is given. Otherwise,
+likelihood estimation is performed via kernel density estimation in non-parametric
+Naïve Bayes classifiers. However, our previous work showed that Pareto density
+estimation (PDE) [1] outperforms other density estimation methods available in R
+and Python, because conventional methods pose several problems when estimating
+distributions that have clipped data or are uniform, multimodal or skewed [1]. In
+contrast, PDE is particularly suitable for discovering structures in continuous data
+and allows for the discovery of mixtures of Gaussians [3]. This work proposes a
+non-parametric Naïve Bayes classifier called PDEbayes that estimates the likelihood
+per class via PDE. It is compared with a non-parametric Naïve Bayes classifier
+available on CRAN called naivebayes on a range of artificial datasets of the FCPS
+(N = 1000 samples) [2]. Moreover, a real-world dataset is used which consists of
+patients with either a positive B-Non-Hodgkin lymphoma (B-NHL) or a negative
+B-NHL diagnosis for which no prior knowledge about the distributions is available.
+PDEbayes outperforms the Naïve Bayes classifier on FCPS datasets slightly and on
+the real-world dataset significantly with a precision of 86% and recall of 85% for
+PDEbayes, 82% and 76% for naivebayes for N = 19135 testdata patients.
+
+Keywords: kernel density estimation, Bayes, classification
+
+References
+1. Thrun, M. C., Gehlert, T., Ultsch, A.: Analyzing the Fine Structure of Distributions, 
+   PloS one, Vol. 15 (10), (2020)
+2. Thrun, M. C., Ultsch, A.: Clustering Benchmark Datasets Exploiting the Fundamental 
+   Clustering Problems, Data in Brief, Vol. 30 (C), (2020)
+3. Ultsch, A., Thrun, M.C., Hansen-Goos, O., Lötsch, J.: Identification of Molecular 
+   Fingerprints in Human Heat Pain Thresholds by Use of an Interactive Mixture Model 
+   R Toolbox (AdaptGauss), International Journal of Molecular Sciences, Vol. 16(10), (2015)
+

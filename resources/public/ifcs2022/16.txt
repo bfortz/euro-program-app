@@ -1,0 +1,36 @@
+A Topological Clustering of Individuals
+
+Rafik Abdesselam
+
+The clustering of objects-individuals is one of the most widely used approaches to
+exploring multidimensional data. The two common unsupervised clustering strategies 
+are Hierarchical Ascending Clustering (HAC) and k-means partitioning used to
+identify groups of similar objects in a dataset to divide it into homogeneous groups.
+The proposed Topological Clustering of Individuals, or TCI, studies a homogeneous
+set of individuals-rows of a data table, based on the notion of neighborhood graphs;
+the columns-variables are more-or-less correlated or linked according to whether
+the variable is of a quantitative or qualitative type. It enables topological analysis
+of the clustering of individual variables which can be quantitative, qualitative or a
+mixture of the two. It first analyzes the correlations or associations observed between
+the variables in the topological context of principal component analysis (PCA) or
+multiple correspondence analysis (MCA), depending on the type of variable, then
+classifies individuals into homogeneous groups relative to the structure of the variables 
+considered. The proposed TCI method is presented and illustrated here using a simple real 
+dataset with quantitative variables; however, it can also be applied with qualitative or 
+mixed variables.
+
+Keywords: hierarchical clustering, proximity measure, neighborhood graph, adjacency matrix, 
+          multivariate data analysis
+
+References
+1. Abdesselam, R.: A Topological Principal Component Analysis. International Journal of Data
+   Science and Analysis. Vol.7, Issue 2, 20–31 (2021)
+2. Batagelj, V., Bren, M.: Comparing resemblance measures. Journal of classification, 12, 
+   73–90 (1995)
+3. Lesot, M.J., Rifqi, M. and Benhadda, H.: Similarity measures for binary and numerical data:
+   a survey. In: IJKESDP, 1, 1, 63-84 (2009)
+4. Panagopoulos, D.: Topological data analysis and clustering. Chapter for a book, Algebraic
+   Topology (math.AT) arXiv:2201.09054, Machine Learning, (2022)
+5. Zighed, D., Abdesselam, R., and Hadgu, A.: Topological comparisons of proximity measures.
+   In: Tan et al. (Eds). 16th PAKDD 2012 Conference, pp. 379–391. Springer, (2012)
+

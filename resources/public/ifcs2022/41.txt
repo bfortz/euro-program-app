@@ -1,0 +1,36 @@
+New Metrics for Classifying Phylogenetic Trees Using k-Means and the Symmetric 
+Difference Metric
+
+Nadia Tahiri and Aleksandr Koshkarov
+
+The k-means method can be adapted to any type of metric space and is sometimes
+linked to the median procedures. This is the case for symmetric difference metric 
+(or Robinson and Foulds [1]) distance in phylogeny, where it can lead to median trees
+as well as to Euclidean Embedding. We show how a specific version of the popular
+k-means clustering algorithm, based on interesting properties of the Robinson and
+Foulds topological distance, can be used to partition a given set of trees into one
+(when the data is homogeneous) or several (when the data is heterogeneous) cluster(s)
+of trees. We have adapted the popular cluster validity indices of Silhouette, and Gap
+to tree clustering with k-means based on a previous work by Tahiri et al. [2]. In this
+article, we will show results of this new approach on a real dataset (aminoacyl-tRNA
+synthetases) of Woese et al. [3]. The new version of phylogenetic tree clustering
+makes the new method well suited for the analysis of large genomic datasets.
+
+Keywords: clustering, symmetric difference metrics, k-means, phylogenetic trees,
+          cluster validity indices
+
+References
+1. Robinson, D. & Foulds, L. Comparison of phylogenetic trees. Mathematical Biosciences. 53,
+   131-147 (1981)
+2. Tahiri, N., Willems, M. & Makarenkov, V. A new fast method for inferring multiple consensus
+   trees using k-medoids. BMC Evolutionary Biology. 18, 1-12 (2018)
+3. Woese, C., Olsen, G., Ibba, M. & Soll, D. Aminoacyl-tRNA synthetases, the genetic code, and
+   the evolutionary process. Microbiology And Molecular Biology Reviews. 64, 202-236 (2000)
+
+
+
+
+
+
+
+

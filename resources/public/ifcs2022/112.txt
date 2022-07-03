@@ -1,0 +1,57 @@
+Continuous Adaptation to Distribution Drifts Through Continual Learning in Manufacturing
+
+Henrique Siqueira and Onay Urfalioglu
+
+Distribution drifts usually occur in the context of time series processing in manufacturing. 
+The causes for this problem include continual optimization of cutting processes in machining 
+and incremental precision loss from long-term stress exerted on the machine’s components. 
+Therefore, it is critical to understand the performance of machine learning (ML) models for 
+anomaly detection in manufacturing under distribution drifts for reliable and robust virtual 
+quality control.
+  In fact, the generalization capability of ML models is strongly compromised when
+performing inference under a distribution different from the training data [1]. As a
+result, these models can have a significant drop in performance with a negative impact
+on overall equipment effectiveness (OEE). OEE is the gold standard in manufacturing
+that defines productivity based on availability, performance and quality. In this
+regard, OEE decreases when workpieces produced under the new distribution are
+wrongly categorized as faulty workpieces, slowing down the manufacturing process
+by unnecessary and excessive manual quality measurements.
+  To avoid this kind of problem in production, anomaly detection systems must
+be constantly evaluated, if necessary, retrained to the new data distribution and redeployed. 
+Instead of adopting a manual and time-demanding workflow, continual learning approaches could 
+acquire novel information from a continuous data stream. This property can possibly endow those 
+systems with continuous adaptation to contextual distribution drifts [2]. In the present study, 
+we aim to investigate how continual learning concepts can be exploited for the development of 
+anomaly detection systems with continuous adaptation to distribution drifts on real-world 
+manufacturing data.
+
+Keywords: continual learning, anomaly detection, manufacturing
+
+References
+1. Liang, W. and Zou, J.: MetaShift: A Dataset of Datasets for Evaluating Contextual 
+   Distribution Shifts and Training Conflicts. In ICLR (2022).
+2. Mundt, M., Lang, S., Delfosse, Q. and Kersting, K.: CLEVA-Compass: A Continual 
+   Learning EValuation Assessment Compass to Promote Research Transparency and Comparability. 
+   In ICLR (2022).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

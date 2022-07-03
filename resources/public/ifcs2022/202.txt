@@ -1,0 +1,37 @@
+Functional Random Forest for Biomedical Signals Classification 
+and Interpretative Tools
+
+F. Maturo and R. Verde
+
+This study deals with tree-based techniques and functional data analysis (FDA)
+[1] for supervised classification of curves representing high-dimensional 
+biomedical data recorded over time. Recently [3] proposed Functional Classification Trees
+(FCTs) and Functional Random Forest (FRF) [2] using b-spline representation and
+the Functional Principal Components Decomposition (FPCD) as possible basis transformation 
+to obtain features from curves for training the classifiers. In our proposal,
+an original contribution is also given by new interpretative tools of the functional
+classification rules in the functional framework. Applications on ECG data have
+shown the effectiveness of the proposed functional classifiers in terms of accuracy
+and their usefulness in terms of interpretability.
+
+Keywords: functional data analysis, supervised classification, functional random forest
+
+References
+1. Ramsay J, Silverman B. Functional Data Analysis, 2nd edn. New York: Springer (2005)
+2. Breiman L. Random Forests. Machine Learning 45(1) 5–32 (2001)
+3. Maturo, F., Verde, R.: Pooling random forest and functional data analysis for biomedical
+   signals supervised classification: theory and application to electrocardiogram data. 
+   Statistics in Medicine, 1–29 (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+

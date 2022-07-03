@@ -1,0 +1,56 @@
+Comparing Model Selection Techniques to Determine the Number of Overlapping Clusters
+for the Additive Profile Clustering Model
+
+Tom F. Wilderjans, Julian Rossbroich, and Jeffrey Durieux
+
+In several areas of science, researchers aim at disclosing the mechanisms that 
+generated object by variable data, like, for example, patient by symptom or consumer
+by brand data. Regularly, based on previous knowledge, it makes sense to assume
+that these mechanisms can be nicely captured through an object clustering. In such
+a case, researchers very often opt for a partitioning method, like, for example, k-means, 
+which results in non-overlapping clusters. Sometimes, however, expectations
+are that objects can be grouped into clusters that overlap, implying that an object may
+belong to multiple clusters. Applied to the patient by symptom data, for example, in
+which clusters correspond with syndromes, it is quite natural to assume that patients
+may suffer from multiple syndromes at the same time as co-morbidity of syndromes
+is often observed in clinical practice. To extract the overlapping object clusters,
+Mirkin’s additive profile (overlapping) clustering model may be used. A non-trivial
+task consists of determining the optimal number of overlapping clusters that are
+present in a given empirical data set. Up to now, however, although some methods
+for model selection for ADPROCLUS were proposed before, no systematic attempt
+of investigating this issue of model selection has been undertaken. Therefore, in this
+presentation, we evaluate in an extensive simulation study several model selection
+techniques. In partiular, several new model selection methods for ADPROCLUS,
+with some of them being methods for the partitioning case tailored to the context of
+overlapping clustering (e.g., AIC, CH-index) are compared to existing methods (e.g.,
+CHull, cross-validation). As such, in order to build a cumulative body of knowledge,
+our study is a benchmarking study in which the performance of new methods is
+carefully compared to the performance of existing methods.
+
+Keywords: overlapping clustering, additive profile clustering, model selection, 
+          simulation study, benchmarking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

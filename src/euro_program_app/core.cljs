@@ -53,7 +53,9 @@
   (s/put! :page :streams))
 
 (secretary/defroute "/stream/:id" [id]
-  (s/put! :stream (reader/read-string id)) 
+  (let [stream (reader/read-string id)
+        stream (if (symbol? stream) (str stream) stream)] 
+    (s/put! :stream stream))
   (s/put! :page :stream))
 
 (secretary/defroute "/user/:id" [id]

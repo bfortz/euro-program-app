@@ -1,0 +1,50 @@
+Analyzing the Effects of Deviations from Normality on the Latent Growth Curve Models
+Goodness-Of-Fit
+
+Catarina Marques, Maria de Fátima Salgueiro, and Paula C.R. Vicente
+
+Latent growth curve models (LGCM) became in recent years a very popular technique 
+for longitudinal data analysis: they allow individuals to have distinct growth
+trajectories over time [1]. Although the LGCM specified model structure imposes
+normality assumptions, the data analyst often faces data deviations from normality, 
+implying mild, moderate or even severe values for skewness and or kurtosis.
+In the current research, a Monte Carlo simulation study was conducted in order to
+investigate the effect of observed data deviations from normality on goodness-of-fit
+indices. A new approach to generate multivariate non-normal distributed data was
+used: the VITA method [2]. This method is a covariance model simulation method
+using regular vines. The dependency structure is determined by bivariate copulae
+and a nested set of trees.
+  One thousand datasets were randomly generated from regular vines using Clayton 
+copula and three marginal distributions (Normal, Student 3 and Gamma). The
+multivariate normal distribution was also used for data generation. LGCM with
+unconditional linear growth was considered. Three time points and distinct 
+combinations of sample sizes were used. The impacts of such deviations on 
+goodness-of-fit measures are discussed.
+
+Keywords: goodness-of-fit indices; LGCM, non-normality data, VITA method.
+
+References
+1. Bollen, K.A., Curran, P.J.: Latent Curve Models - A Structural Equation Perspective. 
+   John Wiley & Sons, New Jersey, USA. (2006)
+2. Grønneberg, S., Foldnes, N.: Covariance Model Simulation using Regular Vines. 
+   Psychometrika 82(4), 1035 – 1051 (2017).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+Categorical Data Visualization and the Cressie-Read Divergence Statistic
+
+Eric J. Beh and Rosaria Lombardo
+
+The literature on correspondence analysis is largely centred on Pearson’s chi-squared
+statistic (Greenacre, 1984; Beh and Lombardo, 2014). For such an analysis, differences 
+between categories is assessed using the chi-squared distance while distances
+in a low-dimensional space are Euclidean. Recently, Beh and Lombardo (2022)
+showed that the Cressie-Read divergence statistic (Cressie and Read, 1984) plays
+a pivotal role in correspondence analysis. This is because Pearson’s statistic, the
+Freeman-Tukey statistic, the log-likelihood ratio statistic and others are special cases
+of this statistic. Therefore, differences amongst categories can be assessed using this
+divergence statistic and still yield Euclidean distances in a low-dimensional space.
+This is very appealing since it provides a greater range of difference measures, including 
+the chi-squared, Hellinger and logarithmic distances.This paper compares the quality and 
+configuration of points in a low-dimensional correspondence plot using the Cressie-Read 
+divergence statistic. This will be done by deriving a global measure that allows for such 
+a comparison and is an extension of a similar measure presented in the past; see, for example, 
+Cuadras, Cuadras and Greenacre (2006).
+
+Keywords: pearson’s chi-squared, cressie-read divergence statistic, comparison
+
+References
+1. Beh, E.J., Lombardo, R.: Correspondence analysis: Theory, practice and new strategies.
+   Wiley, Chichester (2014)
+2. Beh, E.J., Lombardo, R.: Correspondence analysis and the Cressie-Read Divergence Statistic.
+   Submitted (2022)
+3. Cressie, N.A.C., Read, T.R.C.: Multinomial goodness-of-fit tests. Journal of the Royal
+   Statistical Society, Series B, 46, 440–464 (1984)
+4. Cuadras, C.M., Cuadras, D., Greenacre, M.J.: A Comparison of Different Methods for
+   Representing Categorical Data. Communications in Statistics - Simulation and Computation,
+   35, 447–459 (2006)
+5. Greenacre, M.: Theory and application of correspondence analysis. Academic Press, London
+   (1984)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

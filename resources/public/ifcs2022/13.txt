@@ -1,0 +1,11 @@
+Clustering and Blockmodeling Temporal Networks -- Two Indirect Approaches
+
+Vladimir Batagelj
+
+Two approaches to clustering and blockmodeling of temporal networks are presented:
+the first is based on an adaptation of the clustering of symbolic data described by
+modal values and the second is based on clustering with relational constraints.
+Different options for describing a temporal block model are discussed.
+
+Keywords: social networks, network analysis, blockmodeling, symbolic data analysis, 
+          clustering with relational constraints

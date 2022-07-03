@@ -1,0 +1,47 @@
+Fast Minipatch Ensemble Strategies for Learning and Inference
+
+Genevera I. Allen
+
+Enormous quantities of data are collected in many industries and disciplines; this
+data holds the key to solving critical societal and scientific problems. Yet, fitting
+models to make discoveries from this huge data often poses both computational
+and statistical challenges. In this talk, we propose a new ensemble learning strategy
+primed for fast, distributed, and memory-efficient computation that also has many
+statistical advantages. Inspired by random forests, stability selection, and stochastic 
+optimization, we propose to build ensembles based on tiny subsamples of both
+observations and features that we term minipatches. While minipatch learning can
+easily be applied to prediction tasks similarly to random forests, this talk focuses
+on using minipatch ensemble approaches in unconventional ways: We will highlight
+new minipatch learning methods for unsupervised learning, specifically clustering
+and structural graph learning, and distribution-free and model-agnostic inference for
+both predictions and important features. Through huge real data examples from 
+neuroscience, genomics and biomedicine, we illustrate the computational and statistical
+advantages of our minipatch ensemble learning strategies.
+
+Keywords: ensemble learning, consensus clustering, graphical model selection,
+          conformal inference, feature importance inference
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

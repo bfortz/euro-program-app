@@ -1,0 +1,40 @@
+Comparing Variable Selection Methods for High-Dimensional Compositional Data in a
+Discriminant Analysis Context
+
+P. Daunis-i-Estadella, G. Mateu-Figueras, V. Nesrstová, K. Hron, and J.A.
+Martín-Fernández
+
+Orthonormal logratio coordinates are used for statistical analysis of compositions.
+Although there is an infinite number of potential orthonormal bases, using the
+Principal balances (PB) algorithms a specific basis is constructed for maximizing
+the retained variance [3]. PB can be used for selecting some parts in order to reduce
+the data dimension. This is particularly important in the context of high-dimensional
+compositional data (CoDa), such as omic data (genomic, proteomic or metabolomic)
+where the identification of biomarkers that allow to discriminate disease has great
+interest. This work focuses on the comparison of different proposals for variable
+selection in order to apply a discriminant analysis (DA): the Selbal approach [5],
+a forward-selection method for the identification of a balance associated with the
+variable of interest; the CLR-lasso and CoDa-lasso, a penalised regression approach
+[6]; the approaches proposed in [2] based on the index extracted of the variation
+matrix and average accuracy using Partial Least Squares (PLS) DA; the stepwise
+supervised methods for selecting pairwise logratios [1] and the variable selection in
+CoDa using PLS-PB coordinates, a modified procedure consisting in the application
+of PLS regression [4]. Simulated data sets and a real data set with the microbiota
+associated to the colonic mucosa of patients with different subtypes of inflammatory
+bowel disease are used for illustrating the performance of the methods.
+
+Keywords: variable selection, discriminant analysis, principal balances
+
+References
+1. Coenders, G., Greenacre, M.: Three approaches to supervised learning for compositional data
+   with pairwise logratios. arXiv:2111.08953 [stat.ML] (2021)
+2. Filzmoser, P., Hron, K., Templ, M.: Applied compositional data analysis. Springer (2018)
+3. Martín-Fernández J.A., Pawlowsky-Glahn, V., Egozcue, J.J., Tolosona-Delgado, R.: Advances
+   in principal balances for compositional data. Mathematical Geosciences 50, 273–298 (2018)
+4. Nesrstová V, Hron, K., Martín-Fernández J.A, Filzmoser, P., Palarea-Albaladejo, J., Wilms, I.:
+   Variable selection in compositional data using PLS-based balance coordinates. Data Science,
+   Statistics & Visualisation (DSSV), 7-9 July (2021)
+5. Rivera-Pinto J., Egozcue, J.J., Pawlowsky-Glahn, V., Paredes, R., Noguera-Julian, M., Calle,
+   M.L.: Balances: a new perspective for microbiome analysis. mSystems 3, e00053-18 (2018)
+6. Susin, A., Wang, Y., Lê Cao, K.-A., Calle, M. L.: Variable selection in microbiome compositional 
+   data analysis. NAR Genomics and Bioinformatics 2, lqaa029 (2020)

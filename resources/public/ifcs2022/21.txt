@@ -1,0 +1,20 @@
+Penalized Model-Based Functional Clustering: a Regularization Approach via 
+Shrinkage Methods
+
+Nicola Pronello, Rosaria Ignaccolo, Luigi Ippoliti, and Sara Fontanella
+
+With the advance of modern technology, and with data being recorded continuously,
+functional data analysis has gained a lot of popularity in recent years. Working
+in a mixture model-based framework, we develop a flexible functional clustering
+technique achieving dimensionality reduction schemes through a L_1 penalization.
+The proposed procedure results in an integrated modelling approach where shrinkage
+techniques are applied to enable sparse solutions in both the means and the covariance
+matrices of the mixture components, while preserving the underlying clustering
+structure. This leads to an entirely data-driven methodology suitable for simultaneous
+dimensionality reduction and clustering. Preliminary experimental results, both from
+simulation and real data, show that the proposed methodology is worth considering
+within the framework of functional clustering.
+
+Keywords: functional data analysis, l_1 penalty, silhouette width, graphical lasso,
+          mixture model
+

@@ -1,0 +1,53 @@
+A Wavelet-Mixed Effect Landmark Model for the Effect of Potassium and Biomarkers 
+Profiles on Survival in Heart Failure Patients
+
+Caterina Gregorio, Giulia Barbati, and Francesca Ieva
+
+Statistical methods to study the association between a longitudinal biomarker and the
+risk of death are a very relevant problem for the long-term monitoring of biomarkers.
+In this context, sudden crises can cause the biomarker to undergo very abrupt changes.
+Although these oscillations are typically short-term, they often contain relevant
+prognostic information. We propose a method that couples a linear mixed-model
+with a wavelet smoothing to extract both the long-term component and the shortterm 
+oscillations of the individual longitudinal biomarker profiles, and describe them
+as functional data.
+  We then use them as predictors in a landmark model to study their association
+with the risk of death. To illustrate the method, we use clinical application which
+motivated our work, i.e. the monitoring of potassium and related biomarkers in Heart
+Failure patients. The dataset consists of real-world data coming from the integration
+of Administrative Health Records and Outpatient and Inpatient Clinic E-chart from
+Trieste (Italy).
+  Our method not only allows us to identify the short-term oscillations, but also
+reveals their prognostic role, according to their duration, demonstrating the 
+importance of including them in the modeling. Compared to other state of the art methods
+(e.g., landmark analyses and joint models), our proposal archives higher predictive
+performances. Our analysis has also an important clinical implications, since it allows 
+us to derive a dynamic score that can be used in clinical practice to assess the
+risk related to an observed patient’s potassium trajectory and then tune the actual
+drug therapy she/he has to undergo.
+
+Keywords: mixed-effect models, landmark survival analysis, time-dependent covariates, 
+          functional data, heart failure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

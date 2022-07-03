@@ -1,0 +1,54 @@
+Multivariate Time Series Feature Extraction via Multilayer Networks
+
+Vanessa Freitas Silva, Maria Eduarda Silva, Pedro Ribeiro, and Fernando Silva
+
+The extraction of features from time-indexed data has proved to be an important
+preliminary task in many applications of time series analysis, such as classification, 
+clustering and forecasting. Finding a set of features that summarizes the main
+characteristics of such data is therefore a crucial task, which usually involves conventional 
+statistical and non-linear measures of time series analysis [1]. Complementary, features based 
+on complex network methods have been shown to be useful to characterize time series data [2, 3]. 
+For multivariate time series (MTS) settings, feature extraction is even less trivial due to 
+temporal and cross-dimension dependencies. The existing methods and models are often developed 
+under certain constraints and for specific problems, and therefore new methodological and 
+computational tools are required. Multilayer networks are complete structures able of mapping the 
+internal and external temporal dependencies of MTS through intra and inter-network connections [2]. 
+In this work, we introduce novel MTS features based on a new multilayer visibility network mapping 
+method. To demonstrate its applicability, we performed a MTS clustering task based on the proposed 
+features set.
+
+Keywords: multivariate, time series, visibility graphs, feature extraction
+
+Acknowledgements The authors gratefully acknowledge support from FCT (SFRH/BD/139630/2018)
+                 and PREFERENTIAL (PTDC/MAT-STA/28243/2017).
+
+References
+1. Montero-Manso, P., Athanasopoulos, G., Hyndman, R.J., Talagala, T.S.: FFORMA: Feature
+   based forecast model averaging. Int. J. Forecast. 36, 86–92 (2020)
+2. Silva, V.F., Silva, M.E., Ribeiro, P., Silva, F.: Time series analysis via network science:
+   Concepts and algorithms. Wiley Interdiscip. Rev.: Data Min. Knowl. Discov. 11, e1404 (2021)
+3. Silva, V.F., Silva, M.E., Ribeiro, P., Silva, F.: Novel features for time series analysis: 
+   a complex networks approach. Data Min. Knowl. Disc. (2022)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

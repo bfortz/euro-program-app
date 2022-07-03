@@ -1,0 +1,44 @@
+Spherical Separation in Machine Learning
+
+Matteo Avolio, Annabella Astorino, and Antonio Fuduli
+
+We extend the spherical separation approach to clustering problems and to the
+Multiple Instance Learning (MIL) paradigm, the latter constituting a kind of weak
+supervised classification, using a multisphere criterion. In both the cases, while the
+centers of the spheres are heuristically fixed, the corresponding radii are computed
+by solving a specific optimization problem.
+  In particular, for the clustering problem, all the centers are fixed in advance as
+the barycenters of the current clusters (as in the standard K-Means algorithm), while
+the corresponding radii are computed by solving a finite numbers of transportation
+problems.
+  Instead, in the case of Multiple Instance Learning (MIL) problem whose objective
+is to categorize bags of instances, our proposed technique is based on iteratively 
+separating the bags by means of successive maximum-margin spheres (whose number
+is automatically determined), obtained by solving successive linear programs.
+  Numerical results on some test problems drawn from the literature show the
+effectiveness of our proposals.
+
+Keywords: machine learning, spherical separation, clustering, multiple instance learning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

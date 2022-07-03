@@ -1,0 +1,49 @@
+An Ultrametric Model for Clustering and Dimensionality Reduction
+
+Giorgia Zaccaria
+
+The study of multidimensional phenomena is currently growing with the complexity
+of the reality, raising the need for methodologies to explore the relationships between
+their many facets. Multidimensional phenomena are often explained by nested latent
+concepts ordered in a hierarchical, tree structure, whose characterization can differ
+in heterogeneous populations. In this work, a new parsimonious parameterization
+of the covariance matrix able to pinpoint a hierarchical structure on variables is
+proposed, and implemented into a Gaussian Mixture Model (GMM). The proposal
+is based upon the definition of an ultrametric matrix [2], which is one-to-one
+associated with a hierarchy of latent concepts. Its implementation into a GMM aims,
+on one hand, at introducing a new parsimonious GMM with a reduced number of
+parameters and, on the other hand, at identifying a different characterization of the
+phenomenon under study for each component (subpopulation) of the mixture. With
+respect to the existing parsimonious parameterizations of the component covariance
+structure, e.g., the eigen-decomposition [1] and the decomposition based on Factor
+Analysis [3], the ultrametric GMM works particularly well in situations where a
+hierarchy over variables can be identified. Nonetheless, the proposal shows good
+performance also when a general (non-hierarchical) covariance structure is assumed
+for the data. The application of the proposal to real data concerning well-being and a
+benchmark data set illustrates its potentials to explore multidimensional phenomena
+in a heterogeneous population.
+
+Keywords: ultrametric models, parsimonious parameterization, model-based clustering, 
+          hierarchy of latent concepts
+
+References
+1. Banfield, J., Raftery, A.: Model-based Gaussian and non-Gaussian clustering. Biometrics.
+   49(3), 803-–821 (1993)
+2. Dellacherie, C., Martinez, S., San Martin, J.: Inverse M-matrices and ultrametric matrices.
+   Lecture Notes in Mathematics, Springer, Switzerland (2014)
+3. McLachlan, G, Peel, D.: Mixtures of factor analyzers. In: Langley, P. (ed.) Proceedings of the
+   seventeenth international conference on machine learning, pp 599–606. Morgan Kaufmann,
+   San Francisco (2000)
+
+
+
+
+
+
+
+
+
+
+
+
+

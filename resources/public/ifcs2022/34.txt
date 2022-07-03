@@ -1,0 +1,28 @@
+Clustering Brain Connectomes Through a Density-Peak Approach
+
+Riccardo Giubilei
+
+The density-peak (DP) algorithm is a mode-based clustering method that identifies
+cluster centers as data points being surrounded by neighbors with lower density
+and far away from points with higher density. Since its introduction in 2014, DP
+has reaped considerable success for its favorable properties. A striking advantage is
+that it does not require data to be embedded in vector spaces, potentially enabling
+applications to arbitrary data types. In this work, we propose improvements to
+overcome two main limitations of the original DP approach, i.e., the unstable density
+estimation and the absence of an automatic procedure for selecting cluster centers.
+Then, we apply the resulting method to the increasingly important task of graph
+clustering, here intended as gathering together similar graphs. Potential implications
+include grouping similar brain networks for ability assessment or disease prevention,
+as well as clustering different snapshots of the same network evolving over time to
+identify similar patterns or abrupt changes. We test our method in an empirical
+analysis whose goal is clustering brain connectomes to distinguish between patients
+affected by schizophrenia and healthy controls. Results show that, in the specific
+analysis, our method outperforms many existing competitors for graph clustering.
+
+Keywords: nonparametric statistics, mode-based clustering, networks, graph clustering, 
+          kernel density estimation.
+
+
+
+
+

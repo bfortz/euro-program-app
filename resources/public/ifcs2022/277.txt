@@ -1,0 +1,36 @@
+Socio-Economic Classification of Territorial Units: Extreme Value Theory-Based 
+Methods as Support for the Construction of a Synthetic Index
+
+Aleksandra Łuczak and Małgorzata Just
+
+A socio-economic classification of territorial units is helpful to assess their 
+condition and plan their development. However, this process reveals many 
+problems, such as data availability, selection of indicators and their measurement, 
+selection of appropriate methods for normalization, weighing and aggregation of 
+indicators. Aggregation of data depend on kind of data and distribution of 
+variables. One of the main problems for real data are atypical observations. They 
+are significant complication in the analysis of complex economic phenomena, 
+because they have a strong influence on the obtained results [3]. The main goal is 
+to present a comprehensive linear ordering procedure using the positional version 
+of TOPSIS and methods of extreme value theory to assess the level of socioeconomic 
+development of various types of territorial units. We propose a two-step 
+procedure based on six automatic methods that identify the tail of the variable 
+distribution (atypical observations). Moreover, in order to eliminate the impact of 
+asymmetry, mainly in the central part of the variable distribution, we also use the 
+positional TOPSIS method based on ideas of Hellwig [1], as well as Hwang and Yoon 
+[2]. The proposed procedure was used to assess the socio-economic situation of 
+voivodships, districts and municipalities in Poland in 2019. The conducted research
+allows to expand the spectrum of quantitative methods used to study complex 
+phenomena and improves the quality of research.
+
+Keywords: extreme values, tail distribution, positional TOPSIS, 
+          socio-economic situation, territorial units
+
+References
+1. Hellwig, Z.: Zastosowania metody taksonomicznej do typologicznego podziału krajów ze 
+   względu na poziom ich rozwoju i strukturę wykwalifikowanych kadr. Statistical Review. 4, 
+   307–327 (1968)
+2. Hwang, C.L.; Yoon, K.: Multiple Attribute Decision Making: Methods and Applications. 
+   Springer-Verlag, New York (1981)
+3. Łuczak, A., Just, M.: Sustainable development of territorial units: MCDM approach with 
+   optimal tail selection. Ecol. Model. 457(1), 109674 (2021)

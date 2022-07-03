@@ -1,0 +1,28 @@
+A New Functional Data Clustering Technique Based on Spectral Clustering and Downsampling
+
+Maryam Al Alawi, Surajit Ray, and Mayetri Gupta
+
+We present a new framework for clustering functional data along with a new paradigm
+for performing model selection based on downsampling. Our clustering framework is
+a generalisatiion of the spectral clustering approach and is flexible enough to exploit
+higher order features of curves, including derivatives. Extensive comparative studies
+with existing methods show a clear advantage of our approach over existing functional
+data analysis clustering approaches. Additionally, we present a new paradigm for
+model selection, by introducing the technique of downsampling, which allows us
+to create lower resolution replicates of the observed curves. These replicates can
+then be used to provide insight into the tuning parameters for the specific clustering
+techniques. The usefulness of the proposed methods is illustrated through simulations
+and applications to real-life datasets.
+
+Keywords: clustering, clustering stability, functional data analysis, model selection,
+          functional data clustering
+
+References
+1. Ramsay, JO and Silverman, BW.: Functional Data Analysis. Springer, c1997. New York (2005)
+2. Ng, Andrew Y and Jordan, Michael I and Weiss, Yair.: On spectral clustering: Analysis and an
+   algorithm. Advances in Neural Information Processing Systems. 849–856 (2002)
+3. Von Luxburg, Ulrike.: A tutorial on spectral clustering. Statistics and Computing 17(4), 395–416
+   (2007)
+4. Al Alawi, M., Ray, S. and Gupta, M. A New Framework for Distance-based Functional Clustering.
+   In: 34th International Workshop on Statistical Modelling, Guimarães, Portugal, 07-12 Jul 2019, 
+   (2019)

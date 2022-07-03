@@ -1,0 +1,36 @@
+A Review on Official Survey Item Classification for Mixed-Mode Effects Adjustment
+
+Afshin Ashofteh and Pedro Campos
+
+The COVID-19 pandemic has had a direct impact on the development, production,
+and dissemination of official statistics. This situation led National Statistics Institutes
+(NSIs) to make methodological and practical choices for survey collection without
+the need for the direct contact of interviewing staff (i.e. remote survey data collection). 
+Mixing telephone interviews (CATI) and computer-assisted web interviewing
+(CAWI) with direct contact of interviewing constitute a new way for data collection
+at the time COVID-19 crisis. This paper presents a literature review to summarize
+the role of statistical classification and design weights to control coverage errors and
+non-response bias in mixed-mode questionnaire design. We identified 289 research
+articles with a computerized search over two databases, Scopus and Web of Science.
+It was found that, although employing mixed-mode surveys could be considered as a
+substitution of traditional face-to-face interviews (CAPI), proper statistical classification 
+of survey items and responders is important to control the nonresponse rates and coverage error 
+risk.
+
+Keywords: mixed-mode official surveys, item classification, weighting methods, clustering, 
+          measurement error
+
+References
+1. Ashofteh, A., and Bravo, J.M.: A study on the quality of novel coronavirus (COVID-19)
+   official datasets. Stat. J. IAOS, vol. 36, no. 2, pp. 291–301, (2020). doi: 10.3233/SJI-200674
+2. Ashofteh, A., and Bravo, J.M.: Data science training for official statistics: A new scientific
+   paradigm of information and knowledge development in national statistical systems. Stat. J.
+   IAOS, vol. 37, no. 3, pp. 771–789, (2021). doi: 10.3233/SJI-200674
+3. Kim, S. and Couper, M.P.: Feasibility and Quality of a National RDD Smartphone Web
+   Survey: Comparison With a Cell Phone CATI Survey. Soc. Sci. Comput. Rev., vol. 39, no. 6,
+   pp. 1218–1236, (2021).
+
+
+
+
+

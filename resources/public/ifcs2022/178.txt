@@ -1,0 +1,36 @@
+Cluster Analysis and Genetic Risk Score in Age-Related Macular Degeneration - 
+the Coimbra Eye Study
+
+Rita Coimbra
+
+Age-related macular degeneration (AMD) is a complex multifactorial disease
+strongly influenced by a combination of genetic and environmental factors and it
+is the leading cause of severe vision loss in people over 55 years in developed 
+countries. To assess the individual AMD risk, a genetic risk score (GRS) weighted by the
+effect size of 52 genetic variants identified by the IAMDGC GWAS was calculated [1]. 
+Despite the significantly differences in GRS among controls and AMD cases, it
+was not possible to distinguish them based on GRS only.
+In this work we explore pathway-specific GRS for the complement system, ARMS2
+gene, lipid metabolism and extracellular (ECM) matrix remodelling in a sample of
+824 caucasian individuals from the central region of Portugal (Mira) [2]. To explore
+whether pathway-based genotype and environmental data can separate AMD subgroups, 
+we used k-medoids clustering algorithm with Gower distance. The silhouette
+coefficient was used to determine the optimal number of clusters.
+Four clusters were identified, with a similar median age and body mass index (BMI)
+in each cluster. The cluster with the highest GRS value for the complement system
+pathway was cluster 4, for the ARMS2 and the ECM pathways was cluster 2 and
+for lipid-based GRS were clusters 2 and 3. Cluster 4 has the highest overall GRS,
+strengthening the contribution of the complement system to the AMD genetic risk.
+Most severe AMD stages (intermediate and late AMD cases) were more prevalent in
+cluster 3. Despite the interesting results and to fully discriminate AMD subgroups,
+lifestyle and nutritional contribution should be included in the model.
+
+Keywords: age-related macular degeneration, genetic risk score, clustering
+
+References
+1. de Breuk, A. et al: Development of a Genotype Assay for Age-Related Macular Degeneration:
+   The EYE-RISK Consortium. Ophthalmology 128(11), 1604-1617 (2021)
+2. Farinha, C.V.L., Cachulo, M.L., Alves, D. et al: Incidence of Age-Related Macular Degeneration 
+   in the Central Region of Portugal: The Coimbra Eye Study - Report 5. Ophthalmic Res.
+   61(4), 226-235 (2019)
+

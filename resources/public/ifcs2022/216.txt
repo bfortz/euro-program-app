@@ -1,0 +1,34 @@
+Machine Learning Approach to Identify Factors That Influence Accident Severity
+
+Daniel Santos, Vitor Nogueira, José Saias, Paulo Quaresma, Paulo Infante,
+Gonçalo Jacinto, Anabela Afonso, Leonor Rego, Pedro Nogueira, Marcelo Silva,
+Rosalina Pisco Costa, Patrícia Gois, and Paulo Rebelo Manuel
+
+Since the twentieth century, road traffic accidents became a severe public health 
+concern, with deaths and injuries posing a serious threat to world health and a negative
+influence on social and economic progress. One of the primary goals of accident
+data analysis is to determine the main factors that contribute to a traffic accident.
+This study aims to create a Machine Learning approach capable of identifying the
+factors that influence accident severity (seriously injured/dead or lightly injured/no
+injured), supporting the analysis of accident data. A four-year traffic accident data set
+from 2016 to 2019 in the Portuguese district of Setúbal is used. Clustering, Random
+Forests and C5.0 rule models are some of the techniques used to select the most
+influential factors and represent them in rule sets. Results show that a rule-based
+model using the C5.0 algorithm can accurately identify the most relevant factors
+describing road accident severity. Factors such as accidents involving motorcycles
+and pedestrian running over are the most prominent factors in our data.
+
+Keywords: machine learning, road accident data, rule-based model
+
+
+
+
+
+
+
+
+
+
+
+
+

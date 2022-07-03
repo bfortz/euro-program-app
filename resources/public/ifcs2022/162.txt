@@ -1,0 +1,28 @@
+Adaptive Fuzzy Systems in Economics and Finance: Evaluating Interval Forecasts of
+High-Frequency Data
+
+Rosangela Ballini
+
+The forecast of the future movement of economic and financial variables assumes
+a central role for the composition of portfolios, risk management, asset pricing and
+investment analysis; therefore, the development of prediction methodologies is of
+fundamental importance. With the recent and rapid growth in the availability of
+financial information, especially at intraday frequencies, approaches to forecasting
+interval time series have gained prominence in the literature, since they comprise
+the construction of more informative forecasts, capable of capturing the fluctuations 
+of an asset, index or rate over the course of a transaction day, as opposed to
+techniques based on one-off anticipations. In general, forecast models have some
+practical limitations, such as linear structure, nonconsideration of market uncertainties, 
+restrictive hypotheses about the data, need for a large number of observations
+to estimate parameters, and inadequacy for the natural treatment of interval data. To
+address such limitations, fuzzy modeling has been proposed for forecasting interval
+time series. Adaptive fuzzy models are nonlinear, are able to update their structure
+and functionality according to data streams, and handle uncertainty from fuzzy sets.
+Thus, this approach allows the dynamic treatment of complex phenomena, as well as
+considering information affected by uncertainties, as is the case of financial markets.
+These approaches have been applied to different economies by forecasting stock
+prices, exchange rates, stock exchange indices and price volatility, as opposed to
+traditional univariate and multivariate econometric methods.
+
+Keywords: adaptive fuzzy systems, time series forecasting, high-frequency data
+

@@ -1,0 +1,45 @@
+Optimal Random Projection Trees Ensemble
+
+Nosheen Faiz, Adi Lausen, Metodi Metodiev, Zardad Khan, Berthold Lausen
+
+This paper develops the idea of creating an ensemble of accurate and diverse trees
+for improved classification accuracy: Optimal Random Projection Trees Ensemble
+(ORPTE), which is an extension of Optimal Trees Ensemble (OTE) [1]. Diversity
+in the base classification trees is introduced by the method of Random Projection
+as a dimensionality reduction tool that preserves pairwise distances between 
+observations [2]. A sufficiently large number of trees is grown on bootstrap samples by
+using the Random Forest algorithm, each generated on a random projection of the
+training data. For maintaining accuracy in the base models, trees are ranked based on
+their out-of-bag error estimates and a certain proportion of the top ranked trees are
+selected. The selected trees are integrated as an ensemble for predicting new/unseen
+data. The proposed method was assessed on 25 benchmark datasets against seven
+competitor methods in addition to a simulation study. The results demonstrate that
+the proposed method outperformed its competitors in most of the data sets and the
+simulation setup.
+
+Keywords: random projection, optimal trees, ensemble learning
+
+References
+1. Khan, Z., Gul, A., Perperoglou, A., Miftahuddin, M., Mahmoud, O., Adler, W., Lausen, B.:
+   Ensemble of optimal trees, random forest and random projection ensemble classification.
+   Advances in Data Analysis and Classification 14, 97–116 (2020)
+2. Cannings, T.J., Samworth, R.J.: Random projection ensemble classification. Journal of the
+   Royal Statistical Society B 79(4), 1–38 (2017)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

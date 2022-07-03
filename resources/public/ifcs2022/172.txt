@@ -1,0 +1,34 @@
+Uncovering Regions of Maximum Dissimilarity on Random Process Data
+
+Miguel de Carvalho and Gabriel Martos
+
+Everyday millions of data patterns flow around the world at unprecedented speed,
+thus leading to an explosion on the demand for modeling stochastic process data—
+such as time series, point processes, and functional data; each of these types of data
+plays a key role in machine learning, as can be seen, for instance, from the recent
+papers of [1], [2], and [3]. Hand in hand with this shock on demand arrived a pressing
+need for the development of data-intensive methods, techniques, and algorithms for
+learning and comparing random processes.
+In this talk, I will propose a statistical method that learns about regions with a
+certain volume, where the marginal attributes of two processes are less similar. The
+proposed methods are devised in full generality for the setting where the data of
+interest are themselves stochastic processes, and thus the proposed method can be
+used for pointing out the regions of maximum dissimilarity with a certain volume,
+in the contexts of functional data, time series, and point processes. The parameter
+functions underlying both stochastic processes of interest are modeled via a basis
+representation, and Bayesian inference is conducted via an integrated nested Laplace
+approximation. The numerical studies validate the proposed methods, and we showcase 
+their application with case studies on criminology, finance, and medicine.
+
+Keywords: functional parameters, multi-objective optimization, pairs of random processes, 
+          Kolmogorov metric, set function optimization, Youden J statistic
+
+References
+1. José R Berrendero, Beatriz Bueno-Larraz, and Antonio Cuevas. On Mahalanobis distance in
+   functional settings. J. Machine Learning Res., 21(9)cl, 1–33 (2020).
+2. Johann Faouzi and Hicham Janati. pyts: A python package for time series classification. J.
+   Machine Learning Res., 21(46), 1–6 (2020).
+3. Ganggang Xu, Ming Wang, Jiangze Bian, Hui Huang, Timothy R. Burch, Sandro C. Andrade,
+   Jingfei Zhang, and Yongtao Guan. Semi-parametric learning of structured temporal point
+   processes. J. Machine Learning Res., 21(192), 1–39 (2020).
+

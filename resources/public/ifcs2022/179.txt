@@ -1,0 +1,36 @@
+Natural Cubic Smoothing Splines for Latent Class Identification in Longitudinal Growth
+Trajectories
+
+Katerina M. Marcoulides and Laura Trinchera
+
+Latent growth curve modeling is regularly used to examine intra-individual changes
+over time, inter-individual differences in intra-individual changes over time, as well
+as a variety of other intra- and inter-individual disparities over time. In such models,
+the growth trajectories are usually modeled as linear functions. However, nonlinear
+patterns of change over time are quite common in social and behavioral science
+research. Recently Marcoulides and Khojasteh [2] proposed to use natural cubic
+smoothing splines to analyze non-linear longitudinal data. This approach has the
+main advantage of avoiding knot selection when using splines and avoids imposing
+overly restrictive assumptions that other non-linear modeling approaches often require. 
+One limitation is that all the sampled individuals in a given longitudinal study
+are assumed to rise from a single population. Traditional growth mixture modeling
+methods are useful when analyzing such samples with unobserved heterogeneity,
+though they still assume the growth trajectories to be the same for all individuals
+within a latent class [1]. During our presentation we will discuss a novel approach
+that uses derivatives of individual natural cubic smoothing spline functions and then,
+following some recent work by Marcoulides and Trinchera [3], applies a hierarchical 
+clustering algorithm to group or cluster individuals who follow similar growth
+trajectory patterns without requiring to define the number of classes a priori.
+
+Keywords: unobserved heterogeneity, SEM, latent class detection
+
+References
+1. Diallo, T. M. O., Morin, A.J.S., Lu, H.: Impact of misspecifications of the latent 
+  variancecovariance and residual matrices on the class enumeration accuracy of growth 
+  mixture models. Struct. Equ. Model. 23, 507–531 (2016)
+2. Marcoulides, K.M., Khojasteh, J.: Analyzing longitudinal data using natural cubic smoothing
+   splines. Struct. Equ. Model. 25, 965–971 (2018)
+3. Marcoulides, K.M., Trinchera, L.: Detecting unobserved heterogeneity in latent growth curve
+   models. Struct. Equ. Model. 26, 390–401 (2018)
+
+
