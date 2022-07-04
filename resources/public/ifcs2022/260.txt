@@ -1,0 +1,31 @@
+Prognosis of COVID-19 Patients by the Underlying Diseases and Drug Treatment in Korea
+
+Ho Kim and Taerim Lee
+
+Certain underlying diseases such as diabetic mellitus and hypertension
+are a risk factor for the severity and mortality of coronavirus disease (COVID-19)
+patients. Furthermore, both angiotensin converting enzyme inhibitors (ACEi) and
+angiotensin II receptor blockers (ARBs) are controversial at role in the process of
+COVID-19 cases. The aim of the study was to investigate whether underlying diseases 
+and taking ACEi/ARBs, affect the duration of hospitalization and mortality in patients 
+with confirmed COVID-19. Among the comorbidities, a history of hypertension (hazard 
+ratio [HR], 1.51; 95% confidence interval [CI], 1.056–2.158) and diabetes (HR, 1.867; 
+95% CI, 1.408–2.475) were associated significantly with mortality. Furthermore, heart 
+failure (HR, 1.391; 95% CI, 1.027–1.884), chronic obstructive pulmonary disease (HR, 
+1.615; 95% CI, 1.185–2.202), chronic kidney disease (HR, 1.451; 95% CI, 1.018–2.069), 
+mental disorder (HR, 1.61; 95% CI, 1.106–2.343), end stage renal disease (HR, 5.353; 
+95% CI, 2.185–13.12) were also associated significantly with mortality. The underlying 
+disease has increased the risk of mortality in patients with COVID-19. Diabetes, 
+hypertension, cancer, chronic kidney disease, heart failure, and mental disorders 
+increased mortality. Controversial whether taking ACEi/ARBs would benefit COVID-19 
+patients, in our study, patients taking ACEi/ARBs had a higher risk of mortality.
+
+Keywords: COVID-19; underlying disease; medical treatment
+
+References
+1. CDC COVID-19 Response Team; Chow, N.; Fleming-Dutra, K.; Gierke, R.; Hall, A.; Hughes, M.; 
+   Pilishvili, T.; Ritchey, M.; Ritchey, K.; Skoff, T.; et al. Preliminary estimates of the
+   prevalence of selected underlying health conditions among patients with coronavirus disease
+   2019—United States, February 12–March 28, 2020. Morb. Mortal. Wkly. Rep. 2020, 69, 382.
+
+

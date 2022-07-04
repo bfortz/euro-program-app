@@ -1,0 +1,28 @@
+Effect of Type 2 Diabetes and its Genetic Susceptibility on Severity and Mortality 
+of COVID-19 in UK Biobank
+
+Aeyeon Lee, Youngkwang Cho, Jun Li, Taesung Park, Wonil Chung, and Liming Liang
+
+Although Type 2 diabetes (T2D) have been known as one of the important risk
+factors for the severity and mortality of COVID-19, the effect of T2D and its genetic
+susceptibility on COVID-19 are largely unknown. We analyzed the population-based
+cohort data of 459, 188 individuals from UK Biobank with COVID-19 test results,
+individuals’ hospitalization data and death-related records during the period from
+March 11, 2020 to December 20, 2021. First, we investigated the association of
+T2D, and its genetic susceptibility with COVID-19 infection using multivariable
+logistic regression model. To capture overall genetic susceptibility for T2D, we 
+computed polygenic risk scores (PRS) based on summary statistics from UK Biobank.
+In the multivariable logistic models, we found that the odds ratio (OR) of T2D was
+1.555 (P = 3.49×10^(−86)) and OR of PRS for T2D with one-unit (= standard deviation)
+increase in PRS was 1.064 (P = 3.11 × 10^(−12)), indicating the roles of T2D-related
+genetics in the pathogenesis of COVID-19 infection. Next, we performed multivariable 
+Cox proportional hazard models to investigate the effect of T2D patients infected
+with COVID-19 on the survival times. The estimated survival curves and pairwise
+log-rank tests showed that the estimated hazard for COVID-19 infected T2D patients
+were 4.67 times (P = 9.88×10^(−324)) and 2.58 times (P = 6.20×10^(−231)) higher than
+individuals without COVID-19 infection and T2D, respectively and the hazard ratio
+(HR) of PRS for T2D with one-unit increase in PRS was 1.088 (P = 4.76 × 10^(−14)).
+Furthermore, we found the mortality of COVID-19 infected T2D patients was dramatically 
+increased compared to T2D patients not infected with COVID-19 and the mortality of 
+individuals with high genetic susceptibility for T2D was increased as well.
+

@@ -1,0 +1,26 @@
+Significance Mode Analysis (SigMA) for hierarchical structures
+
+Sebastian Ratzenböck, Torsten Möller, Josefa E. Großschedl, João Alves,
+Immanuel M. Bomze, and Stefan Meingast
+
+We present an innovative clustering method, Significance Mode Analysis (SigMA),
+to extract co-spatial and co-moving stellar populations from large-scale surveys such
+as ESA Gaia. The method studies the topological properties of the density field in the
+multidimensional phase space. The set of critical points in the density field gives rise
+to the cluster tree, a hierarchical structure in which leaves correspond to modes of
+the density function. Typically, however, non-parametric density estimation methods
+lead to an over-clustering of the input data. We propose an interpretable cluster tree
+pruning strategy by determining minimum energy paths between pairs of neighboring modes 
+directly in the input space. We test for deviations from unimodality along these paths, 
+which provides a measure of significance for each pair of clusters.
+  We apply SigMA to Gaia data of the closest young stellar association to Earth,
+Scorpio-Centaurus (Sco-Cen), and find 48 co-moving clusters in Sco-Cen. These
+clusters are independently validated using astrophysical knowledge, to a certain extent, 
+by their association with massive stars too bright for Gaia, both unknown to SigMA. Our 
+findings suggest that Sco-Cen is more actively star-forming and dynamically richer than 
+previously thought. This application demonstrates that SigMA allows for an accurate census 
+of young populations, quantify their dynamics, and reconstruct the recent star formation 
+history of the local Milky Way.
+
+Keywords: Mode seeking, cluster tree, stellar groups
+

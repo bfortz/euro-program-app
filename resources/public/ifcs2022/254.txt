@@ -1,0 +1,35 @@
+A Deep Learning Analytics to Detect Dental Caries
+
+Taerim Lee
+
+Deep Learning Analytics uses predictive models that provide actionable information
+for a better prognosis of dental caries. It is a multidisciplinary approach based on 
+dental caries data processing, AI technology-learning enhancement, dental caries data
+mining, and visualization. Three key components need further clarification to help
+them effectively apply deep learning in dental caries prognosis to explain the methods
+for conducting deep learning, the benefits of using deep learning, and the challenges
+of using learning analytics in dental caries. Discover significant socio-demographic
+factors and microbiologic factors to detect the prognosis of dental caries. Compare
+the efficiency with other prognosis models using support vector machine, linear
+discriminant, random forest, logistic regression by ROC curves using ICD-9 codes
+for dental caries, 365 boys and 340 girl cohort with dental caries and normal group
+together. All available data variables required to develop and test models were 
+identified from a sociodemographic and microbiological records database. Data on 500
+records among 705 was utilized for the development of the model and on 205 patients
+utilized to perform cross-validation analysis of the models. Socio-demographic data
+such as presenting signs & symptoms, presence of caries, microbiologic data, and
+corresponding diagnosis and outcomes were collected. Dental data was collected
+for each target group was utilized to retrospectively ascertain optimal preventive
+management for dental caries. Clinical presentations and corresponding treatment
+were utilized as training examples.
+
+Keywords: deep learning analytics; support vector machine; random forest
+
+References
+1. Krizhevsky, A., Sutskever, I. & Hinton, G. ImageNet classification with deep convolutional
+   neural networks. In Proc. Advances in Neural Information Processing Systems 25 1090–1098
+   (2012)
+2. Sutskever, I. Vinyals, O. & Le. Q. V. Sequence to sequence learning with neural networks. 
+   In Proc. Advances in Neural Information Processing Systems 27 3104–3112 (2014)
+
+

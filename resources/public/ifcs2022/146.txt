@@ -1,0 +1,34 @@
+Comparison of survival prediction models for pancreatic cancer: Cox model vs. machine
+learning models
+
+Hyunsuk Kim, Taesung Park and Seungyeoun Lee
+
+A survival prediction model has been recently developed to evaluate the prognosis
+of nonmetastatic resected pancreatic ductal adenocarcinoma (PDAC) based on a Cox
+model using two nationwide database: Surveillance, Epidemiology and End Results
+(SEER) and Korea Tumor Registry System-Biliary Pancreas (KOTUS-BP). In this
+study, we applied the two machine learning methods such as random survival forests
+(RSF) and support vector machines (SVMs) for survival analysis, and compared
+the prediction performance with the Cox model, RSF and SVMs using SEER and
+KOTUS-BP datasets. For the model development and evaluation, three different
+schemes were conducted. First, we utilized data from SEER for model development
+and used data from KOTUS-BP for external evaluation. Secondly, these two datasets
+were swapped by taking data from KOTUS-BP for model development and data from
+SEER for external evaluation. Finally, we mixed these two datasets half and half and
+utilized the mixed datasets as either a model development or a validation. We used
+9,624 patients from SEER and 3,281 patients from KOTUS-BP for constructing a
+prediction model and only seven covariates including age, sex, histologic differentiation, 
+adjuvant treatment, resection margin status, AJCC 8th T-stage and N-stage were
+utilized due to the difference between sets of covariates in two datasets. Comparing
+the three schemes for constructing survival prediction models, the performance of
+Cox model, RSF and SVM is better when using mixed dataset rather than when
+using unmixed dataset. When using mixed dataset, the C-index, 1-year, 2-year, and
+3-year time-dependent AUCs for the Cox model were 0.644, 0.698, 0.680, and 0.687,
+respectively. Similarly, the C-index, 1-year, 2-year, and 3-year time-dependent AUCs
+for RSF were 0.634, 0.682, 0.668, and 0.678, respectively while those for SVM were
+0.623, 0.685, 0.635, and 0.626, respectively. In conclusion, the Cox model performs
+slightly better than the two machine learning methods such as RSF and SVM. This
+is probably because only seven clinical variables were available for constructing the
+prediction model.
+
+Keywords: Cox midel, random survival forest, support vector machines

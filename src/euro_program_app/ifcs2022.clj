@@ -170,7 +170,7 @@
   (reduce (fn [acc [id s]] (update-in acc [(:timeslot s) :sessions] #(conj % id))) timeslots sessions))
 
 (def streams
-  (reduce (fn [acc [id s]] (println s acc) (update-in acc [(:stream s) :sessions] #(conj % id))) streams sessions))
+  (reduce (fn [acc [id s]] (update-in acc [(:stream s) :sessions] #(conj % id))) streams sessions))
 
 (defrecord Abstract [id title authors abstract session keywords])
 
