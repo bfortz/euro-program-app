@@ -1,7 +1,6 @@
 Application of Artificial Intelligence (AI) in Flood Risk Forecasting
 
-Minh Quang Tran, Ana Margarida Bento, Elisabete Teixeira, Hélder Sousa, and
-José Campos e Matos
+Minh Quang Tran, Ana Margarida Bento, Elisabete Teixeira, Hélder Sousa, and José Campos e Matos
 
 Floods are the most serious natural disasters currently, directly affecting people’s
 daily lives and causing many serious effects. The number of annual floods is increasing 

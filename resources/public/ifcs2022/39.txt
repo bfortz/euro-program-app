@@ -1,8 +1,7 @@
 Using Clustering and Machine Learning Methods to Provide Intelligent Grocery
 Shopping Recommendations
 
-Nail Chabane, Mohamed Achraf Bouaoune, Reda Amir Sofiane Tighilt, Bogdan
-Mazoure, Nadia Tahiri, and Vladimir Makarenkov
+Nail Chabane, Mohamed Achraf Bouaoune, Reda Amir Sofiane Tighilt, Bogdan Mazoure, Nadia Tahiri, and Vladimir Makarenkov
 
 Nowadays, grocery lists make part of shopping habits of many customers. With the
 popularity of e-commerce and plethora of products and promotions available on

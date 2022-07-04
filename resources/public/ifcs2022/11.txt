@@ -1,6 +1,6 @@
 Similarity Forest for Time Series Classification
 
-Tomasz Gorecki, Maciej Luczak, and Pawe l Piasecki
+Tomasz Gorecki, Maciej Luczak, and Pawel Piasecki
 
 The idea of similarity forest comes from Sathe and Aggarwal [1] and is derived
 from random forest. Random forests proved to be one of the most excellent methods,

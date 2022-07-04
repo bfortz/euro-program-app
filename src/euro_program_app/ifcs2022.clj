@@ -180,7 +180,7 @@
           [title authors s] (s/split s #"\r\n\r\n" 3)
           [a1 s] (when s (s/split s #"\r\nKeywords: "))
           [keywords a2] (when s (s/split s #"\r\n\r\n"))
-          [authors1 authors2] (s/split authors #"[,\r\n ]*and ")
+          [authors1 authors2] (s/split authors #"[,\r\n ]+and ")
           authors (conj (s/split authors1 #",") authors2)
           authors (map s/trim (filter identity authors))
           keywords (when keywords (map (comp s/capitalize s/trim) (s/split keywords #",")))
@@ -252,5 +252,6 @@
   (update {:k 2} :k inc)
   (process-abstract [282 1])
   (do (dorun (map process-abstract (range 1 285))) nil)
+  (get user-sessions 1)
   )
 
