@@ -63,7 +63,7 @@
    "RM" (stream "Robust Methods") 
    "SNA" (stream "Social Network Analysis") 
    "STDA" (stream "Spatial-Temporal Data Analysis") 
-   "SPE" (stream "SPE") 
+   "SPE" (stream "Classiﬁcation Applied to Biological Sciences") 
    "SLDM" (stream "Statistical Learning and Data Mining") 
    "SEM" (stream "Statistics and Econometric Methods") 
    "SC" (stream "Supervised Classification") 
@@ -84,95 +84,94 @@
       (map inc (range)) 
       (sort-by #(+ (* 1000 (:timeslot %)) (:track %)) 
                (map #(apply session %) 
-                    [["Analysis of Data Streams" 1 [] 1 [282] 1]
-                     ["Categorical Data Analysis and Visualization" 1 [] 2 [283] 1]
+                    [["Analysis of Data Streams" 1 [] 1 [] 1]
+                     ["Categorical Data Analysis and Visualization" 1 [] 2 [] 1]
                      ["Opening Session" 2 [] 3 [] 0]
-                     ["Keynote Dianne Cook" 2 [] 4 [256] 0]
-                     ["Symbolic Data Analysis 1" "SDA" [] 5 [157, 187, 275] 5]
-                     ["Functional Data Analysis 1" "FDA" [] 5 [47, 85, 235] 2]
-                     ["Social Network Analysis 1" "SNA" [] 5 [13, 38, 195] 3]
-                     ["50 Years of Biplots 1" "BIP" [] 5 [75, 158, 240] 4]
-                     ["Statistical Learning and Data Mining 1" "SLDM" [] 5 [99, 105, 144] 8]
-                     ["Clustering 1" "CL" [] 5 [50, 160, 237] 6]
-                     ["Robust Methods 1" "RM" [] 5 [138, 148, 232] 7]
-                     ["Model-based Clustering 1" "MBC" [] 5 [6, 18, 76] 1]
-                     ["Supervised Machine Learning" "S-ML" [] 5 [40, 98] 9]
-                     ["Machine Learning 1" "ML" [] 5 [129, 154, 173] 10]
-                     ["Symbolic Data Analysis 2" "SDA" [] 6 [56, 59, 86] 5]
-                     ["Functional Data Analysis 2" "FDA" [] 6 [84, 135, 226] 2]
-                     ["Supervised Classification 1" "SC" [] 6 [126, 205, 230] 4]
-                     ["Statistics and Econometric Methods" "SEM" [] 6 [61, 97, 141] 9]
-                     ["Statistical Learning and Data Mining 2" "SLDM" [] 6 [27, 131, 133] 8]
-                     ["Clustering 2" "CL" [] 6 [10, 25, 184 ] 6]
-                     ["Robust Methods 2" "RM" [] 6 [90, 114, 132] 7]
-                     ["Model-based Clustering 2" "MBC" [] 6 [24, 55, 79] 1]
-                     ["Data Science in Social Sciences 1" "DS-SS" [] 6 [33, 91, 153] 3]
-                     ["Machine Learning 2" "ML" [] 6 [11, 172, 189] 10]
-                     ["Classification of Time Series" 3 [] 7 [81, 149, 167] 1]     
-                     ["Benchmarking Challenge" 3 [] 7 [264, 265, 268, 273] 10]
-                     ["Dimension Reduction" "DR" [] 8 [71, 102, 214, 219] 10]
-                     ["Functional Data Analysis 3" "FDA" [] 8 [21, 47, 152, 177] 2]
-                     ["Time Series" "TS" [] 8 [7, 109, 164, 258] 5] 
-                     ["Supervised Classification - Trees" "SCT" [] 8 [82, 210, 239, 242] 4]
-                     ["Data Science in Health Sciences" "DS-HS" [] 8 [31, 125, 254, 255] 8]
-                     ["Clustering 3" "CL" [] 8 [34, 37, 41] 6]
-                     ["Compositional Data Analysis 1" "CoDA" [] 8 [14, 44, 201] 9]
-                     ["Model-based Clustering 3" "MBC" [] 8 [28, 257, 198, 32] 1]
-                     ["Text Mining" "TM" [] 8 [30, 48, 168, 171] 3]
-                     ["Symbolic Data Analysis 3" "SDA" [] 9 [107, 119, 209] 5]
-                     ["Functional Data Analysis 4" "FDA" [] 9 [78, 155, 212] 2]
-                     ["Optimization in Classification and Clustering 1" "OCC" [] 9 [77, 127, 231] 8]
-                     ["50 Years of Biplots 2" "BIP" [] 9 [96, 145, 222] 4]
-                     ["Data Science in Economics and Finance 1" "DS-EF" [] 9 [121, 139, 185] 7]
-                     ["Clustering 4" "CL" [] 9 [29, 192, 221] 6]
-                     ["Compositional Data Analysis 2" "CoDA" [] 9 [170, 174] 9]
-                     ["Model-based Clustering 4" "MBC" [] 9 [19, 123, 204] 1]
-                     ["Data Science in Social Sciences 2" "DS-SS" [] 9 [49, 113, 180] 3]
-                     ["Machine Learning 3" "ML" [] 9 [2, 112, 270] 10]
-                     ["Poster Session 1" 4 [] 10 [45, 54, 57, 58, 67, 73, 88, 106, 137, 140, 176, 178, 183, 218] 1]
-                     ["Benchmarking Challenge Award" 2 [] 11 [] 0]
-                     ["IFCS Awards" 2 [] 12 [] 0]
-                     ["Keynote Edwin Diday" 2 [] 13 [281] 0]
-                     ["Keynote Charles Bouveyron" 2 [] 14 [272] 0]
-                     ["COVID Data Analysis" 3 [] 15 [206, 260, 262] 1]
-                     ["Categorical Data Analysis and Visualization" 3 [] 15 [100, 117, 151] 10]
-                     ["Presidential Address Angela Montanari" 2 [] 16 [284] 0]
-                     ["Symbolic Data Analysis 4" "SDA" [] 17 [108, 147, 186] 5]
-                     ["Functional Data Analysis 5" "FDA" [] 17 [43, 74, 134] 2]
-                     ["Interpretable Machine Learning" "IML" [] 17 [190, 193, 250] 10]
-                     ["50 Years of Biplots 3" "BIP" [] 17 [83, 103, 251] 4]
-                     ["Optimization in Classification and Clustering 2" "OCC" [] 17 [15, 143, 188] 8]
-                     ["Clustering 5" "CL" [] 17 [64, 95, 225] 6]
-                     ["Robust Methods 3" "RM" [] 17 [5, 208, 217] 7]
-                     ["Model-based Clustering 5" "MBC" [] 17 [26, 93] 1]
-                     ["Spatial-Temporal Data Analysis 1" "STDA" [] 17 [122, 181, 267] 3]
-                     ["SPE" "SPE" [] 17 [128, 130, 211] 9]
-                     ["Keynote Genevera Allen" 2 [] 18 [271] 0]
-                     ["Poster Session 2" 4 [] 19 [68, 101, 194, 213, 215, 216, 233, 234, 244, 249, 252, 269, 277, 278] 1]
-                     ["Data Science for Business and Marketing" "DS-BM" [] 20 [39, 51, 159, 163] 4]
-                     ["Functional Data Analysis 6" "FDA" [] 20 [65, 169, 202, 253, 280] 2]
-                     ["Social Network Analysis 2" "SNA" [] 20 [36, 224, 243, 245] 3]
-                     ["Data Science in Education" "DS-E" [] 20 [156, 241, 247, 248] 9]
-                     ["Statistical Learning and Data Mining 3" "SLDM" [] 20 [72, 87, 89, 146] 8]
-                     ["Clustering 6" "CL" [] 20 [16, 17, 23] 6]
-                     ["Robust Methods 4" "RM" [] 20 [42, 94, 116, 223] 7]
-                     ["Model-based Clustering 6" "MBC" [] 20 [8, 12, 110] 1]
-                     ["Time Series Classification" "TSC" [] 20 [1, 22, 118, 227] 10]
+                     ["Keynote Dianne Cook" 2 [1156856374] 4 [] 0]
+                     ["Symbolic Data Analysis 1" "SDA" [1755792008] 5 [157, 187, 275] 5]
+                     ["Functional Data Analysis 1" "FDA" [-1468429205] 5 [47, 85, 235] 2]
+                     ["Social Network Analysis 1" "SNA" [227631459] 5 [13, 38, 195] 3]
+                     ["50 Years of Biplots 1" "BIP" [-860309800] 5 [75, 158, 240] 4]
+                     ["Statistical Learning and Data Mining 1" "SLDM" [-1928671837] 5 [99, 105, 144] 8]
+                     ["Clustering 1" "CL" [951086089] 5 [50, 160, 237] 6]
+                     ["Robust Methods 1" "RM" [12998771] 5 [138, 148, 232] 7]
+                     ["Model-based Clustering 1" "MBC" [1348059205] 5 [6, 18, 76] 1]
+                     ["Supervised Machine Learning" "S-ML" [1518611897] 5 [40, 98] 9]
+                     ["Machine Learning 1" "ML" [511666866] 5 [129, 154, 173] 10]
+                     ["Symbolic Data Analysis 2" "SDA" [1755792008] 6 [56, 59, 86] 5]
+                     ["Functional Data Analysis 2" "FDA" [-1854364483] 6 [84, 135, 226] 2]
+                     ["Supervised Classification 1" "SC" [1833189783] 6 [126, 205, 230] 4]
+                     ["Statistics and Econometric Methods" "SEM" [636652566] 6 [61, 97, 141] 9]
+                     ["Statistical Learning and Data Mining 2" "SLDM" [-1820902260] 6 [27, 131, 133] 8]
+                     ["Clustering 2" "CL" [-2076635564] 6 [10, 25, 184 ] 6]
+                     ["Robust Methods 2" "RM" [-1517016318] 6 [90, 114, 132] 7]
+                     ["Model-based Clustering 2" "MBC" [-1971974347] 6 [24, 55, 79] 1]
+                     ["Data Science in Social Sciences 1" "DS-SS" [34861845] 6 [33, 91, 153] 3]
+                     ["Machine Learning 2" "ML" [658595747] 6 [11, 172, 189] 10]
+                     ["Classification of Time Series" 3 [-1875806151] 7 [81, 149, 167] 1]     
+                     ["Benchmarking Challenge" 3 [1244692504] 7 [264, 265, 268, 273] 10]
+                     ["Dimension Reduction" "DR" [-1304129030] 8 [71, 102, 214, 219] 10]
+                     ["Functional Data Analysis 3" "FDA" [644632721] 8 [21, 47, 152, 177] 2]
+                     ["Time Series" "TS" [1034765172] 8 [7, 109, 164, 258] 5] 
+                     ["Supervised Classification - Trees" "SCT" [2077906742] 8 [82, 210, 239, 242] 4]
+                     ["Data Science in Health Sciences" "DS-HS" [-1090059568] 8 [31, 125, 254, 255] 8]
+                     ["Clustering 3" "CL" [1244692504] 8 [34, 37, 41] 6]
+                     ["Compositional Data Analysis 1" "CoDA" [1400430920] 8 [14, 44, 201] 9]
+                     ["Model-based Clustering 3" "MBC" [-1770841430] 8 [28, 257, 198, 32] 1]
+                     ["Text Mining" "TM" [-894655016] 8 [30, 48, 168, 171] 3]
+                     ["Symbolic Data Analysis 3" "SDA" [1332227302] 9 [107, 119, 209] 5]
+                     ["Functional Data Analysis 4" "FDA" [-774412915] 9 [78, 155, 212] 2]
+                     ["Optimization in Classification and Clustering 1" "OCC" [2039042684] 9 [77, 127, 231] 8]
+                     ["50 Years of Biplots 2" "BIP" [-1731816409] 9 [96, 145, 222] 4]
+                     ["Data Science in Economics and Finance 1" "DS-EF" [-1484986528] 9 [121, 139, 185] 7]
+                     ["Clustering 4" "CL" [-990593308] 9 [29, 192, 221] 6]
+                     ["Compositional Data Analysis 2" "CoDA" [-1172329060] 9 [170, 174] 9]
+                     ["Model-based Clustering 4" "MBC" [719400037] 9 [19, 123, 204] 1]
+                     ["Data Science in Social Sciences 2" "DS-SS" [358996414] 9 [49, 113, 180] 3]
+                     ["Machine Learning 3" "ML" [1290924990] 9 [2, 112, 270] 10]
+                     ["Poster Session 1" 4 [] 10 [45, 54, 57, 58, 67, 73, 88, 106, 137, 140, 176, 178, 183, 218] 12]
+                     ["Benchmarking Challenge Award" 2 [1833189783] 11 [] 0]
+                     ["IFCS Awards" 2 [-1633765519] 12 [] 0]
+                     ["Keynote Edwin Diday" 2 [-1633765519] 13 [281] 0]
+                     ["Keynote Charles Bouveyron" 2 [211672853] 14 [272] 0]
+                     ["COVID Data Analysis" 3 [-180899592] 15 [206, 260, 262] 1]
+                     ["Categorical Data Analysis and Visualization" 3 [-1746059320] 15 [100, 117, 151] 10]
+                     ["Presidential Address Angela Montanari" 2 [499089750] 16 [284] 0]
+                     ["Symbolic Data Analysis 4" "SDA" [-638861211] 17 [108, 147, 186] 5]
+                     ["Functional Data Analysis 5" "FDA" [1216026640] 17 [43, 74, 134] 2]
+                     ["Interpretable Machine Learning" "IML" [1183902538] 17 [190, 193, 250] 10]
+                     ["50 Years of Biplots 3" "BIP" [-1540630165] 17 [83, 103, 251] 4]
+                     ["Optimization in Classification and Clustering 2" "OCC" [231349039] 17 [15, 143, 188] 8]
+                     ["Clustering 5" "CL" [99034026] 17 [64, 95, 225] 6]
+                     ["Robust Methods 3" "RM" [-1326682421] 17 [5, 208, 217] 7]
+                     ["Model-based Clustering 5" "MBC" [-544228136] 17 [26, 93] 1]
+                     ["Spatial-Temporal Data Analysis 1" "STDA" [1973313263] 17 [122, 181, 267] 3]
+                     ["Classiﬁcation Applied to Biological Sciences" "SPE" [-530722243, -1046537934] 17 [128, 130, 211] 9]
+                     ["Keynote Genevera Allen" 2 [459379652] 18 [271] 0]
+                     ["Poster Session 2" 4 [] 19 [68, 101, 194, 213, 215, 216, 233, 234, 244, 249, 252, 269, 277, 278] 12]
+                     ["Data Science for Business and Marketing" "DS-BM" [-1858407424] 20 [39, 51, 159, 163] 4]
+                     ["Functional Data Analysis 6" "FDA" [2000451620] 20 [65, 169, 202, 253, 280] 2]
+                     ["Social Network Analysis 2" "SNA" [331192588] 20 [36, 224, 243, 245] 3]
+                     ["Data Science in Education" "DS-E" [1130331529] 20 [156, 241, 247, 248] 9]
+                     ["Statistical Learning and Data Mining 3" "SLDM" [-1820902260] 20 [72, 87, 89, 146] 8]
+                     ["Clustering 6" "CL" [476799132] 20 [16, 17, 23] 6]
+                     ["Robust Methods 4" "RM" [-1326682421] 20 [42, 94, 116, 223] 7]
+                     ["Model-based Clustering 6" "MBC" [-352737693] 20 [8, 12, 110] 1]
+                     ["Time Series Classification" "TSC" [1111807754] 20 [1, 22, 118, 227] 10]
                      ["IFCS Council meeting" 5 [] 21 [] 11]
-                     ["Dimension Reduction" 3 [] 22 [200, 203, 220] 1]
-                     ["Explainable Machine Learning" 3 [] 22 [259, 274, 279] 10]
-                     ["Dimension Reduction & Clustering" "DR+Cl" [] 23 [63, 66, 166] 6]
-                     ["Functional Data Analysis 7" "FDA" [] 23 [92, 124, 263] 2]
-                     ["Supervised Classification 2" "SC" [] 23 [104, 115, 175] 4]
-                     ["Model-based Clustering for Time Series" "MBC-TS" [] 23 [70, 136, 179] 4]
-                     ["Optimization in Classification and Clustering 3" "OCC" [] 23 [182, 199, 276] 8]
-                     ["Data Science in Economics and Finance 2" "DS-EF" [] 23 [35, 162, 197] 7]
-                     ["Data Science in Biology" "DS-B" [] 23 [111, 161, 238] 9]
-                     ["Spatial-Temporal Data Analysis 2" "STDA" [] 23 [69, 120, 142] 3]
-                     ["Machine Learning 4" "ML" [] 23 [4, 191, 196] 10]
-                     ["Keynote João Gama" 2 [] 24 [62] 0]
-                     ["Closing Session" 2 [] 25 [] 0]
-                     ])))))
+                     ["Dimension Reduction" 3 [-142218481] 22 [200, 203, 220] 1]
+                     ["Explainable Machine Learning" 3 [-993048863] 22 [259, 274, 279] 10]
+                     ["Dimension Reduction & Clustering" "DR+Cl" [-954358545] 23 [63, 66, 166] 6]
+                     ["Functional Data Analysis 7" "FDA" [-1841188346] 23 [92, 124, 263] 2]
+                     ["Supervised Classification 2" "SC" [-1481632887] 23 [104, 115, 175] 4]
+                     ["Model-based Clustering for Time Series" "MBC-TS" [-75708338] 23 [70, 136, 179] 4]
+                     ["Optimization in Classification and Clustering 3" "OCC" [291261695] 23 [182, 199, 276] 8]
+                     ["Data Science in Economics and Finance 2" "DS-EF" [-1671994733] 23 [35, 162, 197] 7]
+                     ["Data Science in Biology" "DS-B" [998975565] 23 [111, 161, 238] 9]
+                     ["Spatial-Temporal Data Analysis 2" "STDA" [1973313263] 23 [69, 120, 142] 3]
+                     ["Machine Learning 4" "ML" [198167896] 23 [4, 191, 196] 10]
+                     ["Keynote João Gama" 2 [591521497] 24 [62] 0]
+                     ["Closing Session" 2 [] 25 [] 0]])))))
 
 (def timeslots
   (reduce (fn [acc [id s]] (update-in acc [(:timeslot s) :sessions] #(conj % id))) timeslots sessions))
@@ -212,7 +211,7 @@
 (def kw->id (zipmap keyword-names (map inc (range))))
 
 (def abstracts
-  (map #(update %1 :keywords (fn [kws] (map (fn [k] (get kw->id k)) kws))) abstracts))
+  (map #(update %1 :keywords (fn [kws] (map (fn [k] (kw->id k)) kws))) abstracts))
 
 (defn add-session-to-keywords [acc a]
   (reduce #(update %1 %2 (fn [s] (sort (conj s (:session a))))) acc (:keywords a)))
@@ -221,38 +220,48 @@
   (reduce add-session-to-keywords {} abstracts))
 
 (def keywords
-  (zipmap (map inc (range)) (map #(into {} (Keyword. % (kw-sessions (get kw->id %)))) keyword-names)))
+  (zipmap (map inc (range)) (map #(into {} (Keyword. % (kw-sessions (kw->id %)))) keyword-names)))
 
 (defrecord User [firstname lastname sessions])
 
 (def user-names 
-  (sort (reduce #(union %1 (set (:authors %2))) #{} abstracts)))
+  (sort
+    (reduce 
+      #(conj %1 %2)
+      (reduce #(union %1 (set (:authors %2))) #{} abstracts)
+      ["Nema Dean" "Matthijs Warrens" "Herbert Lee" "Utkarsh Dang" "Charles Taylor" "Krzysztof Jajuga" "Hien Nguyen" "Laura Palagi" "José G. Dias" "Paula Brito" "Sónia Dias" "Filipe Marques" "Rebecca Nugent" "Pedro Duarte Silva"])))
 
-(def user->id (zipmap user-names (map inc (range))))
+(def user->id (zipmap user-names (map hash user-names)))
 
 (def abstracts
-  (map #(update %1 :authors (fn [authors] (map (fn [k] (get user->id k)) authors))) abstracts))
+  (map #(update %1 :authors (fn [authors] (map (fn [k] (user->id k)) authors))) abstracts))
 
 (defn add-session-to-users [acc a]
-  (reduce #(update %1 %2 (fn [s] (distinct (conj s (:session a))))) acc (:authors a)))
+  (reduce #(update %1 %2 (fn [s] (sort (distinct (conj s (:session a)))))) acc (:authors a)))
+
+(defn add-session-chair-to-users [acc [id s]]
+  (reduce #(update %1 %2 (fn [s] (distinct (conj s id)))) acc (:chairs s)))
+
+(def user-chairs
+  (reduce add-session-chair-to-users {} sessions))
 
 (def user-sessions
-  (reduce add-session-to-users {} abstracts))
+  (reduce add-session-to-users user-chairs abstracts))
 
 (defn create-user [uname]
   (let [[firstname lastname] (s/split uname #" " 2)
-        sessions (user-sessions (get user->id uname))]
+        sessions (user-sessions (user->id uname))]
     (into {} (User. firstname lastname sessions))))
 
 (def users
-  (zipmap (map inc (range)) (map create-user user-names)))
+  (zipmap (map hash user-names) (map create-user user-names)))
 
 (def papers (zipmap (map :id abstracts) abstracts))
 
 (defrecord Room [room])
 
 (def rooms 
-  (zipmap (range) (map #(into {} (Room. %)) ["Grand Hall" "118" "113" "213" "260" "115" "135" "159" "211" "215" "218" "Council Room"])))
+  (zipmap (range) (map #(into {} (Room. %)) ["Grand Hall" "118" "113" "213" "260" "115" "135" "159" "211" "215" "218" "Council Room" "Main Hall, Ground Floor"])))
 
 (defrecord Program [timeslots streams sessions papers keywords users rooms])
 
@@ -265,6 +274,6 @@
   (update {:k 2} :k inc)
   (process-abstract [282 1])
   (do (dorun (map process-abstract (range 1 285))) nil)
-  (get user-sessions 1)
+  (users 1001)
   )
 

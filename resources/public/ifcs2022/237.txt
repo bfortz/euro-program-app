@@ -1,7 +1,6 @@
 Significance Mode Analysis (SigMA) for hierarchical structures
 
-Sebastian Ratzenböck, Torsten Möller, Josefa E. Großschedl, João Alves,
-Immanuel M. Bomze, and Stefan Meingast
+Sebastian Ratzenböck, Torsten Möller, Josefa E. Großschedl, João Alves, Immanuel Bomze, and Stefan Meingast
 
 We present an innovative clustering method, Significance Mode Analysis (SigMA),
 to extract co-spatial and co-moving stellar populations from large-scale surveys such

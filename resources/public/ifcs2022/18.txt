@@ -1,6 +1,6 @@
 An MML Embedded Approach for Estimating the Number of Clusters
 
-Claudia Silvestre, Margarida G.M.S. Cardoso, and Mário Figueiredo
+Claudia Silvestre, Margarida Cardoso, and Mário Figueiredo
 
 Assuming that the data originate from a finite mixture of multinomial distributions,
 we study the performance of an integrated Expectation Maximization (EM) algorithm

@@ -1,6 +1,6 @@
 Industry Sector Detection in Legal Articles Using Transformer-Based Deep Learning
 
-Hui Yang, Stella Hadjiantoni, Yunfei Long, Ruta Petraitytè, and Berthold Lausen ˙
+Hui Yang, Stella Hadjiantoni, Yunfei Long, Ruta Petraitytè, and Berthold Lausen
 
 Industry analysis, which identifies multiple industry sectors hidden in massive legal
 texts, could benefit greatly to business activities of legal professions such as 

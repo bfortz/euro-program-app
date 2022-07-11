@@ -1,6 +1,6 @@
 Hierarchies and Weak-Hierarchies as Interval Convexities
 
-P. Bertrand and J. Diatta
+Patrice Bertrand and Jean Diatta
 
 There are several ways to characterize a hierarchy, one being a collection of nonempty
 subsets that are convex according to a type of interval function. This characterization

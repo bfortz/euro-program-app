@@ -1,6 +1,6 @@
 The Clustering Performance of a Weighted Combined Distance Between Time Series
 
-Margarida G. M. S. Cardoso, Ana Alexandra Martins, and João Lagarto
+Margarida Cardoso, Ana Alexandra Martins, and João Lagarto
 
 Recently, [1], we proposed a new dissimilarity measure between time series - COMB,
 a uniform convex combination of four (normalized) distance measures: Euclidean;

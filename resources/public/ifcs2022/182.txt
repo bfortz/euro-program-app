@@ -1,6 +1,6 @@
 True Sparsity Approaches in Classification via Conic Optimization
 
-Immanuel M. Bomze and Bo Peng
+Immanuel Bomze and Bo Peng
 
 Pursuing sparsity is an important issue in all classification tasks, in particular 
 in view of the nowadays increasing popular move towards explainable machine learning.
