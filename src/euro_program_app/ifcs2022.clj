@@ -84,10 +84,10 @@
       (map inc (range)) 
       (sort-by #(+ (* 1000 (:timeslot %)) (:track %)) 
                (map #(apply session %) 
-                    [["Analysis of Data Streams" 1 [] 1 [] 1]
+                    [["Analysis of Data Streams" 1 [] 1 [282] 1]
                      ["Categorical Data Analysis and Visualization" 1 [] 2 [] 1]
-                     ["Opening Session" 2 [] 3 [] 0]
-                     ["Keynote Dianne Cook" 2 [1156856374] 4 [] 0]
+                     ["Opening Session" 2 [] 3 [283] 0]
+                     ["Keynote Dianne Cook" 2 [1156856374] 4 [256] 0]
                      ["Symbolic Data Analysis 1" "SDA" [1755792008] 5 [157, 187, 275] 5]
                      ["Functional Data Analysis 1" "FDA" [-1468429205] 5 [47, 85, 235] 2]
                      ["Social Network Analysis 1" "SNA" [227631459] 5 [13, 38, 195] 3]
@@ -103,7 +103,7 @@
                      ["Supervised Classification 1" "SC" [1833189783] 6 [126, 205, 230] 4]
                      ["Statistics and Econometric Methods" "SEM" [636652566] 6 [61, 97, 141] 9]
                      ["Statistical Learning and Data Mining 2" "SLDM" [-1820902260] 6 [27, 131, 133] 8]
-                     ["Clustering 2" "CL" [-2076635564] 6 [10, 25, 184 ] 6]
+                     ["Clustering 2" "CL" [-2076635564] 6 [10, 25, 184] 6]
                      ["Robust Methods 2" "RM" [-1517016318] 6 [90, 114, 132] 7]
                      ["Model-based Clustering 2" "MBC" [-1971974347] 6 [24, 55, 79] 1]
                      ["Data Science in Social Sciences 1" "DS-SS" [34861845] 6 [33, 91, 153] 3]
