@@ -1,2 +1,3 @@
 {:defaults {:nologin false}
- "ifcs2022" {:nologin true}}
+ "ifcs2022" {:nologin true
+             :logo "ifcs2022.png"}}

@@ -408,7 +408,9 @@
      [:h2 "Loading program data. Please wait..."]]))
 
 (defn title []
-  (s/get :confname))
+  [:span (when-let [logo (s/get :logo)]
+           [:img {:src logo :height "40px" :class "bg-white mr-2"}]) 
+   (s/get :confname)])
 
 (defn nav-link [id]
   (let [link (str "#" id)
