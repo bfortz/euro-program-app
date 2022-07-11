@@ -1,8 +1,6 @@
 Machine Learning Approach to Identify Factors That Influence Accident Severity
 
-Daniel Santos, Vitor Nogueira, José Saias, Paulo Quaresma, Paulo Infante,
-Gonçalo Jacinto, Anabela Afonso, Leonor Rego, Pedro Nogueira, Marcelo Silva,
-Rosalina Pisco Costa, Patrícia Gois, and Paulo Rebelo Manuel
+Daniel Santos, Vitor Nogueira, José Saias, Paulo Quaresma, Paulo Infante, Gonçalo Jacinto, Anabela Afonso, Leonor Rego, Pedro Nogueira, Marcelo Silva, Rosalina Pisco Costa, Patrícia Gois, and Paulo Rebelo Manuel
 
 Since the twentieth century, road traffic accidents became a severe public health 
 concern, with deaths and injuries posing a serious threat to world health and a negative

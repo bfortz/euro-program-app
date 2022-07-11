@@ -1,8 +1,7 @@
 Pooled Mean and Confidence Interval Estimation Combining Different 
 Sets of Summary Statistics
 
-Flora Ferreira, José Soares, Fernanda Sousa, Filipe Magalhães, Isabel Ribeiro, 
-and Pedro Pacheco
+Flora Ferreira, José Soares, Fernanda Sousa, Filipe Magalhães, Isabel Ribeiro, and Pedro Pacheco
 
 Meta-analysis is increasingly used to combine the results of several studies in order
 to estimate the outcome of interest. When considering a continuous outcome, commonly 
