@@ -1,6 +1,6 @@
 Robustness and Initialization Issues in Subspace Clustering
 
-Luis A. García-Escudero and Agustín Mayo-Iscar
+"Luis Angel" García Escudero and Agustín Mayo-Iscar
 
 Observations are often assumed to cluster around lower-dimensional affine linear
 subspaces. In fact, this is one of the most frequently applied approaches when

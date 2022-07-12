@@ -1,6 +1,6 @@
 A Proposal for Formalization and Definition of Anomalies in Dynamical Systems
 
-Jan Michael Spoor, Jens Weber, and Jivka Ovtcharova
+"Jan Michael" Spoor, Jens Weber, and Jivka Ovtcharova
 
 Although many scientists strongly focus on anomaly detection in different applications 
 and domains, there currently exists no universally accepted definition of anomalies and 

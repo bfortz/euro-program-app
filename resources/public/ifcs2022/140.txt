@@ -1,6 +1,6 @@
 Some Factors That Influence the Nature of Road Traffic Accidents
 
-Paulo Infante, Gonçalo Jacinto, Anabela Afonso, Leonor Rego, Vitor Nogueira, Paulo Quaresma, José Saias, Daniel Santos, Pedro Nogueira, Marcelo Silva, Rosalina Pisco Costa, Patrícia Gois, and Paulo Rebelo Manuel
+Paulo Infante, Gonçalo Jacinto, Anabela Afonso, Leonor Rego, Vitor Nogueira, Paulo Quaresma, José Saias, Daniel Santos, Pedro Nogueira, Marcelo Silva, "Rosalina Pisco" Costa, Patrícia Gois, and "Paulo Rebelo" Manuel
 
 Road traffic accidents are one of the major social problems in modern societies. Data
 science plays an important role in its explanation and prediction. One of the main

@@ -1,7 +1,7 @@
 Comparing Variable Selection Methods for High-Dimensional Compositional Data in a
 Discriminant Analysis Context
 
-P. Daunis-i-Estadella, G. Mateu-Figueras, V. Nesrstová, K. Hron, and J.A. Martín-Fernández
+P. Daunis-i-Estadella, Glòria Mateu-Figueras, V. Nesrstová, K. Hron, and Josep A. Martín-Fernández
 
 Orthonormal logratio coordinates are used for statistical analysis of compositions.
 Although there is an infinite number of potential orthonormal bases, using the

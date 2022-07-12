@@ -1,6 +1,6 @@
 Categorical Data Analysis and Visualization
 
-Rosaria Lombardo and Erich Beh
+Rosaria Lombardo and Eric Beh
 
 The impact of the internet, social media and smart devices means that people are
 becoming increasingly literate with use of these technologies and it has changed

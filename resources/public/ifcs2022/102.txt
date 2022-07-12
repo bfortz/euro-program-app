@@ -1,6 +1,6 @@
 Joint Sparse Principal Component Analysis A Simulation Study
 
-Tra Le and Dr. Katrijn Van Deun
+Tra Le and Katrijn Van Deun
 
 Measurement invariance is of great importance in the social and behavioral sciences, 
 as it allows for generalization of latent constructs across different groups,

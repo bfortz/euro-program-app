@@ -1,6 +1,6 @@
 Biplot Representation of Partial Least Squares Regression for Binary Responses
 
-Laura Vicente-Gonzalez and Jose Luis Vicente-Villardon
+Laura Vicente-Gonzalez and "Jose Luis" Vicente-Villardon
 
 In this work we describes biplot representation for visualization of Partial Least
 Squares Regression for Binary Responses (PLS-BLR). The PLS-BLR is a generalization 

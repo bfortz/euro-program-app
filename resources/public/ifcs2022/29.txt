@@ -1,6 +1,6 @@
 Stability of Mixed-Type Cluster Partitions for Determination of the Number of Clusters
 
-Rabea Aschenbruck, Gero Szepannek, and Adalbert F.X. Wilhelm
+Rabea Aschenbruck, Gero Szepannek, and Adalbert Wilhelm
 
 For partitioning clustering methods, the number of clusters has to be determined
 in advance and is therefore an important issue. Besides the application of so-called

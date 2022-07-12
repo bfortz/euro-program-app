@@ -1,6 +1,6 @@
 Consistency of Trimmed Estimators of Scatter under the t-Distribution
 
-Andrea Cerioli, Lucio Barabesi, Luis Angel Garcìa-Escudero, and Agustín Mayo-Iscar
+Andrea Cerioli, Lucio Barabesi, "Luis Angel" García Escudero, and Agustín Mayo-Iscar
 
 It is well known that trimmed estimators of multivariate scatter, such as the Minimum
 Covariance Determinant (MCD) estimator, are inconsistent unless an appropriate

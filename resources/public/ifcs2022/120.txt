@@ -1,6 +1,6 @@
 Spatial Configuration of Fire Stations in Portugal
 
-Regina Bispo, Clara Yokochi, Francisca G. Vieira, Nádia Bachir, Pedro Espadinha-Cruz, José Pedro Lopes, Alexandre Penha, Marta B. Lopes, Filipe J. Marques, João Paulo Rodrigues, and António Grilo
+Regina Bispo, Clara Yokochi, Francisca G. Vieira, Nádia Bachir, Pedro Espadinha-Cruz, "José Pedro" Lopes, Alexandre Penha, Marta B. Lopes, Filipe J. Marques, "João Paulo" Rodrigues, and António Grilo
 
 Fire stations (FS) provide a global emergency response to non-fire incidents, 
 e.g., vehicle crashes. Urban fires are nonetheless one of the most frequent 

@@ -1,7 +1,7 @@
 PLS-Based Principal Balances for Regression and Classification with 
 High-Dimensional Compositional Data
 
-V. Nesrstová, I. Wilms, K. Hron, J. A. Martín-Fernández, P. Filzmoser, and J. Palarea-Albaladejo
+V. Nesrstová, I. Wilms, K. Hron, Josep A. Martín-Fernández, P. Filzmoser, and J. Palarea-Albaladejo
 
 Compositional data naturally occur in many different research fields, such as 
 geochemistry or metabolomics. Due to their relative nature, compositions cannot be

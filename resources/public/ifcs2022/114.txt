@@ -1,6 +1,6 @@
 Outliers Detection in Functional Data
 
-Amovin-Assagba Martial, Gannaz Irene, and Jacques Julien `
+Amovin-Assagba Martial, Gannaz Irene, and Jacques Julien
 
 The modern technologies ease the collection of massive data at high frequency. 
 From a statistical point of view, these data can be considered as functional data: 

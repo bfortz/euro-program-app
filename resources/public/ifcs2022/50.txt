@@ -1,6 +1,6 @@
 Clustering Validation in Hierarchical Cluster Analysis: an Empirical Study
 
-Osvaldo Silva, Aurea Sousa, and Helena Bacelar-Nicolau ´
+Osvaldo Silva, Aurea Sousa, and Helena Bacelar-Nicolau
 
 The evaluation of clustering structures is a crucial step in cluster analysis. This study
 presents the main results of the hierarchical cluster analysis of variables concerning

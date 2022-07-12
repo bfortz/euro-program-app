@@ -1,6 +1,6 @@
 A clusterwise regression method for distributional data
 
-R. Verde, A. Balzanella and A. Irpino
+R. Verde, A. Balzanella and Antonio Irpino
 
 This work deals with a cluster-wise regression method for distributional data. The set
 of objects to be clustered are described by distributional variables {Y, X_1, . . . , X_p},

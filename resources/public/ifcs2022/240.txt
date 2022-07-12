@@ -1,6 +1,6 @@
 Biplots for Categorical and Ordinal Data Based on Logistic Responses
 
-Jose Luis Vicente-Villardon
+"Jose Luis" Vicente-Villardon
 
 A joint representation of individuals and variables in a data matrix is called a Biplot.
 Biplots were proposed 50 years ago in [1].

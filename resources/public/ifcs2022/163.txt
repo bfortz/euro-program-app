@@ -1,6 +1,6 @@
 User Segmentation Based on Online Behavioural Data via Ensemble Predictions and Clustering
 
-Stella Hadjiantoni, Hui Yang,Yunfei Long, Ruta Petraityte, and Berthold Lausen
+Stella Hadjiantoni, Hui Yang, Yunfei Long, Ruta Petraitytè, and Berthold Lausen
 
 We use unsupervised clustering and supervised ensemble machine learning to identify 
 segments of users defined by behavioural data. Hierarchical clustering is used as

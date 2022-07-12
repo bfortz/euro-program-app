@@ -1,6 +1,6 @@
 Multivariate Time Series Feature Extraction via Multilayer Networks
 
-Vanessa Freitas Silva, Maria Eduarda Silva, Pedro Ribeiro, and Fernando Silva
+"Vanessa Freitas" Silva, "Maria Eduarda" Silva, Pedro Ribeiro, and Fernando Silva
 
 The extraction of features from time-indexed data has proved to be an important
 preliminary task in many applications of time series analysis, such as classification, 

@@ -1,7 +1,7 @@
 Reliability Assessment of Ancient Stone Arch Bridge Applying ANN Models, Case Study: 
 Leça Railway Bridge
 
-Edward A. Baron, Ana Margarida Bento, José Campos e Matos, and Rui Calçada
+Edward A. Baron, "Ana Margarida" Bento, José Campos e Matos, and Rui Calçada
 and Kenneth Gavin
 
 In many areas of engineering, surrogate models are used to replace traditional methods 

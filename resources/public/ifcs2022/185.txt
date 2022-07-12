@@ -1,6 +1,6 @@
 Google Trends as a Macroeconomic Predictor: Behind the Scenes
 
-Eduardo Andre Costa and Maria Eduarda Silva
+"Eduardo Andre" Costa and "Maria Eduarda" Silva
 
 Data sourced from online activities and particularly from Google Trends (GT) has
 been gaining importance in the literature as predictors for economic indicators. 

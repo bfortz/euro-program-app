@@ -1,6 +1,6 @@
 The Biplot Inner Product for Interpretation and Derivation of Eigenvector Methods
 
-Cajo J. F. ter Braak
+Cajo J.F. ter Braak
 
 To celebrate K. Ruben Gabriel’s biplot paper [1], I describe its influence, via my
 supervisor Leo C. A. Corsten, on my first to last papers (1981-2021) and on my

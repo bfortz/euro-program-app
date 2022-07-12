@@ -1,6 +1,6 @@
 Outlier Detection: a Procedure to Capture Atypical Groups of Observations
 
-Ana Helena Tavares and Vera Afreixo and Paula Brito
+"Ana Helena" Tavares and Vera Afreixo and Paula Brito
 
 In thiswork, we introduce the concept of atypical group of observations and propose a
 procedure for its identification. By atypical group, we mean a cluster of observations

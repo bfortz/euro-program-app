@@ -1,6 +1,6 @@
 Fuzzy Clustering by Hyperbolic Smoothing
 
-David Mas´ıs, Esteban Segura, Javier Trejos, and Adilson Xavier
+David Masís, Esteban Segura, Javier Trejos, and Adilson Xavier
 
 We propose a novel method for building fuzzy clusters of large data sets, using a
 smoothing numerical approach. The usual sum-of-squares criterion is relaxed so

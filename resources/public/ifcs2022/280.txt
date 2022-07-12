@@ -1,6 +1,6 @@
 Depth-Based Classifiers for Partially Observed Functional Data
 
-Antonio Elías, Raúl Jiménez, Anna M. Paganoni and Laura M. Sangalli
+Antonio Elías, Raúl Jiménez, "Anna Maria" Paganoni and Laura M. Sangalli
 
 Partially observed functional data are frequently encountered in applications and are
 the object of an increasing interest by the literature. We here address the problem

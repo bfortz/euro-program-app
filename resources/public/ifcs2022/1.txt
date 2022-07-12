@@ -1,6 +1,6 @@
 Unsupervised Classification of Categorical Time Series Through Innovative Distances
 
-Angel López-Oriona, José A. Vilar, and Pierpaolo D’Urso ´
+Ángel López-Oriona, José A. Vilar, and Pierpaolo D’Urso
 
 In this paper, two novel distances for nominal time series are introduced. Both
 of them are based on features describing the serial dependence patterns between

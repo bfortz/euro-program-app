@@ -1,6 +1,6 @@
 Modeling a Most Specific Generalization in Domain Taxonomies
 
-Zh. Hayrapetyan and B. Mirkin et al.
+Zh. Hayrapetyan and B. Mirkin
 
 We define a most specific generalization of a fuzzy set of topics assigned to leaves
 of the rooted tree of a domain taxonomy. This generalization lifts the set to its

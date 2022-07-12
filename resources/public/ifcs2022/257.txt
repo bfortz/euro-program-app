@@ -1,6 +1,6 @@
 Monitoring Hyper-Parameter Choice for Robust Cluster Weighted Model
 
-Andrea Cappozzo, Luis Angel García Escudero, Francesca Greselin, and 
+Andrea Cappozzo, "Luis Angel" García Escudero, Francesca Greselin, and 
 Agustín Mayo-Iscar
 
 The estimation of the Cluster Weighted Model is particularly attractive for providing

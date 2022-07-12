@@ -1,6 +1,6 @@
 Old and New Constraints in Model Based Clustering
 
-Luis A. García-Escudero, Agustín Mayo-Iscar, Gianluca Morelli, and Marco Riani
+"Luis Angel" García Escudero, Agustín Mayo-Iscar, Gianluca Morelli, and Marco Riani
 
 Model-based approaches to cluster analysis and mixture modeling often involve
 maximizing classification and mixture likelihoods. Without appropriate constrains

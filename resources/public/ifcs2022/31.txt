@@ -1,7 +1,7 @@
 Emotion Classification Based on Single Electrode Brain Data: 
 Applications for Assistive Technology
 
-Duarte Rodrigues, Luis Paulo Reis, and Brígida Mónica Faria ´
+Duarte Rodrigues, "Luis Paulo" Reis, and "Brígida Mónica" Faria
 
 This research case focused on the development of an emotion classification system
 aimed to be integrated in projects committed to improve assistive technologies.

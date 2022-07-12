@@ -1,7 +1,7 @@
 Time Resolved Feature Importance of a Biopharmaceutical Purification Process Using
 Permutation Based Methods
 
-Matthias Medl, Theresa Scharl, Astrid D¨urauer, and Friedrich Leisch
+Matthias Medl, Theresa Scharl, Astrid Dürauer, and Friedrich Leisch
 
 Real-time monitoring of critical process parameters of biotechnological processes
 is a major step towards quality-by-design in the production of biopharmaceuticals.

@@ -1,6 +1,6 @@
 Multinomial Multilevel Models with Discrete Random Effects: a Multivariate Clustering Tool
 
-Chiara Masci, Francesca Ieva, and Anna Maria Paganoni
+Chiara Masci, Francesca Ieva, and "Anna Maria" Paganoni
 
 We propose a Semi-Parametric Mixed-Effects Multinomial regression model to deal
 with estimation and inference issues in the case of categorical data with a 

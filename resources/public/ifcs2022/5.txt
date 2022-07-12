@@ -1,6 +1,6 @@
 Robustness Aspects of Optimized Centroids
 
-Jan Kalina and Patrik Janácek ˇ
+Jan Kalina and Patrik Janácek
 
 Centroids are often used for object localization tasks, supervised segmentation in
 medical image analysis, or classification in other specific tasks. This paper starts

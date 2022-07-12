@@ -1,7 +1,7 @@
 Creating Homogeneous Sectors: Criteria and Applications of Sectorization
 
-Cristina Lopes, Maria Margarida Lima, Elif Göksu Öztürk, Ana Maria Rodrigues,
-Ana Catarina Nunes, Cristina Oliveira, José Soeiro Ferreira, and Pedro Filipe Rocha
+Cristina Lopes, "Maria Margarida" Lima, Elif Göksu Öztürk, "Ana Maria" Rodrigues,
+"Ana Catarina" Nunes, Cristina Oliveira, "José Soeiro" Ferreira, and "Pedro Filipe" Rocha
 
 Sectorization is the process of grouping a set of previously defined basic units
 (points or small areas) into a fixed number of sectors. Sectorization is also known

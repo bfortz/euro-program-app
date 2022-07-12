@@ -1,6 +1,6 @@
 Categorical Data Visualization and the Cressie-Read Divergence Statistic
 
-Eric J. Beh and Rosaria Lombardo
+Eric Beh and Rosaria Lombardo
 
 The literature on correspondence analysis is largely centred on Pearson’s chi-squared
 statistic (Greenacre, 1984; Beh and Lombardo, 2014). For such an analysis, differences 

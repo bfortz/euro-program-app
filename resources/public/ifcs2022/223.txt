@@ -1,7 +1,7 @@
 A Likelihood Ratio Test for Choosing Input  Parameters  in Robust Model Based 
 Clustering
 
-Luis A. García-Escudero, Agustín Mayo-Iscar, Gianluca Morelli, and Marco Riani
+"Luis Angel" García Escudero, Agustín Mayo-Iscar, Gianluca Morelli, and Marco Riani
 
 In the last twenty five years robust several proposals for maximum likelihood 
 estimation based on trimming and constraints have been developed. For these 

@@ -1,6 +1,6 @@
 Time Series of Counts Under Censoring
 
-Isabel Silva, Maria Eduarda Silva, Isabel Pereira, and Brendan McCabe
+Isabel Silva, "Maria Eduarda" Silva, Isabel Pereira, and Brendan McCabe
 
 Censored time series arise when explicit limits are placed on the observed data
 and occur in several fields including environmental monitoring, economics, medical

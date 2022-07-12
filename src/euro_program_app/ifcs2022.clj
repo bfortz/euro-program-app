@@ -94,7 +94,7 @@
                      ["50 Years of Biplots 1" "BIP" [-860309800] 5 [75, 158, 240] 4]
                      ["Statistical Learning and Data Mining 1" "SLDM" [-1928671837] 5 [99, 105, 144] 8]
                      ["Clustering 1" "CL" [951086089] 5 [50, 160, 237] 6]
-                     ["Robust Methods 1" "RM" [12998771] 5 [138, 148, 232] 7]
+                     ["Robust Methods 1" "RM" [-131426338] 5 [138, 148, 232] 7]
                      ["Model-based Clustering 1" "MBC" [1348059205] 5 [6, 18, 76] 1]
                      ["Supervised Machine Learning" "S-ML" [1518611897] 5 [40, 98] 9]
                      ["Machine Learning 1" "ML" [511666866] 5 [129, 154, 173] 10]
@@ -104,7 +104,7 @@
                      ["Statistics and Econometric Methods" "SEM" [636652566] 6 [61, 97, 141] 9]
                      ["Statistical Learning and Data Mining 2" "SLDM" [-1820902260] 6 [27, 131, 133] 8]
                      ["Clustering 2" "CL" [-2076635564] 6 [10, 25, 184] 6]
-                     ["Robust Methods 2" "RM" [-1517016318] 6 [90, 114, 132] 7]
+                     ["Robust Methods 2" "RM" [-131426338] 6 [90, 114, 132] 7]
                      ["Model-based Clustering 2" "MBC" [-1971974347] 6 [24, 55, 79] 1]
                      ["Data Science in Social Sciences 1" "DS-SS" [34861845] 6 [33, 91, 153] 3]
                      ["Machine Learning 2" "ML" [658595747] 6 [11, 172, 189] 10]
@@ -114,7 +114,7 @@
                      ["Functional Data Analysis 3" "FDA" [644632721] 8 [21, 47, 152, 177] 2]
                      ["Time Series" "TS" [1034765172] 8 [7, 109, 164, 258] 5] 
                      ["Supervised Classification - Trees" "SCT" [2077906742] 8 [82, 210, 239, 242] 4]
-                     ["Data Science in Health Sciences" "DS-HS" [-1090059568] 8 [31, 125, 254, 255] 8]
+                     ["Data Science in Health Sciences" "DS-HS" [535104989] 8 [31, 125, 254, 255] 8]
                      ["Clustering 3" "CL" [1244692504] 8 [34, 37, 41] 6]
                      ["Compositional Data Analysis 1" "CoDA" [1400430920] 8 [14, 44, 201] 9]
                      ["Model-based Clustering 3" "MBC" [-1770841430] 8 [28, 257, 198, 32] 1]
@@ -122,7 +122,7 @@
                      ["Symbolic Data Analysis 3" "SDA" [1332227302] 9 [107, 119, 209] 5]
                      ["Functional Data Analysis 4" "FDA" [-774412915] 9 [78, 155, 212] 2]
                      ["Optimization in Classification and Clustering 1" "OCC" [2039042684] 9 [77, 127, 231] 8]
-                     ["50 Years of Biplots 2" "BIP" [-1731816409] 9 [96, 145, 222] 4]
+                     ["50 Years of Biplots 2" "BIP" [1312906308] 9 [96, 145, 222] 4]
                      ["Data Science in Economics and Finance 1" "DS-EF" [-1484986528] 9 [121, 139, 185] 7]
                      ["Clustering 4" "CL" [-990593308] 9 [29, 192, 221] 6]
                      ["Compositional Data Analysis 2" "CoDA" [-1172329060] 9 [170, 174] 9]
@@ -146,7 +146,7 @@
                      ["Robust Methods 3" "RM" [-1326682421] 17 [5, 208, 217] 7]
                      ["Model-based Clustering 5" "MBC" [-544228136] 17 [26, 93] 1]
                      ["Spatial-Temporal Data Analysis 1" "STDA" [1973313263] 17 [122, 181, 267] 3]
-                     ["Classiﬁcation Applied to Biological Sciences" "SPE" [-530722243, -1046537934] 17 [128, 130, 211] 9]
+                     ["Classification Applied to Biological Sciences" "SPE" [843320350, -1046537934] 17 [128, 130, 211] 9]
                      ["Keynote Genevera Allen" 2 [459379652] 18 [271] 0]
                      ["Poster Session 2" 4 [] 19 [68, 101, 194, 213, 215, 216, 233, 234, 244, 249, 252, 269, 277, 278] 12]
                      ["Data Science for Business and Marketing" "DS-BM" [-1858407424] 20 [39, 51, 159, 163] 4]
@@ -187,8 +187,9 @@
           [title authors s] (s/split s #"\r\n\r\n" 3)
           [a1 s] (when s (s/split s #"\r\nKeywords: "))
           [keywords a2] (when s (s/split s #"\r\n\r\n"))
-          [authors1 authors2] (s/split authors #"[,\r\n ]+and ")
-          authors (conj (s/split authors1 #",") authors2)
+          authors (s/split authors #"[,\r\n ]+and ")
+          authors (map #(s/split % #",") authors)
+          authors (flatten authors)
           authors (map s/trim (filter identity authors))
           keywords (when keywords (map (comp s/capitalize s/trim) (s/split keywords #",")))
           abstract (str a1 "\r\n" a2)]
@@ -229,7 +230,7 @@
     (reduce 
       #(conj %1 %2)
       (reduce #(union %1 (set (:authors %2))) #{} abstracts)
-      ["Nema Dean" "Matthijs Warrens" "Herbert Lee" "Utkarsh Dang" "Charles Taylor" "Krzysztof Jajuga" "Hien Nguyen" "Laura Palagi" "José G. Dias" "Paula Brito" "Sónia Dias" "Filipe Marques" "Rebecca Nugent" "Pedro Duarte Silva"])))
+      ["Nema Dean" "Matthijs Warrens" "Herbert Lee" "Charles Taylor" "Krzysztof Jajuga" "Hien Nguyen" "Laura Palagi" "José G. Dias" "Rebecca Nugent" "Pedro Duarte Silva"])))
 
 (def user->id (zipmap user-names (map hash user-names)))
 
@@ -248,8 +249,17 @@
 (def user-sessions
   (reduce add-session-to-users user-chairs abstracts))
 
+(defn split-uname [uname]
+  (if (= '\" (first uname))
+    (s/split (subs uname 1) #"\" " 2)
+    (let [[f l] (s/split uname #" " 2)]
+      (if (= '\. (second l))
+        (let [[f2 l2] (s/split l #" " 2)]
+          [(str f " " f2) l2])
+        [f l]))))
+
 (defn create-user [uname]
-  (let [[firstname lastname] (s/split uname #" " 2)
+  (let [[firstname lastname] (split-uname uname) 
         sessions (user-sessions (user->id uname))]
     (into {} (User. firstname lastname sessions))))
 

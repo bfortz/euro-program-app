@@ -1,7 +1,7 @@
 Misalignment of Spectral Data: Constrained Optimization in a Functional Data Analysis
 Framework
 
-Francesca Di Salvo, Delia Francesca Chillura Martino, and Gabriella Chirco
+Francesca Di Salvo, "Delia Francesca" Chillura Martino, and Gabriella Chirco
 
 Across several branches of sciences, a large number of applications involves data
 represented as functions and curves, for which functional data analysis can play a

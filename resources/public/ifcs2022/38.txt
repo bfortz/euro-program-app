@@ -1,7 +1,7 @@
 Clustering Student Mobility Data in 3-Way Networks
 
-Vincenzo Giuseppe Genova, Giuseppe Giordano, Giancarlo Ragozini, 
-and Maria Prosperina Vitale
+"Vincenzo Giuseppe" Genova, Giuseppe Giordano, Giancarlo Ragozini, 
+and "Maria Prosperina" Vitale
 
 The present contribution aims at introducing a network data reduction method for
 the analysis of 3-way networks [1] in which classes of nodes of different types are

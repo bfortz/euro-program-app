@@ -1,6 +1,6 @@
 Accuracy Measures for Binary Classification based on Quantitative Group Tests
 
-Rui Santos, Joao Paulo Martins, and Miguel Felgueiras
+Rui Santos, "Joao Paulo" Martins, and Miguel Felgueiras
 
 Classification of a large number of individuals using individual tests can be expensive
 and time-consuming. Hence, taking a sample from different individuals and mixing

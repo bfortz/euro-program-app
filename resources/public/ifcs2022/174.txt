@@ -1,7 +1,6 @@
 Clustering Count Data Using Compositional Methods
 
-Marc Comas-Cufí, Josep A. Martín-Fernández, Glòria Mateu-Figueras, and
-J. Palarea-Albaladejo
+Marc Comas-Cufí, Josep A. Martín-Fernández, Glòria Mateu-Figueras, and J. Palarea-Albaladejo
 
 Multivariate count data are multivariate vectors of non-negative integers. When
 the total number of counts depends on varying external factors (e.g. duration of the
