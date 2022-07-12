@@ -137,7 +137,7 @@
                      ["COVID Data Analysis" 3 [-180899592] 15 [206, 260, 262] 1]
                      ["Categorical Data Analysis and Visualization" 3 [-1746059320] 15 [100, 117, 151] 10]
                      ["Presidential Address Angela Montanari" 2 [499089750] 16 [284] 0]
-                     ["Symbolic Data Analysis 4" "SDA" [-638861211] 17 [108, 147, 186] 5]
+                     ["Symbolic Data Analysis 4" "SDA" [966350613] 17 [108, 147, 186] 5]
                      ["Functional Data Analysis 5" "FDA" [1216026640] 17 [43, 74, 134] 2]
                      ["Interpretable Machine Learning" "IML" [1183902538] 17 [190, 193, 250] 10]
                      ["50 Years of Biplots 3" "BIP" [-1540630165] 17 [83, 103, 251] 4]
