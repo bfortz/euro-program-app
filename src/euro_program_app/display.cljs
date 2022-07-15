@@ -17,7 +17,7 @@
         u (get (:users d) id)]
     [:a {:href (str "#user/" id)} (str (:lastname u) ", " (:firstname u))]))
 
-(defn authors [p]
+(defn abstract-authors [p]
   (reduce #(conj (conj %1 ", ") (user %2)) 
           (let [fa (first (:authors p))] 
             [vector :span (user fa)])
@@ -71,7 +71,7 @@
        [:h3 (:title p)]]]
      [:div {:class "row"} 
       [:div {:class "col"} 
-       [:p (authors p)]]]
+       [:p (abstract-authors p)]]]
      [:div {:class "row"} 
       [:div {:class "col"} 
        [:p [:b "Keywords: "] (keywords-paper p)]]]
@@ -136,7 +136,7 @@
                 [:li
                  [:a {:href (str "#abstract/" pid) :style {:color "black"} } 
                   [:i (:title p)]] [:br]
-                 (authors p)])))]]])]))
+                 (abstract-authors p)])))]]])]))
 
 (defn session [id]
   (let [d (s/get :data)
@@ -243,7 +243,7 @@
         u (get (:users d) id)] 
     [:div
      [:div {:class "row"} 
-      [:div {:class "col text-center"} [:h3 [:a {:href "#participants"} "Participants"]]]]
+      [:div {:class "col text-center"} [:h3 [:a {:href "#authors"} "Authors"]]]]
      [:div {:class "row"} 
       [:div {:class "col text-center"} [:h2 (:firstname u) " " (:lastname u)]]]
      [:div {:class "row"} 
@@ -300,13 +300,13 @@
                 :class "btn btn-program col session"}
             (:name s)]]]))]))
 
-(defn participants []
+(defn authors []
   (let [users (:users (s/get :data))
         fl (s/get :first)]
     (if fl
       (let [u (filter #(= fl (d/up-first %)) users)]
         [:div
-         [:h2 [:a {:href "#participants"} "Participants"]]
+         [:h2 [:a {:href "#authors"} "Authors"]]
          [:ul
           (doall
             (for [id (keys u)] 
@@ -315,13 +315,13 @@
                (user-last id)]))]])
       (let [first-letter (apply sorted-set (map d/up-first users))]
         [:div 
-         [:h2 "Participants"]
+         [:h2 "Authors"]
          [:div {:class "row"}
           (doall
             (for [l first-letter]
               ^{:key (str "P" l)}
               [:div {:class "col-2 col-md-1 text-center"}
-               [:a {:href (str "#participants/" l) 
+               [:a {:href (str "#authors/" l) 
                     :role "button"
                     :class "btn btn-program letter"} l]]))]]))))
 
@@ -393,7 +393,7 @@
        :stream (stream)
        :session (session-detail)
        :user (user-detail)
-       :participants (participants)
+       :authors (authors)
        :keywords (keywords)
        :keyword (keyword-detail)
        :my-program (my-program)
@@ -438,7 +438,7 @@
    (nav-link "schedule")
    (nav-link "my-program")
    (nav-link "streams")
-   (nav-link "participants")
+   (nav-link "authors")
    (nav-link "keywords")
    [:li {:class "nav-item dropdown"}
     [:a {:class "nav-link dropdown-toggle" :href "#" :id "navbarDropdownMenu"

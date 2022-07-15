@@ -62,13 +62,13 @@
   (s/put! :user (reader/read-string id)) 
   (s/put! :page :user))
 
-(secretary/defroute "/participants" []
+(secretary/defroute "/authors" []
   (s/remove! :first)
-  (s/put! :page :participants))
+  (s/put! :page :authors))
 
-(secretary/defroute "/participants/:letter" [letter]
+(secretary/defroute "/authors/:letter" [letter]
   (s/put! :first letter)
-  (s/put! :page :participants))
+  (s/put! :page :authors))
 
 (secretary/defroute "/keywords" []
   (s/put! :page :keywords))

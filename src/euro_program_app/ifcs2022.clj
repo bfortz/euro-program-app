@@ -85,8 +85,8 @@
       (sort-by #(+ (* 1000 (:timeslot %)) (:track %)) 
                (map #(apply session %) 
                     [["Analysis of Data Streams" 1 [] 1 [282] 1]
-                     ["Categorical Data Analysis and Visualization" 1 [] 2 [] 1]
-                     ["Opening Session" 2 [] 3 [283] 0]
+                     ["Categorical Data Analysis and Visualization" 1 [] 2 [283] 1]
+                     ["Opening Session" 2 [] 3 [] 0]
                      ["Keynote Dianne Cook" 2 [1156856374] 4 [256] 0]
                      ["Symbolic Data Analysis 1" "SDA" [1755792008] 5 [157, 187, 275] 5]
                      ["Functional Data Analysis 1" "FDA" [-1468429205] 5 [47, 85, 235] 2]
