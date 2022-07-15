@@ -54,7 +54,7 @@
             [:i {:class "material-icons"} "arrow_back"]]))]
       [:div {:class "col text-center"}
        [:a {:href (str "#session/" id) :style {:color "red"}} 
-        (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]]] 
+        (if-let [a (:acronym s)] a (str (:day t) (:time t) "-" (:track s))) ": " [:b (:name s)]]] 
       [:div {:class "col-2 text-right"} 
        (if (= paperid (last (:papers s))) 
          ""
@@ -113,7 +113,7 @@
                    (:name stream)]]
       [:div {:class "col"}
        [:h2 {:class (if paperid "d-none" "") :style {:color "red"}}
-        (:day t) (:time t) "-" (:track s) ": " [:b (:name s)]] 
+        (if-let [a (:acronym s)] a (str (:day t) (:time t) "-" (:track s))) ": " [:b (:name s)]] 
        [:div {:class (if paperid "d-none" "")}
         (if (= (count chairs) 1)
           [:p "Chair: " (user (first chairs))]
@@ -152,7 +152,7 @@
            :class "btn-program col"}
      [:div {:class "row session"}
       [:div {:class "col-4 col-md-3 col-lg-2"} 
-       (str (:day t) (:time t) "-" (:track s)) [:br] r]
+       (if-let [a (:acronym s)] a (str (:day t) (:time t) "-" (:track s))) [:br] r]
       [:div {:class "col"} 
        [:a {:href (str "#session/" id)} 
         [:b {:style {:color "red"}} (:name s)]] [:br] 
