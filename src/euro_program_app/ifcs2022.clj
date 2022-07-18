@@ -89,7 +89,7 @@
                      ["Opening Session" 2 [] 3 [] 0 "OS"]
                      ["Keynote Dianne Cook" 2 [1156856374] 4 [256] 0 "K1"]
                      ["Symbolic Data Analysis 1" "SDA" [1755792008] 5 [157, 187, 275] 5 "SDA1"]
-                     ["Functional Data Analysis 1" "FDA" [-1468429205] 5 [47, 85, 235] 2 "FDA1"]
+                     ["Functional Data Analysis 1" "FDA" [-1468429205] 5 [46, 85, 235] 2 "FDA1"]
                      ["Social Network Analysis 1" "SNA" [227631459] 5 [13, 38, 195] 3 "SNA1"]
                      ["50 Years of Biplots 1" "BIP" [-860309800] 5 [75, 158, 240] 4 "BIP1"]
                      ["Statistical Learning and Data Mining 1" "SLDM" [-1928671837] 5 [99, 105, 144] 8 "SLDM1"]
