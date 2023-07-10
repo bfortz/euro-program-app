@@ -157,7 +157,17 @@
        [:a {:href (str "#session/" id)} 
         [:b {:style {:color "red"}} (:name s)]] [:br] 
        [:a {:href (str "#stream/" (:stream s))} 
-        [:i {:style {:color "black"}} (:name stream)]]]]
+        [:i {:style {:color "black"}} (:name stream)]]]
+      [:div {:class "col-2"} 
+       [:a {:href (str (if (empty? (filter #(= id %) (s/get :mysessions)))
+                         "#addsession/"
+                         "#delsession/")
+                       id)
+            :role "button"
+            :class "btn btn"}
+        (if (empty? (filter #(= id %) (s/get :mysessions)))
+          [:i {:class "material-icons"} "star_border"]   
+          [:i {:class "material-icons"} "star"])]]]
      (case (s/get :page)
        :user (let [uid (s/get :user)]
                (list
