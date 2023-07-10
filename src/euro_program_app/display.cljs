@@ -151,7 +151,7 @@
     [:div {:role "button"
            :class "btn-program col"}
      [:div {:class "row session"}
-      [:div {:class "col-4 col-md-3 col-lg-2"} 
+      [:div {:class "col-3 col-md-3 col-lg-2"} 
        (if-let [a (:acronym s)] a (str (:day t) (:time t) "-" (:track s))) [:br] r]
       [:div {:class "col"} 
        [:a {:href (str "#session/" id)} 
