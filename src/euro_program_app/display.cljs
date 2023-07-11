@@ -451,8 +451,8 @@
    (nav-link "authors")
    (nav-link "keywords")
    [:div {:class "d-inline-flex d-md-none d-xl-inline-flex navbar-nav"}
-      (nav-link "select-conference")
-      (doall (map (comp nav-link name first) (s/get :static-pages)))]
+      (doall (map (comp nav-link name first) (s/get :static-pages))) 
+      (nav-link "select-conference")]
    [:div {:class "d-none d-md-block d-xl-none"} 
     [:li {:class "nav-item dropdown"}
      [:a {:class "nav-link dropdown-toggle" :href "#" :id "navbarDropdownMenu"
@@ -460,6 +460,6 @@
           :aria-expanded "false"} "More"]
      [:div {:class "dropdown-menu" 
             :aria-labelledby "navbarDropdownMenu"}
-      (nav-dd-link "select-conference")
-      (doall (map (comp nav-dd-link name first) (s/get :static-pages)))]]]])
+      (doall (map (comp nav-dd-link name first) (s/get :static-pages)))     
+      (nav-dd-link "select-conference")]]]])
 
